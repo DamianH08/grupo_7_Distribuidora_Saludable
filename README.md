@@ -25,3 +25,21 @@ Con la variada oferta de productos y precios que tenemos buscamos que todas las 
 **Te invitamos a que tengas una alimentación saludable sin perder sabor y la alegría en tus comidas.** 
 
 
+
+#### Descripción del equipo
+
+* Brian Talavera:
+
+
+* Damián Hernández:
+Tengo 35 años. Vivo en la zona de retiro (Capital Federal) pero nací y me crié en Lanús. Hace 4 años que estoy casado. Amo viajar conociendo nuevas culturas, disfrutar de la naturaleza, el deporte (actualmente juego fútbol y voley) y pasar tiempo con amigos y familia. Soy licenciado en publicidad.
+Trabajé en publicidad digital durante 8 años. En este tiempo fui aprendiendo y creciendo profesionalmente con la industria, tuve la suerte de trabajar en proyectos innovadores para el momento como el desarrollo de una plataforma de compra programática (es un tipo de publicidad que trabaja con algoritmos por detrás para optimizar la compra de espacios publicitarios). Siempre me gustó la innovación y aprender nuevos desafios.
+Hace aproximadamente 2 años decidí dejar un poco de lado la oficina, la publicidad y los jefes para comenzar la vida de emprendedor. Actualmente soy socio gerente de una cadena de dietéticas llamada Distribuidora Saludable. Somos 3 socios que trabajamos codo a codo para sacar adelante este proyecto. Sin duda emprender es un esfuerzo muy grande pero seguimos trabajando mucho, apostando y haciendo que este negocio crezca día a día. Ya contamos con 8 locales y tenemos a cargo a más de 30 personas. A pura prueba y error seguimos aprendiendo cómo manejar este barco! 
+Sin duda el mayor desafio es poder balancear todo esto, no es fácil y todavía no se bien cómo hacerlo.... pero lo sigo intentando!
+
+
+
+
+
+
+* Roberto Isasmendi:
