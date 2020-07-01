@@ -29,6 +29,7 @@ Con la variada oferta de productos y precios que tenemos buscamos que todas las 
 #### Descripción del equipo
 
 * Brian Talavera:
+Tengo 28 años, soy de Misiones, y por ahora estoy viviendo acá. Estudié ingeniería industrial y luego por un timpo como analista de compras en una empresa constructora, luego decidí buscar otro rumbo y encontrar algo que me motive y apasione (si fuera eso posible!). Siempre fui muy apasionado por la computación, especialmente todo lo referido a desarrollo de software y programación. Mas allá de que estudie formalmente otra cosa (por cosas de la vida), siempre me gusto leer y aprender cosas por mi mismo, sobre todo programación, pero me solia pasar de que me estancaba o que cambiaba de rumbo todo el tiempo. Cuando ingresé a éste curso, lo hice con la idea de profundizar lo máximo posible en desarrollo web y concentrarme solo en eso por lo menos en los meses que dura el curso. Anteriormente, ya había indagado en el tema, aprendiendo algo de HTML, CSS, un poquito de Javascript, Python y el framework Django; pero no llegué a profundizar mucho.
 
 
 * Damián Hernández:
