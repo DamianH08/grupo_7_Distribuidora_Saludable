@@ -32,6 +32,8 @@ Con la variada oferta de productos y precios que tenemos buscamos que todas las 
 - https://www.thefoodmarket.com.ar/ : Carrusel donde van pasando Banners, sección de "Destacados" y de "Novedades". 
 - https://www.kevingston.com/producto/02996010_remera-point : Esta página nos gustó por más que no fuera del rubro de la alimentación. Nos gusta como debajo del producto está toda la info necesaria que salta con un pop up cuando hacés click. Datos de envío, forma de pago, política de devolución, etc.
 
+#### Link al wireframe de las páginas: https://drive.google.com/drive/folders/1cYCCRaKtZsjDg_x3D8jUCSB4qV2rV1Tn?usp=sharing
+
 #### Descripción del equipo:
 
 * Brian Talavera:
