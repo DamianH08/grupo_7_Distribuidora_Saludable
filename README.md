@@ -24,9 +24,15 @@ Con la variada oferta de productos y precios que tenemos buscamos que todas las 
 
 **Te invitamos a que tengas una alimentación saludable sin perder sabor y la alegría en tus comidas.** 
 
+#### Sitios de referencia:
 
+- https://frutosare.com.ar/ : Sencillo, fácil de comprar, botón de consultas por WhatsApp.
+- https://newgarden.com.ar/ : La parte de "Categorías" nos gustó cómo está presentada y también la forma en la que se agregan los productos al carrito.
+- https://colorlib.com/preview/#ogani : Nos gusta como queda la vista en mobile, como pasan como slides la parte de "Latest Products" y "Top Rated Products"
+- https://www.thefoodmarket.com.ar/ : Carrusel donde van pasando Banners, sección de "Destacados" y de "Novedades". 
+- https://www.kevingston.com/producto/02996010_remera-point : Esta página nos gustó por más que no fuera del rubro de la alimentación. Nos gusta como debajo del producto está toda la info necesaria que salta con un pop up cuando hacés click. Datos de envío, forma de pago, política de devolución, etc.
 
-#### Descripción del equipo
+#### Descripción del equipo:
 
 * Brian Talavera:
 Tengo 28 años, soy de Misiones, y por ahora estoy viviendo acá. Estudié ingeniería industrial y luego por un timpo como analista de compras en una empresa constructora, luego decidí buscar otro rumbo y encontrar algo que me motive y apasione (si fuera eso posible!). Siempre fui muy apasionado por la computación, especialmente todo lo referido a desarrollo de software y programación. Mas allá de que estudie formalmente otra cosa (por cosas de la vida), siempre me gusto leer y aprender cosas por mi mismo, sobre todo programación, pero me solia pasar de que me estancaba o que cambiaba de rumbo todo el tiempo. Cuando ingresé a éste curso, lo hice con la idea de profundizar lo máximo posible en desarrollo web y concentrarme solo en eso por lo menos en los meses que dura el curso. Anteriormente, ya había indagado en el tema, aprendiendo algo de HTML, CSS, un poquito de Javascript, Python y el framework Django; pero no llegué a profundizar mucho.
@@ -39,8 +45,6 @@ Hace aproximadamente 2 años decidí dejar un poco de lado la oficina, la public
 Sin duda el mayor desafio es poder balancear todo esto, no es fácil y todavía no se bien cómo hacerlo.... pero lo sigo intentando!
 
 
+* Roberto Isasmendi: 
 
-
-
-
-* Roberto Isasmendi: Tengo 27 años y soy de Tucumán. Jugador amateur de fútbol en mis tiempos libres, amante de la lectura. Estudié Ingeniería Industrial pero siempre me gustó la tecnología y las startups como manera de emprender y desarrollar soluciones innovadoras. Así que después de algunas experiencias laborales tanto en la parte más técnica de la ingenierís industrial como en la pafrte comercial, donde no me sentía del todo a gusto, decidí intentar entrar a este mudno del software que tanto me atraía. Por suerte pocos meses después de empezar con esto conseguí trabajo como Business Analyst en una empresa que desarrolla software para empresas de USA, con la idea de transicionar luego a un puesto de desarrollador una vez que tenga más experiencia y conocimientos. Este nuevo trabajo me tiene bastante ocupado durante el día pero por suerte pude organizarme para poder asistir a las clases de Digital House los Martes y Jueves y poder dedicarle los fines de semana a las tareas extras del curso y a apredner más sobre lo visto en la semana. En fin, estoy muy contento y entusiasmado con este proyecto, con poder aprender mucho tanto de los profesores como de mis compañeros y con adentarrme más en este mundo apasionante que es el desarrollo de software.
+  Tengo 27 años y soy de Tucumán. Jugador amateur de fútbol en mis tiempos libres, amante de la lectura. Estudié Ingeniería Industrial pero siempre me gustó la tecnología y las startups como manera de emprender y desarrollar soluciones innovadoras. Así que después de algunas experiencias laborales tanto en la parte más técnica de la ingenierís industrial como en la pafrte comercial, donde no me sentía del todo a gusto, decidí intentar entrar a este mudno del software que tanto me atraía. Por suerte pocos meses después de empezar con esto conseguí trabajo como Business Analyst en una empresa que desarrolla software para empresas de USA, con la idea de transicionar luego a un puesto de desarrollador una vez que tenga más experiencia y conocimientos. Este nuevo trabajo me tiene bastante ocupado durante el día pero por suerte pude organizarme para poder asistir a las clases de Digital House los Martes y Jueves y poder dedicarle los fines de semana a las tareas extras del curso y a apredner más sobre lo visto en la semana. En fin, estoy muy contento y entusiasmado con este proyecto, con poder aprender mucho tanto de los profesores como de mis compañeros y con adentarrme más en este mundo apasionante que es el desarrollo de software.
