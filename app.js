@@ -13,9 +13,21 @@ app.get('/',(req,res)=>{
         path.join(__dirname,'views','index.html')
     )
 });
-app.get('/bulma',(req,res)=>{
-    res.sendFile(path.join(__dirname,'test','bulma','index.html'));
-})
+app.get('/login',(req,res)=>{
+    res.sendFile(
+        path.join(__dirname,'views','login.html')
+    )
+});
+app.get('/carrito',(req,res)=>{
+    res.sendFile(
+        path.join(__dirname,'views','carrito.html')
+    )
+});
+app.get('/test',(req,res)=>{
+    res.sendFile(
+        path.join(__dirname,'views','test.html')
+    )
+});
 
 // Run app
 app.listen(port,()=>{
