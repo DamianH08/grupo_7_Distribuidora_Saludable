@@ -248,7 +248,7 @@ footer nav a{
         border-bottom: 0.2rem #ebebeb solid;
         
     }
-    .box-prd:hover{
+    .img-category:hover,.box-prd:hover{
         border:0.15rem solid #f3c5c5c2;
     }
     .detalle-prd{
@@ -311,3 +311,32 @@ footer nav a{
 .product-container:hover{
     border:0.15rem solid #f3c5c5c2;
 }
+.category-card{
+    width: 25%;
+    max-width: 100px;
+    padding: 0.2rem;
+    margin-bottom: 0.4rem;
+}
+.img-category{
+    width:100%;
+    border-radius: 50%;
+}
+.name-category{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding:0.2rem;
+}
+.lista-categories{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+}
+.lista-categories a{
+    text-decoration: none;
+    color: #333232;
+}   
