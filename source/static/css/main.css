@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#ebebeb;
+    margin: 0;
+
+    font-family:'Montserrat',sans-serif;
+    color: #333232;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/*==== Header =====*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    margin: 0;
+    padding: 0.5em;
+    background-color: #fff
+}
+header .logo{
+    width: 20%;
+    max-width: 68px;
+    padding-left: 0.8rem;
+}
+header .search-container{
+    margin: 0.2rem;
+    padding: 0;
+}
+header form{
+    border: 0.1rem #ebebeb solid;
+}
+
+header input[type=text] {
+    font-size: 1rem;
+    padding: 0.2rem;
+    border: none;
+}
+header .search-container button {
+font-size: 1rem;
+color: rgba(134, 132, 132, 0.2);
+padding: 0.2rem;
+background: #fff;
+border: none;
+cursor: pointer;
+}
+
+header .search-container button:hover {
+background: rgb(240, 238, 238);
+}
+/* Nav bar  */
+header nav a{
+    height: 100%;
+    text-decoration: none;
+    color: #333232;
+    padding: 0.5em;
+}
+header nav a:hover{
+    background-color: rgb(224, 231, 222);
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+/* --------------- */
+.menuBar > i {
+    font-size: 1.7em;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.main-banner{
+    margin: auto;
+    text-align: center;
+}
+.main-banner img{
+    width:100%;
+}
+
+head .navBar{
+    
+}
+
+/*==== container productos =====*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 1.4rem;
+    font-size: 0.8em;
+    background-color: rgb(255, 231, 231);
+    padding: 2rem 0.1rem;
+}
+
+footer nav a{
+        text-decoration: none;
+        color: #333232;
+        padding: 0.5em;
+    }
+
+
+/*=== Movil <420px ===*/
+@media(max-width:425px){
+    .product-container{
+        width: 50%;
+        margin: auto;
+    }
+    .desktop,.tablet{
+        display: none;
+    }
+    header form{
+        font-size: 0.8rem;
+        width: 90%;
+        margin: auto;
+    }
+    header input{
+        width: 80%;
+    }
+    header form button{
+        margin-right: 0.1rem;
+    }
+    header .logo{
+        padding-left: 0.1rem;
+    }
+    .menuBar{
+        display: inline-block;
+        cursor: pointer;
+        width: 10%;
+        padding-left: 0.1rem;
+    }
+    .bar{
+        width: 2rem;
+        height: 0.3rem;
+        background-color: #333;
+        margin: 6px 0;
+        border-radius: 0.2em;
+    }
+/* Productos */
+.title{
+    width: 100%;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    text-align: center;
+    margin: auto;
+    margin-top: 0.2em;
+    background-color: #fff;
+    border-bottom: 0.1em #ebebeb solid;
+}
+.title >h3{
+    margin: 0.2em;
+    font-weight: 700;
+}
+.box-prd{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    width:100%;
+    background-color:#ffffff;
+    margin:auto;
+    border-bottom: 0.2em #ebebeb solid;
+}
+.detalle-prd{
+    width: 60%;
+    margin: 0;
+}
+.desc-prd{
+    align-self: center;
+    text-align:center;
+}
+.img-container{
+    max-width: 40%; 
+    padding: 1%;   
+}
+.precio-prd{
+    font-size: 2rem;
+    text-align: center;
+    align-self: center;
+    padding: auto;
+    
+}
+
+
+}
+
+/*=== Desktop ===*/
+@media(min-width:768px){
+    .product-container{
+        width: 20%;
+    }
+    .movil{
+        display: none;
+    }
+    .menuBar,bar{
+        display: none;
+    }
+    
+    /* Productos */
+    .lista{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+        border-top-left-radius: 0.3em;
+        border-top-right-radius: 0.3em;
+        text-align: center;
+        margin: auto;
+        margin-top: 0.2em;
+        background-color: #fff;
+        border-bottom: 0.1em #ebebeb solid;
+    }
+    .title >h3{
+        margin: 0.2em;
+        font-weight: 700;
+    }
+    .box-prd{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    
+        width:25%;
+        background-color:#ffffff;
+        margin:auto;
+        border: 0.1rem #ebebeb solid;
+        border-bottom: 0.2rem #ebebeb solid;
+        
+    }
+    .box-prd:hover{
+        border:0.15rem solid #f3c5c5c2;
+    }
+    .detalle-prd{
+        width: 60%;
+        margin: 0;
+    }
+    .desc-prd{
+        align-self: center;
+        text-align:center;
+    }
+    .img-container{
+        max-width: 40%; 
+        padding: 1%;   
+    }
+    .precio-prd{
+        font-size: 2em;
+        text-align: center;
+        align-self: center;
+        padding: auto;
+        
+    }
+    
+}
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+    width: 100%;
+    margin-top: 1rem;
+
+    justify-content: space-between;
+}
+
+.product-container{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.1rem;
+    border: 0.1rem solid #ebebeb;
+    cursor: pointer;
+}
+.image-product{
+    width: 95%;
+    margin: 0.5rem auto;
+    border-bottom: 0.1rem solid #ebebeb;
+}
+.price-product{
+    width: 100%;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+.desc-product{
+    text-align: center;
+    margin-bottom: 0.8rem;   
+}
+.photo-product{
+    width: 100%;
+}
+.product-container:hover{
+    border:0.15rem solid #f3c5c5c2;
+}
