@@ -1,3 +1,9 @@
+/* Variables */
+:root{
+    --background-color-header: rgba(0,0,0,0.9);
+}
+
+
 *{
     box-sizing: border-box;
 }
@@ -8,13 +14,90 @@ body{
     font-family:'Montserrat',sans-serif;
     color: #333232;
 
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
 }
 
 
 /*==== Header =====*/
 header{
+    display:flex;
+    background-color: var(--background-color-header);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 0 0.2rem 0;
+}
+.logo-header{
+    width: 6%;
+    float: left;
+    margin: 0.60rem 0.4rem;
+}
+header ul{
+    list-style-type: none;
+    display: inline;
+    overflow: hidden;
+    margin: 0;
+}
+header li{
+    float:left;
+    padding: 0 0.3rem 0 0.3rem;
+}
+header li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 1.5rem;
+  }
+header li a:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+header form{
+    float: right;
+}
+header form input{
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    border-radius: 0.1rem;
+    padding: 0.2rem;
+    border: none;
+}
+
+.dropMenu{
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+/* header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +149,7 @@ header nav a:hover{
     font-weight: 500;
     border-radius: 0.5rem;
 }
-
+ */
 /* --------------- */
 .menuBar > i {
     font-size: 1.7em;
