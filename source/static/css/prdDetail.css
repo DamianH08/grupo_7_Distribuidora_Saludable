@@ -1,0 +1,129 @@
+header img{
+    width: 20%;
+    padding: 0.2rem;
+}
+.desc-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 90%;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    margin: auto;
+    max-width: 800px;
+    background-color: #fff;
+    
+}
+
+.prd-photo{
+    width: 30%;
+    padding: 0.4rem;
+    
+}
+.prd-details{
+    display: flex;
+    padding-left: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+}
+.prd-name{
+    font-size: 2rem;
+    width: 100%;
+    text-align: left;
+}
+.prd-price{
+    font-size: 2rem;
+    color: rgb(34, 204, 11);
+}
+.qty{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+input[type="number"]{
+    width: 15%;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid rgb(14, 95, 3);
+}
+.un{
+    padding-left: 0.5rem;
+    width: 25%;
+    font-size: 1.5rem;
+    
+}
+#add{
+    text-decoration: none;
+    width:35%;
+    padding: 0.5rem;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgb(33, 160, 16);
+}
+#add:hover{
+    background-color: rgb(61, 163, 47);
+}
+
+@media(max-width:425px){
+    .desc-container{
+        width: 98%;     
+    }
+    header img{
+        width: 25%;
+        padding:0.2rem
+    }
+
+    .prd-photo{
+        width: 50%;
+        padding: 0.1rem;
+        
+    }
+    .prd-details{
+        display: flex;
+        padding-left: 1rem;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+    }
+    .prd-name{
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+        text-align: left;
+    }
+    .prd-price{
+        font-size: 2rem;
+        color: rgb(34, 204, 11);
+    }
+    .qty{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    input[type="number"]{
+        width: 50%;
+        font-size: 1.5rem;
+        border-radius: 0.2rem;
+        border: 0.1rem solid rgb(14, 95, 3);
+    }
+    .un{
+        padding-left: 0.5rem;
+        width: 25%;
+        font-size: 1.5rem;
+        
+    }
+    #add{
+        text-decoration: none;
+        width:100%;
+        padding: 0.5rem;
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        background-color: rgb(33, 160, 16);
+    }
+    #add:hover{
+        background-color: rgb(61, 163, 47);
+    }
+}

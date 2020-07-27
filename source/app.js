@@ -28,6 +28,22 @@ app.get('/test',(req,res)=>{
         path.join(__dirname,'views','test.html')
     )
 });
+app.get('/register',(req,res)=>{
+    res.sendFile(
+        path.join(__dirname,'views','register.html')
+    )
+});
+app.get('/productDetail',(req,res)=>{
+    res.sendFile(
+        path.join(__dirname,'views','productDetail.html')
+    )
+});
+app.get('/cart',(req,res)=>{
+    res.sendFile(
+        path.join(__dirname,'views','cart.html')
+    )
+});
+
 
 // Run app
 app.listen(port,()=>{
