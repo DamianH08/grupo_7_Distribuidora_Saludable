@@ -1,0 +1,89 @@
+/*=== Movil <420px ===*/
+@media(max-width:425px){
+    
+    .desktop,.tablet{
+        display: none;
+    }
+    .product-container{
+        width: 50%;
+        margin: auto;
+    }
+    .desktop,.tablet{
+        display: none;
+    }
+    header form{
+        font-size: 0.8rem;
+        width: 90%;
+        margin: auto;
+    }
+    header input{
+        width: 80%;
+    }
+    header form button{
+        margin-right: 0.1rem;
+    }
+    header .logo{
+        padding-left: 0.1rem;
+    }
+    .menuBar{
+        display: inline-block;
+        cursor: pointer;
+        width: 10%;
+        padding-left: 0.1rem;
+    }
+    .bar{
+        width: 2rem;
+        height: 0.3rem;
+        background-color: #333;
+        margin: 6px 0;
+        border-radius: 0.2em;
+    }
+/* Productos */
+.title{
+    width: 100%;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    text-align: center;
+    margin:0;
+    margin-top: 0.5rem;
+    background-color: #fff;
+    border-bottom: 0.1rem #ebebeb solid;
+}
+.title >h3{
+    margin: 0.2rem;
+    font-weight: 700;
+}
+.box-prd{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    width:100%;
+    background-color:#ffffff;
+    margin:auto;
+    border-bottom: 0.2em #ebebeb solid;
+}
+.detalle-prd{
+    width: 60%;
+    margin: 0;
+}
+.desc-prd{
+    align-self: center;
+    text-align:center;
+}
+.img-container{
+    max-width: 40%; 
+    padding: 1%;   
+}
+.precio-prd{
+    font-size: 2rem;
+    text-align: center;
+    align-self: center;
+    padding: auto;
+    
+}
+
+
+}

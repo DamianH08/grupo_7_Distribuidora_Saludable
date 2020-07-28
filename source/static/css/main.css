@@ -129,6 +129,7 @@ header form input{
 
 /* footer */
 footer{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,178 +145,13 @@ footer nav a{
         color: #333232;
         padding: 0.5em;
     }
-
-
-/*=== Movil <420px ===*/
-@media(max-width:425px){
     
-    .desktop,.tablet{
-        display: none;
-    }
-    .product-container{
-        width: 50%;
-        margin: auto;
-    }
-    .desktop,.tablet{
-        display: none;
-    }
-    header form{
-        font-size: 0.8rem;
-        width: 90%;
-        margin: auto;
-    }
-    header input{
-        width: 80%;
-    }
-    header form button{
-        margin-right: 0.1rem;
-    }
-    header .logo{
-        padding-left: 0.1rem;
-    }
-    .menuBar{
-        display: inline-block;
-        cursor: pointer;
-        width: 10%;
-        padding-left: 0.1rem;
-    }
-    .bar{
-        width: 2rem;
-        height: 0.3rem;
-        background-color: #333;
-        margin: 6px 0;
-        border-radius: 0.2em;
-    }
-/* Productos */
-.title{
-    width: 100%;
-    border-top-left-radius: 0.3em;
-    border-top-right-radius: 0.3em;
-    text-align: center;
-    margin: auto;
-    margin-top: 0.2em;
-    background-color: #fff;
-    border-bottom: 0.1em #ebebeb solid;
-}
-.title >h3{
-    margin: 0.2em;
-    font-weight: 700;
-}
-.box-prd{
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    align-items: center;
-    cursor: pointer;
-
-    width:100%;
-    background-color:#ffffff;
-    margin:auto;
-    border-bottom: 0.2em #ebebeb solid;
-}
-.detalle-prd{
-    width: 60%;
-    margin: 0;
-}
-.desc-prd{
-    align-self: center;
-    text-align:center;
-}
-.img-container{
-    max-width: 40%; 
-    padding: 1%;   
-}
-.precio-prd{
-    font-size: 2rem;
-    text-align: center;
-    align-self: center;
-    padding: auto;
-    
-}
-
-
-}
-
-/*=== Desktop ===*/
-@media(min-width:768px){
-    .movil{
-        display: none;
-    }
-    .product-container{
-        width: 20%;
-    }
-    .menuBar,bar{
-        display: none;
-    }
-    
-    /* Productos */
-    .lista{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    .title{
-        width: 100%;
-        border-top-left-radius: 0.3em;
-        border-top-right-radius: 0.3em;
-        text-align: center;
-        margin: auto;
-        margin-top: 0.2em;
-        background-color: #fff;
-        border-bottom: 0.1em #ebebeb solid;
-    }
-    .title >h3{
-        margin: 0.2em;
-        font-weight: 700;
-    }
-    .box-prd{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: space-between;
-        align-items: center;
-        cursor: pointer;
-    
-        width:25%;
-        background-color:#ffffff;
-        margin:auto;
-        border: 0.1rem #ebebeb solid;
-        border-bottom: 0.2rem #ebebeb solid;
-        
-    }
-    .img-category:hover,.box-prd:hover{
-        border:0.15rem solid var(--pink-0);
-    }
-    .detalle-prd{
-        width: 60%;
-        margin: 0;
-    }
-    .desc-prd{
-        align-self: center;
-        text-align:center;
-    }
-    .img-container{
-        max-width: 40%; 
-        padding: 1%;   
-    }
-    .precio-prd{
-        font-size: 2em;
-        text-align: center;
-        align-self: center;
-        padding: auto;
-        
-    }
-    
-}
-
 .products-container{
     display: flex;
     flex-wrap: wrap;
     background-color: #ebebeb;
     width: 100%;
-    margin-top: 1rem;
-
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .product-container{
@@ -324,6 +160,7 @@ footer nav a{
     padding: 0.1rem;
     border: 0.1rem solid #ebebeb;
     cursor: pointer;
+    margin: 0.15rem;
 }
 .image-product{
     width: 95%;
@@ -368,7 +205,7 @@ footer nav a{
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 0.3rem;
 }
 .lista-categories a{
