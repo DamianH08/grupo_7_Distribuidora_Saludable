@@ -34,6 +34,8 @@ Con la variada oferta de productos y precios que tenemos buscamos que todas las 
 
 #### Link al wireframe de las páginas: https://drive.google.com/drive/folders/1cYCCRaKtZsjDg_x3D8jUCSB4qV2rV1Tn?usp=sharing
 
+#### Link al tablero Trello del equipo: https://trello.com/b/GGidC1mI/grupo-7-distribuidora-saludable
+
 #### Descripción del equipo:
 
 * Brian Talavera:
