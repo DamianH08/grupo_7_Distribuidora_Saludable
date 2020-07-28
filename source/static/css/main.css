@@ -126,135 +126,60 @@ header form input{
     justify-content: center;
 }
 
-/*=== Movil <420px ===*/
-@media(max-width:425px){
-    
-    .desktop,.tablet{
-        display: none;
-    }
-    .product-container{
-        width: 50%;
-        margin: auto;
-    }
-    .desktop,.tablet{
-        display: none;
-    }
-    header form{
-        font-size: 0.8rem;
-        width: 90%;
-        margin: auto;
-    }
-    header input{
-        width: 80%;
-    }
-    header form button{
-        margin-right: 0.1rem;
-    }
-    header .logo{
-        padding-left: 0.1rem;
-    }
-    .menuBar{
-        display: inline-block;
-        cursor: pointer;
-        width: 10%;
-        padding-left: 0.1rem;
-    }
-    .bar{
-        width: 2rem;
-        height: 0.3rem;
-        background-color: #333;
-        margin: 6px 0;
-        border-radius: 0.2em;
-    }
-/* Productos */
-.title{
+
+	/*==== Footer =====*/
+footer{
+    background-color: var(--background-color-header);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-arround;
+    align-items: flex-start;
     width: 100%;
-    border-top-left-radius: 0.3em;
-    border-top-right-radius: 0.3em;
-    text-align: center;
-    margin: auto;
-    margin-top: 0.2em;
-    background-color: #fff;
-    border-bottom: 0.1em #ebebeb solid;
+    height: auto;
+    color: white;
 }
-.title >h3{
-    margin: 0.2em;
-    font-weight: 700;
-}
-.box-prd{
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    align-items: center;
-    cursor: pointer;
 
-    width:100%;
-    background-color:#ffffff;
-    margin:auto;
-    border-bottom: 0.2em #ebebeb solid;
+footer div{
+    width: 25%;
+    padding-left: 12px;
 }
-.detalle-prd{
-    width: 60%;
-    margin: 0;
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
 }
-.desc-prd{
-    align-self: center;
-    text-align:center;
-}
-.img-container{
-    max-width: 40%; 
-    padding: 1%;   
-}
-.precio-prd{
-    font-size: 2rem;
-    text-align: center;
-    align-self: center;
-    padding: auto;
     
+footer li a {
+    text-decoration: none;
+    color: white;
 }
 
-
+footer li a:hover{
+    background-color: grey;
 }
 
-/*=== Desktop ===*/
-@media(min-width:768px){
-    .movil{
-        display: none;
-    }
-    .product-container{
-        width: 20%;
-    }
-    .menuBar,bar{
-        display: none;
-    }
-    
-    /* Productos */
-    .lista{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    .title{
-        width: 100%;
-        border-top-left-radius: 0.3em;
-        border-top-right-radius: 0.3em;
-        text-align: center;
-        margin: auto;
-        margin-top: 0.2em;
-        background-color: #fff;
-        border-bottom: 0.1em #ebebeb solid;
-    }
-    .title >h3{
-        margin: 0.2em;
-        font-weight: 700;
-    }
-    .box-prd{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: space-between;
-        align-items: center;
-        cursor: pointer;
+footer i {
+    color: white;
+}
+
+.footer3 i {
+    font-size: 30px;
+}
+
+.footer3 ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.footer4 img{
+    height: 50px;
+}
+
+.copyright{
+    text-align: right;
+    font-size: 8px;
+
+}
     
 .products-container{
     display: flex;
@@ -328,60 +253,4 @@ header form input{
 }
 .add-shadow-1{
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-
-/*==== Footer =====*/
-footer{
-    background-color: var(--background-color-header);
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-arround;
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
-    color: white;
-}
-
-footer div{
-    width: 25%;
-    padding-left: 12px;
-}
-
-footer ul{
-    list-style-type: none;
-    padding: 0;
-}
-    
-footer li a {
-    text-decoration: none;
-    color: white;
-}
-
-footer li a:hover{
-    background-color: grey;
-}
-
-footer i {
-    color: white;
-}
-
-.footer3 i {
-    font-size: 30px;
-}
-
-.footer3 ul li{
-    display: inline-block;
-    padding-right: 10px;
-}
-
-.footer4 img{
-    height: 50px;
-}
-
-.copyright{
-    text-align: right;
-    font-size: 8px;
-
-}
+}	
