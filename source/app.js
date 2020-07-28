@@ -44,6 +44,11 @@ app.get('/cart',(req,res)=>{
     )
 });
 
+app.get('/about',(req,res)=>{
+    res.sendFile(
+        path.join(__dirname,'views','about.html')
+    )
+});
 
 // Run app
 app.listen(port,()=>{

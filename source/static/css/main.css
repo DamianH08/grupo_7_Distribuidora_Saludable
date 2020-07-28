@@ -126,61 +126,6 @@ header form input{
     justify-content: center;
 }
 
-
-	/*==== Footer =====*/
-footer{
-    background-color: var(--background-color-header);
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-arround;
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
-    color: white;
-}
-
-footer div{
-    width: 25%;
-    padding-left: 12px;
-}
-
-footer ul{
-    list-style-type: none;
-    padding: 0;
-}
-    
-footer li a {
-    text-decoration: none;
-    color: white;
-}
-
-footer li a:hover{
-    background-color: grey;
-}
-
-footer i {
-    color: white;
-}
-
-.footer3 i {
-    font-size: 30px;
-}
-
-.footer3 ul li{
-    display: inline-block;
-    padding-right: 10px;
-}
-
-.footer4 img{
-    height: 50px;
-}
-
-.copyright{
-    text-align: right;
-    font-size: 8px;
-
-}
-    
 .products-container{
     display: flex;
     flex-wrap: wrap;
@@ -254,3 +199,69 @@ footer i {
 .add-shadow-1{
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 }	
+
+
+.quienesSomos{
+    text-align: justify;
+    padding: 12px;
+}
+
+.quienesSomos h1{
+    text-align: center;
+}
+
+
+
+/*==== Footer =====*/
+footer{
+    background-color: var(--background-color-header);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-arround;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    color: white;
+    }
+    
+footer div{
+    width: 25%;
+    padding-left: 12px;
+    }
+    
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    }
+        
+footer li a {
+    text-decoration: none;
+    color: white;
+    }
+    
+footer li a:hover{
+    background-color: grey;
+    }
+    
+footer i {
+    color: white;
+    }
+    
+.footer3 i {
+    font-size: 30px;
+    }
+    
+.footer3 ul li{
+    display: inline-block;
+    padding-right: 10px;
+    }
+    
+.footer4 img{
+    height: 50px;
+    }
+    
+.copyright{
+    text-align: right;
+    font-size: 8px;
+    
+}
