@@ -1,0 +1,26 @@
+{
+  "name": "grupo_7_Distribuidora_Saludable",
+  "version": "1.0.0",
+  "description": "Somos el grupo 7 del curso de Desarrollo Web Full Stack Node 2020 de Digital House.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamianH08/grupo_7_Distribuidora_Saludable.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamianH08/grupo_7_Distribuidora_Saludable/issues"
+  },
+  "homepage": "https://github.com/DamianH08/grupo_7_Distribuidora_Saludable#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

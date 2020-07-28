@@ -126,26 +126,6 @@ header form input{
     justify-content: center;
 }
 
-
-/* footer */
-footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    margin-top: 1.4rem;
-    font-size: 0.8em;
-    background-color: rgb(255, 231, 231);
-    padding: 2rem 0.1rem;
-}
-
-footer nav a{
-        text-decoration: none;
-        color: #333232;
-        padding: 0.5em;
-    }
-
-
 /*=== Movil <420px ===*/
 @media(max-width:425px){
     
@@ -381,4 +361,60 @@ footer nav a{
 }
 .add-shadow-1{
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*==== Footer =====*/
+footer{
+    background-color: var(--background-color-header);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-arround;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+footer div{
+    width: 25%;
+    padding-left: 12px;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+    
+footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer li a:hover{
+    background-color: grey;
+}
+
+footer i {
+    color: white;
+}
+
+.footer3 i {
+    font-size: 30px;
+}
+
+.footer3 ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.footer4 img{
+    height: 50px;
+}
+
+.copyright{
+    text-align: right;
+    font-size: 8px;
+
 }
