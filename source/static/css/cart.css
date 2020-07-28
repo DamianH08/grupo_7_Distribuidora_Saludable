@@ -1,6 +1,6 @@
-
 .main-container{
-    width: 70%;
+    width: 80%;
+    max-width: 900px;
     background-color: #fff;
     border-radius: 0.2rem;
     margin: 1rem auto;
@@ -56,6 +56,7 @@ img{
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .resumen{
     width: 100%;
@@ -76,9 +77,14 @@ img{
     font-size: 1.8rem;
     color: var(--green-btn);
 }
+.right-col{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .btn{
-    margin-top: 1.2rem;
     text-decoration: none;
     width:80%;
     padding: 0.5rem;
@@ -89,4 +95,32 @@ img{
 }
 .btn:hover{
     background-color: rgb(61, 163, 47);
+}
+#buy-btn{
+    margin: 1rem 0 0 0;
+}
+#pay-btn{
+    margin: 1rem 0 1rem 0;
+}
+
+
+
+@media(max-width:425px){
+    .main-container{
+        width: 98%;
+    }
+    .list,.right-col{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .resumen{
+        display: none;
+    }
+    .sub{
+        font-weight: 600;
+    }
+    #pay-btn{
+        margin-bottom: 1rem;
+    }
+
 }
