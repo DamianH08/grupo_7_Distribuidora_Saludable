@@ -256,46 +256,12 @@ header form input{
         align-items: center;
         cursor: pointer;
     
-        width:25%;
-        background-color:#ffffff;
-        margin:auto;
-        border: 0.1rem #ebebeb solid;
-        border-bottom: 0.2rem #ebebeb solid;
-        
-    }
-    .img-category:hover,.box-prd:hover{
-        border:0.15rem solid var(--pink-0);
-    }
-    .detalle-prd{
-        width: 60%;
-        margin: 0;
-    }
-    .desc-prd{
-        align-self: center;
-        text-align:center;
-    }
-    .img-container{
-        max-width: 40%; 
-        padding: 1%;   
-    }
-    .precio-prd{
-        font-size: 2em;
-        text-align: center;
-        align-self: center;
-        padding: auto;
-        
-    }
-    
-}
-
 .products-container{
     display: flex;
     flex-wrap: wrap;
     background-color: #ebebeb;
     width: 100%;
-    margin-top: 1rem;
-
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .product-container{
@@ -304,6 +270,7 @@ header form input{
     padding: 0.1rem;
     border: 0.1rem solid #ebebeb;
     cursor: pointer;
+    margin: 0.15rem;
 }
 .image-product{
     width: 95%;
@@ -348,7 +315,7 @@ header form input{
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 0.3rem;
 }
 .lista-categories a{
