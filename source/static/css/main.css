@@ -4,6 +4,7 @@
     --pink-0:rgba(245, 181, 156,0.6);
     --pink-1:#faac8d;
     --pink-2:#f88f65;
+    --green-btn:rgb(34, 204, 11);
 }
 
 
@@ -52,6 +53,7 @@ header li{
     padding: 0 0.3rem 0 0.3rem;
 }
 header li a {
+    flex-grow: 1;
     display: block;
     padding: 8px;
     text-decoration: none;
@@ -376,4 +378,7 @@ footer nav a{
 
 .add-shadow{
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.add-shadow-1{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 }

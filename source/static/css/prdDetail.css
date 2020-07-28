@@ -34,7 +34,7 @@ header img{
 }
 .prd-price{
     font-size: 2rem;
-    color: rgb(34, 204, 11);
+    color: var(--green-btn);
 }
 .qty{
     display: flex;
