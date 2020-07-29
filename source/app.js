@@ -50,6 +50,12 @@ app.get('/about',(req,res)=>{
     )
 });
 
+app.get('/locales',(req,res)=>{
+    res.sendFile(
+        path.join(__dirname,'views','locales.html')
+    )
+});
+
 // Run app
 app.listen(port,()=>{
     console.log(`Server running at localhost:${port}`)
