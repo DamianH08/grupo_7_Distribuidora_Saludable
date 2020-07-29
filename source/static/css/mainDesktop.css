@@ -21,18 +21,6 @@
         width: 100%;
         justify-content: center;
     }
-    .title{
-        width: 100%;
-        border-radius: 0.3em;
-        text-align: center;
-        margin:1.2rem 0 0 0;
-        background-color: #fff;
-        border-bottom: 0.1em #ebebeb solid;
-    }
-    .title >h3{
-        margin: 0.2em;
-        font-weight: 700;
-    }
     .box-prd{
         display: flex;
         flex-wrap: wrap;
