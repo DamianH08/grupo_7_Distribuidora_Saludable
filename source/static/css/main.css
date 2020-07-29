@@ -34,11 +34,11 @@ header{
     margin: 0 0 0.2rem 0;
 }
 header img{
-    width: 20%;
-    padding: 0.2rem;
+    width: 100%;
 }
 .logo-header{
-    width: 6%;
+    text-decoration: none;
+    width: 8%;
     float: left;
     margin: 0.60rem 0.4rem;
 }
@@ -328,4 +328,10 @@ footer i {
     text-align: right;
     font-size: 8px;
     
+}
+.overflow-text{
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

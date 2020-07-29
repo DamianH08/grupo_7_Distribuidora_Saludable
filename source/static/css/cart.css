@@ -103,6 +103,16 @@ img{
     margin: 1rem 0 1rem 0;
 }
 
+.title1{
+    font-size: 1.5rem;
+    width: 98%;
+    text-align: center;
+    margin: 1.2rem auto 0.8rem auto;
+    background-color: #fff;
+    border-bottom: 0.1rem #ebebeb solid;
+    padding: 0.8rem;
+}
+
 
 
 @media(max-width:425px){

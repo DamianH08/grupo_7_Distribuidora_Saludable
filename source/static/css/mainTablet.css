@@ -1,0 +1,11 @@
+@media(min-width:426px){
+    .product-container{
+        width: 24%;
+    }
+    .btn{
+        width: 95%;
+    }
+    .desktop1{
+        display: none;
+    }
+}
