@@ -1,4 +1,76 @@
-@media(min-width:426px){
+/*=== Tablet ===*/
+@media(min-width:426px) and (max-width:768px) {
+
+    .movil{
+        display: none;
+    }
+    .product-container{
+        width:20%;
+    }
+
+    .products-container{
+        justify-content: center;
+    }
+    .menuBar,bar{
+        display: none;
+    }
+    
+    /* Productos */
+    .lista{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .box-prd{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    
+        width:25%;
+        background-color:#ffffff;
+        margin:auto;
+        border: 0.1rem #ebebeb solid;
+        border-bottom: 0.2rem #ebebeb solid;
+        
+    }
+    .img-category:hover,.box-prd:hover{
+        border:0.15rem solid var(--pink-0);
+    }
+    .detalle-prd{
+        width: 60%;
+        margin: 0;
+    }
+    .desc-prd{
+        align-self: center;
+        text-align:center;
+    }
+    .img-container{
+        max-width: 40%; 
+        padding: 1%;   
+    }
+    .precio-prd{
+        font-size: 2em;
+        text-align: center;
+        align-self: center;
+        padding: auto;
+        
+    }
+    
+    .banner-container{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .banner-mid{
+        width: 40%;
+        background-image: #fff;
+    }
+    
     .product-container{
         width: 24%;
     }
@@ -8,4 +80,40 @@
     .desktop1{
         display: none;
     }
+
+
+/*==== Locales =====*/
+.locales article{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.locales section{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.locales article{
+    width: 50%;
+    margin-bottom: 24px;
+    padding: 12px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.locales article div{
+    display:flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 8px;
+ }
+ 
+.locales article img{
+   width: 100%;
+   height: auto;
+  
+}
+
 }
