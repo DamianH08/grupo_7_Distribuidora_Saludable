@@ -1,5 +1,6 @@
 /*=== Tablet ===*/
 @media(min-width:426px) and (max-width:768px) {
+
     .movil{
         display: none;
     }
@@ -20,18 +21,6 @@
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
-    }
-    .title{
-        width: 100%;
-        border-radius: 0.3em;
-        text-align: center;
-        margin:1.2rem 0 0 0;
-        background-color: #fff;
-        border-bottom: 0.1em #ebebeb solid;
-    }
-    .title >h3{
-        margin: 0.2em;
-        font-weight: 700;
     }
     .box-prd{
         display: flex;
@@ -70,6 +59,7 @@
         padding: auto;
         
     }
+    
     .banner-container{
         width:100%;
         display: flex;
@@ -81,6 +71,17 @@
         background-image: #fff;
     }
     
+    .product-container{
+        width: 24%;
+    }
+    .btn{
+        width: 95%;
+    }
+    .desktop1{
+        display: none;
+    }
+
+
 /*==== Locales =====*/
 .locales article{
     margin: 0 auto;
@@ -114,11 +115,5 @@
    height: auto;
   
 }
-
-
-
-
-
-
 
 }

@@ -34,11 +34,11 @@ header{
     margin: 0 0 0.2rem 0;
 }
 header img{
-    width: 20%;
-    padding: 0.2rem;
+    width: 100%;
 }
 .logo-header{
-    width: 6%;
+    text-decoration: none;
+    width: 8%;
     float: left;
     margin: 0.60rem 0.4rem;
 }
@@ -101,6 +101,20 @@ header form input{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .title{
+    width: 98%;
+    border-radius: 1rem;
+    /* border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em; */
+    text-align: center;
+    margin: 1.2rem auto 0.8rem auto;
+    background-color: #fff;
+    border-bottom: 0.1rem #ebebeb solid;
+}
+.title >h3{
+    margin: 0.2rem;
+    font-weight: 700;
+}
 
 /* --------------- */
 .menuBar > i {
@@ -201,7 +215,26 @@ header form input{
 }
 .add-shadow-1{
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
-}	
+}
+.add-shadow-bottom{
+    box-shadow:0px 2px 8px grey;
+}
+
+
+.btn{
+    text-decoration: none;
+    width:80%;
+    padding: 0.5rem;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    background-color:var(--pink-1);
+    border-radius: 0.2rem;
+    font-weight: 500;
+}
+.btn:hover{
+    background-color:var(--pink-2);
+}
 
 /*==== Quienes somos =====*/
 .quienesSomos{
@@ -250,8 +283,6 @@ h1 {
    height: auto;
   
 }
-
-
 
 
 /*==== Footer =====*/
@@ -306,4 +337,10 @@ footer i {
     text-align: right;
     font-size: 8px;
     
+}
+.overflow-text{
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

@@ -8,6 +8,9 @@
         width: 50%;
         margin: auto;
     }
+    .btn{
+        width: 98%;
+    }
     .desktop,.tablet{
         display: none;
     }
@@ -16,14 +19,11 @@
         width: 90%;
         margin: auto;
     }
-    header input{
-        width: 80%;
+    header img{
+        width: 120%;
     }
-    header form button{
-        margin-right: 0.1rem;
-    }
-    header .logo{
-        padding-left: 0.1rem;
+    .logo-header{
+        width: 15%;
     }
     .menuBar{
         display: inline-block;
@@ -39,20 +39,6 @@
         border-radius: 0.2em;
     }
 /* Productos */
-.title{
-    width: 100%;
-    border-top-left-radius: 0.3em;
-    border-top-right-radius: 0.3em;
-    text-align: center;
-    margin:0;
-    margin-top: 0.5rem;
-    background-color: #fff;
-    border-bottom: 0.1rem #ebebeb solid;
-}
-.title >h3{
-    margin: 0.2rem;
-    font-weight: 700;
-}
 .box-prd{
     display: flex;
     flex-direction: row;
@@ -168,12 +154,5 @@ footer i {
     font-size: 8px;
     
 }
-
-
-
-
-
-
-
 
 }
