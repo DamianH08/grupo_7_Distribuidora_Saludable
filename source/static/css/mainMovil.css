@@ -93,20 +93,27 @@
 
 .locales section{
     width: 100%;
-    
 }
 
 .locales article{
     width: 100%;
     margin-bottom: 24px;
     padding: 12px;
+    display:flex;
+    flex-wrap: wrap;
 }
 
-.locales article img{
-   width: 100%;
-   height: auto;
+.locales article div{
+    display:flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 8px;
+ }
 
-}
+ .locales article div img{
+    width: 100%;
+ }
+
 
 /*==== Footer =====*/
 footer{

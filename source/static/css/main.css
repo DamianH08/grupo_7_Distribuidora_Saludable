@@ -231,14 +231,23 @@ h1 {
 }
 
 .locales article{
-    width: 25%;
+    width: 33%;
     margin-bottom: 24px;
     padding: 12px;
+    display:flex;
+    flex-wrap: wrap;
 }
 
+.locales article div{
+    display:flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 8px;
+ }
+ 
 .locales article img{
-   width: 200px;
-   height: 200px;
+   width: 100%;
+   height: auto;
   
 }
 

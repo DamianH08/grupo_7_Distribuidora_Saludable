@@ -1,5 +1,5 @@
-/*=== Desktop ===*/
-@media(min-width:768px){
+/*=== Tablet ===*/
+@media(min-width:426px) and (max-width:768px) {
     .movil{
         display: none;
     }
@@ -81,4 +81,44 @@
         background-image: #fff;
     }
     
+/*==== Locales =====*/
+.locales article{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.locales section{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.locales article{
+    width: 50%;
+    margin-bottom: 24px;
+    padding: 12px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.locales article div{
+    display:flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 8px;
+ }
+ 
+.locales article img{
+   width: 100%;
+   height: auto;
+  
+}
+
+
+
+
+
+
+
 }
