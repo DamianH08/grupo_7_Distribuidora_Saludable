@@ -10,46 +10,17 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/mainMovil.css">
+    <link rel="stylesheet" href="css/mainMobil.css">
+    <link rel="stylesheet" href="css/mainDesktop.css">
     <link rel="stylesheet" href="css/mainTablet.css">
     
     <!-- Icons fontawesome.com -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-    <style>
-        header img{
-            width: 20%;
-            padding: 0.2rem;
-        }
-    </style>
     </head>
 <body>
-    <header>
-        <a href="/" style="display: inline;">
-            <img src="images/logo/logoWhite.png">
-        </a> 
-        <ul class="desktop tablet">
-            <li class="dropdown">
-                <a href="" class="dropbtn"><i class="fas fa-angle-down"></i> Categorías</a>
-                <div class="dropdown-content">
-                  <a href="#">Sin T.A.A.C</a>
-                  <a href="#">Vegano</a>
-                  <a href="#">Aceites</a>
-                  <a href="#">Cereales</a>
-                  <a href="#">Condimentos</a>
-                  <a href="#">Disecados</a>
-                  <a href="#">Endulzantes</a>
-                  <a href="#">Fideos</a>
-            <li><a href="#"><i class="fab fa-nutritionix"></i> Quienes somos</a></li>
-            <li><a href="/login"><i class="fas fa-user"></i> Ingresar</a></li>
-            <li><a href="#"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
-          </ul>
-        <div class="movil">
-            <i class="fa fa-bars movil" style="margin-right:1rem;color: #fff;font-size: 2rem;"></i>
-        </div>
-    </header>
-    
-    
+   <%- include('./partials/header') %>
+
     <div class="quienesSomos">
     
         <h1> ¿Quiénes somos? </h1>
@@ -64,47 +35,7 @@
 
     </div>
     
-    <footer>
-        <div class="footer1"> 
-            <h4> Mapa del sitio: </h4>
-            <ul>
-                <li><a href="#">Incio</a> </li>
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Locales</a> </li>
-                <li><a href="#">Política de cambios y devoluciones</a></li>
-                <li><a href="#">Defensa al consumidor (consultas y/o denuncias)</a></li>
-            </ul>
-        </div>
-
-        <div class="footer2"> 
-            <h4> Contactos: </h4>
-            <ul>
-                <li><i class="fas fa-phone-alt"></i> 4706-0307 </li>
-                <li><i class="fas fa-at"></i> contacto@distribuidorasaludable.com</li>
-                <li>proveedores@distribuidorasaludable.com</li>
-                <li>rrhh@distribuidorasaludable.com</li>
-            </ul>
-        </div>
-
-        <div class="footer3"> 
-            <h4> Redes sociales: </h4>
-            <ul>
-                <li> <a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
-                
-            </ul>
-        </div>
-
-        <div class="footer4"> 
-            <h4> Seguridad y certificaciones</h4>
-            <a href="http://qr.afip.gob.ar/?qr=SpDgX4smKIIRInt5NNJM5A,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0"></a>
-        </div>
-    </footer>
-    
-    <div class="copyright">
-        <p>COPYRIGHT DISTRIBUIDORA SALUDABLE - 2020. TODOS LOS DERECHOS RESERVADOS.</p>
-    </div>
+    <%- include('./partials/footer') %> 
 
 </body>
 </html>
