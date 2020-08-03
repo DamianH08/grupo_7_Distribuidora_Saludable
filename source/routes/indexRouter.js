@@ -8,6 +8,8 @@ router
     .get('/',indexCtrl.index)
     .get('/locales',indexCtrl.locales)
     .get('/about',indexCtrl.about)
+    .get('/cart',indexCtrl.cart)
+    .get('/productDetail',indexCtrl.productDetail)
     ;
 
 module.exports = router;

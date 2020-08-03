@@ -10,10 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
 
     <!-- styles -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/mainMovil.css">
-    <link rel="stylesheet" href="css/mainTablet.css">
-
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mainMobil.css">
+    
     <!-- Icons fontawesome.com -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
@@ -153,7 +152,7 @@
 <body>
     <header>
         <a href="/">
-            <img src="images/logo/logoWhite.png" >
+            <img src="/images/logo/logoWhite.png" >
         </a>
         <a href="/">Inicio</a>
     </header>
@@ -181,47 +180,7 @@
 
     <div class="separador"></div>
 
-    <footer>
-        <div class="footer1"> 
-            <h4> Mapa del sitio: </h4>
-            <ul>
-                <li><a href="#">Incio</a> </li>
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Locales</a> </li>
-                <li><a href="#">Política de cambios y devoluciones</a></li>
-                <li><a href="#">Defensa al consumidor (consultas y/o denuncias)</a></li>
-            </ul>
-        </div>
-
-        <div class="footer2"> 
-            <h4> Contactos: </h4>
-            <ul>
-                <li><i class="fas fa-phone-alt"></i> 4706-0307 </li>
-                <li><i class="fas fa-at"></i> contacto@distribuidorasaludable.com</li>
-                <li>proveedores@distribuidorasaludable.com</li>
-                <li>rrhh@distribuidorasaludable.com</li>
-            </ul>
-        </div>
-
-        <div class="footer3"> 
-            <h4> Redes sociales: </h4>
-            <ul>
-                <li> <a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
-                
-            </ul>
-        </div>
-
-        <div class="footer4"> 
-            <h4> Seguridad y certificaciones</h4>
-            <a href="http://qr.afip.gob.ar/?qr=SpDgX4smKIIRInt5NNJM5A,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0"></a>
-        </div>
-    </footer>
-    
-    <div class="copyright">
-        <p>COPYRIGHT DISTRIBUIDORA SALUDABLE - 2020. TODOS LOS DERECHOS RESERVADOS.</p>
-    </div>
+    <%- include('partials/footer') %> 
 
 </body>
 </html>

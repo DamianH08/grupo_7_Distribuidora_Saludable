@@ -12,10 +12,10 @@ app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 
 // Routes
+const loginRouter = require('./routes/loginRouter');
+app.use('/login',loginRouter);
 const indexRouter = require('./routes/indexRouter');
 app.use('/',indexRouter);
-const loginRouter = require('./routes/loginRouter');
-app.use('/',loginRouter);
 
 // Run app
 app.listen(port,()=>{

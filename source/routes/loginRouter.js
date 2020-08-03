@@ -5,8 +5,8 @@ const router = express.Router();
 const loginCtrl = require('../controllers/loginCtrl');
 
 router
-    .get('/login',loginCtrl.login)
-    .get('/login/register',loginCtrl.register)
+    .get('/',loginCtrl.login)
+    .get('/register',loginCtrl.register)
     ;
 
 module.exports = router;
