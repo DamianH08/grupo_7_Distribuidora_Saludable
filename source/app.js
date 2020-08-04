@@ -7,63 +7,17 @@ const port = 5000;
 // Serve static files
 app.use(express.static(path.join(__dirname,'static')));
 
+// View engine
+app.set('view engine','ejs');
+app.set('views',path.join(__dirname,'views'));
+
 // Routes
-app.get('/',(req,res)=>{
-    res.sendFile(
-        path.join(__dirname,'views','index.html')
-    )
-});
-app.get('/login',(req,res)=>{
-    res.sendFile(
-        path.join(__dirname,'views','login.html')
-    )
-});
-app.get('/carrito',(req,res)=>{
-    res.sendFile(
-        path.join(__dirname,'views','carrito.html')
-    )
-});
-app.get('/test',(req,res)=>{
-    res.sendFile(
-        path.join(__dirname,'views','test.html')
-    )
-});
-app.get('/register',(req,res)=>{
-    res.sendFile(
-        path.join(__dirname,'views','register.html')
-    )
-});
-app.get('/productDetail',(req,res)=>{
-    res.sendFile(
-        path.join(__dirname,'views','productDetail.html')
-    )
-});
-app.get('/cart',(req,res)=>{
-    res.sendFile(
-        path.join(__dirname,'views','cart.html')
-    )
-});
-
-app.get('/about',(req,res)=>{
-    res.sendFile(
-        path.join(__dirname,'views','about.html')
-    )
-});
-
-app.get('/locales',(req,res)=>{
-    res.sendFile(
-        path.join(__dirname,'views','locales.html')
-    )
-});
-
-app.get('/about',(req,res)=>{
-    res.sendFile(
-        path.join(__dirname,'views','about.html')
-    )
-});
-
+const loginRouter = require('./routes/loginRouter');
+app.use('/login',loginRouter);
+const indexRouter = require('./routes/indexRouter');
+app.use('/',indexRouter);
 
 // Run app
 app.listen(port,()=>{
-    console.log(`Server running at localhost:${port}`)
+    console.log(`Server running on localhost:${port}`)
 });

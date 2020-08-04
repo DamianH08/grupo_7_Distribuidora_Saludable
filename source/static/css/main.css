@@ -1,9 +1,9 @@
 /* Variables */
 :root{
     --background-color-header: rgba(0,0,0,0.9);
-    --pink-0:rgba(245, 181, 156,0.6);
-    --pink-1:#faac8d;
-    --pink-2:#f88f65;
+    --pink-0:rgba(128, 247, 81, 0.6);
+    --pink-1:#298003;
+    --pink-2:#80ec52;
     --green-btn:rgb(34, 204, 11);
 }
 
@@ -295,6 +295,7 @@ footer{
     width: 100%;
     height: auto;
     color: white;
+    margin-top: 150px;
     }
     
 footer div{
