@@ -32,6 +32,8 @@ header{
     width: 100%;
     height: auto;
     margin: 0 0 0.2rem 0;
+   /* position: fixed;
+    top: 0px; */
 }
 header img{
     width: 100%;
