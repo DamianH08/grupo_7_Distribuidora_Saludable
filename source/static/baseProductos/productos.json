@@ -1,0 +1,5948 @@
+[
+    {
+        "id": "ACE200",
+        "producto": "Aceite coco - Materia Prima",
+        "variante": "360 ML.",
+        "precio": "400"},
+      {
+        "id": "ACE200",
+        "producto": "Aceite coco - Materia Prima",
+        "variante": "660 ML.",
+        "precio": "330"},
+      {
+        "id": "ACE200",
+        "producto": "Aceite coco - Materia Prima",
+        "variante": "250 ML.",
+        "precio": "300"},
+      {
+        "id": "ACE302",
+        "producto": "Aceite de oliva - 500 ml. - Ecoliva",
+        "variante": "500 ML.",
+        "precio": "260"},
+      {
+        "id": "ACE302",
+        "producto": "Aceite de oliva - 500 ml. - Ecoliva",
+        "variante": "6 U.",
+        "precio": "960"},
+      {
+        "id": "ACE303",
+        "producto": "Aceite blend de oliva y girasol - 1 l. - Italoliva",
+        "variante": "1 L.",
+        "precio": "800"},
+      {
+        "id": "ACE303",
+        "producto": "Aceite blend de oliva y girasol - 1 l. - Italoliva",
+        "variante": "6 U.",
+        "precio": "3240"},
+      {
+        "id": "ACE304",
+        "producto": "Aceite de oliva - Virgen extra organico - 500 ml. - La Riojana",
+        "variante": "500 ML.",
+        "precio": "420"},
+      {
+        "id": "ACE304",
+        "producto": "Aceite de oliva - Virgen extra organico - 500 ml. - La Riojana",
+        "variante": "12 U.",
+        "precio": "5040"},
+      {
+        "id": "ACE305",
+        "producto": "Aceite de oliva - Virgen extra - 500 ml. - La Riojana",
+        "variante": "500 ML.",
+        "precio": "340"},
+      {
+        "id": "ACE305",
+        "producto": "Aceite de oliva - Virgen extra - 500 ml. - La Riojana",
+        "variante": "12 U.",
+        "precio": "4080"},
+      {
+        "id": "ACE306",
+        "producto": "Aceite de oliva - Virgen extra - 1 l. - Terranova",
+        "variante": "1 L.",
+        "precio": "600"},
+      {
+        "id": "ACE306",
+        "producto": "Aceite de oliva - Virgen extra - 1 l. - Terranova",
+        "variante": "6 U.",
+        "precio": "3600"},
+      {
+        "id": "ACE307",
+        "producto": "Aceite de coco - 200 ml. - Biorganic",
+        "variante": "6 U.",
+        "precio": "1680"},
+      {
+        "id": "ACE307",
+        "producto": "Aceite de coco - 200 ml. - Biorganic",
+        "variante": "200 ML.",
+        "precio": "280"},
+      {
+        "id": "ACE308",
+        "producto": "Aceite de coco - 350 ml. - Biorganic",
+        "variante": "6 U.",
+        "precio": "2520"},
+      {
+        "id": "ACE308",
+        "producto": "Aceite de coco - 350 ml. - Biorganic",
+        "variante": "350 ML.",
+        "precio": "420"},
+      {
+        "id": "ACE309",
+        "producto": "Aceite de oliva - 1 l. - Ecoliva",
+        "variante": "1 L.",
+        "precio": "440"},
+      {
+        "id": "ACE309",
+        "producto": "Aceite de oliva - 1 l. - Ecoliva",
+        "variante": "6 U.",
+        "precio": "1680"},
+      {
+        "id": "ACE310",
+        "producto": "Aceite blend de oliva y girasol - 500 ml. - Italoliva",
+        "variante": "500 ML.",
+        "precio": "450"},
+      {
+        "id": "ACE310",
+        "producto": "Aceite blend de oliva y girasol - 500 ml. - Italoliva",
+        "variante": "6 U.",
+        "precio": "2040"},
+      {
+        "id": "ACE311",
+        "producto": "Aceite de coco - 660 ml. - Biorganic",
+        "variante": "6 U.",
+        "precio": "740"},
+      {
+        "id": "ACE311",
+        "producto": "Aceite de coco - 660 ml. - Biorganic",
+        "variante": "660 ML.",
+        "precio": "740"},
+      {
+        "id": "BUD100",
+        "producto": "Budin - Cacao amargo - Casa Vegana",
+        "variante": "490 GR.",
+        "precio": "180"},
+      {
+        "id": "BUD101",
+        "producto": "Budin - Banana y nuez - Casa Vegana",
+        "variante": "490 GR.",
+        "precio": "180"},
+      {
+        "id": "BUD102",
+        "producto": "Budin - Zanahoria - Casa Vegana",
+        "variante": "490 GR.",
+        "precio": "180"},
+      {
+        "id": "CER100",
+        "producto": "Almohaditas rellenas de limon",
+        "variante": "250 GR.",
+        "precio": "100"},
+      {
+        "id": "CER100",
+        "producto": "Almohaditas rellenas de limon",
+        "variante": "2 KG.",
+        "precio": "800"},
+      {
+        "id": "CER101",
+        "producto": "Almohaditas rellenas de chocolate",
+        "variante": "250 GR.",
+        "precio": "110"},
+      {
+        "id": "CER101",
+        "producto": "Almohaditas rellenas de chocolate",
+        "variante": "2 KG.",
+        "precio": "880"},
+      {
+        "id": "CER102",
+        "producto": "Almohaditas de chocolate rellenas de chocolate blanco",
+        "variante": "250 GR.",
+        "precio": "170"},
+      {
+        "id": "CER102",
+        "producto": "Almohaditas de chocolate rellenas de chocolate blanco",
+        "variante": "2 KG.",
+        "precio": "1080"},
+      {
+        "id": "CER103",
+        "producto": "Almohaditas de chocolate rellenas de limon",
+        "variante": "250 GR.",
+        "precio": "140"},
+      {
+        "id": "CER103",
+        "producto": "Almohaditas de chocolate rellenas de limon",
+        "variante": "2 KG.",
+        "precio": "900"},
+      {
+        "id": "CER104",
+        "producto": "Almohaditas de 2 salvados",
+        "variante": "250 GR.",
+        "precio": "105"},
+      {
+        "id": "CER104",
+        "producto": "Almohaditas de 2 salvados",
+        "variante": "2 KG.",
+        "precio": "660"},
+      {
+        "id": "CER105",
+        "producto": "Almohaditas rellenas de crema de avellana",
+        "variante": "250 GR.",
+        "precio": "140"},
+      {
+        "id": "CER105",
+        "producto": "Almohaditas rellenas de crema de avellana",
+        "variante": "2 KG.",
+        "precio": "900"},
+      {
+        "id": "CER106",
+        "producto": "Almohaditas rellenas de pasta de mani",
+        "variante": "250 GR.",
+        "precio": "140"},
+      {
+        "id": "CER106",
+        "producto": "Almohaditas rellenas de pasta de mani",
+        "variante": "2 KG.",
+        "precio": "900"},
+      {
+        "id": "CER107",
+        "producto": "Almohaditas rellenas de frutilla",
+        "variante": "250 GR.",
+        "precio": "140"},
+      {
+        "id": "CER107",
+        "producto": "Almohaditas rellenas de frutilla",
+        "variante": "2 KG.",
+        "precio": "900"},
+      {
+        "id": "CER108",
+        "producto": "Almohaditas de avena",
+        "variante": "250 GR.",
+        "precio": "110"},
+      {
+        "id": "CER108",
+        "producto": "Almohaditas de avena",
+        "variante": "2 KG.",
+        "precio": "690"},
+      {
+        "id": "CER109",
+        "producto": "Almohaditas rellenas de chocolate blanco",
+        "variante": "250 GR.",
+        "precio": "120"},
+      {
+        "id": "CER109",
+        "producto": "Almohaditas rellenas de chocolate blanco",
+        "variante": "2 KG.",
+        "precio": "960"},
+      {
+        "id": "CER110",
+        "producto": "Almohaditas sin tacc - Rellenas de frutilla - Snuks",
+        "variante": "200 GR.",
+        "precio": "150"},
+      {
+        "id": "CER110",
+        "producto": "Almohaditas sin tacc - Rellenas de frutilla - Snuks",
+        "variante": "12 U.",
+        "precio": "1800"},
+      {
+        "id": "CER111",
+        "producto": "Almohaditas sin tacc - Rellenas de avellanas - Snuks",
+        "variante": "200 GR.",
+        "precio": "150"},
+      {
+        "id": "CER111",
+        "producto": "Almohaditas sin tacc - Rellenas de avellanas - Snuks",
+        "variante": "12 U.",
+        "precio": "1800"},
+      {
+        "id": "CER112",
+        "producto": "Almohaditas sin tacc - Rellenas de chocolate - Snuks",
+        "variante": "200 GR.",
+        "precio": "150"},
+      {
+        "id": "CER112",
+        "producto": "Almohaditas sin tacc - Rellenas de chocolate - Snuks",
+        "variante": "12 U.",
+        "precio": "1800"},
+      {
+        "id": "CER113",
+        "producto": "Aritos con miel",
+        "variante": "250 GR.",
+        "precio": "95"},
+      {
+        "id": "CER113",
+        "producto": "Aritos con miel",
+        "variante": "1,25 KG.",
+        "precio": "475"},
+      {
+        "id": "CER114",
+        "producto": "Aritos frutados",
+        "variante": "250 GR.",
+        "precio": "105"},
+      {
+        "id": "CER114",
+        "producto": "Aritos frutados",
+        "variante": "1,25 KG.",
+        "precio": "525"},
+      {
+        "id": "CER116",
+        "producto": "Avena instantanea",
+        "variante": "500 GR.",
+        "precio": "85"},
+      {
+        "id": "CER116",
+        "producto": "Avena instantanea",
+        "variante": "1 KG.",
+        "precio": "170"},
+      {
+        "id": "CER116",
+        "producto": "Avena instantanea",
+        "variante": "25 KG.",
+        "precio": "4250"},
+      {
+        "id": "CER117",
+        "producto": "Avena gruesa",
+        "variante": "500 GR.",
+        "precio": "75"},
+      {
+        "id": "CER117",
+        "producto": "Avena gruesa",
+        "variante": "1 KG.",
+        "precio": "150"},
+      {
+        "id": "CER117",
+        "producto": "Avena gruesa",
+        "variante": "30 KG.",
+        "precio": "4500"},
+      {
+        "id": "CER118",
+        "producto": "Avena tradicional",
+        "variante": "500 GR.",
+        "precio": "75"},
+      {
+        "id": "CER118",
+        "producto": "Avena tradicional",
+        "variante": "250 GR.",
+        "precio": "50"},
+      {
+        "id": "CER118",
+        "producto": "Avena tradicional",
+        "variante": "1 KG.",
+        "precio": "130"},
+      {
+        "id": "CER118",
+        "producto": "Avena tradicional",
+        "variante": "30 KG.",
+        "precio": "3900"},
+      {
+        "id": "CER120",
+        "producto": "Bastoncitos de salvado",
+        "variante": "250 GR.",
+        "precio": "95"},
+      {
+        "id": "CER120",
+        "producto": "Bastoncitos de salvado",
+        "variante": "2 KG.",
+        "precio": "760"},
+      {
+        "id": "CER122",
+        "producto": "Bolitas de chocolate",
+        "variante": "250 GR.",
+        "precio": "115"},
+      {
+        "id": "CER122",
+        "producto": "Bolitas de chocolate",
+        "variante": "2 KG.",
+        "precio": "760"},
+      {
+        "id": "CER123",
+        "producto": "Chocoflakes",
+        "variante": "250 GR.",
+        "precio": "75"},
+      {
+        "id": "CER123",
+        "producto": "Chocoflakes",
+        "variante": "4 KG.",
+        "precio": "1200"},
+      {
+        "id": "CER124",
+        "producto": "Copos de maiz con azucar",
+        "variante": "250 GR.",
+        "precio": "75"},
+      {
+        "id": "CER124",
+        "producto": "Copos de maiz con azucar",
+        "variante": "3,4 KG.",
+        "precio": "884"},
+      {
+        "id": "CER125",
+        "producto": "Copos de maiz con miel",
+        "variante": "250 GR.",
+        "precio": "65"},
+      {
+        "id": "CER125",
+        "producto": "Copos de maiz con miel",
+        "variante": "4 KG.",
+        "precio": "1040"},
+      {
+        "id": "CER126",
+        "producto": "Copos de maiz",
+        "variante": "250 GR.",
+        "precio": "70"},
+      {
+        "id": "CER126",
+        "producto": "Copos de maiz",
+        "variante": "3 KG.",
+        "precio": "840"},
+      {
+        "id": "CER127",
+        "producto": "Copos integrales",
+        "variante": "250 GR.",
+        "precio": "80"},
+      {
+        "id": "CER127",
+        "producto": "Copos integrales",
+        "variante": "3,5 KG.",
+        "precio": "1120"},
+      {
+        "id": "CER128",
+        "producto": "Copos de maiz sin sal",
+        "variante": "250 GR.",
+        "precio": "65"},
+      {
+        "id": "CER128",
+        "producto": "Copos de maiz sin sal",
+        "variante": "3 KG.",
+        "precio": "780"},
+      {
+        "id": "CER129",
+        "producto": "Granola - Natural - 1 kg. - Archimboldo",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "CER129",
+        "producto": "Granola - Natural - 1 kg. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "4000"},
+      {
+        "id": "CER130",
+        "producto": "Granola - Crocante con semillas - 1 kg. - Archimboldo",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "CER130",
+        "producto": "Granola - Crocante con semillas - 1 kg. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "4000"},
+      {
+        "id": "CER131",
+        "producto": "Granola - Especial con frutas seleccionadas - 1 kg. - Archimboldo",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "CER131",
+        "producto": "Granola - Especial con frutas seleccionadas - 1 kg. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "4000"},
+      {
+        "id": "CER132",
+        "producto": "Granola - Tropical - 1 kg. - Archimboldo",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "CER132",
+        "producto": "Granola - Tropical - 1 kg. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "4000"},
+      {
+        "id": "CER133",
+        "producto": "Granola - Energetica - 1 kg. - Archimboldo",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "CER133",
+        "producto": "Granola - Energetica - 1 kg. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "4000"},
+      {
+        "id": "CER134",
+        "producto": "Granola - Naturalmente crocante - 1 kg. - Archimboldo",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "CER134",
+        "producto": "Granola - Naturalmente crocante - 1 kg. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "4000"},
+      {
+        "id": "CER135",
+        "producto": "Granola - Premium - 1 kg. - Archimboldo",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "CER135",
+        "producto": "Granola - Premium - 1 kg. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "4000"},
+      {
+        "id": "CER136",
+        "producto": "Crocante de Cereales - Archimboldo",
+        "variante": "100 GR.",
+        "precio": "100"},
+      {
+        "id": "CER136",
+        "producto": "Crocante de Cereales - Archimboldo",
+        "variante": "10 U.",
+        "precio": "1000"},
+      {
+        "id": "CER137",
+        "producto": "Turron - Crocante - Archimboldo",
+        "variante": "100 GR.",
+        "precio": "90"},
+      {
+        "id": "CER137",
+        "producto": "Turron - Crocante - Archimboldo",
+        "variante": "10 U.",
+        "precio": "900"},
+      {
+        "id": "CER138",
+        "producto": "Turron - Chia - Archimboldo",
+        "variante": "100 GR.",
+        "precio": "90"},
+      {
+        "id": "CER138",
+        "producto": "Turron - Chia - Archimboldo",
+        "variante": "10 U.",
+        "precio": "900"},
+      {
+        "id": "CER139",
+        "producto": "Turron - Energetico - Archimboldo",
+        "variante": "100 GR.",
+        "precio": "90"},
+      {
+        "id": "CER139",
+        "producto": "Turron - Energetico - Archimboldo",
+        "variante": "10 U.",
+        "precio": "900"},
+      {
+        "id": "CER140",
+        "producto": "Turron - Pura fibra - Archimboldo",
+        "variante": "100 GR.",
+        "precio": "90"},
+      {
+        "id": "CER140",
+        "producto": "Turron - Pura fibra - Archimboldo",
+        "variante": "10 U.",
+        "precio": "900"},
+      {
+        "id": "CER141",
+        "producto": "Turron - Puro calcio - Archimboldo",
+        "variante": "100 GR.",
+        "precio": "90"},
+      {
+        "id": "CER141",
+        "producto": "Turron - Puro calcio - Archimboldo",
+        "variante": "10 U.",
+        "precio": "900"},
+      {
+        "id": "CER142",
+        "producto": "Barrita - Mani - Archimboldo",
+        "variante": "35 GR.",
+        "precio": "60"},
+      {
+        "id": "CER142",
+        "producto": "Barrita - Mani - Archimboldo",
+        "variante": "10 U.",
+        "precio": "600"},
+      {
+        "id": "CER143",
+        "producto": "Barrita - Granola - Archimboldo",
+        "variante": "35 GR.",
+        "precio": "60"},
+      {
+        "id": "CER143",
+        "producto": "Barrita - Granola - Archimboldo",
+        "variante": "10 U.",
+        "precio": "600"},
+      {
+        "id": "CER144",
+        "producto": "Barrita - Sesamo - Archimboldo",
+        "variante": "35 GR.",
+        "precio": "60"},
+      {
+        "id": "CER144",
+        "producto": "Barrita - Sesamo - Archimboldo",
+        "variante": "10 U.",
+        "precio": "600"},
+      {
+        "id": "CER145",
+        "producto": "Bocadito - Mani - Archimboldo",
+        "variante": "70 GR.",
+        "precio": "60"},
+      {
+        "id": "CER145",
+        "producto": "Bocadito - Mani - Archimboldo",
+        "variante": "10 U.",
+        "precio": "600"},
+      {
+        "id": "CER146",
+        "producto": "Bocadito - Higo y durazno - Archimboldo",
+        "variante": "70 GR.",
+        "precio": "60"},
+      {
+        "id": "CER146",
+        "producto": "Bocadito - Higo y durazno - Archimboldo",
+        "variante": "10 U.",
+        "precio": "600"},
+      {
+        "id": "CER147",
+        "producto": "Bocadito - Cereal - Archimboldo",
+        "variante": "70 GR.",
+        "precio": "60"},
+      {
+        "id": "CER147",
+        "producto": "Bocadito - Cereal - Archimboldo",
+        "variante": "10 U.",
+        "precio": "600"},
+      {
+        "id": "CER148",
+        "producto": "Bocadito - Higo y pera- Archimboldo",
+        "variante": "35 GR.",
+        "precio": "60"},
+      {
+        "id": "CER148",
+        "producto": "Bocadito - Higo y pera- Archimboldo",
+        "variante": "10 U.",
+        "precio": "600"},
+      {
+        "id": "CER149",
+        "producto": "Bocadito - Sesamo y coco - Archimboldo",
+        "variante": "70 GR.",
+        "precio": "60"},
+      {
+        "id": "CER149",
+        "producto": "Bocadito - Sesamo y coco - Archimboldo",
+        "variante": "10 U.",
+        "precio": "600"},
+      {
+        "id": "CER150",
+        "producto": "Bocadito - Granola y pasta de mani - Archimboldo",
+        "variante": "70 GR.",
+        "precio": "60"},
+      {
+        "id": "CER150",
+        "producto": "Bocadito - Granola y pasta de mani - Archimboldo",
+        "variante": "10 U.",
+        "precio": "600"},
+      {
+        "id": "CER153",
+        "producto": "Ositos de chocolate",
+        "variante": "250 GR.",
+        "precio": "90"},
+      {
+        "id": "CER153",
+        "producto": "Ositos de chocolate",
+        "variante": "2 KG.",
+        "precio": "560"},
+      {
+        "id": "CER154",
+        "producto": "Ositos de frutilla",
+        "variante": "250 GR.",
+        "precio": "90"},
+      {
+        "id": "CER154",
+        "producto": "Ositos de frutilla",
+        "variante": "2 KG.",
+        "precio": "560"},
+      {
+        "id": "CER155",
+        "producto": "Salvado de avena",
+        "variante": "500 GR.",
+        "precio": "80"},
+      {
+        "id": "CER155",
+        "producto": "Salvado de avena",
+        "variante": "1 KG.",
+        "precio": "160"},
+      {
+        "id": "CER155",
+        "producto": "Salvado de avena",
+        "variante": "25 KG.",
+        "precio": "4000"},
+      {
+        "id": "CER156",
+        "producto": "Trigo burgol grueso",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "CER156",
+        "producto": "Trigo burgol grueso",
+        "variante": "1 KG.",
+        "precio": "180"},
+      {
+        "id": "CER156",
+        "producto": "Trigo burgol grueso",
+        "variante": "30 KG.",
+        "precio": "5400"},
+      {
+        "id": "CER157",
+        "producto": "Trigo Burgol",
+        "variante": "500 GR.",
+        "precio": "60"},
+      {
+        "id": "CER158",
+        "producto": "Trigo sarraceno pelado entero",
+        "variante": "500 GR.",
+        "precio": "130"},
+      {
+        "id": "CER159",
+        "producto": "Copos free (con stevia)",
+        "variante": "250 GR.",
+        "precio": "155"},
+      {
+        "id": "CER159",
+        "producto": "Copos free (con stevia)",
+        "variante": "1,25 KG.",
+        "precio": "620"},
+      {
+        "id": "CER160",
+        "producto": "Cous Cous",
+        "variante": "500 GR.",
+        "precio": "100"},
+      {
+        "id": "CER160",
+        "producto": "Cous Cous",
+        "variante": "1 KG.",
+        "precio": "200"},
+      {
+        "id": "CER160",
+        "producto": "Cous Cous",
+        "variante": "25 KG.",
+        "precio": "5000"},
+      {
+        "id": "CER170",
+        "producto": "Granola - Natural - 250 gr. - Archimboldo",
+        "variante": "250 GR.",
+        "precio": "120"},
+      {
+        "id": "CER170",
+        "producto": "Granola - Natural - 250 gr. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "1200"},
+      {
+        "id": "CER171",
+        "producto": "Granola - Crocante con semillas - 250 gr. - Archimboldo",
+        "variante": "250 GR.",
+        "precio": "120"},
+      {
+        "id": "CER171",
+        "producto": "Granola - Crocante con semillas - 250 gr. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "1200"},
+      {
+        "id": "CER172",
+        "producto": "Granola - Especial con frutas seleccionadas - 250 gr. - Archimboldo",
+        "variante": "250 GR.",
+        "precio": "120"},
+      {
+        "id": "CER172",
+        "producto": "Granola - Especial con frutas seleccionadas - 250 gr. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "1200"},
+      {
+        "id": "CER173",
+        "producto": "Granola - Tropical - 250 gr. - Archimboldo",
+        "variante": "250 GR.",
+        "precio": "120"},
+      {
+        "id": "CER173",
+        "producto": "Granola - Tropical - 250 gr. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "1200"},
+      {
+        "id": "CER174",
+        "producto": "Granola - Energetica - 250 gr. - Archimboldo",
+        "variante": "250 GR.",
+        "precio": "120"},
+      {
+        "id": "CER174",
+        "producto": "Granola - Energetica - 250 gr. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "1200"},
+      {
+        "id": "CER175",
+        "producto": "Granola - Naturalmente crocante - 250 gr. - Archimboldo",
+        "variante": "250 GR.",
+        "precio": "120"},
+      {
+        "id": "CER175",
+        "producto": "Granola - Naturalmente crocante - 250 gr. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "1200"},
+      {
+        "id": "CER176",
+        "producto": "Granola - Premium - 250 gr. - Archimboldo",
+        "variante": "250 GR.",
+        "precio": "120"},
+      {
+        "id": "CER176",
+        "producto": "Granola - Premium - 250 gr. - Archimboldo",
+        "variante": "10 U.",
+        "precio": "1200"},
+      {
+        "id": "CER177",
+        "producto": "Germen de Trigo",
+        "variante": "500 GR.",
+        "precio": "60"},
+      {
+        "id": "CON100",
+        "producto": "Ajo en polvo",
+        "variante": "50 GR.",
+        "precio": "20"},
+      {
+        "id": "CON100",
+        "producto": "Ajo en polvo",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "CON100",
+        "producto": "Ajo en polvo",
+        "variante": "25 KG.",
+        "precio": "10000"},
+      {
+        "id": "CON101",
+        "producto": "Curcuma",
+        "variante": "50 GR.",
+        "precio": "20"},
+      {
+        "id": "CON101",
+        "producto": "Curcuma",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "CON101",
+        "producto": "Curcuma",
+        "variante": "5 KG.",
+        "precio": "2000"},
+      {
+        "id": "CON101",
+        "producto": "Curcuma",
+        "variante": "25 KG.",
+        "precio": "10000"},
+      {
+        "id": "DIS101",
+        "producto": "Compota",
+        "variante": "500 GR.",
+        "precio": "325"},
+      {
+        "id": "DIS101",
+        "producto": "Compota",
+        "variante": "1 KG.",
+        "precio": "630"},
+      {
+        "id": "DIS101",
+        "producto": "Compota",
+        "variante": "5 KG.",
+        "precio": "3150"},
+      {
+        "id": "DIS102",
+        "producto": "Durazno",
+        "variante": "500 GR.",
+        "precio": "425"},
+      {
+        "id": "DIS102",
+        "producto": "Durazno",
+        "variante": "1 KG.",
+        "precio": "830"},
+      {
+        "id": "DIS102",
+        "producto": "Durazno",
+        "variante": "5 KG.",
+        "precio": "4140"},
+      {
+        "id": "DIS103",
+        "producto": "Higo negro",
+        "variante": "500 GR.",
+        "precio": "250"},
+      {
+        "id": "DIS103",
+        "producto": "Higo negro",
+        "variante": "1 KG.",
+        "precio": "490"},
+      {
+        "id": "DIS103",
+        "producto": "Higo negro",
+        "variante": "5 KG.",
+        "precio": "2400"},
+      {
+        "id": "DIS105",
+        "producto": "Pasa de uva - Jumbo",
+        "variante": "500 GR.",
+        "precio": "160"},
+      {
+        "id": "DIS105",
+        "producto": "Pasa de uva - Jumbo",
+        "variante": "1 KG.",
+        "precio": "270"},
+      {
+        "id": "DIS105",
+        "producto": "Pasa de uva - Jumbo",
+        "variante": "5 KG.",
+        "precio": "1341"},
+      {
+        "id": "DIS106",
+        "producto": "Pasa de uva - Rubia importada",
+        "variante": "500 GR.",
+        "precio": "250"},
+      {
+        "id": "DIS106",
+        "producto": "Pasa de uva - Rubia importada",
+        "variante": "100 GR.",
+        "precio": "60"},
+      {
+        "id": "DIS106",
+        "producto": "Pasa de uva - Rubia importada",
+        "variante": "1 KG.",
+        "precio": "490"},
+      {
+        "id": "DIS106",
+        "producto": "Pasa de uva - Rubia importada",
+        "variante": "5 KG.",
+        "precio": "2450"},
+      {
+        "id": "DIS107",
+        "producto": "Peras Wiliams",
+        "variante": "500 GR.",
+        "precio": "300"},
+      {
+        "id": "DIS107",
+        "producto": "Peras Wiliams",
+        "variante": "100 GR.",
+        "precio": "65"},
+      {
+        "id": "DIS107",
+        "producto": "Peras Wiliams",
+        "variante": "1 KG.",
+        "precio": "590"},
+      {
+        "id": "DIS107",
+        "producto": "Peras Wiliams",
+        "variante": "5 KG.",
+        "precio": "2840"},
+      {
+        "id": "DIS108",
+        "producto": "Tomate seco",
+        "variante": "500 GR.",
+        "precio": "500"},
+      {
+        "id": "DIS108",
+        "producto": "Tomate seco",
+        "variante": "250 GR.",
+        "precio": "270"},
+      {
+        "id": "DIS108",
+        "producto": "Tomate seco",
+        "variante": "1 KG.",
+        "precio": "1000"},
+      {
+        "id": "DIS108",
+        "producto": "Tomate seco",
+        "variante": "6 KG.",
+        "precio": "6000"},
+      {
+        "id": "DIS109",
+        "producto": "Higo blanco nacional",
+        "variante": "500 GR.",
+        "precio": "220"},
+      {
+        "id": "DIS109",
+        "producto": "Higo blanco nacional",
+        "variante": "1 KG.",
+        "precio": "440"},
+      {
+        "id": "DIS109",
+        "producto": "Higo blanco nacional",
+        "variante": "5 KG.",
+        "precio": "2200"},
+      {
+        "id": "DIS110",
+        "producto": "Hongo seco - Boletus",
+        "variante": "100 GR.",
+        "precio": "178"},
+      {
+        "id": "DIS110",
+        "producto": "Hongo seco - Boletus",
+        "variante": "1 KG.",
+        "precio": "1780"},
+      {
+        "id": "DIS110",
+        "producto": "Hongo seco - Boletus",
+        "variante": "15 KG.",
+        "precio": "26700"},
+      {
+        "id": "DIS111",
+        "producto": "Hongo seco - Shitake",
+        "variante": "200 GR.",
+        "precio": "200"},
+      {
+        "id": "DIS111",
+        "producto": "Hongo seco - Shitake",
+        "variante": "1 KG.",
+        "precio": "1000"},
+      {
+        "id": "DIS111",
+        "producto": "Hongo seco - Shitake",
+        "variante": "10 KG.",
+        "precio": "10000"},
+      {
+        "id": "DIS112",
+        "producto": "Pasa de uva - Sultanina",
+        "variante": "500 GR.",
+        "precio": "135"},
+      {
+        "id": "DIS112",
+        "producto": "Pasa de uva - Sultanina",
+        "variante": "1 KG.",
+        "precio": "250"},
+      {
+        "id": "DIS112",
+        "producto": "Pasa de uva - Sultanina",
+        "variante": "100 GR.",
+        "precio": "30"},
+      {
+        "id": "DIS112",
+        "producto": "Pasa de uva - Sultanina",
+        "variante": "5 KG.",
+        "precio": "1050"},
+      {
+        "id": "DOY001",
+        "producto": "Doypack Mix - Sport - 300 gr. - DEC",
+        "variante": "300 GR.",
+        "precio": "280"},
+      {
+        "id": "DOY002",
+        "producto": "Doypack Mix - Sport full - 300 gr. - DEC",
+        "variante": "300 GR.",
+        "precio": "280"},
+      {
+        "id": "DOY003",
+        "producto": "Doypack Mix - Granola tradicional - 300 gr. - DEC",
+        "variante": "300 GR.",
+        "precio": "220"},
+      {
+        "id": "END100",
+        "producto": "Azucar mascabo",
+        "variante": "500 GR.",
+        "precio": "100"},
+      {
+        "id": "END100",
+        "producto": "Azucar mascabo",
+        "variante": "1 KG.",
+        "precio": "200"},
+      {
+        "id": "END100",
+        "producto": "Azucar mascabo",
+        "variante": "10 KG.",
+        "precio": "2000"},
+      {
+        "id": "END101",
+        "producto": "Azucar organica rubia",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "END101",
+        "producto": "Azucar organica rubia",
+        "variante": "1 KG.",
+        "precio": "180"},
+      {
+        "id": "END101",
+        "producto": "Azucar organica rubia",
+        "variante": "25 KG.",
+        "precio": "4500"},
+      {
+        "id": "END102",
+        "producto": "Cacao amargo",
+        "variante": "100 GR.",
+        "precio": "60"},
+      {
+        "id": "END102",
+        "producto": "Cacao amargo",
+        "variante": "1 KG.",
+        "precio": "560"},
+      {
+        "id": "END102",
+        "producto": "Cacao amargo",
+        "variante": "25 KG.",
+        "precio": "14000"},
+      {
+        "id": "END103",
+        "producto": "Miel organica - Garabato - 480 gr. - De Monte",
+        "variante": "480 GR.",
+        "precio": "250"},
+      {
+        "id": "END103",
+        "producto": "Miel organica - Garabato - 480 gr. - De Monte",
+        "variante": "6 U.",
+        "precio": "1500"},
+      {
+        "id": "END104",
+        "producto": "Miel organica - Algarrobo - 480 gr. - De Monte",
+        "variante": "480 GR.",
+        "precio": "250"},
+      {
+        "id": "END104",
+        "producto": "Miel organica - Algarrobo - 480 gr. - De Monte",
+        "variante": "6 U.",
+        "precio": "1500"},
+      {
+        "id": "END105",
+        "producto": "Miel organica - Multifloral - 480 gr. - De Monte",
+        "variante": "480 GR.",
+        "precio": "250"},
+      {
+        "id": "END105",
+        "producto": "Miel organica - Multifloral - 480 gr. - De Monte",
+        "variante": "6 U.",
+        "precio": "1500"},
+      {
+        "id": "END106",
+        "producto": "Miel organica - Chanar - 480 gr. - De Monte",
+        "variante": "480 GR.",
+        "precio": "250"},
+      {
+        "id": "END106",
+        "producto": "Miel organica - Chanar - 480 gr. - De Monte",
+        "variante": "6 U.",
+        "precio": "1500"},
+      {
+        "id": "END107",
+        "producto": "Miel organica - Quebracho - 480 gr. - De Monte",
+        "variante": "480 GR.",
+        "precio": "250"},
+      {
+        "id": "END107",
+        "producto": "Miel organica - Quebracho - 480 gr. - De Monte",
+        "variante": "6 U.",
+        "precio": "1500"},
+      {
+        "id": "END108",
+        "producto": "Stevia en hoja",
+        "variante": "100 GR.",
+        "precio": "120"},
+      {
+        "id": "END108",
+        "producto": "Stevia en hoja",
+        "variante": "50 GR.",
+        "precio": "70"},
+      {
+        "id": "END108",
+        "producto": "Stevia en hoja",
+        "variante": "25 GR.",
+        "precio": "40"},
+      {
+        "id": "END108",
+        "producto": "Stevia en hoja",
+        "variante": "1 KG.",
+        "precio": "1165"},
+      {
+        "id": "END108",
+        "producto": "Stevia en hoja",
+        "variante": "25 KG.",
+        "precio": "29125"},
+      {
+        "id": "END110",
+        "producto": "Stevia en polvo - 110 gr. - Jual",
+        "variante": "110 GR.",
+        "precio": "155"},
+      {
+        "id": "END110",
+        "producto": "Stevia en polvo - 110 gr. - Jual",
+        "variante": "9 U.",
+        "precio": "1395"},
+      {
+        "id": "END112",
+        "producto": "Cacao dulce",
+        "variante": "100 GR.",
+        "precio": "60"},
+      {
+        "id": "END112",
+        "producto": "Cacao dulce",
+        "variante": "1 KG.",
+        "precio": "560"},
+      {
+        "id": "END112",
+        "producto": "Cacao dulce",
+        "variante": "25 KG.",
+        "precio": "14000"},
+      {
+        "id": "END117",
+        "producto": "Miel organica - Mistol - 480 gr. - De Monte",
+        "variante": "480 GR.",
+        "precio": "250"},
+      {
+        "id": "END117",
+        "producto": "Miel organica - Mistol - 480 gr. - De Monte",
+        "variante": "6 U.",
+        "precio": "1500"},
+      {
+        "id": "END119",
+        "producto": "Azucar impalpable",
+        "variante": "100 GR.",
+        "precio": "20"},
+      {
+        "id": "END119",
+        "producto": "Azucar impalpable",
+        "variante": "10 KG.",
+        "precio": "2000"},
+      {
+        "id": "END120",
+        "producto": "Azucar negra",
+        "variante": "10 KG.",
+        "precio": "1800"},
+      {
+        "id": "END120",
+        "producto": "Azucar negra",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "END121",
+        "producto": "Miel sin TACC - Dosificador osito - 350 gr. - Nectar Del Monte",
+        "variante": "350 GR.",
+        "precio": "185"},
+      {
+        "id": "END121",
+        "producto": "Miel sin TACC - Dosificador osito - 350 gr. - Nectar Del Monte",
+        "variante": "6 U.",
+        "precio": "1110"},
+      {
+        "id": "END122",
+        "producto": "Miel sin TACC - 500 gr. - Nectar Del Monte",
+        "variante": "500 GR.",
+        "precio": "240"},
+      {
+        "id": "END122",
+        "producto": "Miel sin TACC - 500 gr. - Nectar Del Monte",
+        "variante": "6 U.",
+        "precio": "1440"},
+      {
+        "id": "END123",
+        "producto": "Miel sin TACC - 1 kg. - Nectar Del Monte",
+        "variante": "1 KG.",
+        "precio": "450"},
+      {
+        "id": "END123",
+        "producto": "Miel sin TACC - 1 kg. - Nectar Del Monte",
+        "variante": "6 U.",
+        "precio": "2700"},
+      {
+        "id": "END200",
+        "producto": "Stevia liquida - 125 ml. - Jual",
+        "variante": "125 ML.",
+        "precio": "125"},
+      {
+        "id": "END200",
+        "producto": "Stevia liquida - 125 ml. - Jual",
+        "variante": "20 U.",
+        "precio": "2500"},
+      {
+        "id": "END201",
+        "producto": "Stevia liquida - 250 ml. - Jual",
+        "variante": "250 ML.",
+        "precio": "190"},
+      {
+        "id": "END201",
+        "producto": "Stevia liquida - 250 ml. - Jual",
+        "variante": "15 U.",
+        "precio": "2850"},
+      {
+        "id": "END202",
+        "producto": "Stevia liquida - 600 ml. - Jual",
+        "variante": "600 ML.",
+        "precio": "400"},
+      {
+        "id": "END202",
+        "producto": "Stevia liquida - 600 ml. - Jual",
+        "variante": "6 U.",
+        "precio": "2400"},
+      {
+        "id": "ENV001",
+        "producto": "PedidoYa Envio",
+        "variante": "U",
+        "precio": "59"},
+      {
+        "id": "ENV002",
+        "producto": "Delivery WEB",
+        "variante": "U",
+        "precio": "200"},
+      {
+        "id": "FAR100",
+        "producto": "Alcohol en gel",
+        "variante": "250 ML.",
+        "precio": "250"},
+      {
+        "id": "FID100",
+        "producto": "Fideo multigrano maccarrum - Troncoso",
+        "variante": "500 GR.",
+        "precio": "150"},
+      {
+        "id": "FID101",
+        "producto": "Fideo multigrano penne regati - Troncoso",
+        "variante": "500 GR.",
+        "precio": "150"},
+      {
+        "id": "FID103",
+        "producto": "Fideo multigrano fusilloni - Troncoso",
+        "variante": "500 GR.",
+        "precio": "100"},
+      {
+        "id": "FID104",
+        "producto": "Fideo semola de trigo candeal fusilloni - Troncoso",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "FID106",
+        "producto": "Fideo semola de trigo candeal caserecce - Troncoso",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "FID107",
+        "producto": "Fideos algarroba caserecce - Troncoso",
+        "variante": "500 GR.",
+        "precio": "105"},
+      {
+        "id": "FID108",
+        "producto": "Fideos de arroz Tradicionales - Soyarroz",
+        "variante": "300 GR.",
+        "precio": "130"},
+      {
+        "id": "FID108",
+        "producto": "Fideos de arroz Tradicionales - Soyarroz",
+        "variante": "40 U.",
+        "precio": "5200"},
+      {
+        "id": "FID109",
+        "producto": "Fideos de espinaca fusilloni - Troncoso",
+        "variante": "500 GR.",
+        "precio": "165"},
+      {
+        "id": "FID111",
+        "producto": "Fideos - Arveja - Makarona",
+        "variante": "250 GR.",
+        "precio": "135"},
+      {
+        "id": "FID112",
+        "producto": "Fideos semillas maccarrum - Troncoso",
+        "variante": "500 GR.",
+        "precio": "170"},
+      {
+        "id": "FID113",
+        "producto": "Fideos semillas caserecce - Troncoso",
+        "variante": "500 GR.",
+        "precio": "110"},
+      {
+        "id": "FID114",
+        "producto": "Fideos tinta de calamar caserecce - Troncoso",
+        "variante": "500 GR.",
+        "precio": "170"},
+      {
+        "id": "FID115",
+        "producto": "Fideos tinta de calamar fusilloni - Troncoso",
+        "variante": "500 GR.",
+        "precio": "170"},
+      {
+        "id": "FID117",
+        "producto": "Fideos 3 sabores penne regati - Troncoso",
+        "variante": "500 GR.",
+        "precio": "165"},
+      {
+        "id": "FID118",
+        "producto": "Fideos zanahoria y jengibre caserecce - Troncoso",
+        "variante": "500 GR.",
+        "precio": "120"},
+      {
+        "id": "FID119",
+        "producto": "Fideos zanahoria y jengibre fusilloni - Troncoso",
+        "variante": "500 GR.",
+        "precio": "120"},
+      {
+        "id": "FID120",
+        "producto": "Fideos - Lenteja - Makarona",
+        "variante": "250 GR.",
+        "precio": "135"},
+      {
+        "id": "FID121",
+        "producto": "Fideos - al huevo casserecce  - Troncoso",
+        "variante": "250 GR.",
+        "precio": "165"},
+      {
+        "id": "FID128",
+        "producto": "Fideos de Arroz Integrales - Soyarroz",
+        "variante": "300 GR.",
+        "precio": "130"},
+      {
+        "id": "FID128",
+        "producto": "Fideos de Arroz Integrales - Soyarroz",
+        "variante": "40 U.",
+        "precio": "5200"},
+      {
+        "id": "FID129",
+        "producto": "Fideos de arroz con espinaca - Soyarroz",
+        "variante": "300 GR.",
+        "precio": "130"},
+      {
+        "id": "FID129",
+        "producto": "Fideos de arroz con espinaca - Soyarroz",
+        "variante": "40 U.",
+        "precio": "5200"},
+      {
+        "id": "FID130",
+        "producto": "Fideos de arroz con morrón - Soyarroz",
+        "variante": "300 GR.",
+        "precio": "130"},
+      {
+        "id": "FID130",
+        "producto": "Fideos de arroz con morrón - Soyarroz",
+        "variante": "40 U.",
+        "precio": "5200"},
+      {
+        "id": "FID131",
+        "producto": "Fideos de arroz con maiz - Soyarroz",
+        "variante": "300 GR.",
+        "precio": "130"},
+      {
+        "id": "FID131",
+        "producto": "Fideos de arroz con maiz - Soyarroz",
+        "variante": "40 U.",
+        "precio": "5200"},
+      {
+        "id": "FRS100",
+        "producto": "Almendra - Importada",
+        "variante": "1 KG.",
+        "precio": "1550"},
+      {
+        "id": "FRS100",
+        "producto": "Almendra - Importada",
+        "variante": "500 GR.",
+        "precio": "790"},
+      {
+        "id": "FRS100",
+        "producto": "Almendra - Importada",
+        "variante": "250 GR.",
+        "precio": "380"},
+      {
+        "id": "FRS100",
+        "producto": "Almendra - Importada",
+        "variante": "5 KG.",
+        "precio": "7750"},
+      {
+        "id": "FRS101",
+        "producto": "Almendra - Importada de oferta",
+        "variante": "500 GR.",
+        "precio": "700"},
+      {
+        "id": "FRS101",
+        "producto": "Almendra - Importada de oferta",
+        "variante": "250 GR.",
+        "precio": "385"},
+      {
+        "id": "FRS101",
+        "producto": "Almendra - Importada de oferta",
+        "variante": "1 KG.",
+        "precio": "385"},
+      {
+        "id": "FRS101",
+        "producto": "Almendra - Importada de oferta",
+        "variante": "100 GR.",
+        "precio": "170"},
+      {
+        "id": "FRS102",
+        "producto": "Almendra - Nacional",
+        "variante": "500 GR.",
+        "precio": "730"},
+      {
+        "id": "FRS102",
+        "producto": "Almendra - Nacional",
+        "variante": "1 KG.",
+        "precio": "1350"},
+      {
+        "id": "FRS102",
+        "producto": "Almendra - Nacional",
+        "variante": "100 GR.",
+        "precio": "145"},
+      {
+        "id": "FRS102",
+        "producto": "Almendra - Nacional",
+        "variante": "250 GR.",
+        "precio": "390"},
+      {
+        "id": "FRS102",
+        "producto": "Almendra - Nacional",
+        "variante": "5 KG.",
+        "precio": "6750"},
+      {
+        "id": "FRS106",
+        "producto": "Avellana",
+        "variante": "250 GR.",
+        "precio": "450"},
+      {
+        "id": "FRS106",
+        "producto": "Avellana",
+        "variante": "500 GR.",
+        "precio": "880"},
+      {
+        "id": "FRS106",
+        "producto": "Avellana",
+        "variante": "3 KG.",
+        "precio": "5130"},
+      {
+        "id": "FRS106",
+        "producto": "Avellana",
+        "variante": "1 KG.",
+        "precio": "1710"},
+      {
+        "id": "FRS108",
+        "producto": "Caju tostado y salado",
+        "variante": "250 GR.",
+        "precio": "380"},
+      {
+        "id": "FRS108",
+        "producto": "Caju tostado y salado",
+        "variante": "500 GR.",
+        "precio": "730"},
+      {
+        "id": "FRS108",
+        "producto": "Caju tostado y salado",
+        "variante": "1 KG.",
+        "precio": "1425"},
+      {
+        "id": "FRS108",
+        "producto": "Caju tostado y salado",
+        "variante": "3 KG.",
+        "precio": "3915"},
+      {
+        "id": "FRS110",
+        "producto": "Caju natural",
+        "variante": "500 GR.",
+        "precio": "720"},
+      {
+        "id": "FRS110",
+        "producto": "Caju natural",
+        "variante": "250 GR.",
+        "precio": "375"},
+      {
+        "id": "FRS110",
+        "producto": "Caju natural",
+        "variante": "1 KG.",
+        "precio": "1390"},
+      {
+        "id": "FRS110",
+        "producto": "Caju natural",
+        "variante": "22,68 KG.",
+        "precio": "31525"},
+      {
+        "id": "FRS112",
+        "producto": "Caju tostado",
+        "variante": "500 GR.",
+        "precio": "730"},
+      {
+        "id": "FRS112",
+        "producto": "Caju tostado",
+        "variante": "250 GR.",
+        "precio": "375"},
+      {
+        "id": "FRS112",
+        "producto": "Caju tostado",
+        "variante": "1 KG.",
+        "precio": "1425"},
+      {
+        "id": "FRS112",
+        "producto": "Caju tostado",
+        "variante": "3 KG.",
+        "precio": "4200"},
+      {
+        "id": "FRS114",
+        "producto": "Garrapinada de mani",
+        "variante": "500 GR.",
+        "precio": "150"},
+      {
+        "id": "FRS114",
+        "producto": "Garrapinada de mani",
+        "variante": "250 GR.",
+        "precio": "80"},
+      {
+        "id": "FRS114",
+        "producto": "Garrapinada de mani",
+        "variante": "1 KG.",
+        "precio": "300"},
+      {
+        "id": "FRS114",
+        "producto": "Garrapinada de mani",
+        "variante": "5 KG.",
+        "precio": "1240"},
+      {
+        "id": "FRS115",
+        "producto": "Maiz crocante - Sabor barbacoa",
+        "variante": "500 GR.",
+        "precio": "410"},
+      {
+        "id": "FRS115",
+        "producto": "Maiz crocante - Sabor barbacoa",
+        "variante": "250 GR.",
+        "precio": "220"},
+      {
+        "id": "FRS115",
+        "producto": "Maiz crocante - Sabor barbacoa",
+        "variante": "100 GR.",
+        "precio": "110"},
+      {
+        "id": "FRS115",
+        "producto": "Maiz crocante - Sabor barbacoa",
+        "variante": "20 KG.",
+        "precio": "16399"},
+      {
+        "id": "FRS115",
+        "producto": "Maiz crocante - Sabor barbacoa",
+        "variante": "1 KG.",
+        "precio": "820"},
+      {
+        "id": "FRS117",
+        "producto": "Maiz crocante - Sabor mostaza y miel",
+        "variante": "500 GR.",
+        "precio": "410"},
+      {
+        "id": "FRS117",
+        "producto": "Maiz crocante - Sabor mostaza y miel",
+        "variante": "250 GR.",
+        "precio": "220"},
+      {
+        "id": "FRS117",
+        "producto": "Maiz crocante - Sabor mostaza y miel",
+        "variante": "100 GR.",
+        "precio": "110"},
+      {
+        "id": "FRS117",
+        "producto": "Maiz crocante - Sabor mostaza y miel",
+        "variante": "1 KG.",
+        "precio": "820"},
+      {
+        "id": "FRS117",
+        "producto": "Maiz crocante - Sabor mostaza y miel",
+        "variante": "20 KG.",
+        "precio": "16400"},
+      {
+        "id": "FRS119",
+        "producto": "Maiz crocante - Sabor original",
+        "variante": "500 GR.",
+        "precio": "410"},
+      {
+        "id": "FRS119",
+        "producto": "Maiz crocante - Sabor original",
+        "variante": "250 GR.",
+        "precio": "220"},
+      {
+        "id": "FRS119",
+        "producto": "Maiz crocante - Sabor original",
+        "variante": "100 GR.",
+        "precio": "110"},
+      {
+        "id": "FRS119",
+        "producto": "Maiz crocante - Sabor original",
+        "variante": "1 KG.",
+        "precio": "820"},
+      {
+        "id": "FRS119",
+        "producto": "Maiz crocante - Sabor original",
+        "variante": "20 KG.",
+        "precio": "16400"},
+      {
+        "id": "FRS121",
+        "producto": "Maiz crocante - Sabor picante",
+        "variante": "500 GR.",
+        "precio": "410"},
+      {
+        "id": "FRS121",
+        "producto": "Maiz crocante - Sabor picante",
+        "variante": "250 GR.",
+        "precio": "220"},
+      {
+        "id": "FRS121",
+        "producto": "Maiz crocante - Sabor picante",
+        "variante": "100 GR.",
+        "precio": "110"},
+      {
+        "id": "FRS121",
+        "producto": "Maiz crocante - Sabor picante",
+        "variante": "1 KG.",
+        "precio": "820"},
+      {
+        "id": "FRS121",
+        "producto": "Maiz crocante - Sabor picante",
+        "variante": "20 KG.",
+        "precio": "16400"},
+      {
+        "id": "FRS123",
+        "producto": "Maiz crocante - Sabor queso",
+        "variante": "500 GR.",
+        "precio": "410"},
+      {
+        "id": "FRS123",
+        "producto": "Maiz crocante - Sabor queso",
+        "variante": "250 GR.",
+        "precio": "220"},
+      {
+        "id": "FRS123",
+        "producto": "Maiz crocante - Sabor queso",
+        "variante": "100 GR.",
+        "precio": "110"},
+      {
+        "id": "FRS123",
+        "producto": "Maiz crocante - Sabor queso",
+        "variante": "1 KG.",
+        "precio": "820"},
+      {
+        "id": "FRS123",
+        "producto": "Maiz crocante - Sabor queso",
+        "variante": "20 KG.",
+        "precio": "16400"},
+      {
+        "id": "FRS125",
+        "producto": "Mani cervecero - Sabor original",
+        "variante": "500 GR.",
+        "precio": "200"},
+      {
+        "id": "FRS125",
+        "producto": "Mani cervecero - Sabor original",
+        "variante": "100 GR.",
+        "precio": "45"},
+      {
+        "id": "FRS125",
+        "producto": "Mani cervecero - Sabor original",
+        "variante": "1 KG.",
+        "precio": "390"},
+      {
+        "id": "FRS125",
+        "producto": "Mani cervecero - Sabor original",
+        "variante": "9 KG.",
+        "precio": "3510"},
+      {
+        "id": "FRS127",
+        "producto": "Mani repelado sin sal",
+        "variante": "1 KG.",
+        "precio": "150"},
+      {
+        "id": "FRS127",
+        "producto": "Mani repelado sin sal",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "FRS127",
+        "producto": "Mani repelado sin sal",
+        "variante": "25 KG.",
+        "precio": "3750"},
+      {
+        "id": "FRS128",
+        "producto": "Mani repelado salado",
+        "variante": "1 KG.",
+        "precio": "150"},
+      {
+        "id": "FRS128",
+        "producto": "Mani repelado salado",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "FRS128",
+        "producto": "Mani repelado salado",
+        "variante": "25 KG.",
+        "precio": "3750"},
+      {
+        "id": "FRS129",
+        "producto": "Mani vaina",
+        "variante": "500 GR.",
+        "precio": "140"},
+      {
+        "id": "FRS129",
+        "producto": "Mani vaina",
+        "variante": "1 KG.",
+        "precio": "265"},
+      {
+        "id": "FRS129",
+        "producto": "Mani vaina",
+        "variante": "20 KG.",
+        "precio": "5140"},
+      {
+        "id": "FRS130",
+        "producto": "Nuez con cascara",
+        "variante": "500 GR.",
+        "precio": "310"},
+      {
+        "id": "FRS130",
+        "producto": "Nuez con cascara",
+        "variante": "1 KG.",
+        "precio": "595"},
+      {
+        "id": "FRS130",
+        "producto": "Nuez con cascara",
+        "variante": "10 KG.",
+        "precio": "5950"},
+      {
+        "id": "FRS131",
+        "producto": "Nuez extralight",
+        "variante": "1 KG.",
+        "precio": "1110"},
+      {
+        "id": "FRS131",
+        "producto": "Nuez extralight",
+        "variante": "500 GR.",
+        "precio": "575"},
+      {
+        "id": "FRS131",
+        "producto": "Nuez extralight",
+        "variante": "100 GR.",
+        "precio": "130"},
+      {
+        "id": "FRS131",
+        "producto": "Nuez extralight",
+        "variante": "250 GR.",
+        "precio": "300"},
+      {
+        "id": "FRS131",
+        "producto": "Nuez extralight",
+        "variante": "10 KG.",
+        "precio": "11100"},
+      {
+        "id": "FRS134",
+        "producto": "Nuez light",
+        "variante": "1 KG.",
+        "precio": "890"},
+      {
+        "id": "FRS134",
+        "producto": "Nuez light",
+        "variante": "500 GR.",
+        "precio": "450"},
+      {
+        "id": "FRS134",
+        "producto": "Nuez light",
+        "variante": "100 GR.",
+        "precio": "105"},
+      {
+        "id": "FRS135",
+        "producto": "Nuez OFERTA",
+        "variante": "500 GR.",
+        "precio": "410"},
+      {
+        "id": "FRS135",
+        "producto": "Nuez OFERTA",
+        "variante": "1 KG.",
+        "precio": "850"},
+      {
+        "id": "FRS135",
+        "producto": "Nuez OFERTA",
+        "variante": "100 GR.",
+        "precio": "85"},
+      {
+        "id": "FRS135",
+        "producto": "Nuez OFERTA",
+        "variante": "250 GR.",
+        "precio": "210"},
+      {
+        "id": "FRS136",
+        "producto": "Nuez pecan",
+        "variante": "500 GR.",
+        "precio": "800"},
+      {
+        "id": "FRS136",
+        "producto": "Nuez pecan",
+        "variante": "250 GR.",
+        "precio": "400"},
+      {
+        "id": "FRS136",
+        "producto": "Nuez pecan",
+        "variante": "1 KG.",
+        "precio": "1500"},
+      {
+        "id": "FRS136",
+        "producto": "Nuez pecan",
+        "variante": "10 KG.",
+        "precio": "11000"},
+      {
+        "id": "FRS137",
+        "producto": "Almendra - Nacional de oferta",
+        "variante": "1 KG.",
+        "precio": "1200"},
+      {
+        "id": "FRS137",
+        "producto": "Almendra - Nacional de oferta",
+        "variante": "500 GR.",
+        "precio": "680"},
+      {
+        "id": "FRS137",
+        "producto": "Almendra - Nacional de oferta",
+        "variante": "250 GR.",
+        "precio": "360"},
+      {
+        "id": "FRS137",
+        "producto": "Almendra - Nacional de oferta",
+        "variante": "100 GR.",
+        "precio": "130"},
+      {
+        "id": "FRS138",
+        "producto": "Pistacho",
+        "variante": "250 GR.",
+        "precio": "490"},
+      {
+        "id": "FRS138",
+        "producto": "Pistacho",
+        "variante": "500 GR.",
+        "precio": "850"},
+      {
+        "id": "FRS138",
+        "producto": "Pistacho",
+        "variante": "1 KG.",
+        "precio": "1700"},
+      {
+        "id": "FRS138",
+        "producto": "Pistacho",
+        "variante": "5 KG.",
+        "precio": "8500"},
+      {
+        "id": "FRS141",
+        "producto": "Almendra - Importada Non pareil",
+        "variante": "500 GR.",
+        "precio": "815"},
+      {
+        "id": "FRS141",
+        "producto": "Almendra - Importada Non pareil",
+        "variante": "250 GR.",
+        "precio": "420"},
+      {
+        "id": "FRS141",
+        "producto": "Almendra - Importada Non pareil",
+        "variante": "100 GR.",
+        "precio": "180"},
+      {
+        "id": "FRS141",
+        "producto": "Almendra - Importada Non pareil",
+        "variante": "1 KG.",
+        "precio": "1585"},
+      {
+        "id": "FRS141",
+        "producto": "Almendra - Importada Non pareil",
+        "variante": "22,68 KG.",
+        "precio": "35945"},
+      {
+        "id": "FRS142",
+        "producto": "Mani cervecero - Sabor jamon",
+        "variante": "500 GR.",
+        "precio": "200"},
+      {
+        "id": "FRS142",
+        "producto": "Mani cervecero - Sabor jamon",
+        "variante": "1 KG.",
+        "precio": "340"},
+      {
+        "id": "FRS142",
+        "producto": "Mani cervecero - Sabor jamon",
+        "variante": "10 KG.",
+        "precio": "3400"},
+      {
+        "id": "FRS143",
+        "producto": "Mani cervecero - Sabor pizza",
+        "variante": "500 GR.",
+        "precio": "200"},
+      {
+        "id": "FRS143",
+        "producto": "Mani cervecero - Sabor pizza",
+        "variante": "1 KG.",
+        "precio": "390"},
+      {
+        "id": "FRS143",
+        "producto": "Mani cervecero - Sabor pizza",
+        "variante": "10 KG.",
+        "precio": "3900"},
+      {
+        "id": "FRS144",
+        "producto": "Mani cervecero - Sabor queso",
+        "variante": "500 GR.",
+        "precio": "200"},
+      {
+        "id": "FRS144",
+        "producto": "Mani cervecero - Sabor queso",
+        "variante": "1 KG.",
+        "precio": "390"},
+      {
+        "id": "FRS144",
+        "producto": "Mani cervecero - Sabor queso",
+        "variante": "10 KG.",
+        "precio": "3900"},
+      {
+        "id": "FRS145",
+        "producto": "Mani cervecero - Sabor salame",
+        "variante": "500 GR.",
+        "precio": "200"},
+      {
+        "id": "FRS145",
+        "producto": "Mani cervecero - Sabor salame",
+        "variante": "1 KG.",
+        "precio": "390"},
+      {
+        "id": "FRS145",
+        "producto": "Mani cervecero - Sabor salame",
+        "variante": "10 KG.",
+        "precio": "3900"},
+      {
+        "id": "FRS146",
+        "producto": "Mani repelado con oregano",
+        "variante": "500 GR.",
+        "precio": "100"},
+      {
+        "id": "FRS146",
+        "producto": "Mani repelado con oregano",
+        "variante": "1 KG.",
+        "precio": "200"},
+      {
+        "id": "FRS146",
+        "producto": "Mani repelado con oregano",
+        "variante": "25 KG.",
+        "precio": "5000"},
+      {
+        "id": "FRS147",
+        "producto": "Mani repelado con provenzal",
+        "variante": "500 GR.",
+        "precio": "100"},
+      {
+        "id": "FRS147",
+        "producto": "Mani repelado con provenzal",
+        "variante": "1 KG.",
+        "precio": "160"},
+      {
+        "id": "FRS147",
+        "producto": "Mani repelado con provenzal",
+        "variante": "25 KG.",
+        "precio": "2380"},
+      {
+        "id": "FRS148",
+        "producto": "Mani repelado con pimenton",
+        "variante": "500 GR.",
+        "precio": "100"},
+      {
+        "id": "FRS148",
+        "producto": "Mani repelado con pimenton",
+        "variante": "1 KG.",
+        "precio": "100"},
+      {
+        "id": "FRS148",
+        "producto": "Mani repelado con pimenton",
+        "variante": "25 KG.",
+        "precio": "100"},
+      {
+        "id": "FRU100",
+        "producto": "Anana en cubos",
+        "variante": "250 GR.",
+        "precio": "305"},
+      {
+        "id": "FRU100",
+        "producto": "Anana en cubos",
+        "variante": "100 GR.",
+        "precio": "125"},
+      {
+        "id": "FRU100",
+        "producto": "Anana en cubos",
+        "variante": "500 GR.",
+        "precio": "600"},
+      {
+        "id": "FRU100",
+        "producto": "Anana en cubos",
+        "variante": "1 KG.",
+        "precio": "1200"},
+      {
+        "id": "FRU100",
+        "producto": "Anana en cubos",
+        "variante": "20 KG.",
+        "precio": "24000"},
+      {
+        "id": "FRU102",
+        "producto": "Anana en rodajas",
+        "variante": "250 GR.",
+        "precio": "280"},
+      {
+        "id": "FRU102",
+        "producto": "Anana en rodajas",
+        "variante": "500 GR.",
+        "precio": "540"},
+      {
+        "id": "FRU102",
+        "producto": "Anana en rodajas",
+        "variante": "100 GR.",
+        "precio": "130"},
+      {
+        "id": "FRU102",
+        "producto": "Anana en rodajas",
+        "variante": "1 KG.",
+        "precio": "1050"},
+      {
+        "id": "FRU102",
+        "producto": "Anana en rodajas",
+        "variante": "20 KG.",
+        "precio": "21000"},
+      {
+        "id": "FRU104",
+        "producto": "Anana en tiras de color",
+        "variante": "250 GR.",
+        "precio": "305"},
+      {
+        "id": "FRU104",
+        "producto": "Anana en tiras de color",
+        "variante": "500 GR.",
+        "precio": "600"},
+      {
+        "id": "FRU104",
+        "producto": "Anana en tiras de color",
+        "variante": "100 GR.",
+        "precio": "125"},
+      {
+        "id": "FRU104",
+        "producto": "Anana en tiras de color",
+        "variante": "1 KG.",
+        "precio": "1200"},
+      {
+        "id": "FRU104",
+        "producto": "Anana en tiras de color",
+        "variante": "20 KG.",
+        "precio": "24000"},
+      {
+        "id": "FRU106",
+        "producto": "Arandano",
+        "variante": "250 GR.",
+        "precio": "290"},
+      {
+        "id": "FRU106",
+        "producto": "Arandano",
+        "variante": "500 GR.",
+        "precio": "550"},
+      {
+        "id": "FRU106",
+        "producto": "Arandano",
+        "variante": "1 KG.",
+        "precio": "1100"},
+      {
+        "id": "FRU106",
+        "producto": "Arandano",
+        "variante": "11,34 KG.",
+        "precio": "12018"},
+      {
+        "id": "FRU108",
+        "producto": "Chips de banana",
+        "variante": "500 GR.",
+        "precio": "350"},
+      {
+        "id": "FRU108",
+        "producto": "Chips de banana",
+        "variante": "250 GR.",
+        "precio": "185"},
+      {
+        "id": "FRU108",
+        "producto": "Chips de banana",
+        "variante": "1 KG.",
+        "precio": "680"},
+      {
+        "id": "FRU108",
+        "producto": "Chips de banana",
+        "variante": "6,8 KG.",
+        "precio": "4516"},
+      {
+        "id": "FRU110",
+        "producto": "Ciruela dagen",
+        "variante": "500 GR.",
+        "precio": "210"},
+      {
+        "id": "FRU110",
+        "producto": "Ciruela dagen",
+        "variante": "1 KG.",
+        "precio": "395"},
+      {
+        "id": "FRU110",
+        "producto": "Ciruela dagen",
+        "variante": "5 KG.",
+        "precio": "1975"},
+      {
+        "id": "FRU112",
+        "producto": "Coco en cubos",
+        "variante": "100 GR.",
+        "precio": "170"},
+      {
+        "id": "FRU112",
+        "producto": "Coco en cubos",
+        "variante": "250 GR.",
+        "precio": "420"},
+      {
+        "id": "FRU112",
+        "producto": "Coco en cubos",
+        "variante": "500 GR.",
+        "precio": "830"},
+      {
+        "id": "FRU112",
+        "producto": "Coco en cubos",
+        "variante": "1 KG.",
+        "precio": "1660"},
+      {
+        "id": "FRU112",
+        "producto": "Coco en cubos",
+        "variante": "20 KG.",
+        "precio": "33200"},
+      {
+        "id": "FRU115",
+        "producto": "Coco en escamas",
+        "variante": "100 GR.",
+        "precio": "95"},
+      {
+        "id": "FRU115",
+        "producto": "Coco en escamas",
+        "variante": "500 GR.",
+        "precio": "450"},
+      {
+        "id": "FRU115",
+        "producto": "Coco en escamas",
+        "variante": "250 GR.",
+        "precio": "235"},
+      {
+        "id": "FRU115",
+        "producto": "Coco en escamas",
+        "variante": "1 KG.",
+        "precio": "880"},
+      {
+        "id": "FRU115",
+        "producto": "Coco en escamas",
+        "variante": "5 KG.",
+        "precio": "4410"},
+      {
+        "id": "FRU120",
+        "producto": "Damasco turco",
+        "variante": "50 GR.",
+        "precio": "45"},
+      {
+        "id": "FRU120",
+        "producto": "Damasco turco",
+        "variante": "1 KG.",
+        "precio": "830"},
+      {
+        "id": "FRU120",
+        "producto": "Damasco turco",
+        "variante": "5 KG.",
+        "precio": "4140"},
+      {
+        "id": "FRU121",
+        "producto": "Datil egipcio",
+        "variante": "500 GR.",
+        "precio": "310"},
+      {
+        "id": "FRU121",
+        "producto": "Datil egipcio",
+        "variante": "50 GR.",
+        "precio": "35"},
+      {
+        "id": "FRU121",
+        "producto": "Datil egipcio",
+        "variante": "1 KG.",
+        "precio": "610"},
+      {
+        "id": "FRU121",
+        "producto": "Datil egipcio",
+        "variante": "5 KG.",
+        "precio": "3035"},
+      {
+        "id": "FRU123",
+        "producto": "Higo turco",
+        "variante": "50 GR.",
+        "precio": "65"},
+      {
+        "id": "FRU123",
+        "producto": "Higo turco",
+        "variante": "1 KG.",
+        "precio": "1260"},
+      {
+        "id": "FRU123",
+        "producto": "Higo turco",
+        "variante": "5 KG.",
+        "precio": "6290"},
+      {
+        "id": "FRU124",
+        "producto": "Jengibre en fetas",
+        "variante": "250 GR.",
+        "precio": "300"},
+      {
+        "id": "FRU124",
+        "producto": "Jengibre en fetas",
+        "variante": "500 GR.",
+        "precio": "560"},
+      {
+        "id": "FRU124",
+        "producto": "Jengibre en fetas",
+        "variante": "100 GR.",
+        "precio": "130"},
+      {
+        "id": "FRU124",
+        "producto": "Jengibre en fetas",
+        "variante": "1 KG.",
+        "precio": "1120"},
+      {
+        "id": "FRU124",
+        "producto": "Jengibre en fetas",
+        "variante": "5 KG.",
+        "precio": "5600"},
+      {
+        "id": "FRU126",
+        "producto": "Jengibre en cubos",
+        "variante": "100 GR.",
+        "precio": "50"},
+      {
+        "id": "FRU126",
+        "producto": "Jengibre en cubos",
+        "variante": "250 GR.",
+        "precio": "185"},
+      {
+        "id": "FRU126",
+        "producto": "Jengibre en cubos",
+        "variante": "500 GR.",
+        "precio": "350"},
+      {
+        "id": "FRU126",
+        "producto": "Jengibre en cubos",
+        "variante": "1 KG.",
+        "precio": "700"},
+      {
+        "id": "FRU126",
+        "producto": "Jengibre en cubos",
+        "variante": "20 KG.",
+        "precio": "14000"},
+      {
+        "id": "FRU128",
+        "producto": "Kiwi hidroazucarado",
+        "variante": "250 GR.",
+        "precio": "315"},
+      {
+        "id": "FRU130",
+        "producto": "Manzana en rodajas",
+        "variante": "500 GR.",
+        "precio": "480"},
+      {
+        "id": "FRU130",
+        "producto": "Manzana en rodajas",
+        "variante": "250 GR.",
+        "precio": "260"},
+      {
+        "id": "FRU130",
+        "producto": "Manzana en rodajas",
+        "variante": "100 GR.",
+        "precio": "105"},
+      {
+        "id": "FRU130",
+        "producto": "Manzana en rodajas",
+        "variante": "1 KG.",
+        "precio": "960"},
+      {
+        "id": "FRU130",
+        "producto": "Manzana en rodajas",
+        "variante": "10 KG.",
+        "precio": "5760"},
+      {
+        "id": "FRU135",
+        "producto": "Pomelo cubo",
+        "variante": "250 GR.",
+        "precio": "170"},
+      {
+        "id": "FRU135",
+        "producto": "Pomelo cubo",
+        "variante": "100 GR.",
+        "precio": "70"},
+      {
+        "id": "FRU137",
+        "producto": "Tiras de limon",
+        "variante": "100 GR.",
+        "precio": "70"},
+      {
+        "id": "FRU137",
+        "producto": "Tiras de limon",
+        "variante": "1 KG.",
+        "precio": "700"},
+      {
+        "id": "FRU137",
+        "producto": "Tiras de limon",
+        "variante": "5 KG.",
+        "precio": "3500"},
+      {
+        "id": "FRU138",
+        "producto": "Tiras de naranja",
+        "variante": "100 GR.",
+        "precio": "70"},
+      {
+        "id": "FRU138",
+        "producto": "Tiras de naranja",
+        "variante": "1 KG.",
+        "precio": "700"},
+      {
+        "id": "FRU138",
+        "producto": "Tiras de naranja",
+        "variante": "5 KG.",
+        "precio": "3500"},
+      {
+        "id": "FRU139",
+        "producto": "Ciruela Presidente",
+        "variante": "500 GR.",
+        "precio": "250"},
+      {
+        "id": "FRU140",
+        "producto": "Durazno entero medallon",
+        "variante": "500 GR.",
+        "precio": "320"},
+      {
+        "id": "FRU150",
+        "producto": "Fruta abrillantada",
+        "variante": "500 GR.",
+        "precio": "100"},
+      {
+        "id": "FRU150",
+        "producto": "Fruta abrillantada",
+        "variante": "250 GR.",
+        "precio": "55"},
+      {
+        "id": "FRU151",
+        "producto": "Pomelo Gajos",
+        "variante": "500 GR.",
+        "precio": "350"},
+      {
+        "id": "FRU151",
+        "producto": "Pomelo Gajos",
+        "variante": "250 GR.",
+        "precio": "190"},
+      {
+        "id": "FRU153",
+        "producto": "Coco rallado",
+        "variante": "250 GR.",
+        "precio": "140"},
+      {
+        "id": "FRU153",
+        "producto": "Coco rallado",
+        "variante": "500 GR.",
+        "precio": "270"},
+      {
+        "id": "FRU153",
+        "producto": "Coco rallado",
+        "variante": "1 KG.",
+        "precio": "540"},
+      {
+        "id": "FRU153",
+        "producto": "Coco rallado",
+        "variante": "25 KG.",
+        "precio": "13500"},
+      {
+        "id": "FRU200",
+        "producto": "Anana en feta",
+        "variante": "250 GR.",
+        "precio": "305"},
+      {
+        "id": "FRU200",
+        "producto": "Anana en feta",
+        "variante": "100 GR.",
+        "precio": "125"},
+      {
+        "id": "GAL100",
+        "producto": "Galletas de arroz - Light Vainilla - Carilo",
+        "variante": "150 GR.",
+        "precio": "80"},
+      {
+        "id": "GAL100",
+        "producto": "Galletas de arroz - Light Vainilla - Carilo",
+        "variante": "18 U.",
+        "precio": "1350"},
+      {
+        "id": "GAL101",
+        "producto": "Galletas de arroz - Clasica - Carilo",
+        "variante": "150 GR.",
+        "precio": "80"},
+      {
+        "id": "GAL101",
+        "producto": "Galletas de arroz - Clasica - Carilo",
+        "variante": "18 U.",
+        "precio": "1350"},
+      {
+        "id": "GAL102",
+        "producto": "Galletas de arroz - Sin sal - Carilo",
+        "variante": "150 GR.",
+        "precio": "80"},
+      {
+        "id": "GAL102",
+        "producto": "Galletas de arroz - Sin sal - Carilo",
+        "variante": "18 U.",
+        "precio": "1350"},
+      {
+        "id": "GAL103",
+        "producto": "Galletas de arroz - Dulce - Carilo",
+        "variante": "150 GR.",
+        "precio": "80"},
+      {
+        "id": "GAL103",
+        "producto": "Galletas de arroz - Dulce - Carilo",
+        "variante": "18 U.",
+        "precio": "1350"},
+      {
+        "id": "GAL208",
+        "producto": "Galletitas con gluten - Queso y cebolla - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL209",
+        "producto": "Galletitas con gluten - Queso y semillas de amapola - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL210",
+        "producto": "Galletitas con gluten - Queso y semillas de sesamo - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL211",
+        "producto": "Galletitas con gluten - Tomate y albahaca - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL212",
+        "producto": "Galletitas de avena - Chia y algarroba - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL213",
+        "producto": "Galletitas de avena - Chia y limon - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL214",
+        "producto": "Galletitas de avena - Chia y miel - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL215",
+        "producto": "Galletitas de avena - Chia y naranja - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL216",
+        "producto": "Galletitas dieteticas - avena y chia. Sabor algarroba y frutos del bosque - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL217",
+        "producto": "Galletitas dieteticas - avena y chia. Sabor Dulce de leche - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL218",
+        "producto": "Galletitas dieteticas - avena y chia. Sabor Jengibre y canela - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL219",
+        "producto": "Galletitas dieteticas - avena y chia. Sabor limon - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL220",
+        "producto": "Galletitas dieteticas - avena y chia. Sabor manzana y almendras - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL221",
+        "producto": "Galletitas dieteticas - avena y chia. Sabor Naranja - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL222",
+        "producto": "Galletitas dieteticas - avena y chia. Sabor- Algarroba y naranja - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL223",
+        "producto": "Galletitas Integrales - Algarroba y naranja - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL224",
+        "producto": "Galletitas integrales - Cebolla, amapola y oregano - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL225",
+        "producto": "Galletitas integrales - Coco y mani - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL226",
+        "producto": "Galletitas integrales - Sesamo - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL227",
+        "producto": "Galletitas integrales - Tomate y albahaca - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL228",
+        "producto": "Galletitas integrales - Cebolla amapola oregano Sin Sal - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL229",
+        "producto": "Galletitas integrales - Sesamo Sin sal - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL230",
+        "producto": "Galletitas integrales - tomate albahaca Sin Sal - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL231",
+        "producto": "Palitos salados - Sabor Queso - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "110"},
+      {
+        "id": "GAL232",
+        "producto": "Palitos salados - Semillas de sesamo - La Zaranda",
+        "variante": "200 GR.",
+        "precio": "110"},
+      {
+        "id": "GAL233",
+        "producto": "Galletita - Blondies - Nina",
+        "variante": "U",
+        "precio": "85"},
+      {
+        "id": "GAL234",
+        "producto": "Galletita - Chocolate - Nina",
+        "variante": "U",
+        "precio": "85"},
+      {
+        "id": "GAL235",
+        "producto": "Galletita - Lemon & Ginger - Nina",
+        "variante": "U",
+        "precio": "85"},
+      {
+        "id": "GAL236",
+        "producto": "Galletita - Chocochips - Nina",
+        "variante": "U",
+        "precio": "85"},
+      {
+        "id": "GAL237",
+        "producto": "Galletita - Cranberrys - Nina",
+        "variante": "U",
+        "precio": "85"},
+      {
+        "id": "GAL238",
+        "producto": "Galletita - Blondies Sugar Free - Nina",
+        "variante": "U",
+        "precio": "90"},
+      {
+        "id": "GAL239",
+        "producto": "Galletita - Lemon & Ginger Sugar Free - Nina",
+        "variante": "U",
+        "precio": "90"},
+      {
+        "id": "GAL240",
+        "producto": "Galletita - Bizcochitos de oliva - Nina",
+        "variante": "U",
+        "precio": "90"},
+      {
+        "id": "GAL241",
+        "producto": "Cookies veganas - Avena y coco - 150 gr. - Meltaim",
+        "variante": "150 GR.",
+        "precio": "80"},
+      {
+        "id": "GAL241",
+        "producto": "Cookies veganas - Avena y coco - 150 gr. - Meltaim",
+        "variante": "24 U.",
+        "precio": "1920"},
+      {
+        "id": "GAL242",
+        "producto": "Cookies veganas - Avena y pasas - 150 gr. - Meltaim",
+        "variante": "150 GR.",
+        "precio": "80"},
+      {
+        "id": "GAL242",
+        "producto": "Cookies veganas - Avena y pasas - 150 gr. - Meltaim",
+        "variante": "24 U.",
+        "precio": "1920"},
+      {
+        "id": "GAL243",
+        "producto": "Cookies veganas - Cacao y chips de chocolate - 150 gr. - Meltaim",
+        "variante": "150 GR.",
+        "precio": "80"},
+      {
+        "id": "GAL243",
+        "producto": "Cookies veganas - Cacao y chips de chocolate - 150 gr. - Meltaim",
+        "variante": "24 U.",
+        "precio": "1920"},
+      {
+        "id": "GAL244",
+        "producto": "Cookies veganas - Limon y frutos rojos - 150 gr. - Meltaim",
+        "variante": "150 GR.",
+        "precio": "80"},
+      {
+        "id": "GAL244",
+        "producto": "Cookies veganas - Limon y frutos rojos - 150 gr. - Meltaim",
+        "variante": "24 U.",
+        "precio": "1920"},
+      {
+        "id": "GAL245",
+        "producto": "Cookies veganas - Vainilla y chips de chocolate - 150 gr. - Meltaim",
+        "variante": "150 GR.",
+        "precio": "80"},
+      {
+        "id": "GAL245",
+        "producto": "Cookies veganas - Vainilla y chips de chocolate - 150 gr. - Meltaim",
+        "variante": "24 U.",
+        "precio": "1920"},
+      {
+        "id": "GAL246",
+        "producto": "Galletitas sin TACC - Naranja - 200 gr. - Delicel",
+        "variante": "18 U.",
+        "precio": "1800"},
+      {
+        "id": "GAL246",
+        "producto": "Galletitas sin TACC - Naranja - 200 gr. - Delicel",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL247",
+        "producto": "Galletitas sin TACC - Pepas de membrillo - 200 gr. - Delicel",
+        "variante": "18 U.",
+        "precio": "1800"},
+      {
+        "id": "GAL247",
+        "producto": "Galletitas sin TACC - Pepas de membrillo - 200 gr. - Delicel",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL248",
+        "producto": "Galletitas sin TACC - Chocolate - 200 gr. - Delicel",
+        "variante": "18 U.",
+        "precio": "1800"},
+      {
+        "id": "GAL248",
+        "producto": "Galletitas sin TACC - Chocolate - 200 gr. - Delicel",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL249",
+        "producto": "Galletitas sin TACC - Vainilla y chips - 200 gr. - Delicel",
+        "variante": "18 U.",
+        "precio": "1800"},
+      {
+        "id": "GAL249",
+        "producto": "Galletitas sin TACC - Vainilla y chips - 200 gr. - Delicel",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL250",
+        "producto": "Galletitas sin TACC - Coco - 200 gr. - Delicel",
+        "variante": "18 U.",
+        "precio": "1800"},
+      {
+        "id": "GAL250",
+        "producto": "Galletitas sin TACC - Coco - 200 gr. - Delicel",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "GAL251",
+        "producto": "Galletitas sin TACC - Limon - 200 gr. - Delicel",
+        "variante": "18 U.",
+        "precio": "1800"},
+      {
+        "id": "GAL251",
+        "producto": "Galletitas sin TACC - Limon - 200 gr. - Delicel",
+        "variante": "200 GR.",
+        "precio": "100"},
+      {
+        "id": "HAR102",
+        "producto": "Fecula de mandioca",
+        "variante": "500 GR.",
+        "precio": "75"},
+      {
+        "id": "HAR102",
+        "producto": "Fecula de mandioca",
+        "variante": "1 KG.",
+        "precio": "140"},
+      {
+        "id": "HAR102",
+        "producto": "Fecula de mandioca",
+        "variante": "25 KG.",
+        "precio": "3500"},
+      {
+        "id": "HAR103",
+        "producto": "Harina de arroz yamani integral",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "HAR103",
+        "producto": "Harina de arroz yamani integral",
+        "variante": "1 KG.",
+        "precio": "160"},
+      {
+        "id": "HAR104",
+        "producto": "Harina de algarroba",
+        "variante": "500 GR.",
+        "precio": "80"},
+      {
+        "id": "HAR104",
+        "producto": "Harina de algarroba",
+        "variante": "1 KG.",
+        "precio": "160"},
+      {
+        "id": "HAR104",
+        "producto": "Harina de algarroba",
+        "variante": "25 KG.",
+        "precio": "4000"},
+      {
+        "id": "HAR105",
+        "producto": "Harina de almendra",
+        "variante": "500 GR.",
+        "precio": "980"},
+      {
+        "id": "HAR105",
+        "producto": "Harina de almendra",
+        "variante": "250 GR.",
+        "precio": "500"},
+      {
+        "id": "HAR106",
+        "producto": "Harina de arroz blanco",
+        "variante": "500 GR.",
+        "precio": "50"},
+      {
+        "id": "HAR106",
+        "producto": "Harina de arroz blanco",
+        "variante": "1 KG.",
+        "precio": "80"},
+      {
+        "id": "HAR106",
+        "producto": "Harina de arroz blanco",
+        "variante": "30 KG.",
+        "precio": "2400"},
+      {
+        "id": "HAR107",
+        "producto": "Harina de arroz yamani",
+        "variante": "500 GR.",
+        "precio": "35"},
+      {
+        "id": "HAR107",
+        "producto": "Harina de arroz yamani",
+        "variante": "1 KG.",
+        "precio": "70"},
+      {
+        "id": "HAR108",
+        "producto": "Harina de arvejas",
+        "variante": "500 GR.",
+        "precio": "70"},
+      {
+        "id": "HAR108",
+        "producto": "Harina de arvejas",
+        "variante": "1 KG.",
+        "precio": "120"},
+      {
+        "id": "HAR108",
+        "producto": "Harina de arvejas",
+        "variante": "40 KG.",
+        "precio": "4480"},
+      {
+        "id": "HAR109",
+        "producto": "Harina de avena",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "HAR109",
+        "producto": "Harina de avena",
+        "variante": "1 KG.",
+        "precio": "160"},
+      {
+        "id": "HAR109",
+        "producto": "Harina de avena",
+        "variante": "25 KG.",
+        "precio": "4000"},
+      {
+        "id": "HAR110",
+        "producto": "Harina de centeno",
+        "variante": "1 KG.",
+        "precio": "140"},
+      {
+        "id": "HAR110",
+        "producto": "Harina de centeno",
+        "variante": "25 KG.",
+        "precio": "3500"},
+      {
+        "id": "HAR111",
+        "producto": "Harina de garbanzo",
+        "variante": "1 KG.",
+        "precio": "100"},
+      {
+        "id": "HAR111",
+        "producto": "Harina de garbanzo",
+        "variante": "20 KG.",
+        "precio": "2000"},
+      {
+        "id": "HAR113",
+        "producto": "Harina integral fina",
+        "variante": "1 KG.",
+        "precio": "45"},
+      {
+        "id": "HAR114",
+        "producto": "Harina integral de trigo candeal",
+        "variante": "1 KG.",
+        "precio": "160"},
+      {
+        "id": "HAR114",
+        "producto": "Harina integral de trigo candeal",
+        "variante": "500 GR.",
+        "precio": "80"},
+      {
+        "id": "HAR114",
+        "producto": "Harina integral de trigo candeal",
+        "variante": "30 KG.",
+        "precio": "2400"},
+      {
+        "id": "HAR117",
+        "producto": "Harina integral de trigo sarraceno sin tacc",
+        "variante": "500 GR.",
+        "precio": "130"},
+      {
+        "id": "HAR119",
+        "producto": "Levadura de cerveza",
+        "variante": "250 GR.",
+        "precio": "180"},
+      {
+        "id": "HAR119",
+        "producto": "Levadura de cerveza",
+        "variante": "1 KG.",
+        "precio": "510"},
+      {
+        "id": "HAR119",
+        "producto": "Levadura de cerveza",
+        "variante": "5 KG.",
+        "precio": "2547"},
+      {
+        "id": "HAR120",
+        "producto": "Semola",
+        "variante": "500 GR.",
+        "precio": "65"},
+      {
+        "id": "HAR121",
+        "producto": "Harina integral de trigo pan",
+        "variante": "1 KG.",
+        "precio": "100"},
+      {
+        "id": "HAR121",
+        "producto": "Harina integral de trigo pan",
+        "variante": "20 KG.",
+        "precio": "2000"},
+      {
+        "id": "HAR122",
+        "producto": "Harina integral de trigo candeal super fina",
+        "variante": "1 KG.",
+        "precio": "90"},
+      {
+        "id": "HAR123",
+        "producto": "Harina integral de trigo super fina",
+        "variante": "1 KG.",
+        "precio": "85"},
+      {
+        "id": "HAR125",
+        "producto": "Harina de chia",
+        "variante": "500 GR.",
+        "precio": "80"},
+      {
+        "id": "HAR125",
+        "producto": "Harina de chia",
+        "variante": "1 KG.",
+        "precio": "160"},
+      {
+        "id": "HAR125",
+        "producto": "Harina de chia",
+        "variante": "25 KG.",
+        "precio": "4000"},
+      {
+        "id": "HAR126",
+        "producto": "Harina de lino",
+        "variante": "500 GR.",
+        "precio": "120"},
+      {
+        "id": "HAR126",
+        "producto": "Harina de lino",
+        "variante": "1 KG.",
+        "precio": "230"},
+      {
+        "id": "HAR126",
+        "producto": "Harina de lino",
+        "variante": "20 KG.",
+        "precio": "3200"},
+      {
+        "id": "HAR130",
+        "producto": "Fecula de maiz",
+        "variante": "1 KG.",
+        "precio": "120"},
+      {
+        "id": "HAR130",
+        "producto": "Fecula de maiz",
+        "variante": "20 KG.",
+        "precio": "3000"},
+      {
+        "id": "HAR132",
+        "producto": "Harina de mani",
+        "variante": "500 GR.",
+        "precio": "75"},
+      {
+        "id": "HAR132",
+        "producto": "Harina de mani",
+        "variante": "25 KG.",
+        "precio": "3750"},
+      {
+        "id": "HAR132",
+        "producto": "Harina de mani",
+        "variante": "1 KG.",
+        "precio": "150"},
+      {
+        "id": "HAR133",
+        "producto": "Harina de lentejas",
+        "variante": "500 GR.",
+        "precio": "70"},
+      {
+        "id": "HAR133",
+        "producto": "Harina de lentejas",
+        "variante": "1 KG.",
+        "precio": "140"},
+      {
+        "id": "HAR133",
+        "producto": "Harina de lentejas",
+        "variante": "25 KG.",
+        "precio": "3500"},
+      {
+        "id": "HAR134",
+        "producto": "Polvo para hornear",
+        "variante": "200 GR.",
+        "precio": "60"},
+      {
+        "id": "HAR134",
+        "producto": "Polvo para hornear",
+        "variante": "100 GR.",
+        "precio": "30"},
+      {
+        "id": "HAR134",
+        "producto": "Polvo para hornear",
+        "variante": "25 KG.",
+        "precio": "7500"},
+      {
+        "id": "HAR134",
+        "producto": "Polvo para hornear",
+        "variante": "1 KG.",
+        "precio": "300"},
+      {
+        "id": "HAR135",
+        "producto": "Levadura - Levadin",
+        "variante": "250 GR.",
+        "precio": "140"},
+      {
+        "id": "HAR135",
+        "producto": "Levadura - Levadin",
+        "variante": "25 KG.",
+        "precio": "14000"},
+      {
+        "id": "HAR135",
+        "producto": "Levadura - Levadin",
+        "variante": "1 KG.",
+        "precio": "560"},
+      {
+        "id": "HAR136",
+        "producto": "Harina de maiz blanco",
+        "variante": "1 KG.",
+        "precio": "175"},
+      {
+        "id": "HAR136",
+        "producto": "Harina de maiz blanco",
+        "variante": "25 KG.",
+        "precio": "4340"},
+      {
+        "id": "HAR136",
+        "producto": "Harina de maiz blanco",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "INF101",
+        "producto": "Te Negro en hebras",
+        "variante": "50 GR.",
+        "precio": "40"},
+      {
+        "id": "INF102",
+        "producto": "Te Rojo en hebras",
+        "variante": "50 GR.",
+        "precio": "40"},
+      {
+        "id": "JUG103",
+        "producto": "Jugo Manzana roja - Pura frutta",
+        "variante": "1 L.",
+        "precio": "120"},
+      {
+        "id": "JUG103",
+        "producto": "Jugo Manzana roja - Pura frutta",
+        "variante": "200 ML.",
+        "precio": "45"},
+      {
+        "id": "JUG104",
+        "producto": "Jugo Manzana verde - Pura frutta",
+        "variante": "1 L.",
+        "precio": "120"},
+      {
+        "id": "JUG104",
+        "producto": "Jugo Manzana verde - Pura frutta",
+        "variante": "200 ML.",
+        "precio": "45"},
+      {
+        "id": "JUG107",
+        "producto": "Jugo Naranja - Estancia Los naranjos",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG108",
+        "producto": "Jugo Pomelo - Estancia Los naranjos",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG109",
+        "producto": "Jugo Frutilla y naranja - Estancia Los naranjos",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG110",
+        "producto": "Jugo Anana y naranja - Estancia Los naranjos",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG111",
+        "producto": "Jugo Maracuya y naranja - Estancia Los naranjos",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG112",
+        "producto": "Jugo Durazno y naranja - Estancia Los naranjos",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG113",
+        "producto": "Jugo Limon, menta y jengibre - Estancia Los naranjos",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG114",
+        "producto": "Jugo Manzana - Estancia Los naranjos",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG127",
+        "producto": "Jugo Arandanos manzana - Pura frutta",
+        "variante": "1 L.",
+        "precio": "150"},
+      {
+        "id": "JUG128",
+        "producto": "Jugo frutilla manzana - Pura frutta",
+        "variante": "1 L.",
+        "precio": "150"},
+      {
+        "id": "JUG129",
+        "producto": "Jugo Stevia - Arandanos - 500 ml. - Cuarto Creciente",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG129",
+        "producto": "Jugo Stevia - Arandanos - 500 ml. - Cuarto Creciente",
+        "variante": "9 U.",
+        "precio": "765"},
+      {
+        "id": "JUG130",
+        "producto": "Jugo Stevia - Ciruela - 500 ml. - Cuarto Creciente",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG130",
+        "producto": "Jugo Stevia - Ciruela - 500 ml. - Cuarto Creciente",
+        "variante": "9 U.",
+        "precio": "765"},
+      {
+        "id": "JUG131",
+        "producto": "Jugo Stevia - Limonada - 500 ml. - Cuarto Creciente",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG131",
+        "producto": "Jugo Stevia - Limonada - 500 ml. - Cuarto Creciente",
+        "variante": "9 U.",
+        "precio": "765"},
+      {
+        "id": "JUG132",
+        "producto": "Jugo Stevia - Kiwi - 500 ml. - Cuarto Creciente",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG132",
+        "producto": "Jugo Stevia - Kiwi - 500 ml. - Cuarto Creciente",
+        "variante": "9 U.",
+        "precio": "765"},
+      {
+        "id": "JUG133",
+        "producto": "Jugo Stevia - Frutos rojos - 500 ml. - Cuarto Creciente",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG133",
+        "producto": "Jugo Stevia - Frutos rojos - 500 ml. - Cuarto Creciente",
+        "variante": "9 U.",
+        "precio": "765"},
+      {
+        "id": "JUG134",
+        "producto": "Jugo Stevia - Naranja - 500 ml. - Cuarto Creciente",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG134",
+        "producto": "Jugo Stevia - Naranja - 500 ml. - Cuarto Creciente",
+        "variante": "9 U.",
+        "precio": "85"},
+      {
+        "id": "JUG135",
+        "producto": "Jugo Stevia - Manzana - 500 ml. - Cuarto Creciente",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG135",
+        "producto": "Jugo Stevia - Manzana - 500 ml. - Cuarto Creciente",
+        "variante": "9 U.",
+        "precio": "85"},
+      {
+        "id": "JUG136",
+        "producto": "Jugo Stevia - Pera - 500 ml. - Cuarto Creciente",
+        "variante": "500 ML.",
+        "precio": "85"},
+      {
+        "id": "JUG136",
+        "producto": "Jugo Stevia - Pera - 500 ml. - Cuarto Creciente",
+        "variante": "9 U.",
+        "precio": "85"},
+      {
+        "id": "KIO110",
+        "producto": "Almendras con chocolate",
+        "variante": "100 GR.",
+        "precio": "120"},
+      {
+        "id": "KIO131",
+        "producto": "Caramelos sueltos - Eucalipto y tomillo - Nutravit",
+        "variante": "10 GR.",
+        "precio": "8"},
+      {
+        "id": "KIO131",
+        "producto": "Caramelos sueltos - Eucalipto y tomillo - Nutravit",
+        "variante": "100 U.",
+        "precio": "800"},
+      {
+        "id": "KIO135",
+        "producto": "Crackines",
+        "variante": "120 GR.",
+        "precio": "70"},
+      {
+        "id": "KIO135",
+        "producto": "Crackines",
+        "variante": "20 U.",
+        "precio": "1400"},
+      {
+        "id": "KIO136",
+        "producto": "Mani con chocolate",
+        "variante": "100 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO137",
+        "producto": "Pasas con chocolate negro",
+        "variante": "100 GR.",
+        "precio": "72"},
+      {
+        "id": "KIO138",
+        "producto": "Snack - Chips de mandioca - Nuestros sabores",
+        "variante": "80 GR.",
+        "precio": "55"},
+      {
+        "id": "KIO138",
+        "producto": "Snack - Chips de mandioca - Nuestros sabores",
+        "variante": "18 U.",
+        "precio": "990"},
+      {
+        "id": "KIO139",
+        "producto": "Snack - Raices - Nuestros sabores",
+        "variante": "80 GR.",
+        "precio": "55"},
+      {
+        "id": "KIO139",
+        "producto": "Snack - Raices - Nuestros sabores",
+        "variante": "18 U.",
+        "precio": "990"},
+      {
+        "id": "KIO140",
+        "producto": "Snack - Batatita - Nuestros sabores",
+        "variante": "80 GR.",
+        "precio": "55"},
+      {
+        "id": "KIO140",
+        "producto": "Snack - Batatita - Nuestros sabores",
+        "variante": "18 U.",
+        "precio": "550"},
+      {
+        "id": "KIO142",
+        "producto": "Snack - Rusticas - Nuestros sabores",
+        "variante": "80 GR.",
+        "precio": "55"},
+      {
+        "id": "KIO142",
+        "producto": "Snack - Rusticas - Nuestros sabores",
+        "variante": "18 U.",
+        "precio": "990"},
+      {
+        "id": "KIO143",
+        "producto": "Tutuca",
+        "variante": "150 GR.",
+        "precio": "40"},
+      {
+        "id": "KIO143",
+        "producto": "Tutuca",
+        "variante": "1 KG.",
+        "precio": "267"},
+      {
+        "id": "KIO143",
+        "producto": "Tutuca",
+        "variante": "10 KG.",
+        "precio": "2667"},
+      {
+        "id": "KIO147",
+        "producto": "Caramelos sueltos - Propoleo - Nutravit",
+        "variante": "10 GR.",
+        "precio": "8"},
+      {
+        "id": "KIO147",
+        "producto": "Caramelos sueltos - Propoleo - Nutravit",
+        "variante": "100 U.",
+        "precio": "800"},
+      {
+        "id": "KIO148",
+        "producto": "Caramelos sueltos - Miel y limon - Nutravit",
+        "variante": "10 GR.",
+        "precio": "8"},
+      {
+        "id": "KIO148",
+        "producto": "Caramelos sueltos - Miel y limon - Nutravit",
+        "variante": "100 U.",
+        "precio": "800"},
+      {
+        "id": "KIO149",
+        "producto": "Caramelos sueltos - Arrope de miel - Nutravit",
+        "variante": "10 GR.",
+        "precio": "8"},
+      {
+        "id": "KIO149",
+        "producto": "Caramelos sueltos - Arrope de miel - Nutravit",
+        "variante": "100 U.",
+        "precio": "800"},
+      {
+        "id": "KIO150",
+        "producto": "Caramelos sueltos - Propoleo y mentol - Nutravit",
+        "variante": "10 GR.",
+        "precio": "8"},
+      {
+        "id": "KIO150",
+        "producto": "Caramelos sueltos - Propoleo y mentol - Nutravit",
+        "variante": "100 U.",
+        "precio": "800"},
+      {
+        "id": "KIO151",
+        "producto": "Caramelos sueltos - Jengibre y limon - Nutravit",
+        "variante": "10 GR.",
+        "precio": "8"},
+      {
+        "id": "KIO151",
+        "producto": "Caramelos sueltos - Jengibre y limon - Nutravit",
+        "variante": "100 U.",
+        "precio": "800"},
+      {
+        "id": "KIO152",
+        "producto": "Caramelos sueltos - Fucus y spirulina - Nutravit",
+        "variante": "10 GR.",
+        "precio": "8"},
+      {
+        "id": "KIO152",
+        "producto": "Caramelos sueltos - Fucus y spirulina - Nutravit",
+        "variante": "100 U.",
+        "precio": "800"},
+      {
+        "id": "KIO159",
+        "producto": "Barrita Manzana - Muecas",
+        "variante": "50 GR.",
+        "precio": "45"},
+      {
+        "id": "KIO160",
+        "producto": "Barrita Pasas- Muecas",
+        "variante": "50 GR.",
+        "precio": "45"},
+      {
+        "id": "KIO161",
+        "producto": "Barrita Cacao - Muecas",
+        "variante": "50 GR.",
+        "precio": "45"},
+      {
+        "id": "KIO162",
+        "producto": "Te - Pai Mutan - Voisins",
+        "variante": "25 GR.",
+        "precio": "260"},
+      {
+        "id": "KIO163",
+        "producto": "Te - Sencha - Voisins",
+        "variante": "25 GR.",
+        "precio": "260"},
+      {
+        "id": "KIO164",
+        "producto": "Te - Oolong - Voisins",
+        "variante": "25 GR.",
+        "precio": "260"},
+      {
+        "id": "KIO165",
+        "producto": "Te - Ceylon - Voisins",
+        "variante": "25 GR.",
+        "precio": "260"},
+      {
+        "id": "KIO166",
+        "producto": "Te - Pu erh - Voisins",
+        "variante": "25 GR.",
+        "precio": "260"},
+      {
+        "id": "KIO167",
+        "producto": "Te - Rooibos - Voisins",
+        "variante": "25 GR.",
+        "precio": "260"},
+      {
+        "id": "KIO181",
+        "producto": "Chips arroz yamani integral Sal marina y oliva - Natural Pop",
+        "variante": "60 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO181",
+        "producto": "Chips arroz yamani integral Sal marina y oliva - Natural Pop",
+        "variante": "18 U.",
+        "precio": "1080"},
+      {
+        "id": "KIO182",
+        "producto": "Chips arroz yamani integral Queso - Natural Pop",
+        "variante": "60 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO182",
+        "producto": "Chips arroz yamani integral Queso - Natural Pop",
+        "variante": "18 U.",
+        "precio": "1080"},
+      {
+        "id": "KIO183",
+        "producto": "Chips arroz yamani integral Crema y cebolla - Natural Pop",
+        "variante": "60 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO183",
+        "producto": "Chips arroz yamani integral Crema y cebolla - Natural Pop",
+        "variante": "18 U.",
+        "precio": "1080"},
+      {
+        "id": "KIO185",
+        "producto": "Snack - Zanahoria - Nuestros sabores",
+        "variante": "80 GR.",
+        "precio": "55"},
+      {
+        "id": "KIO185",
+        "producto": "Snack - Zanahoria - Nuestros sabores",
+        "variante": "18 U.",
+        "precio": "990"},
+      {
+        "id": "KIO186",
+        "producto": "Snack - Chips de papa con pimienta negra - Nuestros sabores",
+        "variante": "80 GR.",
+        "precio": "55"},
+      {
+        "id": "KIO186",
+        "producto": "Snack - Chips de papa con pimienta negra - Nuestros sabores",
+        "variante": "18 U.",
+        "precio": "990"},
+      {
+        "id": "KIO188",
+        "producto": "Barritas - Almendra, pasas y miel - LYV",
+        "variante": "28 GR.",
+        "precio": "45"},
+      {
+        "id": "KIO189",
+        "producto": "Barritas - Caju, zapallo y sal marina - LYV",
+        "variante": "28 GR.",
+        "precio": "45"},
+      {
+        "id": "KIO190",
+        "producto": "Barritas - Mani, quinoa y choco amargo - LYV",
+        "variante": "28 GR.",
+        "precio": "45"},
+      {
+        "id": "KIO191",
+        "producto": "Te saquito - Verde - Kalena",
+        "variante": "50 GR.",
+        "precio": "100"},
+      {
+        "id": "KIO191",
+        "producto": "Te saquito - Verde - Kalena",
+        "variante": "20 U.",
+        "precio": "2000"},
+      {
+        "id": "KIO192",
+        "producto": "Te saquito - Rojo - Kalena",
+        "variante": "50 GR.",
+        "precio": "100"},
+      {
+        "id": "KIO192",
+        "producto": "Te saquito - Rojo - Kalena",
+        "variante": "20 U.",
+        "precio": "2000"},
+      {
+        "id": "KIO193",
+        "producto": "Te saquito - Manzanilla - Kalena",
+        "variante": "50 GR.",
+        "precio": "100"},
+      {
+        "id": "KIO193",
+        "producto": "Te saquito - Manzanilla - Kalena",
+        "variante": "20 U.",
+        "precio": "2000"},
+      {
+        "id": "KIO194",
+        "producto": "Te saquito - Boldo - Kalena",
+        "variante": "50 GR.",
+        "precio": "100"},
+      {
+        "id": "KIO194",
+        "producto": "Te saquito - Boldo - Kalena",
+        "variante": "20 U.",
+        "precio": "2000"},
+      {
+        "id": "KIO195",
+        "producto": "Te saquito - Mix de hierbas - Kalena",
+        "variante": "50 GR.",
+        "precio": "100"},
+      {
+        "id": "KIO195",
+        "producto": "Te saquito - Mix de hierbas - Kalena",
+        "variante": "20 U.",
+        "precio": "2000"},
+      {
+        "id": "KIO196",
+        "producto": "Mate cocido saquito - Kalena",
+        "variante": "75 GR.",
+        "precio": "100"},
+      {
+        "id": "KIO196",
+        "producto": "Mate cocido saquito - Kalena",
+        "variante": "20 U.",
+        "precio": "2000"},
+      {
+        "id": "KIO197",
+        "producto": "Snack - Tortilla chips con chia - Nuestros sabores",
+        "variante": "80 GR.",
+        "precio": "55"},
+      {
+        "id": "KIO197",
+        "producto": "Snack - Tortilla chips con chia - Nuestros sabores",
+        "variante": "18 U.",
+        "precio": "990"},
+      {
+        "id": "KIO200",
+        "producto": "Helado - Tableta menta - Freddo",
+        "variante": "50 GR.",
+        "precio": "110"},
+      {
+        "id": "KIO201",
+        "producto": "Helado - Tableta frambuesa - Freddo",
+        "variante": "50 GR.",
+        "precio": "110"},
+      {
+        "id": "KIO202",
+        "producto": "Helado - Tableta americana - Freddo",
+        "variante": "50 GR.",
+        "precio": "110"},
+      {
+        "id": "KIO203",
+        "producto": "Helado - Tableta dulce de leche - Freddo",
+        "variante": "50 GR.",
+        "precio": "110"},
+      {
+        "id": "KIO204",
+        "producto": "Helado - Pinta bombon Americana - Freddo",
+        "variante": "500 ML.",
+        "precio": "380"},
+      {
+        "id": "KIO205",
+        "producto": "Helado - Pinta bombon Dulce de leche - Freddo",
+        "variante": "500 ML.",
+        "precio": "380"},
+      {
+        "id": "KIO206",
+        "producto": "Helado - Pinta Frutilla a la crema - Freddo",
+        "variante": "500 ML.",
+        "precio": "380"},
+      {
+        "id": "KIO207",
+        "producto": "Helado - Pinta Chocolate doble tentacion - Freddo",
+        "variante": "500 ML.",
+        "precio": "380"},
+      {
+        "id": "KIO208",
+        "producto": "Helado - Pinta Dulce de leche clasico - Freddo",
+        "variante": "500 ML.",
+        "precio": "380"},
+      {
+        "id": "KIO209",
+        "producto": "Helado - Pinta Banana split - Freddo",
+        "variante": "500 ML.",
+        "precio": "380"},
+      {
+        "id": "KIO210",
+        "producto": "Helado - Vasito Chocolate doble tentacion - Freddo",
+        "variante": "120 ML.",
+        "precio": "180"},
+      {
+        "id": "KIO211",
+        "producto": "Helado - Vasito Cookies y cream - Freddo",
+        "variante": "120 ML.",
+        "precio": "180"},
+      {
+        "id": "KIO212",
+        "producto": "Helado - Vasito Dulce de leche tentacion - Freddo",
+        "variante": "120 ML.",
+        "precio": "180"},
+      {
+        "id": "KIO213",
+        "producto": "Helado - Vasito Frutilla a la crema - Freddo",
+        "variante": "120 ML.",
+        "precio": "180"},
+      {
+        "id": "KIO214",
+        "producto": "Arroz blanco inflado dulce",
+        "variante": "150 GR.",
+        "precio": "40"},
+      {
+        "id": "KIO214",
+        "producto": "Arroz blanco inflado dulce",
+        "variante": "1 KG.",
+        "precio": "267"},
+      {
+        "id": "KIO214",
+        "producto": "Arroz blanco inflado dulce",
+        "variante": "7 KG.",
+        "precio": "1867"},
+      {
+        "id": "KIO215",
+        "producto": "Avellanas con chocolate",
+        "variante": "100 GR.",
+        "precio": "132"},
+      {
+        "id": "KIO216",
+        "producto": "Chocolate con leche en rama",
+        "variante": "100 GR.",
+        "precio": "120"},
+      {
+        "id": "KIO217",
+        "producto": "Chocolate blanco en rama",
+        "variante": "100 GR.",
+        "precio": "120"},
+      {
+        "id": "KIO218",
+        "producto": "Pasas con chocolate blanco",
+        "variante": "100 GR.",
+        "precio": "80"},
+      {
+        "id": "KIO219",
+        "producto": "Helado - Vasito Chocolate Dark - Freddo",
+        "variante": "120 ML.",
+        "precio": "180"},
+      {
+        "id": "KIO220",
+        "producto": "Helado - Paleta kids Vainilla chocolate con leche - Freddo",
+        "variante": "60 GR.",
+        "precio": "180"},
+      {
+        "id": "KIO221",
+        "producto": "Helado - Paleta kids Frutilla ch blanco - Freddo",
+        "variante": "60 GR.",
+        "precio": "180"},
+      {
+        "id": "KIO222",
+        "producto": "Helado - Pinta dulce de leche tentacion - Freddo",
+        "variante": "500 ML.",
+        "precio": "380"},
+      {
+        "id": "KIO223",
+        "producto": "Brownie - Chocolate blanco con almendras y limon - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO223",
+        "producto": "Brownie - Chocolate blanco con almendras y limon - Meltaim",
+        "variante": "12 U.",
+        "precio": "720"},
+      {
+        "id": "KIO224",
+        "producto": "Brownie sin azucar - Algarroba con nueces - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO224",
+        "producto": "Brownie sin azucar - Algarroba con nueces - Meltaim",
+        "variante": "12 U.",
+        "precio": "720"},
+      {
+        "id": "KIO225",
+        "producto": "Alfajor vegano - Pasta de mani avena y chia - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO225",
+        "producto": "Alfajor vegano - Pasta de mani avena y chia - Meltaim",
+        "variante": "12 U.",
+        "precio": "720"},
+      {
+        "id": "KIO226",
+        "producto": "Alfajor vegano - Pasta de mani cacao y algarroba - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO226",
+        "producto": "Alfajor vegano - Pasta de mani cacao y algarroba - Meltaim",
+        "variante": "12 U.",
+        "precio": "720"},
+      {
+        "id": "KIO227",
+        "producto": "Alfajor vegano - Limon cacao y algarroba - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO227",
+        "producto": "Alfajor vegano - Limon cacao y algarroba - Meltaim",
+        "variante": "12 U.",
+        "precio": "720"},
+      {
+        "id": "KIO228",
+        "producto": "Alfajor vegano - Frutos rojos cacao y algarroba - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO228",
+        "producto": "Alfajor vegano - Frutos rojos cacao y algarroba - Meltaim",
+        "variante": "12 U.",
+        "precio": "720"},
+      {
+        "id": "KIO229",
+        "producto": "Alfajor vegano - Avellanas cacao y algarroba - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO229",
+        "producto": "Alfajor vegano - Avellanas cacao y algarroba - Meltaim",
+        "variante": "12 U.",
+        "precio": "720"},
+      {
+        "id": "KIO230",
+        "producto": "Alfajor sin azucar - Dulce de leche y algarroba - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO230",
+        "producto": "Alfajor sin azucar - Dulce de leche y algarroba - Meltaim",
+        "variante": "12 U.",
+        "precio": "720"},
+      {
+        "id": "KIO231",
+        "producto": "Alfajor sin azucar - Dulce de leche chia y amapola - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO231",
+        "producto": "Alfajor sin azucar - Dulce de leche chia y amapola - Meltaim",
+        "variante": "12 U.",
+        "precio": "720"},
+      {
+        "id": "KIO232",
+        "producto": "Huevito de chocolate",
+        "variante": "U",
+        "precio": "25"},
+      {
+        "id": "KIO234",
+        "producto": "Huevo de chocolate 30gr",
+        "variante": "U",
+        "precio": "100"},
+      {
+        "id": "KIO235",
+        "producto": "Huevo de chocolate - Sin azucar",
+        "variante": "U",
+        "precio": "520"},
+      {
+        "id": "KIO236",
+        "producto": "Huevo de chocolate 500gr",
+        "variante": "U",
+        "precio": "1190"},
+      {
+        "id": "KIO237",
+        "producto": "Huevo de chocolate - Amor",
+        "variante": "U",
+        "precio": "760"},
+      {
+        "id": "KIO238",
+        "producto": "Conejo de chocolate Chico 30g",
+        "variante": "U",
+        "precio": "90"},
+      {
+        "id": "KIO239",
+        "producto": "Conejo de chocolate Grande 80g",
+        "variante": "U",
+        "precio": "200"},
+      {
+        "id": "KIO240",
+        "producto": "Helado - Pinta cookies&cream - Freddo",
+        "variante": "500 ML.",
+        "precio": "380"},
+      {
+        "id": "KIO241",
+        "producto": "Helado - Pinta chocolate dark - Freddo",
+        "variante": "500 ML.",
+        "precio": "380"},
+      {
+        "id": "KIO242",
+        "producto": "Helado - Tableta chocolate tentación - Freddo",
+        "variante": "50 GR.",
+        "precio": "110"},
+      {
+        "id": "KIO243",
+        "producto": "Helado - Tableta banan split - Freddo",
+        "variante": "50 GR.",
+        "precio": "110"},
+      {
+        "id": "KIO244",
+        "producto": "Bocadito de chocolate relleno de dulce de leche - 20 gr. - Chocolatory Woow!",
+        "variante": "20 GR.",
+        "precio": "40"},
+      {
+        "id": "KIO244",
+        "producto": "Bocadito de chocolate relleno de dulce de leche - 20 gr. - Chocolatory Woow!",
+        "variante": "24 U.",
+        "precio": "950"},
+      {
+        "id": "KIO245",
+        "producto": "Chocolate - Semi amargo 0% azucar 51% cacao - 20 gr. - Chocolatory",
+        "variante": "20 GR.",
+        "precio": "50"},
+      {
+        "id": "KIO245",
+        "producto": "Chocolate - Semi amargo 0% azucar 51% cacao - 20 gr. - Chocolatory",
+        "variante": "24 U.",
+        "precio": "1200"},
+      {
+        "id": "KIO246",
+        "producto": "Chocolate - Leche sin azucar 32% cacao - 20 gr. - Chocolatory",
+        "variante": "20 GR.",
+        "precio": "50"},
+      {
+        "id": "KIO246",
+        "producto": "Chocolate - Leche sin azucar 32% cacao - 20 gr. - Chocolatory",
+        "variante": "24 U.",
+        "precio": "1200"},
+      {
+        "id": "KIO247",
+        "producto": "Chocolate - Amargo 76% cacao - 20 gr. - Chocolatory",
+        "variante": "20 GR.",
+        "precio": "50"},
+      {
+        "id": "KIO247",
+        "producto": "Chocolate - Amargo 76% cacao - 20 gr. - Chocolatory",
+        "variante": "24 U.",
+        "precio": "1200"},
+      {
+        "id": "KIO248",
+        "producto": "Chocolate - Semi amargo 0% azucar 51% cacao - 90 gr. - Chocolatory",
+        "variante": "90 GR.",
+        "precio": "200"},
+      {
+        "id": "KIO248",
+        "producto": "Chocolate - Semi amargo 0% azucar 51% cacao - 90 gr. - Chocolatory",
+        "variante": "6 U.",
+        "precio": "1200"},
+      {
+        "id": "KIO249",
+        "producto": "Chocolate - Leche sin azucar 32% cacao - 90 gr. - Chocolatory",
+        "variante": "90 GR.",
+        "precio": "200"},
+      {
+        "id": "KIO249",
+        "producto": "Chocolate - Leche sin azucar 32% cacao - 90 gr. - Chocolatory",
+        "variante": "6 U.",
+        "precio": "1200"},
+      {
+        "id": "KIO250",
+        "producto": "Chocolate - Amargo 76% cacao - 90 gr. - Chocolatory",
+        "variante": "90 GR.",
+        "precio": "200"},
+      {
+        "id": "KIO250",
+        "producto": "Chocolate - Amargo 76% cacao - 90 gr. - Chocolatory",
+        "variante": "6 U.",
+        "precio": "1200"},
+      {
+        "id": "KIO251",
+        "producto": "Alfajor vegano - Coco y Cream - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO251",
+        "producto": "Alfajor vegano - Coco y Cream - Meltaim",
+        "variante": "12 U.",
+        "precio": "720"},
+      {
+        "id": "KIO252",
+        "producto": "Alfajor vegano - Coco y Frutilla - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO252",
+        "producto": "Alfajor vegano - Coco y Frutilla - Meltaim",
+        "variante": "12 U.",
+        "precio": "720"},
+      {
+        "id": "KIO253",
+        "producto": "Alfajor chocolate - Felices las vacas",
+        "variante": "75 GR.",
+        "precio": "100"},
+      {
+        "id": "KIO254",
+        "producto": "Alfajor de Maicena - Felices las vacas",
+        "variante": "75 GR.",
+        "precio": "100"},
+      {
+        "id": "KIO255",
+        "producto": "Barra de chocolate rellena - Le Choc - Felices las vacas",
+        "variante": "U",
+        "precio": "90"},
+      {
+        "id": "KIO256",
+        "producto": "Alfajor vegano - Marroc - Meltaim",
+        "variante": "50 GR.",
+        "precio": "60"},
+      {
+        "id": "KIO256",
+        "producto": "Alfajor vegano - Marroc - Meltaim",
+        "variante": "12 U.",
+        "precio": "60"},
+      {
+        "id": "KIO300",
+        "producto": "Snack veggie - Sabor pizza - 90 gr. - Granix",
+        "variante": "90 GR.",
+        "precio": "80"},
+      {
+        "id": "KIO301",
+        "producto": "Snack veggie - Sabor cebolla - 90 gr. - Granix",
+        "variante": "90 GR.",
+        "precio": "80"},
+      {
+        "id": "KIO302",
+        "producto": "Snack veggie - Sabor finas hierbas - 90 gr. - Granix",
+        "variante": "90 GR.",
+        "precio": "80"},
+      {
+        "id": "KIO303",
+        "producto": "Snack veggie - Sabor barbacoa - 90 gr. - Granix",
+        "variante": "90 GR.",
+        "precio": "80"},
+      {
+        "id": "LEC101",
+        "producto": "Leche de almendras - Original - 1 l. - Vrink",
+        "variante": "1 L.",
+        "precio": "180"},
+      {
+        "id": "LEC101",
+        "producto": "Leche de almendras - Original - 1 l. - Vrink",
+        "variante": "12 U.",
+        "precio": "2160"},
+      {
+        "id": "LEC103",
+        "producto": "Leche de castana de caju - Original - Vivet",
+        "variante": "333 ML.",
+        "precio": "85"},
+      {
+        "id": "LEC104",
+        "producto": "Leche de castana de caju - Vainilla - Vivet",
+        "variante": "333 ML.",
+        "precio": "85"},
+      {
+        "id": "LEC105",
+        "producto": "Leche de castana de caju - Frutilla - Vivet",
+        "variante": "333 ML.",
+        "precio": "85"},
+      {
+        "id": "LEC106",
+        "producto": "Leche de castana de caju - Chocolate - Vivet",
+        "variante": "333 ML.",
+        "precio": "85"},
+      {
+        "id": "LEC107",
+        "producto": "Leche de castana de caju - Caffe Latte - Vivet",
+        "variante": "333 ML.",
+        "precio": "85"},
+      {
+        "id": "LEC108",
+        "producto": "Leche de almendras - Chocolate - 1 l. - Vrink",
+        "variante": "1 L.",
+        "precio": "180"},
+      {
+        "id": "LEC108",
+        "producto": "Leche de almendras - Chocolate - 1 l. - Vrink",
+        "variante": "12 U.",
+        "precio": "2160"},
+      {
+        "id": "LEC109",
+        "producto": "Leche de almendras - Vainilla - 1 l. - Vrink",
+        "variante": "1 L.",
+        "precio": "180"},
+      {
+        "id": "LEC109",
+        "producto": "Leche de almendras - Vainilla - 1 l. - Vrink",
+        "variante": "12 U.",
+        "precio": "2160"},
+      {
+        "id": "LEC112",
+        "producto": "Leche Chocolatada - Felices Las Vacas",
+        "variante": "500 ML.",
+        "precio": "130"},
+      {
+        "id": "LEC113",
+        "producto": "Leche de Almendras - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "130"},
+      {
+        "id": "LEC114",
+        "producto": "Leche de Coco - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "130"},
+      {
+        "id": "LEC117",
+        "producto": "Leche de cacahuate - Cacao Power - Vivet",
+        "variante": "200 ML.",
+        "precio": "50"},
+      {
+        "id": "LEC118",
+        "producto": "Leche de cacahuate - Vainilla caramel - Vivet",
+        "variante": "200 ML.",
+        "precio": "50"},
+      {
+        "id": "LEC119",
+        "producto": "Leche de cacahuate - Vainilla natural - Vivet",
+        "variante": "200 ML.",
+        "precio": "50"},
+      {
+        "id": "LEC120",
+        "producto": "Leche de almendras - Original sin azucar - 1 l. - Vrink",
+        "variante": "1 L.",
+        "precio": "180"},
+      {
+        "id": "LEC120",
+        "producto": "Leche de almendras - Original sin azucar - 1 l. - Vrink",
+        "variante": "12 U.",
+        "precio": "2160"},
+      {
+        "id": "LEC121",
+        "producto": "Leche de mani - Original - 1 l. - Vrink",
+        "variante": "1 L.",
+        "precio": "160"},
+      {
+        "id": "LEC121",
+        "producto": "Leche de mani - Original - 1 l. - Vrink",
+        "variante": "12 U.",
+        "precio": "1920"},
+      {
+        "id": "LEC122",
+        "producto": "Leche de mani - Chocolate - 1 l. - Vrink",
+        "variante": "1 L.",
+        "precio": "160"},
+      {
+        "id": "LEC122",
+        "producto": "Leche de mani - Chocolate - 1 l. - Vrink",
+        "variante": "12 U.",
+        "precio": "1920"},
+      {
+        "id": "LEC123",
+        "producto": "Leche de Vainilla - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "130"},
+      {
+        "id": "LEC124",
+        "producto": "Smoothie Banana - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "190"},
+      {
+        "id": "LEC125",
+        "producto": "Smoothie Frutos Rojos - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "190"},
+      {
+        "id": "LEC126",
+        "producto": "Smoothie Mango y Maracuya - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "190"},
+      {
+        "id": "LEC127",
+        "producto": "Leche de mani - Chocolate - 200 ml. - Vrink",
+        "variante": "200 ML.",
+        "precio": "60"},
+      {
+        "id": "LEC127",
+        "producto": "Leche de mani - Chocolate - 200 ml. - Vrink",
+        "variante": "24 U.",
+        "precio": "60"},
+      {
+        "id": "LEG100",
+        "producto": "Arroz blanco doble carolina",
+        "variante": "1 KG.",
+        "precio": "130"},
+      {
+        "id": "LEG100",
+        "producto": "Arroz blanco doble carolina",
+        "variante": "500 GR.",
+        "precio": "80"},
+      {
+        "id": "LEG100",
+        "producto": "Arroz blanco doble carolina",
+        "variante": "25 KG.",
+        "precio": "3250"},
+      {
+        "id": "LEG101",
+        "producto": "Arroz yamani blanco",
+        "variante": "1 KG.",
+        "precio": "130"},
+      {
+        "id": "LEG101",
+        "producto": "Arroz yamani blanco",
+        "variante": "30 KG.",
+        "precio": "3900"},
+      {
+        "id": "LEG102",
+        "producto": "Arroz yamani integral",
+        "variante": "1 KG.",
+        "precio": "140"},
+      {
+        "id": "LEG102",
+        "producto": "Arroz yamani integral",
+        "variante": "25 KG.",
+        "precio": "3500"},
+      {
+        "id": "LEG103",
+        "producto": "Cebada perlada",
+        "variante": "1 KG.",
+        "precio": "70"},
+      {
+        "id": "LEG103",
+        "producto": "Cebada perlada",
+        "variante": "500 GR.",
+        "precio": "40"},
+      {
+        "id": "LEG105",
+        "producto": "Garbanzo",
+        "variante": "500 GR.",
+        "precio": "50"},
+      {
+        "id": "LEG105",
+        "producto": "Garbanzo",
+        "variante": "1 KG.",
+        "precio": "95"},
+      {
+        "id": "LEG105",
+        "producto": "Garbanzo",
+        "variante": "25 KG.",
+        "precio": "2375"},
+      {
+        "id": "LEG106",
+        "producto": "Lenteja",
+        "variante": "1 KG.",
+        "precio": "245"},
+      {
+        "id": "LEG106",
+        "producto": "Lenteja",
+        "variante": "500 GR.",
+        "precio": "125"},
+      {
+        "id": "LEG106",
+        "producto": "Lenteja",
+        "variante": "25 KG.",
+        "precio": "6250"},
+      {
+        "id": "LEG107",
+        "producto": "Lenteja turca",
+        "variante": "500 GR.",
+        "precio": "165"},
+      {
+        "id": "LEG107",
+        "producto": "Lenteja turca",
+        "variante": "1 KG.",
+        "precio": "330"},
+      {
+        "id": "LEG107",
+        "producto": "Lenteja turca",
+        "variante": "25 KG.",
+        "precio": "8250"},
+      {
+        "id": "LEG108",
+        "producto": "Lentejon",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "LEG108",
+        "producto": "Lentejon",
+        "variante": "1 KG.",
+        "precio": "160"},
+      {
+        "id": "LEG108",
+        "producto": "Lentejon",
+        "variante": "25 KG.",
+        "precio": "4000"},
+      {
+        "id": "LEG109",
+        "producto": "Poroto de soja",
+        "variante": "1 KG.",
+        "precio": "70"},
+      {
+        "id": "LEG109",
+        "producto": "Poroto de soja",
+        "variante": "25 KG.",
+        "precio": "1125"},
+      {
+        "id": "LEG110",
+        "producto": "Poroto mung",
+        "variante": "500 GR.",
+        "precio": "60"},
+      {
+        "id": "LEG110",
+        "producto": "Poroto mung",
+        "variante": "1 KG.",
+        "precio": "120"},
+      {
+        "id": "LEG110",
+        "producto": "Poroto mung",
+        "variante": "25 KG.",
+        "precio": "3000"},
+      {
+        "id": "LEG111",
+        "producto": "Poroto negro",
+        "variante": "500 GR.",
+        "precio": "60"},
+      {
+        "id": "LEG111",
+        "producto": "Poroto negro",
+        "variante": "1 KG.",
+        "precio": "115"},
+      {
+        "id": "LEG111",
+        "producto": "Poroto negro",
+        "variante": "25 KG.",
+        "precio": "2874"},
+      {
+        "id": "LEG112",
+        "producto": "Soja texturizada mediana",
+        "variante": "500 GR.",
+        "precio": "70"},
+      {
+        "id": "LEG112",
+        "producto": "Soja texturizada mediana",
+        "variante": "20 KG.",
+        "precio": "2800"},
+      {
+        "id": "LEG112",
+        "producto": "Soja texturizada mediana",
+        "variante": "1 KG.",
+        "precio": "140"},
+      {
+        "id": "LEG113",
+        "producto": "Arroz largo fino integral",
+        "variante": "1 KG.",
+        "precio": "80"},
+      {
+        "id": "LEG113",
+        "producto": "Arroz largo fino integral",
+        "variante": "25 KG.",
+        "precio": "2000"},
+      {
+        "id": "LEG114",
+        "producto": "Arroz koshikari",
+        "variante": "500 GR.",
+        "precio": "84"},
+      {
+        "id": "LEG114",
+        "producto": "Arroz koshikari",
+        "variante": "1 KG.",
+        "precio": "168"},
+      {
+        "id": "LEG114",
+        "producto": "Arroz koshikari",
+        "variante": "25 KG.",
+        "precio": "4200"},
+      {
+        "id": "LEG115",
+        "producto": "Arroz basmati",
+        "variante": "500 GR.",
+        "precio": "199"},
+      {
+        "id": "LEG115",
+        "producto": "Arroz basmati",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "LEG115",
+        "producto": "Arroz basmati",
+        "variante": "10 KG.",
+        "precio": "3980"},
+      {
+        "id": "LEG116",
+        "producto": "Lenteja canadiense",
+        "variante": "1 KG.",
+        "precio": "190"},
+      {
+        "id": "LEG116",
+        "producto": "Lenteja canadiense",
+        "variante": "500 GR.",
+        "precio": "100"},
+      {
+        "id": "LEG116",
+        "producto": "Lenteja canadiense",
+        "variante": "25 KG.",
+        "precio": "4750"},
+      {
+        "id": "LEG117",
+        "producto": "Poroto alubia",
+        "variante": "1 KG.",
+        "precio": "100"},
+      {
+        "id": "LEG117",
+        "producto": "Poroto alubia",
+        "variante": "25 KG.",
+        "precio": "2500"},
+      {
+        "id": "LEG117",
+        "producto": "Poroto alubia",
+        "variante": "500 GR.",
+        "precio": "45"},
+      {
+        "id": "LEG119",
+        "producto": "Poroto colorado",
+        "variante": "500 GR.",
+        "precio": "80"},
+      {
+        "id": "LEG119",
+        "producto": "Poroto colorado",
+        "variante": "1 KG.",
+        "precio": "160"},
+      {
+        "id": "LEG119",
+        "producto": "Poroto colorado",
+        "variante": "25 KG.",
+        "precio": "4000"},
+      {
+        "id": "LEG120",
+        "producto": "Maiz Partido Blanco",
+        "variante": "500 GR.",
+        "precio": "42"},
+      {
+        "id": "LEG121",
+        "producto": "Soja texturizada fina",
+        "variante": "500 GR.",
+        "precio": "70"},
+      {
+        "id": "LEG121",
+        "producto": "Soja texturizada fina",
+        "variante": "1 KG.",
+        "precio": "130"},
+      {
+        "id": "LEG121",
+        "producto": "Soja texturizada fina",
+        "variante": "20 KG.",
+        "precio": "2600"},
+      {
+        "id": "LEG122",
+        "producto": "Arveja partida",
+        "variante": "500 GR.",
+        "precio": "55"},
+      {
+        "id": "LEG122",
+        "producto": "Arveja partida",
+        "variante": "1 KG.",
+        "precio": "110"},
+      {
+        "id": "LEG122",
+        "producto": "Arveja partida",
+        "variante": "25 KG.",
+        "precio": "2750"},
+      {
+        "id": "LEG123",
+        "producto": "Poroto regina",
+        "variante": "1 KG.",
+        "precio": "90"},
+      {
+        "id": "LEG123",
+        "producto": "Poroto regina",
+        "variante": "500 GR.",
+        "precio": "50"},
+      {
+        "id": "LEG123",
+        "producto": "Poroto regina",
+        "variante": "25 KG.",
+        "precio": "2250"},
+      {
+        "id": "LEG124",
+        "producto": "Poroto aduki",
+        "variante": "1 KG.",
+        "precio": "170"},
+      {
+        "id": "LEG124",
+        "producto": "Poroto aduki",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "LEG124",
+        "producto": "Poroto aduki",
+        "variante": "25 KG.",
+        "precio": "4250"},
+      {
+        "id": "LEG125",
+        "producto": "Arroz blanco largo fino",
+        "variante": "1 KG.",
+        "precio": "120"},
+      {
+        "id": "LEG125",
+        "producto": "Arroz blanco largo fino",
+        "variante": "30 KG.",
+        "precio": "3000"},
+      {
+        "id": "LEG126",
+        "producto": "Poroto pallares",
+        "variante": "500 GR.",
+        "precio": "125"},
+      {
+        "id": "LEG126",
+        "producto": "Poroto pallares",
+        "variante": "1 KG.",
+        "precio": "250"},
+      {
+        "id": "LEG126",
+        "producto": "Poroto pallares",
+        "variante": "30 KG.",
+        "precio": "7500"},
+      {
+        "id": "LEG127",
+        "producto": "Maiz piscingallo",
+        "variante": "250 GR.",
+        "precio": "25"},
+      {
+        "id": "LEG127",
+        "producto": "Maiz piscingallo",
+        "variante": "1 KG.",
+        "precio": "100"},
+      {
+        "id": "LEG127",
+        "producto": "Maiz piscingallo",
+        "variante": "20 KG.",
+        "precio": "2000"},
+      {
+        "id": "LEG127",
+        "producto": "Maiz piscingallo",
+        "variante": "500 GR.",
+        "precio": "50"},
+      {
+        "id": "LEG128",
+        "producto": "Lupines",
+        "variante": "500 GR.",
+        "precio": "60"},
+      {
+        "id": "LEG128",
+        "producto": "Lupines",
+        "variante": "1 KG.",
+        "precio": "120"},
+      {
+        "id": "LEG128",
+        "producto": "Lupines",
+        "variante": "25 KG.",
+        "precio": "3000"},
+      {
+        "id": "LEG129",
+        "producto": "Arveja entera",
+        "variante": "500 GR.",
+        "precio": "65"},
+      {
+        "id": "LEG129",
+        "producto": "Arveja entera",
+        "variante": "1 KG.",
+        "precio": "130"},
+      {
+        "id": "LEG129",
+        "producto": "Arveja entera",
+        "variante": "25 KG.",
+        "precio": "3250"},
+      {
+        "id": "LEG130",
+        "producto": "Arroz medio grano",
+        "variante": "1 KG.",
+        "precio": "80"},
+      {
+        "id": "LEG130",
+        "producto": "Arroz medio grano",
+        "variante": "30 KG.",
+        "precio": "2400"},
+      {
+        "id": "MER102",
+        "producto": "Mermelada Diet - Arandanos - 400 gr. - Cuarto Creciente",
+        "variante": "400 GR.",
+        "precio": "130"},
+      {
+        "id": "MER102",
+        "producto": "Mermelada Diet - Arandanos - 400 gr. - Cuarto Creciente",
+        "variante": "6 U.",
+        "precio": "780"},
+      {
+        "id": "MER103",
+        "producto": "Mermelada Diet - Frutilla - 400 gr. - Cuarto Creciente",
+        "variante": "400 GR.",
+        "precio": "130"},
+      {
+        "id": "MER103",
+        "producto": "Mermelada Diet - Frutilla - 400 gr. - Cuarto Creciente",
+        "variante": "6 U.",
+        "precio": "780"},
+      {
+        "id": "MER104",
+        "producto": "Mermelada Diet - Frutos Rojos - 400 gr. - Cuarto Creciente",
+        "variante": "400 GR.",
+        "precio": "130"},
+      {
+        "id": "MER104",
+        "producto": "Mermelada Diet - Frutos Rojos - 400 gr. - Cuarto Creciente",
+        "variante": "6 U.",
+        "precio": "780"},
+      {
+        "id": "MER105",
+        "producto": "Mermelada Diet - Ciruela - 400 gr. - Cuarto Creciente",
+        "variante": "400 GR.",
+        "precio": "130"},
+      {
+        "id": "MER105",
+        "producto": "Mermelada Diet - Ciruela - 400 gr. - Cuarto Creciente",
+        "variante": "6 U.",
+        "precio": "780"},
+      {
+        "id": "MER106",
+        "producto": "Mermelada Stevia - Frutilla - 300 gr. - Cuarto Creciente",
+        "variante": "300 GR.",
+        "precio": "155"},
+      {
+        "id": "MER106",
+        "producto": "Mermelada Stevia - Frutilla - 300 gr. - Cuarto Creciente",
+        "variante": "6 U.",
+        "precio": "930"},
+      {
+        "id": "MER107",
+        "producto": "Mermelada Stevia - Higo - 300 gr. - Cuarto Creciente",
+        "variante": "300 GR.",
+        "precio": "155"},
+      {
+        "id": "MER107",
+        "producto": "Mermelada Stevia - Higo - 300 gr. - Cuarto Creciente",
+        "variante": "6 U.",
+        "precio": "930"},
+      {
+        "id": "MER108",
+        "producto": "Mermelada Stevia - Durazno - 300 gr. - Cuarto Creciente",
+        "variante": "300 GR.",
+        "precio": "155"},
+      {
+        "id": "MER108",
+        "producto": "Mermelada Stevia - Durazno - 300 gr. - Cuarto Creciente",
+        "variante": "6 U.",
+        "precio": "930"},
+      {
+        "id": "MER109",
+        "producto": "Mermelada Stevia - Arandanos - 300 gr. - Cuarto Creciente",
+        "variante": "300 GR.",
+        "precio": "155"},
+      {
+        "id": "MER109",
+        "producto": "Mermelada Stevia - Arandanos - 300 gr. - Cuarto Creciente",
+        "variante": "6 U.",
+        "precio": "930"},
+      {
+        "id": "MER110",
+        "producto": "Mermelada Stevia - Frutos Rojos - 300 gr. - Cuarto Creciente",
+        "variante": "300 GR.",
+        "precio": "155"},
+      {
+        "id": "MER110",
+        "producto": "Mermelada Stevia - Frutos Rojos - 300 gr. - Cuarto Creciente",
+        "variante": "6 U.",
+        "precio": "930"},
+      {
+        "id": "MER111",
+        "producto": "Mermelada Diet  - Durazno - 300 gr. - Cuarto Creciente",
+        "variante": "300 GR.",
+        "precio": "130"},
+      {
+        "id": "MER111",
+        "producto": "Mermelada Diet  - Durazno - 300 gr. - Cuarto Creciente",
+        "variante": "6 U.",
+        "precio": "130"},
+      {
+        "id": "MER112",
+        "producto": "Mermelada Diet  - Higo - 300 gr. - Cuarto Creciente",
+        "variante": "300 GR.",
+        "precio": "130"},
+      {
+        "id": "MER112",
+        "producto": "Mermelada Diet  - Higo - 300 gr. - Cuarto Creciente",
+        "variante": "6 U.",
+        "precio": "130"},
+      {
+        "id": "MIX100",
+        "producto": "Mix agridulce",
+        "variante": "500 GR.",
+        "precio": "310"},
+      {
+        "id": "MIX100",
+        "producto": "Mix agridulce",
+        "variante": "1 KG.",
+        "precio": "595"},
+      {
+        "id": "MIX101",
+        "producto": "Mix arandanos",
+        "variante": "500 GR.",
+        "precio": "600"},
+      {
+        "id": "MIX101",
+        "producto": "Mix arandanos",
+        "variante": "100 GR.",
+        "precio": "125"},
+      {
+        "id": "MIX101",
+        "producto": "Mix arandanos",
+        "variante": "1 KG.",
+        "precio": "1200"},
+      {
+        "id": "MIX102",
+        "producto": "Mix energia",
+        "variante": "1 KG.",
+        "precio": "570"},
+      {
+        "id": "MIX102",
+        "producto": "Mix energia",
+        "variante": "100 GR.",
+        "precio": "90"},
+      {
+        "id": "MIX102",
+        "producto": "Mix energia",
+        "variante": "500 GR.",
+        "precio": "320"},
+      {
+        "id": "MIX105",
+        "producto": "Mix energia con banana",
+        "variante": "1 KG.",
+        "precio": "500"},
+      {
+        "id": "MIX105",
+        "producto": "Mix energia con banana",
+        "variante": "100 GR.",
+        "precio": "90"},
+      {
+        "id": "MIX105",
+        "producto": "Mix energia con banana",
+        "variante": "500 GR.",
+        "precio": "290"},
+      {
+        "id": "MIX107",
+        "producto": "Mix fantasia",
+        "variante": "500 GR.",
+        "precio": "555"},
+      {
+        "id": "MIX107",
+        "producto": "Mix fantasia",
+        "variante": "100 GR.",
+        "precio": "115"},
+      {
+        "id": "MIX107",
+        "producto": "Mix fantasia",
+        "variante": "1 KG.",
+        "precio": "1100"},
+      {
+        "id": "MIX108",
+        "producto": "Mix patagonico",
+        "variante": "500 GR.",
+        "precio": "550"},
+      {
+        "id": "MIX108",
+        "producto": "Mix patagonico",
+        "variante": "100 GR.",
+        "precio": "125"},
+      {
+        "id": "MIX108",
+        "producto": "Mix patagonico",
+        "variante": "1 KG.",
+        "precio": "1150"},
+      {
+        "id": "MIX109",
+        "producto": "Mix premium",
+        "variante": "1 KG.",
+        "precio": "1550"},
+      {
+        "id": "MIX109",
+        "producto": "Mix premium",
+        "variante": "500 GR.",
+        "precio": "770"},
+      {
+        "id": "MIX111",
+        "producto": "Mix primavera",
+        "variante": "500 GR.",
+        "precio": "590"},
+      {
+        "id": "MIX111",
+        "producto": "Mix primavera",
+        "variante": "1 KG.",
+        "precio": "1150"},
+      {
+        "id": "MIX112",
+        "producto": "Mix salado con almendras",
+        "variante": "500 GR.",
+        "precio": "370"},
+      {
+        "id": "MIX112",
+        "producto": "Mix salado con almendras",
+        "variante": "1 KG.",
+        "precio": "740"},
+      {
+        "id": "MIX113",
+        "producto": "Mix sin mani",
+        "variante": "1 KG.",
+        "precio": "860"},
+      {
+        "id": "MIX113",
+        "producto": "Mix sin mani",
+        "variante": "500 GR.",
+        "precio": "470"},
+      {
+        "id": "MIX113",
+        "producto": "Mix sin mani",
+        "variante": "100 GR.",
+        "precio": "90"},
+      {
+        "id": "MIX115",
+        "producto": "Mix sin pasas",
+        "variante": "500 GR.",
+        "precio": "530"},
+      {
+        "id": "MIX115",
+        "producto": "Mix sin pasas",
+        "variante": "1 KG.",
+        "precio": "920"},
+      {
+        "id": "MIX117",
+        "producto": "Mix afrodisíaco",
+        "variante": "500 GR.",
+        "precio": "650"},
+      {
+        "id": "MIX117",
+        "producto": "Mix afrodisíaco",
+        "variante": "1 KG.",
+        "precio": "1305"},
+      {
+        "id": "MIX118",
+        "producto": "Mix andino",
+        "variante": "500 GR.",
+        "precio": "350"},
+      {
+        "id": "MIX118",
+        "producto": "Mix andino",
+        "variante": "1 KG.",
+        "precio": "660"},
+      {
+        "id": "MIX119",
+        "producto": "Mix break",
+        "variante": "500 GR.",
+        "precio": "650"},
+      {
+        "id": "MIX119",
+        "producto": "Mix break",
+        "variante": "1 KG.",
+        "precio": "1250"},
+      {
+        "id": "MIX120",
+        "producto": "Mix caribe",
+        "variante": "500 GR.",
+        "precio": "655"},
+      {
+        "id": "MIX120",
+        "producto": "Mix caribe",
+        "variante": "1 KG.",
+        "precio": "1245"},
+      {
+        "id": "MIX121",
+        "producto": "Mix clasico",
+        "variante": "500 GR.",
+        "precio": "400"},
+      {
+        "id": "MIX121",
+        "producto": "Mix clasico",
+        "variante": "1 KG.",
+        "precio": "780"},
+      {
+        "id": "MIX122",
+        "producto": "Mix europeo",
+        "variante": "500 GR.",
+        "precio": "425"},
+      {
+        "id": "MIX122",
+        "producto": "Mix europeo",
+        "variante": "1 KG.",
+        "precio": "800"},
+      {
+        "id": "MIX123",
+        "producto": "Mix forte",
+        "variante": "500 GR.",
+        "precio": "540"},
+      {
+        "id": "MIX123",
+        "producto": "Mix forte",
+        "variante": "1 KG.",
+        "precio": "925"},
+      {
+        "id": "MIX125",
+        "producto": "Mix power",
+        "variante": "500 GR.",
+        "precio": "280"},
+      {
+        "id": "MIX125",
+        "producto": "Mix power",
+        "variante": "1 KG.",
+        "precio": "560"},
+      {
+        "id": "MIX125",
+        "producto": "Mix power",
+        "variante": "5 KG.",
+        "precio": "2800"},
+      {
+        "id": "MIX126",
+        "producto": "Mix running",
+        "variante": "500 GR.",
+        "precio": "545"},
+      {
+        "id": "MIX126",
+        "producto": "Mix running",
+        "variante": "1 KG.",
+        "precio": "1026"},
+      {
+        "id": "MIX127",
+        "producto": "Mix tropical",
+        "variante": "500 GR.",
+        "precio": "460"},
+      {
+        "id": "MIX127",
+        "producto": "Mix tropical",
+        "variante": "1 KG.",
+        "precio": "900"},
+      {
+        "id": "MIX129",
+        "producto": "Mix pasiones",
+        "variante": "500 GR.",
+        "precio": "580"},
+      {
+        "id": "MIX129",
+        "producto": "Mix pasiones",
+        "variante": "1 KG.",
+        "precio": "1100"},
+      {
+        "id": "MIX130",
+        "producto": "Mix cuyano",
+        "variante": "500 GR.",
+        "precio": "330"},
+      {
+        "id": "MIX131",
+        "producto": "Mix Promo",
+        "variante": "100 GR.",
+        "precio": "100"},
+      {
+        "id": "MIX132",
+        "producto": "Mix nutritivo",
+        "variante": "10 KG.",
+        "precio": "4980"},
+      {
+        "id": "MIX132",
+        "producto": "Mix nutritivo",
+        "variante": "1 KG.",
+        "precio": "640"},
+      {
+        "id": "MIX132",
+        "producto": "Mix nutritivo",
+        "variante": "500 GR.",
+        "precio": "320"},
+      {
+        "id": "MIX134",
+        "producto": "Mix cervecero",
+        "variante": "10 KG.",
+        "precio": "6400"},
+      {
+        "id": "MIX134",
+        "producto": "Mix cervecero",
+        "variante": "1 KG.",
+        "precio": "640"},
+      {
+        "id": "MIX134",
+        "producto": "Mix cervecero",
+        "variante": "500 GR.",
+        "precio": "320"},
+      {
+        "id": "MIX135",
+        "producto": "Mix energia con anana",
+        "variante": "500 GR.",
+        "precio": "370"},
+      {
+        "id": "MIX135",
+        "producto": "Mix energia con anana",
+        "variante": "1 KG.",
+        "precio": "740"},
+      {
+        "id": "MIX135",
+        "producto": "Mix energia con anana",
+        "variante": "5 KG.",
+        "precio": "3700"},
+      {
+        "id": "MIX136",
+        "producto": "Mix Serrano",
+        "variante": "500 GR.",
+        "precio": "460"},
+      {
+        "id": "MIX136",
+        "producto": "Mix Serrano",
+        "variante": "1 KG.",
+        "precio": "920"},
+      {
+        "id": "MIX136",
+        "producto": "Mix Serrano",
+        "variante": "5 KG.",
+        "precio": "4600"},
+      {
+        "id": "MIX137",
+        "producto": "Mix Salado",
+        "variante": "500 GR.",
+        "precio": "200"},
+      {
+        "id": "MIX137",
+        "producto": "Mix Salado",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "MIX137",
+        "producto": "Mix Salado",
+        "variante": "5 KG.",
+        "precio": "2000"},
+      {
+        "id": "MIX138",
+        "producto": "Mix power full",
+        "variante": "500 GR.",
+        "precio": "310"},
+      {
+        "id": "MIX138",
+        "producto": "Mix power full",
+        "variante": "1 KG.",
+        "precio": "620"},
+      {
+        "id": "MIX138",
+        "producto": "Mix power full",
+        "variante": "5 KG.",
+        "precio": "550"},
+      {
+        "id": "MIX139",
+        "producto": "Mix Sport",
+        "variante": "500 GR.",
+        "precio": "320"},
+      {
+        "id": "MIX139",
+        "producto": "Mix Sport",
+        "variante": "1 KG.",
+        "precio": "640"},
+      {
+        "id": "MIX139",
+        "producto": "Mix Sport",
+        "variante": "5 KG.",
+        "precio": "3200"},
+      {
+        "id": "MIX140",
+        "producto": "Mix Sport Full",
+        "variante": "500 GR.",
+        "precio": "360"},
+      {
+        "id": "MIX140",
+        "producto": "Mix Sport Full",
+        "variante": "1 KG.",
+        "precio": "720"},
+      {
+        "id": "MIX140",
+        "producto": "Mix Sport Full",
+        "variante": "5 KG.",
+        "precio": "3600"},
+      {
+        "id": "MIX141",
+        "producto": "Mix Runner",
+        "variante": "500 GR.",
+        "precio": "490"},
+      {
+        "id": "MIX141",
+        "producto": "Mix Runner",
+        "variante": "1 KG.",
+        "precio": "980"},
+      {
+        "id": "MIX141",
+        "producto": "Mix Runner",
+        "variante": "5 KG.",
+        "precio": "4900"},
+      {
+        "id": "ÑOQ001",
+        "producto": "Ñoquis de Lentejas - Meltaim",
+        "variante": "250 GR.",
+        "precio": "110"},
+      {
+        "id": "PAN100",
+        "producto": "Pan - Centeno  - Val Maira",
+        "variante": "400 GR.",
+        "precio": "115"},
+      {
+        "id": "PAN101",
+        "producto": "Pan - Integral total - Val Maira",
+        "variante": "400 GR.",
+        "precio": "125"},
+      {
+        "id": "PAN102",
+        "producto": "Pan - Semillas y cereales  - Val Maira",
+        "variante": "400 GR.",
+        "precio": "155"},
+      {
+        "id": "PAN103",
+        "producto": "Pan - Algarroba - Val Maira",
+        "variante": "400 GR.",
+        "precio": "145"},
+      {
+        "id": "PAN104",
+        "producto": "Pan - Multicereal sin sal - Val Maira",
+        "variante": "400 GR.",
+        "precio": "170"},
+      {
+        "id": "PAN105",
+        "producto": "Pan - Multicereal - Val Maira",
+        "variante": "400 GR.",
+        "precio": "170"},
+      {
+        "id": "PAN106",
+        "producto": "Borrar - Pan - Multicereal  - val maira",
+        "variante": "400 GR.",
+        "precio": "95"},
+      {
+        "id": "PAN107",
+        "producto": "Pan - Salvado Doble - Val Maira",
+        "variante": "400 GR.",
+        "precio": "105"},
+      {
+        "id": "PAN108",
+        "producto": "Pan - Salvado sin sal - Val Maira",
+        "variante": "400 GR.",
+        "precio": "105"},
+      {
+        "id": "PAN109",
+        "producto": "Pan - Salvado light - Val Maira",
+        "variante": "400 GR.",
+        "precio": "105"},
+      {
+        "id": "PAN110",
+        "producto": "Pan - Multicereal de molde - Natupan",
+        "variante": "400 GR.",
+        "precio": "155"},
+      {
+        "id": "PAN111",
+        "producto": "Pan- Multicereal Redondo - NatuPan",
+        "variante": "U",
+        "precio": "165"},
+      {
+        "id": "PAN112",
+        "producto": "Pan - Sesamo Molde - Val Maira",
+        "variante": "400 GR.",
+        "precio": "155"},
+      {
+        "id": "PAN113",
+        "producto": "Pan- Lacteado Molde - Val Maira",
+        "variante": "400 GR.",
+        "precio": "100"},
+      {
+        "id": "PAN117",
+        "producto": "Pan- Doble integral y salvado- Natupan",
+        "variante": "400 GR.",
+        "precio": "115"},
+      {
+        "id": "PAN118",
+        "producto": "Pan - Doble integral - Pan rustico",
+        "variante": "U",
+        "precio": "190"},
+      {
+        "id": "PAN119",
+        "producto": "Pan - Calabaza - Pan rustico",
+        "variante": "U",
+        "precio": "190"},
+      {
+        "id": "PAN120",
+        "producto": "Pan - Multicereal  - Pan rustico",
+        "variante": "U",
+        "precio": "190"},
+      {
+        "id": "PAN121",
+        "producto": "Pan - Lino y girasol - Pan rustico",
+        "variante": "U",
+        "precio": "190"},
+      {
+        "id": "PAN122",
+        "producto": "Pan - Sin Sal - Pan rustico",
+        "variante": "U",
+        "precio": "190"},
+      {
+        "id": "PAN123",
+        "producto": "Pan - Doble Salvado - Pan rustico",
+        "variante": "U",
+        "precio": "190"},
+      {
+        "id": "PAN124",
+        "producto": "Pan - Pasas de Uva - Pan rustico",
+        "variante": "U",
+        "precio": "190"},
+      {
+        "id": "PRE001",
+        "producto": "Premezcla sin TACC - Ñoquis - 500 gr. - Delicel",
+        "variante": "500 GR.",
+        "precio": "120"},
+      {
+        "id": "PRE001",
+        "producto": "Premezcla sin TACC - Ñoquis - 500 gr. - Delicel",
+        "variante": "12 U.",
+        "precio": "1440"},
+      {
+        "id": "PRE002",
+        "producto": "Premezcla sin TACC - Bizcochuelo de chocolate - 500 gr. - Delicel",
+        "variante": "500 GR.",
+        "precio": "120"},
+      {
+        "id": "PRE002",
+        "producto": "Premezcla sin TACC - Bizcochuelo de chocolate - 500 gr. - Delicel",
+        "variante": "12 U.",
+        "precio": "1440"},
+      {
+        "id": "PRE003",
+        "producto": "Premezcla sin TACC - Bizcochuelo de vainilla - 500 gr. - Delicel",
+        "variante": "500 GR.",
+        "precio": "120"},
+      {
+        "id": "PRE003",
+        "producto": "Premezcla sin TACC - Bizcochuelo de vainilla - 500 gr. - Delicel",
+        "variante": "12 U.",
+        "precio": "1440"},
+      {
+        "id": "PRE004",
+        "producto": "Premezcla sin TACC - Pizza - 500 gr. - Delicel",
+        "variante": "500 GR.",
+        "precio": "120"},
+      {
+        "id": "PRE004",
+        "producto": "Premezcla sin TACC - Pizza - 500 gr. - Delicel",
+        "variante": "12 U.",
+        "precio": "1440"},
+      {
+        "id": "PRE005",
+        "producto": "Premezcla sin TACC - Pan - 500 gr. - Delicel",
+        "variante": "500 GR.",
+        "precio": "120"},
+      {
+        "id": "PRE005",
+        "producto": "Premezcla sin TACC - Pan - 500 gr. - Delicel",
+        "variante": "12 U.",
+        "precio": "1440"},
+      {
+        "id": "PRE006",
+        "producto": "Premezcla sin TACC - Universal - 500 gr. - Delicel",
+        "variante": "500 GR.",
+        "precio": "120"},
+      {
+        "id": "PRE006",
+        "producto": "Premezcla sin TACC - Universal - 500 gr. - Delicel",
+        "variante": "12 U.",
+        "precio": "1440"},
+      {
+        "id": "Promo",
+        "producto": "2x1 - Almohaditas sin tacc - Rellenas de frutilla - Snuks",
+        "variante": "200 GR.",
+        "precio": "150"},
+      {
+        "id": "promo2",
+        "producto": "la - 2x1 - Leche de Almendras - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "130"},
+      {
+        "id": "promo2",
+        "producto": "lch - 2x1 - Leche Chocolatada - Felices Las Vacas",
+        "variante": "500 ML.",
+        "precio": "130"},
+      {
+        "id": "promo2",
+        "producto": "lco - 2x1 - Leche de Coco - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "130"},
+      {
+        "id": "promo2",
+        "producto": "lv - 2x1 - Leche de Vainilla - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "130"},
+      {
+        "id": "promo2",
+        "producto": "sb - 2x1 - Smoothie Banana - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "190"},
+      {
+        "id": "promo2",
+        "producto": "sfr - 2x1 - Smoothie Frutos Rojos - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "190"},
+      {
+        "id": "promo2",
+        "producto": "smm - 2x1 - Smoothie Mango y Maracuya - Felices las vacas",
+        "variante": "500 ML.",
+        "precio": "190"},
+      {
+        "id": "SAL100",
+        "producto": "Sal marina gruesa",
+        "variante": "500 GR.",
+        "precio": "130"},
+      {
+        "id": "SAL100",
+        "producto": "Sal marina gruesa",
+        "variante": "1 KG.",
+        "precio": "260"},
+      {
+        "id": "SAL100",
+        "producto": "Sal marina gruesa",
+        "variante": "10 KG.",
+        "precio": "1300"},
+      {
+        "id": "SAL103",
+        "producto": "Sal rosa del Himalaya fina",
+        "variante": "500 GR.",
+        "precio": "90"},
+      {
+        "id": "SAL103",
+        "producto": "Sal rosa del Himalaya fina",
+        "variante": "1 KG.",
+        "precio": "180"},
+      {
+        "id": "SAL103",
+        "producto": "Sal rosa del Himalaya fina",
+        "variante": "25 KG.",
+        "precio": "4500"},
+      {
+        "id": "SAL104",
+        "producto": "Sal rosa del Himalaya gruesa",
+        "variante": "500 GR.",
+        "precio": "100"},
+      {
+        "id": "SAL104",
+        "producto": "Sal rosa del Himalaya gruesa",
+        "variante": "1 KG.",
+        "precio": "200"},
+      {
+        "id": "SAL104",
+        "producto": "Sal rosa del Himalaya gruesa",
+        "variante": "25 KG.",
+        "precio": "5000"},
+      {
+        "id": "SAL107",
+        "producto": "Sal marina fina",
+        "variante": "500 GR.",
+        "precio": "130"},
+      {
+        "id": "SAL107",
+        "producto": "Sal marina fina",
+        "variante": "1 KG.",
+        "precio": "260"},
+      {
+        "id": "SAL107",
+        "producto": "Sal marina fina",
+        "variante": "10 KG.",
+        "precio": "1300"},
+      {
+        "id": "SEM100",
+        "producto": "Girasol",
+        "variante": "500 GR.",
+        "precio": "140"},
+      {
+        "id": "SEM100",
+        "producto": "Girasol",
+        "variante": "1 KG.",
+        "precio": "280"},
+      {
+        "id": "SEM100",
+        "producto": "Girasol",
+        "variante": "25 KG.",
+        "precio": "7000"},
+      {
+        "id": "SEM104",
+        "producto": "Quinoa blanca importada",
+        "variante": "1 KG.",
+        "precio": "490"},
+      {
+        "id": "SEM104",
+        "producto": "Quinoa blanca importada",
+        "variante": "500 GR.",
+        "precio": "280"},
+      {
+        "id": "SEM104",
+        "producto": "Quinoa blanca importada",
+        "variante": "25 KG.",
+        "precio": "12200"},
+      {
+        "id": "SEM105",
+        "producto": "Quinoa nacional",
+        "variante": "1 KG.",
+        "precio": "450"},
+      {
+        "id": "SEM105",
+        "producto": "Quinoa nacional",
+        "variante": "500 GR.",
+        "precio": "230"},
+      {
+        "id": "SEM105",
+        "producto": "Quinoa nacional",
+        "variante": "25 KG.",
+        "precio": "11450"},
+      {
+        "id": "SEM106",
+        "producto": "Semillas de amapola azul",
+        "variante": "250 GR.",
+        "precio": "320"},
+      {
+        "id": "SEM106",
+        "producto": "Semillas de amapola azul",
+        "variante": "1 KG.",
+        "precio": "1280"},
+      {
+        "id": "SEM106",
+        "producto": "Semillas de amapola azul",
+        "variante": "25 KG.",
+        "precio": "32000"},
+      {
+        "id": "SEM108",
+        "producto": "Semillas de zapallo",
+        "variante": "500 GR.",
+        "precio": "475"},
+      {
+        "id": "SEM108",
+        "producto": "Semillas de zapallo",
+        "variante": "250 GR.",
+        "precio": "240"},
+      {
+        "id": "SEM108",
+        "producto": "Semillas de zapallo",
+        "variante": "1 KG.",
+        "precio": "950"},
+      {
+        "id": "SEM108",
+        "producto": "Semillas de zapallo",
+        "variante": "25 KG.",
+        "precio": "23750"},
+      {
+        "id": "SEM109",
+        "producto": "Semillas de lino",
+        "variante": "500 GR.",
+        "precio": "70"},
+      {
+        "id": "SEM109",
+        "producto": "Semillas de lino",
+        "variante": "1 KG.",
+        "precio": "140"},
+      {
+        "id": "SEM109",
+        "producto": "Semillas de lino",
+        "variante": "25 KG.",
+        "precio": "3500"},
+      {
+        "id": "SEM110",
+        "producto": "Semillas de chia",
+        "variante": "500 GR.",
+        "precio": "130"},
+      {
+        "id": "SEM110",
+        "producto": "Semillas de chia",
+        "variante": "1 KG.",
+        "precio": "260"},
+      {
+        "id": "SEM110",
+        "producto": "Semillas de chia",
+        "variante": "25 KG.",
+        "precio": "6500"},
+      {
+        "id": "SEM111",
+        "producto": "Semillas de mijo",
+        "variante": "500 GR.",
+        "precio": "130"},
+      {
+        "id": "SEM111",
+        "producto": "Semillas de mijo",
+        "variante": "1 KG.",
+        "precio": "265"},
+      {
+        "id": "SEM111",
+        "producto": "Semillas de mijo",
+        "variante": "25 KG.",
+        "precio": "7868"},
+      {
+        "id": "SEM112",
+        "producto": "Sesamo blanco",
+        "variante": "250 GR.",
+        "precio": "150"},
+      {
+        "id": "SEM112",
+        "producto": "Sesamo blanco",
+        "variante": "1 KG.",
+        "precio": "600"},
+      {
+        "id": "SEM112",
+        "producto": "Sesamo blanco",
+        "variante": "25 KG.",
+        "precio": "15000"},
+      {
+        "id": "SEM113",
+        "producto": "Sesamo integral",
+        "variante": "500 GR.",
+        "precio": "130"},
+      {
+        "id": "SEM113",
+        "producto": "Sesamo integral",
+        "variante": "250 GR.",
+        "precio": "70"},
+      {
+        "id": "SEM113",
+        "producto": "Sesamo integral",
+        "variante": "1 KG.",
+        "precio": "260"},
+      {
+        "id": "SEM113",
+        "producto": "Sesamo integral",
+        "variante": "25 KG.",
+        "precio": "6500"},
+      {
+        "id": "SEM114",
+        "producto": "Sesamo negro",
+        "variante": "250 GR.",
+        "precio": "200"},
+      {
+        "id": "SEM114",
+        "producto": "Sesamo negro",
+        "variante": "1 KG.",
+        "precio": "800"},
+      {
+        "id": "SEM114",
+        "producto": "Sesamo negro",
+        "variante": "25 KG.",
+        "precio": "20000"},
+      {
+        "id": "SEM115",
+        "producto": "Girasol con cascara",
+        "variante": "500 GR.",
+        "precio": "80"},
+      {
+        "id": "SEM115",
+        "producto": "Girasol con cascara",
+        "variante": "1 KG.",
+        "precio": "160"},
+      {
+        "id": "SEM115",
+        "producto": "Girasol con cascara",
+        "variante": "5 KG.",
+        "precio": "800"},
+      {
+        "id": "SEM118",
+        "producto": "Semillas de mostaza amarilla",
+        "variante": "500 GR.",
+        "precio": "160"},
+      {
+        "id": "SEM118",
+        "producto": "Semillas de mostaza amarilla",
+        "variante": "250 GR.",
+        "precio": "85"},
+      {
+        "id": "SEM118",
+        "producto": "Semillas de mostaza amarilla",
+        "variante": "1 KG.",
+        "precio": "320"},
+      {
+        "id": "SEM118",
+        "producto": "Semillas de mostaza amarilla",
+        "variante": "5 KG.",
+        "precio": "1600"},
+      {
+        "id": "SEM119",
+        "producto": "Mix de semillas desayuno",
+        "variante": "500 GR.",
+        "precio": "200"},
+      {
+        "id": "SEM119",
+        "producto": "Mix de semillas desayuno",
+        "variante": "1 KG.",
+        "precio": "400"},
+      {
+        "id": "SEM119",
+        "producto": "Mix de semillas desayuno",
+        "variante": "25 KG.",
+        "precio": "10000"},
+      {
+        "id": "SEM120",
+        "producto": "Mix de semillas ensalada",
+        "variante": "500 GR.",
+        "precio": "260"},
+      {
+        "id": "SEM120",
+        "producto": "Mix de semillas ensalada",
+        "variante": "1 KG.",
+        "precio": "520"},
+      {
+        "id": "SEM120",
+        "producto": "Mix de semillas ensalada",
+        "variante": "25 KG.",
+        "precio": "13000"},
+      {
+        "id": "SEM121",
+        "producto": "Mix de semillas integral",
+        "variante": "500 GR.",
+        "precio": "250"},
+      {
+        "id": "SEM121",
+        "producto": "Mix de semillas integral",
+        "variante": "1 KG.",
+        "precio": "500"},
+      {
+        "id": "SEM121",
+        "producto": "Mix de semillas integral",
+        "variante": "25 KG.",
+        "precio": "12500"},
+      {
+        "id": "SUP100",
+        "producto": "Bayas de goyi",
+        "variante": "100 GR.",
+        "precio": "150"},
+      {
+        "id": "SUP100",
+        "producto": "Bayas de goyi",
+        "variante": "1 KG.",
+        "precio": "1500"},
+      {
+        "id": "SUP101",
+        "producto": "Bicarbonato de sodio",
+        "variante": "250 GR.",
+        "precio": "45"},
+      {
+        "id": "SUP101",
+        "producto": "Bicarbonato de sodio",
+        "variante": "1 KG.",
+        "precio": "180"},
+      {
+        "id": "SUP101",
+        "producto": "Bicarbonato de sodio",
+        "variante": "25 KG.",
+        "precio": "4500"},
+      {
+        "id": "SUP103",
+        "producto": "Maca - Kalpa",
+        "variante": "500 GR.",
+        "precio": "200"},
+      {
+        "id": "SUP109",
+        "producto": "Spirulina Organica - 50 gr. - Primitiiva",
+        "variante": "50 GR.",
+        "precio": "430"},
+      {
+        "id": "SUP109",
+        "producto": "Spirulina Organica - 50 gr. - Primitiiva",
+        "variante": "10 U.",
+        "precio": "4300"},
+      {
+        "id": "SUP110",
+        "producto": "Moringa",
+        "variante": "50 GR.",
+        "precio": "80"},
+      {
+        "id": "SUP111",
+        "producto": "Spirulina orgánica - Snack raw - 50 gr. - Primitiiva",
+        "variante": "50 GR.",
+        "precio": "430"},
+      {
+        "id": "SUP111",
+        "producto": "Spirulina orgánica - Snack raw - 50 gr. - Primitiiva",
+        "variante": "10 U.",
+        "precio": "4300"},
+ 
+        {
+        "id": "UNT100",
+        "producto": "Crema caju - Finas hierbas - Vivet",
+        "variante": "220 GR.",
+        "precio": "130"},
+      {
+        "id": "UNT101",
+        "producto": "Crema caju - Natural - Vivet",
+        "variante": "220 GR.",
+        "precio": "130"},
+      {
+        "id": "UNT103",
+        "producto": "Postre placer - Vainilla - Vivet",
+        "variante": "90 GR.",
+        "precio": "100"},
+      {
+        "id": "UNT104",
+        "producto": "Postre placer - Chocolate - Vivet",
+        "variante": "90 GR.",
+        "precio": "100"},
+      {
+        "id": "UNT105",
+        "producto": "Sirius untable de castana tostado con cacao - Vivet",
+        "variante": "210 GR.",
+        "precio": "180"},
+      {
+        "id": "UNT108",
+        "producto": "Crema de mani - Coco - 380 gr. - Hardy",
+        "variante": "380 GR.",
+        "precio": "180"},
+      {
+        "id": "UNT108",
+        "producto": "Crema de mani - Coco - 380 gr. - Hardy",
+        "variante": "15 U.",
+        "precio": "2700"},
+      {
+        "id": "UNT109",
+        "producto": "Crema de mani - Chocolate - 380 gr.  - Hardy",
+        "variante": "380 GR.",
+        "precio": "180"},
+      {
+        "id": "UNT109",
+        "producto": "Crema de mani - Chocolate - 380 gr.  - Hardy",
+        "variante": "15 U.",
+        "precio": "2700"},
+      {
+        "id": "UNT110",
+        "producto": "Crema de mani - Cookies - 380 gr. - Hardy",
+        "variante": "380 GR.",
+        "precio": "180"},
+      {
+        "id": "UNT110",
+        "producto": "Crema de mani - Cookies - 380 gr. - Hardy",
+        "variante": "15 U.",
+        "precio": "2700"},
+      {
+        "id": "UNT111",
+        "producto": "Crema de mani - Vainilla - 380 gr. - Hardy",
+        "variante": "380 GR.",
+        "precio": "180"},
+      {
+        "id": "UNT111",
+        "producto": "Crema de mani - Vainilla - 380 gr. - Hardy",
+        "variante": "15 U.",
+        "precio": "2700"},
+      {
+        "id": "UNT112",
+        "producto": "Crema de mani - Natural - 380 gr. - Hardy",
+        "variante": "380 GR.",
+        "precio": "180"},
+      {
+        "id": "UNT112",
+        "producto": "Crema de mani - Natural - 380 gr. - Hardy",
+        "variante": "15 U.",
+        "precio": "2700"},
+      {
+        "id": "UNT113",
+        "producto": "Queso de almendras untable - Cheddar - Felices las vacas",
+        "variante": "200 GR.",
+        "precio": "140"},
+      {
+        "id": "UNT114",
+        "producto": "Queso de almendras untable - Clasico - Felices las vacas",
+        "variante": "200 GR.",
+        "precio": "140"},
+      {
+        "id": "UNT115",
+        "producto": "Untable de almendras - Dulce de leche - Felices las vacas",
+        "variante": "250 GR.",
+        "precio": "140"},
+      {
+        "id": "UNT116",
+        "producto": "Pasta de mani  - 480 gr. - DEC",
+        "variante": "480 GR.",
+        "precio": "240"},
+      {
+        "id": "UNT117",
+        "producto": "Dulce de almendras repostero - 950 gr - Felices las vacas",
+        "variante": "950 GR.",
+        "precio": "420"},
+      {
+        "id": "UNT118",
+        "producto": "Hummus - Garbanzo - Felices las vacas",
+        "variante": "230 GR.",
+        "precio": "170"},
+      {
+        "id": "VEG101",
+        "producto": "Hamburguesas - Soja y calabaza - Veggieland",
+        "variante": "360 GR.",
+        "precio": "160"},
+      {
+        "id": "VEG102",
+        "producto": "Hamburguesas - Soja y espinaca - Veggieland",
+        "variante": "360 GR.",
+        "precio": "160"},
+      {
+        "id": "VEG103",
+        "producto": "Hamburguesas - Multicereales - Veggieland",
+        "variante": "360 GR.",
+        "precio": "160"},
+      {
+        "id": "VEG104",
+        "producto": "Hamburguesas - Soja y quinoa - Veggieland",
+        "variante": "340 GR.",
+        "precio": "160"},
+      {
+        "id": "VEG105",
+        "producto": "Hamburguesas - Soja y choclo - Veggieland",
+        "variante": "360 GR.",
+        "precio": "160"},
+      {
+        "id": "VEG106",
+        "producto": "Hamburguesas - Yamani y curcuma - Veggieland",
+        "variante": "360 GR.",
+        "precio": "160"},
+      {
+        "id": "VEG107",
+        "producto": "Hamburguesas - Brocoli y amaranto - Veggieland",
+        "variante": "360 GR.",
+        "precio": "160"},
+      {
+        "id": "VEG108",
+        "producto": "Hamburguesas - Batata con masala - Veggieland",
+        "variante": "360 GR.",
+        "precio": "115"},
+      {
+        "id": "VEG109",
+        "producto": "Hamburguesas - Remolacha y chia - Veggieland",
+        "variante": "340 GR.",
+        "precio": "160"},
+      {
+        "id": "VEG110",
+        "producto": "Hamburguesas - Lenteja y sesamo - Veggieland",
+        "variante": "360 GR.",
+        "precio": "160"},
+      {
+        "id": "VEG115",
+        "producto": "Hamburguesa - Clasica - Veggieland",
+        "variante": "U",
+        "precio": "115"},
+      {
+        "id": "VEG200",
+        "producto": "Hamburguesa - Quinoa andina - Casa vegana",
+        "variante": "480 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG201",
+        "producto": "Hamburguesa - Quinoa hindu al curry ahumado - Casa vegana",
+        "variante": "480 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG202",
+        "producto": "Hamburguesa - Quinoa sin sal - Casa vegana",
+        "variante": "480 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG203",
+        "producto": "Hamburguesa - Quinoa mediterranea - Casa vegana",
+        "variante": "480 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG204",
+        "producto": "Hamburguesa - Mijo asiatico - Casa vegana",
+        "variante": "480 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG205",
+        "producto": "Hamburguesa - Amaranto y arroz yamani - Casa vegana",
+        "variante": "480 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG206",
+        "producto": "Hamburguesa - Lentejon canadiense - Casa vegana",
+        "variante": "480 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG207",
+        "producto": "Hamburguesa - Aduki y remolacha - Casa vegana",
+        "variante": "480 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG208",
+        "producto": "Hamburguesa - Aduki Hungaro con especies ahumadas - Casa vegana",
+        "variante": "480 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG209",
+        "producto": "Toque - Lenteja - Casa Vegana",
+        "variante": "U",
+        "precio": "195"},
+      {
+        "id": "VEG210",
+        "producto": "Hamburguesa Green Moon - Casa Vegana",
+        "variante": "U",
+        "precio": "180"},
+      {
+        "id": "VEG211",
+        "producto": "Toque - Garbanzo - Casa Vegana",
+        "variante": "U",
+        "precio": "195"},
+      {
+        "id": "VEG212",
+        "producto": "Mozzarella - Felices las vacas",
+        "variante": "500 GR.",
+        "precio": "330"},
+      {
+        "id": "VEG213",
+        "producto": "Provoleta - Felices las vacas",
+        "variante": "250 GR.",
+        "precio": "230"},
+      {
+        "id": "VEG214",
+        "producto": "Karnevil - Felices las vacas",
+        "variante": "250 GR.",
+        "precio": "250"},
+      {
+        "id": "VEG300",
+        "producto": "Hamburguesas - Quinoa y curri - Green kitchen",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG301",
+        "producto": "Hamburguesas - Lenteja - Green kitchen",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG302",
+        "producto": "Hamburguesas - Calabaza y cebolla caramelizada - Green kitchen",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG303",
+        "producto": "Hamburguesas - Black bean ahumada - Green kitchen",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG304",
+        "producto": "Nuggets veganos - Arroz y lentejas - Green kitchen",
+        "variante": "300 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG305",
+        "producto": "Nuggets veganos - Quinoa y garbanzo - Green kitchen",
+        "variante": "300 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG400",
+        "producto": "Hamburguesa - Berenjena y pimenton - Tienda veggie",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG401",
+        "producto": "Hamburguesa - Brocoli y mijo - Tienda veggie",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG402",
+        "producto": "Hamburguesa - Calabaza y garbanzo - Tienda veggie",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG403",
+        "producto": "Hamburguesa - Cebolla caramelizada - Tienda veggie",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG404",
+        "producto": "Hamburguesa - Espinaca y arveja - Tienda veggie",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG405",
+        "producto": "Hamburguesa - Lentejas y arroz yamani - Tienda veggie",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG406",
+        "producto": "Hamburguesa - Tomate seco y aduki - Tienda veggie",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "VEG407",
+        "producto": "Hamburguesa - Romero y zanahoria dulce - Tienda veggie",
+        "variante": "500 GR.",
+        "precio": "180"},
+      {
+        "id": "YER100",
+        "producto": "Yerba sin tacc - Tradicional - 500 gr. - Kalena",
+        "variante": "500 GR.",
+        "precio": "240"},
+      {
+        "id": "YER100",
+        "producto": "Yerba sin tacc - Tradicional - 500 gr. - Kalena",
+        "variante": "12 U.",
+        "precio": "2160"},
+      {
+        "id": "YER103",
+        "producto": "Yerba organica - 500 gr. - Taihang",
+        "variante": "500 GR.",
+        "precio": "240"},
+      {
+        "id": "YER103",
+        "producto": "Yerba organica - 500 gr. - Taihang",
+        "variante": "10 U.",
+        "precio": "2400"},
+      {
+        "id": "YER105",
+        "producto": "Yerba sin tacc - Despalada - 500 gr. - Kalena",
+        "variante": "500 GR.",
+        "precio": "240"},
+      {
+        "id": "YER105",
+        "producto": "Yerba sin tacc - Despalada - 500 gr. - Kalena",
+        "variante": "10 U.",
+        "precio": "1900"},
+      {
+        "id": "YOG100",
+        "producto": "Yogur - Durazno - 190 gr - Felices las vacas",
+        "variante": "190 GR.",
+        "precio": "90"},
+      {
+        "id": "YOG101",
+        "producto": "Yogur - Frutilla - 190 gr - Felices las vacas",
+        "variante": "190 GR.",
+        "precio": "90"},
+      {
+        "id": "YOG102",
+        "producto": "Yogur - Cereales - 190 gr - Felices las vacas",
+        "variante": "190 GR.",
+        "precio": "90"}
+]
