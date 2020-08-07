@@ -2,7 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 
-const loginCtrl = require('../controllers/loginCtrl');
+const loginCtrl = require('../controllers/usrCtrl');
 
 router
     .get('/',loginCtrl.login)

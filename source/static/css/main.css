@@ -347,3 +347,9 @@ footer i {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+a.to-categories{
+    text-decoration: none;
+    cursor: pointer;
+    color: #333232;
+}

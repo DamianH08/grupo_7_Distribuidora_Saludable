@@ -1,4 +1,2 @@
-.gitignore
+gitignore
 source/node_modules/
-source/package-lock.json
-source/package.json
