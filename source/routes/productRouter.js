@@ -6,6 +6,9 @@ const productsCtrl = require('../controllers/productsCtrl');
 
 router
     .get('/',productsCtrl.index)
+    .get('/categories',productsCtrl.categories)
+    .get('/categories/:cat',productsCtrl.category)
+    .get('/:id',productsCtrl.detail)
     ;
 
 module.exports = router;

@@ -1,6 +1,11 @@
+const categories_db = require("../db/categories_db");
+
 module.exports ={
     index: (req,res)=>{
-        res.render('index')
+        let categories = categories_db.data;
+        res.render('index',{
+            categories:categories
+        })
     },
     locales: (req,res)=>{
         res.render('locales')

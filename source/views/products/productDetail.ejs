@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora Saludable</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/prdDetail.css">
+    <link rel="stylesheet" href="/css/mainMovil.css">
+    <link rel="stylesheet" href="/css/mainTablet.css">
+    
+    <!-- Icons fontawesome.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+</head>
+<body>
+    <%- include('../partials/header') %> 
+
+    <div style="margin-bottom:1rem;"></div>
+    <div class="desc-container add-shadow">
+        <img class="prd-photo" src="<%= product.img %> ">
+        <div class="prd-details">
+            <div class="prd-name"><%= product.producto %> </div>
+            <div class="prd-price">$<%= product.precio %> </div>
+            <div class="qty">
+                <input type="number" name="qty" placeholder="1" required>
+                <div class="un">Kg</div>
+            </div>
+            <a href="#" id="add" class="add-shadow"><i class="fas fa-shopping-cart"></i> Agregar al carrito</a>
+
+
+        </div>
+    </div>
+    
+    <%- include('../partials/footer') %> 
+</body>
+</html>

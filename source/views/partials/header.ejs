@@ -1,19 +1,15 @@
 <header>
     <a href="/" class="logo-header">
-        <img src="images/logo/logoWhite.png">
+        <img src="/images/logo/logoWhite.png">
     </a>
     <ul class="desktop tablet">
         <li class="dropdown">
             <a href="" class="dropbtn"><i class="fas fa-angle-down"></i> Categorías</a>
             <div class="dropdown-content">
-              <a href="#">Sin T.A.A.C</a>
-              <a href="#">Vegano</a>
-              <a href="#">Aceites</a>
-              <a href="#">Cereales</a>
-              <a href="#">Condimentos</a>
-              <a href="#">Disecados</a>
-              <a href="#">Endulzantes</a>
-              <a href="#">Fideos</a>
+                <a href="/products/categories">Ver todas</a>
+                <% categories.forEach(category =>{ %> 
+                    <a href="products/categories/<%= category.id %>" > <%= category.name %> </a>
+                <% }) %> 
         <li><a href="/about"><i class="fab fa-nutritionix"></i> Quienes somos</a></li>
         <li><a href="/login"><i class="fas fa-user"></i> Ingresar</a></li>
         <li><a href="/cart"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
