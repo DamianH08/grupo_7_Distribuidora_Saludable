@@ -171,10 +171,12 @@ header form input{
     font-size: 2em;
     font-weight: 500;
     text-align: center;
+    color: green;
 }
 .desc-product{
     text-align: center;
     margin-bottom: 0.8rem;   
+    color: #333232;
 }
 .photo-product{
     width: 100%;
@@ -352,4 +354,9 @@ a.to-categories{
     text-decoration: none;
     cursor: pointer;
     color: #333232;
+}
+a.to-product{
+    text-decoration: none;
+    text-emphasis: none;
+    text-decoration-color: none;
 }

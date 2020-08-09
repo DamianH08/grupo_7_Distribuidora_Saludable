@@ -10,4 +10,8 @@ module.exports ={
         let categories = data.map(cat => cat.name);
         return categories;
     },
+    findById:(id)=>{
+        let ctg = data.find(categ => categ.id.toLowerCase()==id.toLowerCase())
+        return ctg.name
+    }
 }

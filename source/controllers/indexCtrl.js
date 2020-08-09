@@ -8,13 +8,14 @@ module.exports ={
         })
     },
     locales: (req,res)=>{
-        res.render('locales')
+        res.render('about/locales',{
+            categories:categories_db.data
+        })
     },
     about: (req,res)=>{
-        res.render('about')
-    },
-    test:(req,res)=>{
-        res.render('test')
+        res.render('about/about',{
+            categories:categories_db.data
+        })
     },
     cart:(req,res)=>{
         res.render('cart')

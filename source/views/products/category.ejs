@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <%- include('../partials/styles-and-fonts') %> 
+
+</head>
+<body>
+    <%- include('../partials/header') %>
+    
+    <h1><%= categoryName %> </h1>
+
+    <div class="container"> 
+        <div class="products-container">
+            <% products.forEach((product) => {%> 
+            <a class="to-product" href="/products/<%= product.id %> ">
+                <div class="product-container add-shadow-1">
+                        <div class="image-product"><img class="photo-product" src="<%= product.img %>"></div>
+                        <div class="price-product">$<%= product.precio %> </div>
+                        <div class="desc-product"><%= product.producto %> </div>
+                        <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
+                </div>
+            </a>
+        <% }) %> 
+        </div>
+</body>
+</html>
