@@ -10,6 +10,7 @@ router
     .get('/about',indexCtrl.about)
     .get('/cart',indexCtrl.cart)
     .get('/productDetail',indexCtrl.productDetail)
+    .get('/search',indexCtrl.search)
     ;
 
 module.exports = router;

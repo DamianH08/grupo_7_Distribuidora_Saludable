@@ -67,16 +67,33 @@ header li a {
 header li a:hover{
     background-color: rgba(0,0,0,0.4);
 }
-header form{
-    float: right;
-}
-header form input{
-    font-family: 'Montserrat';
-    font-size: 1.2rem;
-    border-radius: 0.1rem;
-    padding: 0.2rem;
+.search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+   
+  }
+  .search-form_input {
+    border:none;
+    background-color: rgb(85, 85, 85);
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 0.1rem 2rem 0.1rem 0.1rem;
+    border-radius: 3px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .search-form_button {
+    background-color: rgb(85, 85, 85);
+    color: #fff;
+    position: absolute;
+    right: 1px;
+    height: 90%;
     border: none;
-}
+    cursor: pointer;
+  }
 
 .dropMenu{
     display: inline-block;
@@ -159,7 +176,7 @@ header form input{
     padding: 0.1rem;
     border: 0.1rem solid #ebebeb;
     cursor: pointer;
-    margin: 0.15rem;
+    margin: 0.8rem 0.5rem;
 }
 .image-product{
     width: 95%;
@@ -237,7 +254,7 @@ header form input{
     font-weight: 500;
 }
 .btn:hover{
-    background-color:var(--pink-2);
+    opacity: 0.8;
 }
 
 /*==== Quienes somos =====*/

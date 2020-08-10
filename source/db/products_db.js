@@ -17,5 +17,9 @@ module.exports = {
     },
     findById: (id)=>{
         return data.filter(prd => prd.id == id)[0]
+    },
+    findByKeyword:(keyword)=>{
+        return data.filter(
+            prd => prd.producto.toLowerCase().includes(keyword.toLowerCase()))
     }
 }

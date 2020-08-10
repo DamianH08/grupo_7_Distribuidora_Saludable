@@ -1,12 +1,15 @@
 /*=== Movil <420px ===*/
 @media(max-width:425px){
-    
+
     .desktop,.tablet{
         display: none;
     }
+    .products-container{
+        justify-content: space-evenly;
+    }
     .product-container{
-        width: 50%;
-        margin: auto;
+        width: 48%;
+        margin: 0.1rem;
     }
     .btn{
         width: 98%;
@@ -14,11 +17,15 @@
     .desktop,.tablet{
         display: none;
     }
-    header form{
-        font-size: 0.8rem;
-        width: 90%;
-        margin: auto;
+    .search-form{
+        width: 60%;
     }
+    .search-form_input{
+        font-size:0.8rem;
+        height: 100%;
+        padding: 0.6rem;
+    }
+
     header img{
         width: 120%;
     }

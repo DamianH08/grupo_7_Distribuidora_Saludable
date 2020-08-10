@@ -2,6 +2,11 @@
     <a href="/" class="logo-header">
         <img src="/images/logo/logoWhite.png">
     </a>
+    <form action="/search" method="GET" class="search-form">
+        <input type="text" name="keyword" placeholder="Buscar..." class="search-form_input">
+        <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+    </form>
+    
     <ul class="desktop tablet">
         <li class="dropdown">
             <a href="" class="dropbtn"><i class="fas fa-angle-down"></i> Categorías</a>
@@ -10,7 +15,15 @@
                 <% categories.forEach(category =>{ %> 
                     <a href="/products/categories/<%= category.id %>" > <%= category.name %> </a>
                 <% }) %> 
-        <li><a href="/about"><i class="fab fa-nutritionix"></i> Quienes somos</a></li>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropbtn"><i class="fas fa-angle-down"></i> Conocénos</a>
+            <div class="dropdown-content">
+                <a href="/locales">Locales</a>
+                <a href="/about">Nosotros</a>
+            </div>
+        </li>
         <li><a href="/login"><i class="fas fa-user"></i> Ingresar</a></li>
         <li><a href="/cart"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
       </ul>

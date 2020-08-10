@@ -1,13 +1,18 @@
 /*=== Tablet ===*/
 @media(min-width:426px) and (max-width:768px) {
-
     .movil{
         display: none;
     }
     .product-container{
         width:20%;
     }
-
+    .search-form{
+        width: 30%;
+        
+    }
+    header li a{
+        font-size: 0.9rem;
+    }
     .products-container{
         justify-content: center;
     }

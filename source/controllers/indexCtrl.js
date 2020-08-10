@@ -1,4 +1,5 @@
 const categories_db = require("../db/categories_db");
+const products_db = require("../db/products_db");
 
 module.exports ={
     index: (req,res)=>{
@@ -18,10 +19,19 @@ module.exports ={
         })
     },
     cart:(req,res)=>{
-        res.render('cart')
+        res.render('cart',{
+            categories:categories_db.data
+        })
     },
     productDetail:(req,res)=>{
         res.render('productDetail')
+    },
+    search:(req,res)=>{
+        res.render('search',{
+            categories:categories_db.data,
+            keyword:req.query.keyword,
+            products:products_db.findByKeyword(req.query.keyword)
+        })
     }
 };
 
