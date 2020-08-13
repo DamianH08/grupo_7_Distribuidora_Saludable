@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear producto</title>
+    <%- include('../../partials/styles-and-fonts') %> 
+    <%- include('../partials/style') %> 
+</head>
+<body>
+    <%- include('../partials/header') %> 
+
+    <div class="main-container">
+        
+        <div class="menu-container add-shadow-1">
+            <ul class="vnav">
+                <li><a class="nav-btn" href="/admin/products/create">Crear</a></li>
+                <li><a class="nav-btn active" href="">Modificar</a></li>
+                <li><a class="nav-btn" href="">Borrar</a></li>
+            </ul>
+
+        </div>
+   
+    <div class="form-container add-shadow-1">
+        <form action="/admin/products/create" method="POST">
+
+            <label for="name">Nombre del producto:</label><br>
+            <input type="text" placeholder="<%= product.producto %>"><br>
+            <label for="price">Precio:</label><br>
+            <input type="text" name="price" placeholder="<%= product.precio %> ">
+            <span><%= product.variante %> </span><br>
+            <label for="un">Unidad:</label><br>
+            <input type="number" min="0" name="unidad">
+            <select name="category" id="">
+                <option value="">Unidad</option>
+                <option value="">kg (kilogramo)</option>
+                <option value="">g (gramo)</option>
+                <option value="">l (litro)</option>
+            </select><br>
+            <label for="description">Descripción:</label><br>
+            <input type="text" id="descr">
+            <label for="image">Imágen:</label>
+            <input type="text" style="width: 50%;" placeholder="<%= product.img %> ">
+            <a target="_blank" href="<%= product.img %>">ver</a>
+            <div class="btn-container"> 
+                <input type="submit" value="Aceptar">
+                <a href="javascript:history.back()">cancelar</a>
+            </div>
+        </form>
+    </div>
+    </div>
+    
+    <div style="height: 200px;"></div>
+</body>
+</html>

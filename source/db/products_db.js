@@ -4,8 +4,19 @@ const path = require('path'),
 let file = fs.readFileSync(path.join(__dirname,'products.json'),'utf-8');
 let data = JSON.parse(file);
 
-let t = data[0];
-console.log(t.id.slice(0,3).toLowerCase());
+//this function generates a new id for each new product
+function generateId(id){
+    let ids=[]
+    for(let product of data){
+        if(product.id.slice(0,3)==id.toUpperCase()){
+            ids.push(product.id)
+        }
+    }
+    ids.sort();
+    let newID =id+(parseInt(ids[ids.length-1].slice(3,6))+1);
+    console.log(newID.toUpperCase())
+    return newID.toUpperCase();
+}
 
 module.exports = {
     all:()=>data,
@@ -21,5 +32,19 @@ module.exports = {
     findByKeyword:(keyword)=>{
         return data.filter(
             prd => prd.producto.toLowerCase().includes(keyword.toLowerCase()))
+    },
+    createProduct:(name,price,qty,unit,image,category)=>{
+        let newProduct = {
+            'id':generateId(category),
+            'producto':name,
+            'variante':qty+' '+unit,
+            'precio':price,
+            'img':image
+        };
+        data.push(newProduct);
+        console.log(data[data.length-1]);
+        fs.writeFileSync('db/products.json',JSON.stringify(data,null,2),(err)=>{
+            if(err){console.log(err)}
+        });
     }
 }

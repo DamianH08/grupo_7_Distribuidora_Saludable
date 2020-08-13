@@ -1,0 +1,129 @@
+<style>
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        margin-top: 1.2rem;
+    }
+    .menu-container{
+        width: 25%;
+        height: 100%;
+        background-color: #fff;    
+    }
+    .form-container{        
+        width: 60%;
+        background-color: #fff;
+    }
+    #descr{
+        width: 100%;
+    }
+    .form-container{
+        padding: 1rem;
+    }
+    .form-container input,select{
+        margin-bottom: 0.8rem;
+        padding: 0.3rem;
+    }
+    .btn-container{
+        width: 80%;
+        margin: 1rem auto 0.5rem;
+        text-align: center;
+    }
+    
+    /* vertical nav */
+    ul.vnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    ul.vnav li,a.nav-btn {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.2rem;
+    font: inherit;
+    color: inherit;
+    }
+    a.active{
+        background-color: rgb(49, 173, 80);
+        color: #fff;
+    }
+    a.nav-btn:hover:not(.active){  
+        background-color: rgba(49,173,80,0.2);
+    }
+
+    /* porducts list */
+    .id-title{
+        width: 10%;
+    }
+    .name-title{
+        width:40% ;
+    }
+    .price-title{
+        width: 10%;
+    }
+    .unit-title{
+        width: 10%;
+    }
+    
+    .products-list{
+        width: 60%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .product-row,.row-titles{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .row-titles{
+        background-color: rgb(49, 173, 80);
+        color: #fff;
+        font-weight: 700;
+        padding: 0.1rem 1rem;
+    }
+    .product-row{
+        padding: 0.3rem 0.1rem;
+    }
+    .id{
+        width: 10%;
+    }
+    .name{
+        width: 40%;
+    }
+    .price,.unit{
+        width: 10%;
+    }
+    .btn-admin{
+        color: inherit;
+    }
+    .btn-admin:hover{
+        color: rgb(49, 173, 80);
+    }
+    i.fas.fa-trash-alt:hover{
+        color: red;
+    }
+    i.fas{
+        margin: 0 0.2rem ;
+    }
+
+    /* Product container */
+    .prod-container{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        background-color: #fff;
+    }
+    .details{
+        width: 50%;
+    }
+    
+    
+
+</style>

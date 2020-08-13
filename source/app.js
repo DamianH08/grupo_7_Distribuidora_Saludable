@@ -11,13 +11,21 @@ app.use(express.static(path.join(__dirname,'static')));
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 
+//POST request
+app.use(express.urlencoded({extended:false}));
+
 // Routes
-const productRouter = require('./routes/productRouter')
-app.use('/products',productRouter);
-const loginRouter = require('./routes/userRouter');
-app.use('/login',loginRouter);
-const indexRouter = require('./routes/indexRouter');
-app.use('/',indexRouter);
+const 
+    adminRouter = require('./routes/adminRouter'),
+    productRouter = require('./routes/productRouter'),
+    loginRouter = require('./routes/userRouter'),
+    indexRouter = require('./routes/indexRouter');
+const { urlencoded } = require('express');
+app
+    .use('/products',productRouter)
+    .use('/login',loginRouter)
+    .use('/admin',adminRouter)
+    .use('/',indexRouter);
 
 // Run app
 app.listen(port,()=>{

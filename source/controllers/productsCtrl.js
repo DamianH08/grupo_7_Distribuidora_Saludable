@@ -11,13 +11,6 @@ module.exports ={
             categories:categories_db.data
         })
     },
-    detail: (req,res)=>{
-        res.render('products/productDetail',{
-            product:products_db.findById(req.params.id),
-            categories:categories_db.all()
-        }
-        )
-    },
     categories: (req,res) =>{
         res.render('products/allCategories',{
             categories:categories_db.data
@@ -29,6 +22,21 @@ module.exports ={
             categories:categories_db.data,
             products:products_db.findByCategory(req.params.cat),
         });
-        // res.send(products);
+        
+    },
+    show: (req,res)=>{
+        res.render('products/productDetail',{
+            product:products_db.findById(req.params.id),
+            categories:categories_db.all()
+        }
+        )
+    },
+    create: (req,res)=>{
+        res.render('products/create',{
+            categories:categories_db.data
+        })
+    },
+    edit: (req,res)=>{
+        res.send('ok')
     }
 };

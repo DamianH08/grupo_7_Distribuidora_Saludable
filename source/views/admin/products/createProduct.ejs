@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear producto</title>
+    <%- include('../../partials/styles-and-fonts') %> 
+    <%- include('../partials/style') %> 
+</head>
+<body>
+    <%- include('../partials/header') %> 
+
+    <div class="main-container">
+        
+        <div class="menu-container add-shadow-1">
+            <ul class="vnav">
+                <li><a class="nav-btn active" href="/admin/products/create">Crear</a></li>
+                <li><a class="nav-btn" href="">Modificar</a></li>
+                <li><a class="nav-btn" href="">Borrar</a></li>
+            </ul>
+
+        </div>
+   
+    <div class="form-container add-shadow-1">
+        <form action="/admin/products/create" method="POST">
+            <label for="name">Nombre del producto:</label><br>
+            <input type="text" name="name"><br>
+            <label for="price">Precio:</label><br>
+            <input type="text" name="price"><br>
+            <label for="un">Unidad:</label><br>
+            <input type="number" min="0" name="quantity">
+            <select name="unit">
+                <option value="Un">Unidad</option>
+                <option value="kg">kg (kilogramo)</option>
+                <option value="g">g (gramo)</option>
+                <option value="l">l (litro)</option>
+            </select><br>
+            <label for="description">Descripción:</label><br>
+            <input type="text" id="descr">
+            <label for="image">Imágen:</label>
+            <input type="text" placeholder="URL" name="image">
+            <label for="category">Categoría</label>
+            <select name="category">
+                <% categories.forEach(category =>{ %> 
+                <option value="<%= category.id %>"> <%= category.name %> </option>
+                <% } ) %> 
+            </select><br>
+            <div class="btn-container">
+                <input type="submit" value="Aceptar">
+                <input type="submit" value="Cancelar">
+            </div>
+        </form>
+    </div>
+    </div>
+    
+    <div style="height: 200px;"></div>
+</body>
+</html>

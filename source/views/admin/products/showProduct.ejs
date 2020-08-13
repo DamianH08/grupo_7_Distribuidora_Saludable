@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear producto</title>
+    <%- include('../../partials/styles-and-fonts') %> 
+    <%- include('../partials/style') %> 
+</head>
+<body>
+    <%- include('../partials/header') %> 
+        
+    <div class="main-container">
+        <div class="menu-container add-shadow-1">
+            <ul class="vnav">
+                <li><a class="nav-btn active" href="/admin/products/create">Crear</a></li>
+                <li><a class="nav-btn" href="">Modificar</a></li>
+                <li><a class="nav-btn" href="">Borrar</a></li>
+            </ul>
+        </div>
+
+        <div class="prod-container">
+            <div style="text-align: left;margin:0.5rem;font-size: 1.2rem;">
+                <a href="javascript:history.back()" style="text-decoration: none;color: inherit;">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="details">
+                <img src="<%= product.img %> " alt="">
+            </div>  
+            <div class="details">
+                <div class="row-btns" style="text-align: right;margin:0.5rem;font-size: 1.2rem;">
+                    <a class="btn-admin" href="/admin/products/<%= product.id %> " title="Ver"><i class="fas fa-eye"></i></a>
+                    <a class="btn-admin" href="/admin/products/<%= product.id %>/edit" title="Editar"><i class="fas fa-pen"></i></a>
+                    <a class="btn-admin" href="" title="Borrar"><i class="fas fa-trash-alt"></i></a>
+                </div>
+                <p>ID:<%= product.id %> </p>
+                <p><%= product.producto %> </p>
+                <p>$<%= product.precio %> </p>
+                <p><%= product.variante %> </p>     
+            </div> 
+            
+                          
+        </div>
+
+
+    </div>
+
+
+    
+    <div style="height: 200px;"></div>
+</body>
+</html>
