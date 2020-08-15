@@ -34,8 +34,9 @@ module.exports = {
             prd => prd.producto.toLowerCase().includes(keyword.toLowerCase()))
     },
     createProduct:(name,price,qty,unit,image,category)=>{
+        let id = generateId(category);
         let newProduct = {
-            'id':generateId(category),
+            'id':id,
             'producto':name,
             'variante':qty+' '+unit,
             'precio':price,
@@ -43,6 +44,31 @@ module.exports = {
         };
         data.push(newProduct);
         console.log(data[data.length-1]);
+        fs.writeFileSync('db/products.json',JSON.stringify(data,null,2),(err)=>{
+            if(err){console.log(err)}
+        });
+        return id;
+    },
+    storeEditedProduct:(id,name,price,img)=>{
+        for(let product of data){
+            if(product.id==id){
+                product.producto=name;
+                product.precio=price;
+                product.img=img;
+                console.log(product);
+                break;
+            }
+        }
+        fs.writeFileSync('db/products.json',JSON.stringify(data,null,2),(err)=>{
+            if(err){console.log(err)}
+        });
+    },
+    storeDeletedProduct:(id)=>{
+        let i=0;
+        for(i;i<data.length-1;i++){
+            if(id == data[i].id ){break}
+        }
+        data.splice(i,1);
         fs.writeFileSync('db/products.json',JSON.stringify(data,null,2),(err)=>{
             if(err){console.log(err)}
         });

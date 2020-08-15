@@ -647,8 +647,8 @@
     "id": "CER116",
     "producto": "Avena instantanea",
     "variante": "500 GR.",
-    "precio": "85",
-    "img": "//d26lpennugtm8s.cloudfront.net/stores/904/312/products/avena-instantanea1-5c90a8154b292a2dff15508373159375-320-0.jpg"
+    "precio": "120",
+    "img": "//d26lpennugtm8s.cloudfront.net/stores/904/312/products/avena-instantanea1-5c90a8154b292a2dff15508373159375-320-0.jpg  "
   },
   {
     "id": "CER116",
@@ -7021,17 +7021,10 @@
     "img": "//d26lpennugtm8s.cloudfront.net/stores/904/312/products/trigo-burgol-fino1-f982c4d967730cbeb715519853365253-320-0.jpg"
   },
   {
-    "id": "CER158",
-    "producto": "Trigo sarraceno pelado entero",
-    "variante": "500 GR.",
-    "precio": "130",
-    "img": "//d26lpennugtm8s.cloudfront.net/stores/904/312/products/trigo-sarraceno-pelado-entero1-c5a34d4b15a53a91d115519853967008-320-0.jpg"
-  },
-  {
-    "id": "HAR137",
-    "producto": "harina aaa",
+    "id": "CER178",
+    "producto": "avena qq",
     "variante": "1 kg",
-    "precio": "500",
-    "img": "imagen"
+    "precio": "200",
+    "img": ""
   }
 ]

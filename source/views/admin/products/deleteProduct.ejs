@@ -15,15 +15,16 @@
         <div class="menu-container add-shadow-1">
             <ul class="vnav">
                 <li><a class="nav-btn" href="/admin/products/create">Crear</a></li>
-                <li><a class="nav-btn active" href="admin/porducts/edit">Editar</a></li>
-                <li><a class="nav-btn" href="">Borrar</a></li>
+                <li><a class="nav-btn" href="admin/porducts/edit">Editar</a></li>
+                <li><a class="nav-btn active" href="">Borrar</a></li>
             </ul>
 
         </div>
    
     <div class="form-container add-shadow-1">
-        <form action="/admin/products/<%= product.id %>/edit " method="POST">
-            <span>ID: <%= product.id %> </span><br>
+        <form action="/admin/products/<%= product.id %>/delete " method="POST">
+            <label for="">ID:</label><br>
+            <input type="text" value="<%= product.id %> " ><br>
             <br>
             <label for="name">Nombre del producto:</label><br>
             <input type="text" style="width: 50%;" name="name" value="<%= product.producto %>"><br>
@@ -36,7 +37,7 @@
             <input type="text" style="width: 50%;" name="img" value="<%= product.img %> ">
             <a target="_blank" href="<%= product.img %>">ver</a>
             <div class="btn-container"> 
-                <input type="submit" value="Aceptar">
+                <input type="submit" value="Borrar">
                 <a href="javascript:history.back()">cancelar</a>
             </div>
         </form>

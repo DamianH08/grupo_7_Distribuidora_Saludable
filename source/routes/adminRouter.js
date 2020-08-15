@@ -10,7 +10,9 @@ router
     .post('/products/create',adminCtrl.storeProduct)
     .get('/products/:id',adminCtrl.showProduct)
     .get('/products/:id/edit',adminCtrl.editProduct)
-    .post('/products/:id/edit')
+    .post('/products/:id/edit',adminCtrl.storeEditedProduct)
+    .get('/products/:id/delete',adminCtrl.deleteProduct)
+    .post('/products/:id/delete',adminCtrl.storeDeletedProduct  )
     ;
 
 module.exports = router;

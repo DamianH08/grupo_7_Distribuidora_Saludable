@@ -22,7 +22,7 @@ module.exports = {
         })
     },
     storeProduct:(req,res)=>{
-        products_db.createProduct(
+        let newProduct = products_db.createProduct(
             req.body.name,
             req.body.price,
             req.body.quantity,
@@ -30,12 +30,30 @@ module.exports = {
             req.body.image,
             req.body.category
         );
-        res.send('product created')
+        res.redirect(`/admin/products/${newProduct}`);
     },
     editProduct:(req,res)=>{
         res.render('admin/products/editProduct',{
             product:products_db.findById(req.params.id)
         })       
+    },
+    storeEditedProduct:(req,res)=>{
+        products_db.storeEditedProduct(
+            req.params.id,
+            req.body.name,
+            req.body.price,
+            req.body.img
+        );
+        res.redirect(`/admin/products/${req.params.id}`);
+    },
+    deleteProduct:(req,res)=>{
+        res.render('admin/products/deleteProduct',{
+            product : products_db.findById(req.params.id)
+        });
+    },
+    storeDeletedProduct:(req,res)=>{
+        products_db.storeDeletedProduct(req.params.id);
+        res.render('admin/products/deletedProduct');
     }
 
 }
