@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #ebebeb;
+            font-family: sans-serif;
+        }
+        header{
+            background-color:rgba(0,0,0,0.9);
+            width: 100%;
+        }
+        header img{
+            width: 8%;
+            margin: 0.6rem 0.4rem ;
+        }
+        
+        #home{
+            float:right;
+        }
+        img.error{
+            width:80%;
+            margin:auto ;
+        }
+        div{
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            color: #333322;
+        }
+        a.home{
+            color: #fff;
+            background-color: #62be90;
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        a.home:hover{
+            opacity: 0.8;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img src="/images/logo/logoWhite.png" >
+        </a>
+       </header>
+       <div>
+        <h2>Error 404: page not found</h2>
+        <a class="home" href="javascript:history.back()">Volver</a><br>
+        <img class="error" src="/images/illustrations/404.png" alt="">
+       </div>
+   
+</body>
+</html>

@@ -25,11 +25,15 @@ module.exports ={
         
     },
     show: (req,res)=>{
-        res.render('products/productDetail',{
-            product:products_db.findById(req.params.id),
-            categories:categories_db.all()
+        if(products_db.findById(req.params.id)){
+            res.render('products/productDetail',{
+                product:products_db.findById(req.params.id),
+                categories:categories_db.all()
+            }
+            )
+        }else{
+            res.status('404').render('404')
         }
-        )
     },
     create: (req,res)=>{
         res.render('products/create',{

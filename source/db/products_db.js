@@ -55,6 +55,7 @@ module.exports = {
                 product.producto=name;
                 product.precio=price;
                 product.img=img;
+                console.log(`The following product has been edited:`);
                 console.log(product);
                 break;
             }

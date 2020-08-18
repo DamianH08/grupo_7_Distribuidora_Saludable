@@ -20,12 +20,18 @@ const
     productRouter = require('./routes/productRouter'),
     loginRouter = require('./routes/userRouter'),
     indexRouter = require('./routes/indexRouter');
-const { urlencoded } = require('express');
+
 app
     .use('/products',productRouter)
     .use('/login',loginRouter)
     .use('/admin',adminRouter)
     .use('/',indexRouter);
+
+//Error 404
+app.use((req,res,next)=>{
+    res.status('404').render('404');
+    next();
+});
 
 // Run app
 app.listen(port,()=>{
