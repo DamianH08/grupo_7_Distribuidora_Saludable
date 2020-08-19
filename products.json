@@ -7019,5 +7019,19 @@
     "variante": "500 GR.",
     "precio": "60",
     "img": "//d26lpennugtm8s.cloudfront.net/stores/904/312/products/trigo-burgol-fino1-f982c4d967730cbeb715519853365253-320-0.jpg"
+  },
+  {
+    "id": "CER178",
+    "producto": "avena qq",
+    "variante": "1 kg",
+    "precio": "200",
+    "img": ""
+  },
+  {
+    "id": "CER179",
+    "producto": "avena x",
+    "variante": "1 kg",
+    "precio": "50",
+    "img": ""
   }
 ]

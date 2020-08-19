@@ -9,7 +9,6 @@ router
     .get('/locales',indexCtrl.locales)
     .get('/about',indexCtrl.about)
     .get('/cart',indexCtrl.cart)
-    .get('/productDetail',indexCtrl.productDetail)
     .get('/search',indexCtrl.search)
     ;
 
