@@ -1,0 +1,133 @@
+
+.login{
+    box-sizing: content-box;
+    margin: auto;
+    margin-top: 1rem;
+    border: 0.12rem solid var(--pink-1);
+    background-color: #fff;
+    width: 30%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+form,.more{
+    margin: auto;
+    padding: 1rem;
+}
+input[type="email"],input[type="password"],input[type="submit"],input[type="text"]{    
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    color: inherit;
+    padding: 0.5rem;
+    margin: 0.3rem auto 0.8rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid var(--pink-1);
+}
+
+input:hover{
+    border: 0.1rem solid var(--pink-2);
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+a.register:hover{
+    border: 0.1rem solid var(--pink-2);
+}
+label{
+    color: rgb(102, 100, 100);
+    font-weight: 700;
+}
+button{
+    margin: auto;
+    margin-top: 0.6rem;
+    width: 100%;
+    height: 2rem;
+}
+.btn{
+    width: 100%;
+    
+}
+header{
+    background-color:var(--background-color-header);
+    padding: 1rem;
+    width: 100%;
+}
+header img{
+    width:20%;
+
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+button{
+    cursor: pointer;
+}
+input[type="submit"]{
+    margin-bottom: 0.3rem;
+}
+label{
+    font-size: 0.8rem;
+}
+.more a{
+    text-align: center;
+    display: block;
+    color:#272726da;
+    font-size: 0.9rem;
+    width: 100%;
+}
+.register{
+    margin: 0.3rem auto 1.5rem;
+}
+.recover{
+    text-align: center;
+    color: #272726da;
+}
+
+@media(max-width: 425px) {
+    .login{
+        width: 90%;
+        margin: auto;
+        padding: 0.2rem;
+    }
+    .imput{
+        width: 95%;
+    }
+
+    form{
+        padding: 0.5rem;
+    }
+    .more{
+        padding: 0 0.5rem 0.5rem 0.5rem;
+    }
+    
+}
+.register{
+    background-color: #f8f5ceda;
+    font-weight: 700;
+    color: #272726da;
+    padding: 0.5rem;
+    margin: 0.3rem auto 1rem;
+    width: 100%;
+    border-radius: 0.2rem;
+    border: 0.1rem solid var(--pink-1);
+
+}
+input[type="checkbox"]{
+    color: var(--pink-2);
+}
+h3,h4{
+    text-align: center;
+}
+h4{
+    margin-bottom: 0.6rem;
+}
+
+@media(min-width:426px) and (max-width:768px){
+    .login{
+        width: 50%;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora Saludable</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mainMobil.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <!-- Icons fontawesome.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img src="/images/logo/logoWhite.png" >
+        </a>
+        <a href="/">Inicio</a>
+    </header>
+    
+    <div class="login add-shadow">
+        <h3>¡Bienvenido!</h3>
+        <h4>Por favor, ingresá tus datos:</h4>
+        <form action="/users/register" method="POST">
+            <div class="name_surname">
+                <input type="text" name="name" placeholder="Nombre">
+                <input type="text" name="surname" placeholder="Apellido">
+            </div>
+            <input type="email" name="email" placeholder="Email">
+            <input class="password" type="password" name="password" placeholder="Contrasena">
+            <input type="password" name="repeat" placeholder="Repetir contrasena">
+            <input type="submit" value="Enviar" style="background-color:var(--pink-1);font-weight: 700;color: #272726da;"></input>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Recordarme
+            </label>           
+        </form>
+    </div>
+
+    <div style="height: 100px;"></div>
+
+
+</body>
+</html>

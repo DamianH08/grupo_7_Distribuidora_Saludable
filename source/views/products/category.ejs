@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category</title>
+    <title><%= categoryName %> </title>
     <%- include('../partials/styles-and-fonts') %> 
 
 </head>
@@ -19,7 +19,12 @@
                 <div class="product-container add-shadow-1">
                         <div class="image-product"><img class="photo-product" src="<%= product.img %>"></div>
                         <div class="price-product">$<%= product.precio %> </div>
-                        <div class="desc-product"><%= product.producto %> </div>
+                        <div class="desc-product">
+                            <% if(product.producto.length>25){ %>
+                            <%= product.producto.slice(0,25)+"..."%> <%} else{ %>
+                                    <%= product.producto %> 
+                                    <%} %>  
+                        </div>
                         <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
                 </div>
             </a>

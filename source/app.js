@@ -18,14 +18,15 @@ app.use(express.urlencoded({extended:false}));
 const 
     adminRouter = require('./routes/adminRouter'),
     productRouter = require('./routes/productRouter'),
-    loginRouter = require('./routes/userRouter'),
+    userRouter = require('./routes/userRouter'),
     indexRouter = require('./routes/indexRouter');
 
 app
+    .use('/',indexRouter)
     .use('/products',productRouter)
-    .use('/login',loginRouter)
+    .use('/users',userRouter)
     .use('/admin',adminRouter)
-    .use('/',indexRouter);
+    ;
 
 //Error 404
 app.use((req,res,next)=>{

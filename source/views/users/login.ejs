@@ -11,12 +11,15 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/mainMobil.css">
     
     <!-- Icons fontawesome.com -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <style>
+        header img{
+            width: 20%;
+            padding: 0.2rem;
+        }
         
         .login{
             box-sizing: content-box;
@@ -31,14 +34,13 @@
         }
         .login:hover{
             /* border: 0.25rem solid #f5e50dfa; */
-            
         }
 
         form,.more{
             margin: auto;
             padding: 1rem;
         }
-        input[type="email"],input[type="password"],input[type="submit"],input[type="text"]{
+        input[type="email"],input[type="password"],input[type="submit"]{
             background-color: #fff;
             font-family: 'Montserrat',sans-serif;
             font-weight: 400;
@@ -47,6 +49,7 @@
             width: 100%;
             border-radius: 0.2rem;
             border: 0.1rem solid var(--pink-1);
+            
         }
         input:hover{
             border: 0.1rem solid var(--pink-2);
@@ -141,13 +144,9 @@
         input[type="checkbox"]{
             color: var(--pink-2);
         }
-        h3,h4{
-            text-align: center;
-        }
-        h4{
-            margin-bottom: 0.6rem;
-        }
+
     </style>
+
 </head>
 <body>
     <header>
@@ -158,29 +157,25 @@
     </header>
     
     <div class="login add-shadow">
-        <h3>¡Bienvenido!</h3>
-        <h4>Por favor, ingresá tus datos:</h4>
-        <form action="#">
-            <label for="surname">Apellido</label>
-            <input type="text" name="surname" placeholder="Apellido">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" placeholder="Nombre">
+        <h3 style="text-align: center;">¡Bienvenido!</h3>
+        <form action="/users/login" method="POST">
             <label for="email">Email</label>
             <input type="email" placeholder="Email" name="email">
             <label for="password">Contraseña</label>
             <input class="password" type="password" placeholder="Contraseña" name="password">
-            <label for="repeat">Repetir contraseña</label>
-            <input type="password" name="repeat" placeholder="Contraseña">
-            <input type="submit" value="Enviar" style="background-color:var(--pink-1);font-weight: 700;color: #272726da;"></input>
+            <input type="submit" value="Entrar" style="background-color:var(--pink-1);font-weight: 700;color: #272726da;"></input>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Recordarme
             </label>           
         </form>
+        <div class="more">
+            <a href="/users/register" class="register">Registrarme</a>
+            <a href="#" class="recover" style="font-weight: 600;text-decoration:underline;">Olvidé mi contraseña</a>
+        </div>
     </div>
-
     <div class="separador"></div>
-
-    <%- include('partials/footer') %> 
+    
+    <%- include('../partials/footer') %> 
 
 </body>
 </html>

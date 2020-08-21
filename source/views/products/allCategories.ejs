@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorías</title>
     <%- include('../partials/styles-and-fonts') %> 
-
+    <style>
+        .lista-categories{
+            width: 90%;
+            margin:auto;
+        }
+        .caetgory-card{
+            margin: 1rem 1.5rem;
+        }
+    </style>
 </head>
 <body>
     <%- include('../partials/header') %>
@@ -17,11 +25,13 @@
             <a href="/products/categories/<%= category.id %> ">
                 <img class="img-category" src="/images/categories/<%= category.name %>.jpg">
                 <div class="name-category">
-                    <p style="margin: 0;"><%= category.name %> </p>
+                    <p style="margin: 0;" class="overflow-text"><%= category.name %> </p>
                 </div>
             </a>
         </div>
         <% }) %> 
+
+        <div style="height:100px"></div>
     
 </body>
 </html>
