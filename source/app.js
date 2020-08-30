@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname,'static')));
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 
-//POST request
+// Populate req.body
 app.use(express.urlencoded({extended:false}));
 
 // Routes

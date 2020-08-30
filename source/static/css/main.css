@@ -175,6 +175,7 @@ header li a:hover{
     background-color: #fff;
     border-radius: 0.3rem;
     padding: 0.1rem;
+    padding-bottom: 0.3rem;
     border: 0.1rem solid #ebebeb;
     cursor: pointer;
     margin: 0.8rem 0.5rem;
@@ -200,7 +201,7 @@ header li a:hover{
     width: 100%;
 }
 .product-container:hover{
-    border:0.15rem solid var(--pink-0);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .category-card{
     width: 25%;
