@@ -28,15 +28,31 @@
     
     <div class="login add-shadow">
         <h3>¡Bienvenido!</h3>
-        <h4>Por favor, ingresá tus datos:</h4>
+        <% if(errorMessage.length>0){ %>
+            <div class="errorMessage"> <%= errorMessage %> </div>
+        <% }else{ %>  
+            <h4>Por favor, ingresá tus datos:</h4>
+        <% } %> 
         <form action="/users/register" method="POST">
             <div class="name_surname">
-                <input type="text" name="name" placeholder="Nombre">
-                <input type="text" name="surname" placeholder="Apellido">
+                <% if(name.length>0){ %> 
+                    <input type="text" name="name"  value=<%= name %>>
+                <% }else{ %> 
+                    <input type="text" name="name"  placeholder="Nombre">
+                <% } %>
+                <% if(surname.length>0){ %> 
+                    <input type="text" name="surname" value=<%= surname %> >
+                <% }else{ %> 
+                    <input type="text" name="surname"  placeholder="Apellido">
+                <% } %>
             </div>
-            <input type="email" name="email" placeholder="Email">
+            <% if(email.length>0){ %> 
+                <input type="email" name="email" value=<%= email %> >
+            <% }else{ %> 
+                <input type="email" name="email" placeholder="Email">
+            <% } %>
             <input class="password" type="password" name="password" placeholder="Contrasena">
-            <input type="password" name="repeat" placeholder="Repetir contrasena">
+            <input type="password" placeholder="Repetir contrasena">
             <input type="submit" value="Enviar" style="background-color:var(--pink-1);font-weight: 700;color: #272726da;"></input>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Recordarme

@@ -379,3 +379,10 @@ a.to-product{
     text-emphasis: none;
     text-decoration-color: none;
 }
+
+/* Errors */
+.errorMessage{
+    color: red;
+    text-align: center;
+    font-size: 0.9rem;
+}

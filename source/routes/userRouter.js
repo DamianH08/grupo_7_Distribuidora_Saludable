@@ -1,16 +1,17 @@
-const express = require('express');
-
-const router = express.Router();
-
-const userCtrl = require('../controllers/usrCtrl');
+const 
+    express = require('express'),
+    router = express.Router(),
+    userCtrl = require('../controllers/usrCtrl'),
+    validate = require('../middlewares/validators')
+    ;
 
 router
     .get('/',(req,res)=>res.redirect('/users/login'))
     .get('/cart',userCtrl.cart)
     .get('/login',userCtrl.showLoginForm)
-    .post('/login',userCtrl.login)
+    .post('/login',validate.loginForm,userCtrl.login)
     .get('/register',userCtrl.showRegisterForm)
-    .post('/register',userCtrl.register)
+    .post('/register',validate.registerForm,userCtrl.register)
     ;
 
 module.exports = router;
