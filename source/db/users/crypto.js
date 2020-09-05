@@ -19,4 +19,19 @@ function hashPasswords(url){
 }
 // hashPasswords('users1.json');
 
+//this function generates a .sql script that populates users table from database
+function generateScript(){
+    let data = fs.readFileSync(path.join(__dirname,'users.json'),'utf-8');
+    let users = JSON.parse(data);
+    let query = "use dist_saludable;\ninsert into users (first_name,last_name,email,password) values \n";
+    for(let user of users){
+        query +=`('${user.first_name}','${user.last_name}','${user.email}','${user.password}'),\n`
+    }
+    fs.writeFileSync(
+        path.join(__dirname,'add_users.sql'),
+        query
+        );
+}
+generateScript();
+
 

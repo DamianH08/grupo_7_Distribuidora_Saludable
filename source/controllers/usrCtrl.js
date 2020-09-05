@@ -1,6 +1,10 @@
 const 
     categories_db = require("../db/categories_db"),
-    { validationResult } = require('express-validator')
+    { validationResult, Result } = require('express-validator'),
+    { Op } = require('sequelize'),
+    {user}  = require('../database/models/'),
+    bcrypt = require('bcryptjs'),
+    hash = bcrypt.genSalt(10)
     ;
 
 module.exports ={
@@ -10,18 +14,33 @@ module.exports ={
             errorMessage:'',
         })
     },
-    cart:(req,res)=>{
-        res.render('users/cart',{
-            categories:categories_db.data
-        })
-    },
-    login:(req,res)=>{
+    authUser:(req,res)=>{
         let errors = validationResult(req);
         if(errors.isEmpty()){
-            res.send('ok')
+            user.findOne({ where:{email:req.body.email} })
+            .then(user=>{
+                bcrypt.compare(req.body.password,user.password)
+                    .then(isValidPassword=>{
+                        if(isValidPassword){
+                            res.send('ok')
+                        }else{
+                            res.render('users/login',{
+                                errorMessage:'Revisá los datos ingresados',
+                                email:req.body.email
+                            })                
+                        }
+                    })
+                    .catch(error=>console.log('hubo un erros'))
+            })
+            .catch(()=>{
+                res.render('users/login',{
+                    errorMessage:'Revisá los datos ingresados',
+                    email:req.body.email
+                })
+            })
         }else{
             res.render('users/login',{
-                errorMessage:'Verificar datos ingresados',
+                errorMessage:'Revisá los datos ingresados',
                 email:req.body.email
             })
         }
@@ -36,7 +55,6 @@ module.exports ={
     },
     register: (req,res)=>{
         let errors = validationResult(req);
-        console.log(errors);
         if(errors.isEmpty()){
             res.send('ok')
         }else{
@@ -47,5 +65,28 @@ module.exports ={
                 email: (req.body.email.length==0)? '':req.body.email,
         })
         }
+    },
+    test:(req,res)=>{
+        if(req.query.id){
+            user.findByPk(req.query.id)
+                .then(e=>res.send(e))
+        }
+        if(req.query.name){
+            user.findOne({
+                where:{
+                    email:req.query.name
+                }
+            })
+            .then(e=>res.send(e))
+        }
+
+        // user.findAll()
+        //     .then(a=>res.send(a))
+        //     .catch(e=>console.log(e))
+    },
+    cart:(req,res)=>{
+        res.render('users/cart',{
+            categories:categories_db.data
+        })
     }
 };
