@@ -1,6 +1,6 @@
 const 
     categories_db = require("../db/categories_db"),
-    { validationResult, Result } = require('express-validator'),
+    { check, validationResult, body } = require('express-validator'),
     { Op } = require('sequelize'),
     {user}  = require('../database/models/'),
     bcrypt = require('bcryptjs'),
@@ -56,14 +56,13 @@ module.exports ={
     register: (req,res)=>{
         let errors = validationResult(req);
         if(errors.isEmpty()){
-            res.send('ok')
+            res.send('OK REGISTRADO')
         }else{
-            res.render('users/register',{
-                errorMessage:'verificar datos ingresados',
-                name: (req.body.name.length==0)? '':req.body.name,
-                surname: (req.body.surname.length==0)? '':req.body.surname, 
-                email: (req.body.email.length==0)? '':req.body.email,
-        })
+           return res.render('users/register',{ 
+               errors: errors.errors,
+               name: (req.body.name.length==0)? '':req.body.name,
+               surname: (req.body.surname.length==0)? '':req.body.surname, 
+               email: (req.body.email.length==0)? '':req.body.email, })
         }
     },
     test:(req,res)=>{
