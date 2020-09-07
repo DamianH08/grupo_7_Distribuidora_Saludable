@@ -53,7 +53,6 @@ module.exports ={
                 password: req.body.password  
               }
                                     
- 
             let usersFileControl = fs.readFileSync('./db/users/usersControl.json', {encoding: 'utf-8'});
             let usersControl = [];
             if (usersFileControl != ''){
@@ -64,8 +63,20 @@ module.exports ={
             let usersJSONControl = JSON.stringify(usersControl);
 
             fs.writeFileSync('./db/users/usersControl.json',usersJSONControl);
-
+            // *************************  //
  
+            // Guardado en Base de datos: REVISAR CAMPOS AL CREAR LA BASE
+            // *********************************************
+            // db.Users.create({
+            //    name: req.body.name,
+            //    surname: req.body.surname,
+            //    email: req.body.email,
+            //    password: bcrypt.hashSync(req.body.password, 10),
+            //    avatar: req.files[0].filename
+            //  
+            //  })
+
+
             res.send('Se guardó OK, PASAR A VISTA LOGEADO');
 
         }else{
