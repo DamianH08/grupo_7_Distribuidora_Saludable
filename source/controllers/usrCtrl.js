@@ -6,7 +6,9 @@ const
     fs = require('fs'),
     path = require('path'),
     bcrypt = require('bcryptjs'),
-    hash = bcrypt.genSalt(10)
+    hash = bcrypt.genSalt(10),
+    crypto = require('crypto'),
+    tokenStorage = require('../db/userTokens')
     ;
 
 module.exports ={
@@ -24,7 +26,17 @@ module.exports ={
                 bcrypt.compare(req.body.password,user.password)
                     .then(isValidPassword=>{
                         if(isValidPassword){
-                            res.send('ok')
+                            req.session.user = user.first_name;
+                            if(req.body.remember=='on'){
+                                const token = crypto.randomBytes(64).toString('base64');
+                                tokenStorage.new(token,user.id,user.first_name);
+                                res.cookie('userToken',token,{maxAge:1000*60*60}) // 1 hora
+                                res.cookie('userName',user.first_name,{maxAge:1000*60*60})
+                                req.session.userName = user.first_name;
+                            }else{
+                                req.session.userName = user.first_name;
+                            }                            
+                            res.redirect('/')
                         }else{
                             res.render('users/login',{
                                 errorMessage:'Revisá los datos ingresados',
@@ -32,7 +44,7 @@ module.exports ={
                             })                
                         }
                     })
-                    .catch(error=>console.log('hubo un erros'))
+                    .catch(error=>console.log(error))
             })
             .catch(()=>{
                 res.render('users/login',{
@@ -134,14 +146,14 @@ module.exports ={
             user.findByPk(req.query.id)
                 .then(e=>res.send(e))
         }
-        if(req.query.name){
-            user.findOne({
-                where:{
-                    email:req.query.name
-                }
-            })
-            .then(e=>res.send(e))
-        }
+        // if(req.query.name){
+        //     user.findOne({
+        //         where:{
+        //             email:req.query.name
+        //         }
+        //     })
+        //     .then(e=>res.send(e))
+        // }
 
         // user.findAll()
         //     .then(a=>res.send(a))
@@ -151,5 +163,11 @@ module.exports ={
         res.render('users/cart',{
             categories:categories_db.data
         })
+    },
+    logout:(req,res)=>{
+        req.session.destroy();
+        res.clearCookie('userToken');
+        res.clearCookie('userName');
+        res.redirect('/')
     }
 };

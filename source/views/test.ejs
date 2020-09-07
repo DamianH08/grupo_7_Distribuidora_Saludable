@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="/icons/font-awesome.min.css">
 </head>
 <body>
-        <h1 style="text-align:center;">Test Page</h1>
+    <% if(locals.user){ %>
+        <h1 style="text-align:center;"><%= user %> </h1>
+   <% }else{ %>
+        <h1 style="text-align:center;"></h1>   
+   <% } %>   
 
     
 </body>

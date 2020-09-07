@@ -1,6 +1,9 @@
 const express = require('express');
 const path = require('path');
 
+const session = require('express-session');
+const coockieParser = require('cookie-parser');
+
 const app = express();
 const port = 5000;
 
@@ -14,8 +17,20 @@ app.set('views',path.join(__dirname,'views'));
 // Populate req.body
 app.use(express.urlencoded({extended:false}));
 
+//Session and cookies
+app.use(session({
+    secret:"distribuidora saludable",
+    resave:false,
+    saveUninitialized:true
+}));
+app.use(coockieParser());
+
+//este middleware verifica si hay un usuario logeado
+const verify = require('./middlewares/loggedUsers');
+app.use('*',verify.isLogged)
+
 // Routes
-const 
+const
     adminRouter = require('./routes/adminRouter'),
     productRouter = require('./routes/productRouter'),
     userRouter = require('./routes/userRouter'),
