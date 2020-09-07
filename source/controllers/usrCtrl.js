@@ -61,6 +61,9 @@ module.exports ={
         let errors = validationResult(req);
         if(errors.isEmpty()){
 
+            
+            
+            
             let user = {
                 name: req.body.name,
                 surname: req.body.surname,
@@ -68,10 +71,10 @@ module.exports ={
                 password: bcrypt.hashSync(req.body.password, 10)
             }
             
+            
             //utilizo método de guardado en JSON --- REEMPLAZAR POR GUARDADO EN BASE DE DATOS
             
-            let usersUrl = './db/users/users2.json';
-            let usersFile = fs.readFileSync(usersUrl, {encoding: 'utf-8'});
+            let usersFile = fs.readFileSync('./db/users/users2.json', {encoding: 'utf-8'});
             let users = [];
             if (usersFile != ''){
                 users = JSON.parse(usersFile);
@@ -80,10 +83,30 @@ module.exports ={
             users.push(user);
             let usersJSON = JSON.stringify(users);
 
-            fs.writeFileSync(usersUrl,usersJSON);
+            fs.writeFileSync('./db/users/users2.json',usersJSON);
 
             
+            //Es sólo para controlar los datos y leer la contraseña sin hashear
+            let userControl = {
+                name: req.body.name,
+                surname: req.body.surname,
+                email: req.body.email,  
+                password: req.body.password  
+              }
+                                    
+ 
+            let usersFileControl = fs.readFileSync('./db/users/usersControl.json', {encoding: 'utf-8'});
+            let usersControl = [];
+            if (usersFileControl != ''){
+                usersControl = JSON.parse(usersFileControl);
+            }
+            
+            usersControl.push(userControl);
+            let usersJSONControl = JSON.stringify(usersControl);
 
+            fs.writeFileSync('./db/users/usersControl.json',usersJSONControl);
+
+ 
             res.send('Se guardó OK, PASAR A VISTA LOGEADO');
 
         }else{
