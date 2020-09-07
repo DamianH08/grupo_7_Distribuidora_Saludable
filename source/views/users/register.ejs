@@ -28,8 +28,19 @@
     
     <div class="login add-shadow">
         <h3>¡Bienvenido!</h3>
-        <% if(errorMessage.length>0){ %>
-            <div class="errorMessage"> <%= errorMessage %> </div>
+        
+        <% if(typeof errors != 'undefined') { %>
+            <div class="errorMessage">
+                <p><underline>Errores generados:</strong></p>
+                <ul> 
+                    <% for(let i=0 ; i<errors.length ; i++) { %>
+                        <li>
+                            <%= errors[i].msg %> 
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+
         <% }else{ %>  
             <h4>Por favor, ingresá tus datos:</h4>
         <% } %> 
@@ -51,8 +62,8 @@
             <% }else{ %> 
                 <input type="email" name="email" placeholder="Email">
             <% } %>
-            <input class="password" type="password" name="password" placeholder="Contrasena">
-            <input type="password" placeholder="Repetir contrasena">
+            <input class="password" type="password" name="password" placeholder="Contraseña">
+            <input type="password" placeholder="Repetir contraseña">
             <input type="submit" value="Enviar" style="background-color:var(--pink-1);font-weight: 700;color: #272726da;"></input>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Recordarme

@@ -32,9 +32,7 @@
             padding: 0.8rem;
             border-radius: 0.5rem;
         }
-        .login:hover{
-            /* border: 0.25rem solid #f5e50dfa; */
-        }
+       
 
         form,.more{
             margin: auto;
@@ -162,13 +160,13 @@
             <div class="errorMessage"> <%= errorMessage %>  </div>
             <% } %> 
         <form action="/users/login" method="POST">
-            <label for="email">Email</label>
+            <label for="email"></label>
             <% if(errorMessage.length>0 ){ %>
                 <input type="email" value=<%= email %>  name="email">
             <% }else{ %>
                 <input type="email" placeholder="Email" name="email"> 
             <% } %> 
-            <label for="password">Contraseña</label>
+            <label for="password"></label>
             <input class="password" type="password" placeholder="Contraseña" name="password">
             <input type="submit" value="Entrar" style="background-color:var(--pink-1);font-weight: 700;color: #272726da;"></input>
             <label>
