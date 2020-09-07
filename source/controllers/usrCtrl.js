@@ -56,19 +56,17 @@ module.exports ={
         })
     },
 
-    //sumar NEXT
-    register: (req,res)=>{      
+    
+    register: (req,res, next)=>{      
         let errors = validationResult(req);
         if(errors.isEmpty()){
-
-            
-            
             
             let user = {
                 name: req.body.name,
                 surname: req.body.surname,
                 email: req.body.email,
-                password: bcrypt.hashSync(req.body.password, 10)
+                password: bcrypt.hashSync(req.body.password, 10),
+                avatar: req.files[0].filename
             }
             
             
@@ -110,12 +108,13 @@ module.exports ={
             res.send('Se guardó OK, PASAR A VISTA LOGEADO');
 
         }else{
-            console.log(errors);
+            
            return res.render('users/register',{ 
                errors: errors.errors,
-               name: (req.body.name.length==0)? '':req.body.name,
-               surname: (req.body.surname.length==0)? '':req.body.surname, 
-               email: (req.body.email.length==0)? '':req.body.email, })
+               name: req.body.name,
+               surname: req.body.surname, 
+               email: req.body.email, })
+
         }
     },
 
