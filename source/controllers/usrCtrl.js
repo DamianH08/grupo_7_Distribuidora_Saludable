@@ -27,8 +27,12 @@ module.exports ={
                             req.session.user = user.first_name;
                             if(req.body.remember=='on'){
                                 const token = crypto.randomBytes(64).toString('base64');
-                                tokenStorage.new(token,user.id);
+                                tokenStorage.new(token,user.id,user.first_name);
                                 res.cookie('userToken',token,{maxAge:1000*60*60}) // 1 hora
+                                res.cookie('userName',user.first_name,{maxAge:1000*60*60})
+                                req.session.userName = user.first_name;
+                            }else{
+                                req.session.userName = user.first_name;
                             }                            
                             res.redirect('/')
                         }else{
@@ -95,5 +99,11 @@ module.exports ={
         res.render('users/cart',{
             categories:categories_db.data
         })
+    },
+    logout:(req,res)=>{
+        req.session.destroy();
+        res.clearCookie('userToken');
+        res.clearCookie('userName');
+        res.redirect('/')
     }
 };
