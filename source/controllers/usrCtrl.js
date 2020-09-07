@@ -4,7 +4,9 @@ const
     { Op } = require('sequelize'),
     {user}  = require('../database/models/'),
     bcrypt = require('bcryptjs'),
-    hash = bcrypt.genSalt(10)
+    hash = bcrypt.genSalt(10),
+    crypto = require('crypto'),
+    tokenStorage = require('../db/userTokens')
     ;
 
 module.exports ={
@@ -22,7 +24,13 @@ module.exports ={
                 bcrypt.compare(req.body.password,user.password)
                     .then(isValidPassword=>{
                         if(isValidPassword){
-                            res.send('ok')
+                            req.session.user = user.first_name;
+                            if(req.body.remember=='on'){
+                                const token = crypto.randomBytes(64).toString('base64');
+                                tokenStorage.new(token,user.id);
+                                res.cookie('userToken',token,{maxAge:1000*60*60}) // 1 hora
+                            }                            
+                            res.redirect('/')
                         }else{
                             res.render('users/login',{
                                 errorMessage:'Revisá los datos ingresados',
@@ -30,7 +38,7 @@ module.exports ={
                             })                
                         }
                     })
-                    .catch(error=>console.log('hubo un erros'))
+                    .catch(error=>console.log(error))
             })
             .catch(()=>{
                 res.render('users/login',{
@@ -71,14 +79,14 @@ module.exports ={
             user.findByPk(req.query.id)
                 .then(e=>res.send(e))
         }
-        if(req.query.name){
-            user.findOne({
-                where:{
-                    email:req.query.name
-                }
-            })
-            .then(e=>res.send(e))
-        }
+        // if(req.query.name){
+        //     user.findOne({
+        //         where:{
+        //             email:req.query.name
+        //         }
+        //     })
+        //     .then(e=>res.send(e))
+        // }
 
         // user.findAll()
         //     .then(a=>res.send(a))

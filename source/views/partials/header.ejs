@@ -24,7 +24,12 @@
                 <a href="/about">Nosotros</a>
             </div>
         </li>
-        <li><a href="/users/login"><i class="fas fa-user"></i> Ingresar</a></li>
+        <% if(locals.user){ %>
+            <li><a href="/users/user"><i class="fas fa-user"></i> <%= user %>  </a></li>
+        <% }else{ %>
+            <li><a href="/users/login"><i class="fas fa-user"></i> Ingresar  </a></li>
+        <% } %> 
+
         <li><a href="/users/cart"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
       </ul>
     <div class="movil">

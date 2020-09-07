@@ -13,6 +13,7 @@ router
     .get('/register',userCtrl.showRegisterForm)
     .post('/register',validate.registerForm,userCtrl.register)
     .get('/test',userCtrl.test)
+    .get('/user',(req,res)=>{res.render('users/user')})
     ;
 
 module.exports = router;
