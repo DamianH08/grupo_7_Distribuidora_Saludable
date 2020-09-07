@@ -30,11 +30,12 @@
         <h3>¡Bienvenido!</h3>
         
         <% if(typeof errors != 'undefined') { %>
+            
             <div class="errorMessage">
                 <p><underline>Errores generados:</strong></p>
                 <ul> 
                     <% for(let i=0 ; i<errors.length ; i++) { %>
-                        <li>
+                        <li> 
                             <%= errors[i].msg %> 
                         </li>
                     <% } %>
@@ -44,7 +45,9 @@
         <% }else{ %>  
             <h4>Por favor, ingresá tus datos:</h4>
         <% } %> 
-        <form action="/users/register" method="POST">
+
+        <!-- enctype="multipart/form-data" -->
+        <form action="/users/register" method="POST" >
             <div class="name_surname">
                 <% if(name.length>0){ %> 
                     <input type="text" name="name"  value=<%= name %>>
@@ -64,6 +67,10 @@
             <% } %>
             <input class="password" type="password" name="password" placeholder="Contraseña">
             <input type="password" placeholder="Repetir contraseña">
+
+          <!--  <label for="avatar">Sube una foto a tu perfil:</label>
+            <input type="file" name="avatar"> -->
+            
             <input type="submit" value="Enviar" style="background-color:var(--pink-1);font-weight: 700;color: #272726da;"></input>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Recordarme

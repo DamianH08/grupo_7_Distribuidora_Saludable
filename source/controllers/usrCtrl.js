@@ -3,6 +3,8 @@ const
     { check, validationResult, body } = require('express-validator'),
     { Op } = require('sequelize'),
     {user}  = require('../database/models/'),
+    fs = require('fs'),
+    path = require('path'),
     bcrypt = require('bcryptjs'),
     hash = bcrypt.genSalt(10)
     ;
@@ -53,11 +55,39 @@ module.exports ={
             email:''
         })
     },
-    register: (req,res)=>{
+
+    //sumar NEXT
+    register: (req,res)=>{      
         let errors = validationResult(req);
         if(errors.isEmpty()){
-            res.send('OK REGISTRADO')
+
+            let user = {
+                name: req.body.name,
+                surname: req.body.surname,
+                email: req.body.email,
+                password: bcrypt.hashSync(req.body.password, 10)
+            }
+            
+            //utilizo método de guardado en JSON --- REEMPLAZAR POR GUARDADO EN BASE DE DATOS
+            
+            let usersUrl = './db/users/users2.json';
+            let usersFile = fs.readFileSync(usersUrl, {encoding: 'utf-8'});
+            let users = [];
+            if (usersFile != ''){
+                users = JSON.parse(usersFile);
+            }
+            
+            users.push(user);
+            let usersJSON = JSON.stringify(users);
+
+            fs.writeFileSync(usersUrl,usersJSON);
+
+            
+
+            res.send('Se guardó OK, PASAR A VISTA LOGEADO');
+
         }else{
+            console.log(errors);
            return res.render('users/register',{ 
                errors: errors.errors,
                name: (req.body.name.length==0)? '':req.body.name,
@@ -65,6 +95,7 @@ module.exports ={
                email: (req.body.email.length==0)? '':req.body.email, })
         }
     },
+
     test:(req,res)=>{
         if(req.query.id){
             user.findByPk(req.query.id)
