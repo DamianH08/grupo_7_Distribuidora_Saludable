@@ -5,6 +5,12 @@ module.exports = {
     index:(req,res)=>{
         res.render('admin/index')
     },
+    login:(req,res)=>{
+        res.render('admin/login')
+    },
+    authAdmin:(req,res)=>{
+        res.send('ok')
+    },
     showProducts:(req,res)=>{
         res.render('admin/products/products',{
           keyword:req.query.keyword,

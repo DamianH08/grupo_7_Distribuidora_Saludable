@@ -1,5 +1,10 @@
 -- this query populate table users from dist_saludable database
 use dist_saludable;
+
+alter table users add role varchar(5) not null default 'user';
+alter table users add constraint check(role in ('user','admin'));
+
+
 insert into users (first_name,last_name,email,password) values 
 ('Rodina','Souttar','rsout15tar0@phpbb.com','$2a$10$QNNznz/ADSKXi70XLOWJU.EAJ1x26xLJJ0OtZG1elMzDSca.g1rli'),
 ('Walliw','Laval','wlaval1@meetup.com','$2a$10$QNNznz/ADSKXi70XLOWJU.m5mcZSJ187LukpMoAC1aHGvDRB34.6K'),

@@ -27,7 +27,8 @@ app.use(coockieParser());
 
 //este middleware verifica si hay un usuario logeado
 const verify = require('./middlewares/loggedUsers');
-app.use('*',verify.isLogged)
+app.use('*',verify.isLogged);
+app.use('/admin',verify.isAdmin);
 
 // Routes
 const

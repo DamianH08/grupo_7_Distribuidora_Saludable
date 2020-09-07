@@ -1,12 +1,15 @@
-const express = require('express');
+const
+    express = require('express'),
+    router = express.Router(),
+    indexCtrl = require('../controllers/indexCtrl'),
+    validator = require('../middlewares/validators')
+    ;
 
-const router = express.Router();
-
-const indexCtrl = require('../controllers/indexCtrl');
-
-const log = require('../middlewares/loggedUsers')
 router
-    .get('/',log.isLogged,indexCtrl.index)
+    .get('/',indexCtrl.index)
+    .get('/login',indexCtrl.login)
+    .post('/login',validator.loginForm,indexCtrl.authUser)
+    .get('/logout',indexCtrl.logout)
     .get('/locales',indexCtrl.locales)
     .get('/about',indexCtrl.about)
     .get('/cart',indexCtrl.cart)

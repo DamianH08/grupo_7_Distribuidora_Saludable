@@ -5,6 +5,8 @@ const
 
 router
     .get('/',adminCtrl.index)
+    .get('/login',adminCtrl.login)
+    .post('/login',adminCtrl.authAdmin)
     .get('/products',adminCtrl.showProducts)
     .get('/products/create',adminCtrl.createProduct)
     .post('/products/create',adminCtrl.storeProduct)

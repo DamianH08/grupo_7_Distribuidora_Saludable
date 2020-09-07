@@ -8,11 +8,12 @@ module.exports = {
     find:(userToken)=>{
         return tokens.filter(item => item.token==userToken)
     },
-    new:(userToken,userId,userName)=>{
+    new:(userToken,userId,userName,role)=>{
         let newItem = {
             'token':userToken,
             'id':userId,
-            'user':userName
+            'user':userName,
+            'role':role
         };
         tokens.push(newItem);
         fs.writeFileSync('db/userTokens.json',JSON.stringify(tokens,null,2),(err)=>{

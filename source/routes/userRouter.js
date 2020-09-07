@@ -18,15 +18,12 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage });
 
 router
-    .get('/',(req,res)=>res.redirect('/users/login'))
+    .get('/',(req,res)=>res.redirect('/login'))
     .get('/cart',userCtrl.cart)
-    .get('/login',userCtrl.showLoginForm)
-    .post('/login',validate.loginForm,userCtrl.authUser)
     .get('/register',userCtrl.showRegisterForm)
     .post('/register',upload.any(), validate.registerForm,userCtrl.register)
     .get('/test',userCtrl.test)
     .get('/user',(req,res)=>{res.render('users/user')})
-    .get('/logout',userCtrl.logout)
     ;
 
 module.exports = router;
