@@ -14,8 +14,9 @@ module.exports = {
         next();        
     },
     isAdmin: (req,res,next)=>{
-        if(req.session.admin){
-            res.locals.user = req.cookies.userName;
+        console.log('session '+ req.session.admin)
+        if(req.session){
+            res.locals.user = req.session.user;
             next()
         }else if(req.cookies.token){
             let oldToken = tokens.find(req.cookies.userToken)[0];

@@ -52,8 +52,8 @@ module.exports ={
                 bcrypt.compare(req.body.password,user.password)
                     .then(isValidPassword=>{
                         if(isValidPassword && user.role=='admin'){
-                            req.session.userName = user.first_name;
-                            req.session.admin = true;
+                            req.session.user = user.first_name;
+                            req.session.admin = 'yes';
                             if(req.body.remember=='on'){
                                 const token = crypto.randomBytes(64).toString('base64');
                                 tokenStorage.new(token,user.id,user.first_name,user.role);
