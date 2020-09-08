@@ -46,21 +46,23 @@
             <h4>Por favor, ingresá tus datos:</h4>
         <% } %> 
 
-       
+       <% if(locals.errorMessage){ %>
+        <div class="errorMessage"><%= errorMessage %> </div>
+       <% } %>  
         <form action="/users/register" method="POST" enctype="multipart/form-data" >
             <div class="name_surname">
-                <% if(name.length>0){ %> 
-                    <input type="text" name="name"  value=<%= name %>>
+                <% if(locals.firstName>0){ %> 
+                    <input type="text" name="name"  value=<%= firstName %>>
                 <% }else{ %> 
                     <input type="text" name="name"  placeholder="Nombre">
                 <% } %>
-                <% if(surname.length>0){ %> 
-                    <input type="text" name="surname" value=<%= surname %> >
+                <% if(locals.lastName>0){ %> 
+                    <input type="text" name="surname" value=<%= lastName %> >
                 <% }else{ %> 
                     <input type="text" name="surname"  placeholder="Apellido">
                 <% } %>
             </div>
-            <% if(email.length>0){ %> 
+            <% if(locals.email){ %> 
                 <input type="email" name="email" value=<%= email %> >
             <% }else{ %> 
                 <input type="email" name="email" placeholder="Email">
@@ -68,8 +70,10 @@
             <input class="password" type="password" name="password" placeholder="Contraseña">
             <input type="password" placeholder="Repetir contraseña">
 
-            <label for="avatar">Sube una foto a tu perfil:</label>
-            <input type="file" name="avatar">
+            <div class="upload">
+                <label for="avatar">Sube una foto:</label>
+                <input type="file" name="avatar">
+            </div>
             
             <input type="submit" value="Enviar" style="background-color:var(--pink-1);font-weight: 700;color: #272726da;"></input>
             <label>

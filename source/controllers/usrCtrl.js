@@ -6,9 +6,7 @@ const
     fs = require('fs'),
     path = require('path'),
     bcrypt = require('bcryptjs'),
-    hash = bcrypt.genSalt(10),
-    crypto = require('crypto'),
-    tokenStorage = require('../db/userTokens')
+    hash = bcrypt.genSalt(10)
     ;
 
 module.exports ={
@@ -23,46 +21,65 @@ module.exports ={
     register: (req,res, next)=>{      
         let errors = validationResult(req);
         if(errors.isEmpty()){      
-            let user = {
-                name: req.body.name,
-                surname: req.body.surname,
-                email: req.body.email,
-                password: bcrypt.hashSync(req.body.password, 10),
-                avatar: req.files[0].filename
-            }
-            
+            user.create({
+                first_name:req.body.name,
+                last_name:req.body.surname,
+                email:req.body.email,
+                password:bcrypt.hashSync(req.body.password,10)
+            })
+            .then(newUser=>{
+                res.redirect('/login');
+            })
+            .catch(e => {
+                res.locals.firstName = req.body.name;
+                res.locals.lastName = req.body.surname;
+                res.locals.email = req.body.email;
+                if(e.name=="SequelizeUniqueConstraintError"){
+                    res.render('users/register',{
+                        errorMessage:"El email ya se ancuentra registrado",
+                    })
+                }
+            })
+
+            // let user = {
+            //     name: req.body.name,
+            //     surname: req.body.surname,
+            //     email: req.body.email,
+            //     password: bcrypt.hashSync(req.body.password, 10),
+            //     // avatar: req.files[0].filename
+            // }
             //utilizo método de guardado en JSON --- REEMPLAZAR POR GUARDADO EN BASE DE DATOS
             
-            let usersFile = fs.readFileSync('./db/users/users2.json', {encoding: 'utf-8'});
-            let users = [];
-            if (usersFile != ''){
-                users = JSON.parse(usersFile);
-            }
+            // let usersFile = fs.readFileSync('./db/users/users2.json', {encoding: 'utf-8'});
+            // let users = [];
+            // if (usersFile != ''){
+            //     users = JSON.parse(usersFile);
+            // }
             
-            users.push(user);
-            let usersJSON = JSON.stringify(users);
+            // users.push(user);
+            // let usersJSON = JSON.stringify(users);
 
-            fs.writeFileSync('./db/users/users2.json',usersJSON);
+            // fs.writeFileSync('./db/users/users2.json',usersJSON);
 
             
-            //Es sólo para controlar los datos y leer la contraseña sin hashear
-            let userControl = {
-                name: req.body.name,
-                surname: req.body.surname,
-                email: req.body.email,  
-                password: req.body.password  
-              }
+            // //Es sólo para controlar los datos y leer la contraseña sin hashear
+            // let userControl = {
+            //     name: req.body.name,
+            //     surname: req.body.surname,
+            //     email: req.body.email,  
+            //     password: req.body.password  
+            //   }
                                     
-            let usersFileControl = fs.readFileSync('./db/users/usersControl.json', {encoding: 'utf-8'});
-            let usersControl = [];
-            if (usersFileControl != ''){
-                usersControl = JSON.parse(usersFileControl);
-            }
+            // let usersFileControl = fs.readFileSync('./db/users/usersControl.json', {encoding: 'utf-8'});
+            // let usersControl = [];
+            // if (usersFileControl != ''){
+            //     usersControl = JSON.parse(usersFileControl);
+            // }
             
-            usersControl.push(userControl);
-            let usersJSONControl = JSON.stringify(usersControl);
+            // usersControl.push(userControl);
+            // let usersJSONControl = JSON.stringify(usersControl);
 
-            fs.writeFileSync('./db/users/usersControl.json',usersJSONControl);
+            // fs.writeFileSync('./db/users/usersControl.json',usersJSONControl);
             // *************************  //
  
             // Guardado en Base de datos: REVISAR CAMPOS AL CREAR LA BASE
@@ -75,9 +92,7 @@ module.exports ={
             //    avatar: req.files[0].filename
             //  
             //  })
-
-
-            res.send('Se guardó OK, PASAR A VISTA LOGEADO');
+            // res.send('Se guardó OK, PASAR A VISTA LOGEADO');
 
         }else{
             
