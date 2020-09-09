@@ -20,7 +20,7 @@ module.exports ={
     },
     register: (req,res, next)=>{      
         let errors = validationResult(req);
-        if (errors.isEmpty()){      
+        if (errors.isEmpty()){ 
             user.create({
                 first_name:req.body.first_name,
                 last_name:req.body.last_name,
@@ -28,6 +28,7 @@ module.exports ={
                 password:bcrypt.hashSync(req.body.password,10),
                 avatar: req.files[0].filename
             })
+            
             .then(newUser=>{
                 res.redirect('/login');
             })
