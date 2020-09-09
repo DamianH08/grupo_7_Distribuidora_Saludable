@@ -51,15 +51,15 @@
        <% } %>  
         <form action="/users/register" method="POST" enctype="multipart/form-data" >
             <div class="name_surname">
-                <% if(locals.firstName>0){ %> 
-                    <input type="text" name="name"  value=<%= firstName %>>
+                <% if(locals.first_name){ %> 
+                    <input type="text" name="first_name"  value=<%= first_name %>>
                 <% }else{ %> 
-                    <input type="text" name="name"  placeholder="Nombre">
+                    <input type="text" name="first_name"  placeholder="Nombre">
                 <% } %>
-                <% if(locals.lastName>0){ %> 
-                    <input type="text" name="surname" value=<%= lastName %> >
+                <% if(locals.last_name){ %> 
+                    <input type="text" name="last_name" value=<%= last_name %> >
                 <% }else{ %> 
-                    <input type="text" name="surname"  placeholder="Apellido">
+                    <input type="text" name="last_name"  placeholder="Apellido">
                 <% } %>
             </div>
             <% if(locals.email){ %> 

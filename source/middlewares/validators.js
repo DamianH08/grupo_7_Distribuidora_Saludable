@@ -12,9 +12,9 @@ module.exports = {
             .isLength({min:5}).withMessage(loginMessage)
     ],
     registerForm : [
-        check('name')
+        check('first_name')
             .notEmpty().withMessage('El campo Nombre no puede estar vacio.'),
-        check('surname')
+        check('last_name')
             .notEmpty().withMessage('El campo Apellido no puede estar vacio.'),
         check('email')
             .notEmpty().withMessage('El campo Email no puede estar vacio.').bail()
@@ -22,5 +22,8 @@ module.exports = {
         check('password')
             .notEmpty().withMessage('El campo Contraseña no puede estar vacio.').bail()
             .isLength({min:5}).withMessage('La Contaseña debe tener al menos 5 caracteres.')
+
+            
     ]
+   
 }
