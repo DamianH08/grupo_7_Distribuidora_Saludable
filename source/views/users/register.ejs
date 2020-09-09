@@ -31,16 +31,7 @@
         
         <% if(typeof errors != 'undefined') { %>
             
-            <div class="errorMessage">
-                <p><underline>Errores generados:</strong></p>
-                <ul> 
-                    <% for(let i=0 ; i<errors.length ; i++) { %>
-                        <li> 
-                            <%= errors[i].msg %> 
-                        </li>
-                    <% } %>
-                </ul>
-            </div>
+            
 
         <% }else{ %>  
             <h4>Por favor, ingresá tus datos:</h4>
@@ -53,21 +44,77 @@
             <div class="name_surname">
                 <% if(locals.first_name){ %> 
                     <input type="text" name="first_name"  value=<%= first_name %>>
+                    
+                    <% if(errors.first_name) { %>   
+                        <div class="errorMessage">
+                         <%= errors.first_name.msg %> </li>
+                     </div>
+            
+                     <% } %> 
+
                 <% }else{ %> 
                     <input type="text" name="first_name"  placeholder="Nombre">
+                    <% if(errors.first_name) { %>   
+                        <div class="errorMessage">
+                         <%= errors.first_name.msg %> </li>
+                     </div>
+            
+                     <% } %> 
+                   
                 <% } %>
                 <% if(locals.last_name){ %> 
                     <input type="text" name="last_name" value=<%= last_name %> >
+                    <% if(errors.last_name) { %>   
+                        <div class="errorMessage">
+                         <%= errors.last_name.msg %> </li>
+                     </div>
+            
+                     <% } %> 
+
                 <% }else{ %> 
                     <input type="text" name="last_name"  placeholder="Apellido">
+                    <% if(errors.last_name) { %>   
+                        <div class="errorMessage">
+                         <%= errors.last_name.msg %> </li>
+                     </div>
+            
+                     <% } %> 
                 <% } %>
             </div>
-            <% if(locals.email){ %> 
-                <input type="email" name="email" value=<%= email %> >
+           
+
+            <% if(locals.email) { %>
+                    <input type="email" name="email" value=<%= email %> >
+                    
+                    <% if(errors.email) { %>   
+                        <div class="errorMessage">
+                         <%= errors.email.msg %> </li>
+                     </div>
+            
+                     <% } %> 
+
+                
+                
             <% }else{ %> 
                 <input type="email" name="email" placeholder="Email">
+                
+                <% if(errors.email) { %>   
+                    <div class="errorMessage">
+                     <%= errors.email.msg %> </li>
+                 </div>
+        
+                 <% } %> 
+
             <% } %>
             <input class="password" type="password" name="password" placeholder="Contraseña">
+            
+            <% if(errors.password) { %>   
+                <div class="errorMessage">
+                 <%= errors.password.msg %> </li>
+             </div>
+    
+             <% } %> 
+
             <input type="password" placeholder="Repetir contraseña">
 
             <div class="upload">
