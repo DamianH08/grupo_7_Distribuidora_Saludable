@@ -36,7 +36,11 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING(5),
             defaultValue:'user',
             allowNull:false
-          }
+          },
+          avatar:{
+            type: DataTypes.STRING(100),
+            allowNull: false
+          },
         },
         {
             sequelize, // This is the connection instance

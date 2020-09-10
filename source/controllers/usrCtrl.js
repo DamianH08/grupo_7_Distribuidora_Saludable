@@ -13,27 +13,30 @@ module.exports ={
     showRegisterForm: (req,res)=>{
         res.render('users/register',{
             errorMessage:'',
-            name:'',
-            surname:'',
+            first_name:'',
+            last_name:'',
             email:''
         })
     },
     register: (req,res, next)=>{      
         let errors = validationResult(req);
-        if(errors.isEmpty()){      
+        if (errors.isEmpty()){ 
             user.create({
-                first_name:req.body.name,
-                last_name:req.body.surname,
+                first_name:req.body.first_name,
+                last_name:req.body.last_name,
                 email:req.body.email,
-                password:bcrypt.hashSync(req.body.password,10)
+                password:bcrypt.hashSync(req.body.password,10),
+                avatar: req.files[0].filename
             })
+            
             .then(newUser=>{
                 res.redirect('/login');
             })
             .catch(e => {
-                res.locals.firstName = req.body.name;
-                res.locals.lastName = req.body.surname;
+                res.locals.first_name = req.body.first_name;
+                res.locals.last_name = req.body.last_name;
                 res.locals.email = req.body.email;
+
                 if(e.name=="SequelizeUniqueConstraintError"){
                     res.render('users/register',{
                         errorMessage:"El email ya se ancuentra registrado",
@@ -41,65 +44,12 @@ module.exports ={
                 }
             })
 
-            // let user = {
-            //     name: req.body.name,
-            //     surname: req.body.surname,
-            //     email: req.body.email,
-            //     password: bcrypt.hashSync(req.body.password, 10),
-            //     // avatar: req.files[0].filename
-            // }
-            //utilizo método de guardado en JSON --- REEMPLAZAR POR GUARDADO EN BASE DE DATOS
-            
-            // let usersFile = fs.readFileSync('./db/users/users2.json', {encoding: 'utf-8'});
-            // let users = [];
-            // if (usersFile != ''){
-            //     users = JSON.parse(usersFile);
-            // }
-            
-            // users.push(user);
-            // let usersJSON = JSON.stringify(users);
-
-            // fs.writeFileSync('./db/users/users2.json',usersJSON);
-
-            
-            // //Es sólo para controlar los datos y leer la contraseña sin hashear
-            // let userControl = {
-            //     name: req.body.name,
-            //     surname: req.body.surname,
-            //     email: req.body.email,  
-            //     password: req.body.password  
-            //   }
-                                    
-            // let usersFileControl = fs.readFileSync('./db/users/usersControl.json', {encoding: 'utf-8'});
-            // let usersControl = [];
-            // if (usersFileControl != ''){
-            //     usersControl = JSON.parse(usersFileControl);
-            // }
-            
-            // usersControl.push(userControl);
-            // let usersJSONControl = JSON.stringify(usersControl);
-
-            // fs.writeFileSync('./db/users/usersControl.json',usersJSONControl);
-            // *************************  //
- 
-            // Guardado en Base de datos: REVISAR CAMPOS AL CREAR LA BASE
-            // *********************************************
-            // db.Users.create({
-            //    name: req.body.name,
-            //    surname: req.body.surname,
-            //    email: req.body.email,
-            //    password: bcrypt.hashSync(req.body.password, 10),
-            //    avatar: req.files[0].filename
-            //  
-            //  })
-            // res.send('Se guardó OK, PASAR A VISTA LOGEADO');
 
         }else{
-            console.log(errors)
            return res.render('users/register',{ 
-               errors: errors.errors,
-               name: req.body.name,
-               surname: req.body.surname, 
+               errors: errors.mapped(),
+               first_name: req.body.first_name,
+               last_name: req.body.last_name, 
                email: req.body.email, })
 
         }
