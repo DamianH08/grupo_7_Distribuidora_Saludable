@@ -95,7 +95,7 @@ module.exports ={
             // res.send('Se guardó OK, PASAR A VISTA LOGEADO');
 
         }else{
-            
+            console.log(errors)
            return res.render('users/register',{ 
                errors: errors.errors,
                name: req.body.name,

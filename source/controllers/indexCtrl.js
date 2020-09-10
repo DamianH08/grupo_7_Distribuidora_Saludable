@@ -53,7 +53,7 @@ module.exports ={
                     .then(isValidPassword=>{
                         if(isValidPassword && user.role=='admin'){
                             req.session.user = user.first_name;
-                            req.session.admin = 'yes';
+                            req.session.admin = true;
                             if(req.body.remember=='on'){
                                 const token = crypto.randomBytes(64).toString('base64');
                                 tokenStorage.new(token,user.id,user.first_name,user.role);
@@ -74,7 +74,7 @@ module.exports ={
                             }                            
                             res.redirect('/')
                         }else{
-                            res.render('/login',{
+                            res.render('login',{
                                 errorMessage:'Revisá los datos ingresados',
                                 email:req.body.email
                             })                
@@ -83,13 +83,14 @@ module.exports ={
                     .catch(error=>console.log(error))
             })
             .catch(()=>{
-                res.render('/login',{
+                res.render('login',{
                     errorMessage:'Revisá los datos ingresados',
                     email:req.body.email
                 })
             })
         }else{
-            res.render('/login',{
+            console.log(errors)
+            res.render('login',{
                 errorMessage:'Revisá los datos ingresados',
                 email:req.body.email
             })

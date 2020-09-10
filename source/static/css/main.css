@@ -15,7 +15,7 @@ body{
     background-color:#ebebeb;
     margin: 0;
 
-    font-family:'Montserrat',sans-serif;
+    font-family:'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #333232;
 
     /* max-width: 1200px; */
