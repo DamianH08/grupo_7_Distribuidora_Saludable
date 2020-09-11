@@ -29,9 +29,21 @@
     <div class="login add-shadow">
         <h3>¡Bienvenido!</h3>
         
+
         <% if(typeof errors != 'undefined') { %>
             
             
+                <div class="errorMessage">
+                    <% if(errors.first_name) { %> 
+                        <%= errors.first_name.msg %> </br> 
+                    <% } %> 
+                    
+                    <%= errors.last_name.msg %> </br> 
+                    <%= errors.email.msg %> </br>
+                    <%= errors.password.msg %> </br>
+                </div>
+    
+              
 
         <% }else{ %>  
             <h4>Por favor, ingresá tus datos:</h4>
@@ -45,40 +57,24 @@
                 <% if(locals.first_name){ %> 
                     <input type="text" name="first_name"  value=<%= first_name %>>
                     
-                    <% if(errors.first_name) { %>   
-                        <div class="errorMessage">
-                         <%= errors.first_name.msg %> </li>
-                     </div>
-            
-                     <% } %> 
+                  
 
                 <% }else{ %> 
                     <input type="text" name="first_name"  placeholder="Nombre">
-                    <% if(errors.first_name) { %>   
-                        <div class="errorMessage">
-                         <%= errors.first_name.msg %> </li>
-                     </div>
-            
-                     <% } %> 
+                
                    
                 <% } %>
+
                 <% if(locals.last_name){ %> 
                     <input type="text" name="last_name" value=<%= last_name %> >
-                    <% if(errors.last_name) { %>   
-                        <div class="errorMessage">
-                         <%= errors.last_name.msg %> </li>
-                     </div>
+                    
             
-                     <% } %> 
+                
 
                 <% }else{ %> 
                     <input type="text" name="last_name"  placeholder="Apellido">
-                    <% if(errors.last_name) { %>   
-                        <div class="errorMessage">
-                         <%= errors.last_name.msg %> </li>
-                     </div>
-            
-                     <% } %> 
+                   
+
                 <% } %>
             </div>
            
@@ -86,34 +82,19 @@
             <% if(locals.email) { %>
                     <input type="email" name="email" value=<%= email %> >
                     
-                    <% if(errors.email) { %>   
-                        <div class="errorMessage">
-                         <%= errors.email.msg %> </li>
-                     </div>
-            
-                     <% } %> 
+        
 
                 
                 
             <% }else{ %> 
                 <input type="email" name="email" placeholder="Email">
                 
-                <% if(errors.email) { %>   
-                    <div class="errorMessage">
-                     <%= errors.email.msg %> </li>
-                 </div>
-        
-                 <% } %> 
+                
 
             <% } %>
+
             <input class="password" type="password" name="password" placeholder="Contraseña">
-            
-            <% if(errors.password) { %>   
-                <div class="errorMessage">
-                 <%= errors.password.msg %> </li>
-             </div>
-    
-             <% } %> 
+                  
 
             <input type="password" placeholder="Repetir contraseña">
 

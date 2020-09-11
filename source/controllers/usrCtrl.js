@@ -20,6 +20,7 @@ module.exports ={
     },
     register: (req,res, next)=>{      
         let errors = validationResult(req);
+        
         if (errors.isEmpty()){ 
             user.create({
                 first_name:req.body.first_name,
@@ -46,6 +47,8 @@ module.exports ={
 
 
         }else{
+
+           
            return res.render('users/register',{ 
                errors: errors.mapped(),
                first_name: req.body.first_name,
