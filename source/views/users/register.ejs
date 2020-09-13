@@ -38,9 +38,17 @@
                         <%= errors.first_name.msg %> </br> 
                     <% } %> 
                     
-                    <%= errors.last_name.msg %> </br> 
-                    <%= errors.email.msg %> </br>
-                    <%= errors.password.msg %> </br>
+                    <% if(errors.last_name) { %> 
+                        <%= errors.last_name.msg %> </br> 
+                    <% } %> 
+                    
+                    <% if(errors.email) { %> 
+                        <%= errors.email.msg %> </br> 
+                    <% } %> 
+                    
+                    <% if(errors.password) { %> 
+                        <%= errors.password.msg %> </br> 
+                    <% } %> 
                 </div>
     
               

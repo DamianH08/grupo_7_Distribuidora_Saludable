@@ -43,6 +43,8 @@ module.exports ={
                         errorMessage:"El email ya se ancuentra registrado",
                     })
                 }
+
+                res.render('users/register')
             })
 
 
