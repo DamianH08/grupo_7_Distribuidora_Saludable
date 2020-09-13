@@ -20,14 +20,22 @@ module.exports ={
     },
     register: (req,res, next)=>{      
         let errors = validationResult(req);
-        
+
         if (errors.isEmpty()){ 
+        let foto;   
+            if(req.files[0]){
+                foto = req.files[0].filename;
+            }
+                
+                
+            
             user.create({
                 first_name:req.body.first_name,
                 last_name:req.body.last_name,
                 email:req.body.email,
                 password:bcrypt.hashSync(req.body.password,10),
-                avatar: req.files[0].filename
+                avatar: foto   
+                
             })
             
             .then(newUser=>{
@@ -47,8 +55,8 @@ module.exports ={
                 res.render('users/register')
             })
 
-
-        }else{
+        }
+        else{
 
            
            return res.render('users/register',{ 
