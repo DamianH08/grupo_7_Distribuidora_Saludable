@@ -15,7 +15,7 @@ module.exports = {
     },
     isAdmin: (req,res,next)=>{
         req.session.admin = true;
-        req.session.user = 'Brian';
+        req.session.user = 'Neo';
         if(req.session.admin){
             res.locals.user = req.session.user;
             next()
