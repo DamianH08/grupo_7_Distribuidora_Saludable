@@ -162,14 +162,14 @@
             <div class="errorMessage"> <%= errorMessage %>  </div>
             <% } %> 
         <form action="/login" method="POST">
-            <label for="email"></label>
+            <label for="email">Email: </label>
             <% if(locals.email){ %>
                 <input type="email" value=<%= email %>  name="email">
             <% }else{ %>
-                <input type="email" placeholder="Email" name="email"> 
+                <input type="email" placeholder="cosmeFulanito@mail.com" name="email"> 
             <% } %> 
-            <label for="password"></label>
-            <input class="password" type="password" placeholder="Contraseña" name="password">
+            <label for="password">Contraseña:</label>
+            <input class="password" type="password" placeholder="*****" name="password">
             <input type="submit" value="Entrar" style="background-color:var(--pink-1);font-weight: 700;color: #272726da;"></input>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Recordarme
