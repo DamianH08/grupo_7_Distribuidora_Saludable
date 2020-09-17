@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <%- include('../../partials/styles-and-fonts') %>
+    <%- include('../partials/style') %>  
+    <style>
+        .product-row,.row-titles{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .product-row >div{
+            text-align: left;
+            }
+        .user-id,.uid-title{
+            width:10%
+        }
+        .first-name,.fname-title{
+            width: 20%;
+        }
+        .last-name,.lname-title{
+            width: 25%;
+        }
+        .email,.email-title{
+            width:35%
+        }
+        .row-btns{
+            width: 10%;
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo-header">
+            <img src="/images/logo/logoWhite.png">
+        </a>
+        <form action="/admin/products" method="GET" class="search-form">
+            <input 
+            type="text" 
+            name="keyword" 
+            class="search-form_input"
+            <% if(keyword){ %> 
+                value=<%= keyword %>  
+                <% }else{ %>
+                placeholder="Buscar..."
+                <% } %> 
+            >
+            <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+        </form>
+        
+        <ul class="desktop tablet">
+            <li><a href="/login"><i class="fas fa-user"></i> Admin</a></li>
+            
+        <div class="movil">
+            <i class="fa fa-bars movil" style="margin-right:1rem;color: #fff;font-size: 2rem;"></i>
+        </div>
+    </header> 
+    
+    <div class="main-container">
+        
+        <!-- navbar -->
+        <%- include('../partials/verticalMenu') %> 
+
+        <!-- Products list -->
+        <div class="products-list add-shadow-1">
+
+            <div class="row-titles">
+                <span class="uid-title">ID</span>
+                <span class="fname-title">Nombre</span>
+                <span class="lname-title">Apellido</span>
+                <span class="email-title">Email</span>
+                <span>Acciones</span>
+            </div>
+
+            <% if(users.length>0){users.forEach(user =>{ %> 
+            <div class="product-row">
+                <div class="user-id"><%= user.id %> </div>
+                <div class="first-name text-overflow"><%= user.first_name  %> </div>
+                <div class="last-name"><%= user.last_name %> </div>
+                <div class="email"><%= user.email %> </div>
+                <div class="row-btns">
+                    <a class="btn-admin" href="" title="Ver"><i class="fas fa-eye"></i></a>
+                    <a class="btn-admin" href="" title="Editar"><i class="fas fa-pen"></i></a>
+                    <a id="delete-btn" class="btn-admin" title="Borrar"><i class="fas fa-trash-alt"></i></a>
+                </div>
+            </div>
+            <% })} else{ %>
+                <h4>No se encontraton resultados de tu búsqueda</h4>
+            <% } %>  
+        </div>
+
+  </div>
+
+    </div>    
+
+</body>
+</html>

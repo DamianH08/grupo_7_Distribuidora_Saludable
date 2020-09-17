@@ -15,6 +15,7 @@ router
     .post('/products/:id/edit',adminCtrl.storeEditedProduct)
     .get('/products/:id/delete',adminCtrl.deleteProduct)
     .post('/products/:id/delete',adminCtrl.storeDeletedProduct  )
+    .get('/users',adminCtrl.users)
     ;
 
 module.exports = router;

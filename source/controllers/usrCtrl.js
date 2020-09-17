@@ -65,7 +65,9 @@ module.exports ={
         })
     },
     test:(req,res)=>{
-        sessionToken.findAll({include:'user'})
+        user.findAll({
+            attributes:['id','first_name','last_name','email']
+        })
         .then(results => res.send(results))
         .catch(e => console.log(e))
     }

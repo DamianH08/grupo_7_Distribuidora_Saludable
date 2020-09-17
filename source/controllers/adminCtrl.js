@@ -1,5 +1,6 @@
 const products_db = require('../db/products_db');
 const categories_db = require('../db/categories_db');
+const {user} = require('../database/models')
 
 module.exports = {
     index:(req,res)=>{
@@ -60,6 +61,18 @@ module.exports = {
     storeDeletedProduct:(req,res)=>{
         products_db.storeDeletedProduct(req.params.id);
         res.render('admin/products/deletedProduct');
-    }
+    },
+    users:(req,res)=>{
+        user.findAll({
+            attributes:['id','first_name','last_name','email']
+        })
+        .then(users =>{
+            res.render('admin/users/users',{
+                keyword:undefined,
+                users:users
+            })
 
+        })
+    }
+    
 }
