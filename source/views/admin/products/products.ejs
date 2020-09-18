@@ -8,43 +8,13 @@
     <%- include('../partials/style') %>  
 </head>
 <body>
-    <header>
-        <a href="/" class="logo-header">
-            <img src="/images/logo/logoWhite.png">
-        </a>
-        <form action="/admin/products" method="GET" class="search-form">
-            <input 
-            type="text" 
-            name="keyword" 
-            class="search-form_input"
-            <% if(keyword){ %> 
-                value=<%= keyword %>  
-                <% }else{ %>
-                placeholder="Buscar..."
-                <% } %> 
-            >
-            <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
-        </form>
-        
-        <ul class="desktop tablet">
-            <li><a href="/login"><i class="fas fa-user"></i> Admin</a></li>
-            
-        <div class="movil">
-            <i class="fa fa-bars movil" style="margin-right:1rem;color: #fff;font-size: 2rem;"></i>
-        </div>
-    </header> 
+    
+    <%- include('../partials/header') %> 
     
     <div class="main-container">
         
         <!-- navbar -->
-        <div class="menu-container add-shadow-1">
-            <ul class="vnav">
-                <li><a class="nav-btn active" href="#">Productos</a></li>
-                <li><a class="nav-btn" href="/admin/products/create">Crear</a></li>
-                <li><a class="nav-btn" href="">Modificar</a></li>
-                <li><a class="nav-btn" href="">Borrar</a></li>
-            </ul>
-        </div>
+        <%- include('../partials/verticalMenu') %> 
 
         <!-- Products list -->
         <div class="products-list add-shadow-1">
@@ -60,9 +30,9 @@
             <% if(products.length>0){products.forEach(product =>{ %> 
             <div class="product-row">
                 <span class="id"><%= product.id %> </span>
-                <span class="name text-overflow"><%= product.producto.slice(0,30) %> </span>
-                <span class="price">$<%= product.precio %> </span>
-                <span class="unit"><%= product.variante %> </span>
+                <span class="name text-overflow"><%= product.name.slice(0,37) %> </span>
+                <span class="price"><%= "$100" %> </span>
+                <span class="unit"><%= "1 kg" %> </span>
                 <div class="row-btns">
                     <a class="btn-admin" href="/admin/products/<%= product.id %> " title="Ver"><i class="fas fa-eye"></i></a>
                     <a class="btn-admin" href="/admin/products/<%= product.id %>/edit" title="Editar"><i class="fas fa-pen"></i></a>

@@ -17,14 +17,20 @@
 
     <div style="margin-bottom:1rem;"></div>
     <div class="desc-container add-shadow">
-        <img class="prd-photo" src="<%= product.img %> ">
+        <img class="prd-photo" src="<%= product.image %> ">
         <div class="prd-details">
-            <div class="prd-name"><%= product.producto %> </div>
-            <div class="prd-price">$<%= product.precio %> </div>
-            <div class="qty">
-                <input type="number" name="qty" placeholder="1" required>
-                <div class="un">Kg</div>
-            </div>
+            <div class="prd-name"><%= product.name %> </div>
+            <div id="price" class="prd-price">$<%= variants[0].price %> </div>
+            <!-- <div class="qty"> -->
+                <!-- <input type="number" name="qty" placeholder="1" required> -->
+                <!-- <div class="un">//variant.name</div> -->
+            <!-- </div> -->
+            <select name="variant" id="variants">
+                <% variants.forEach(variant => { %> 
+                <option value=<%= variant.price %> data-price=<%= variant.price %> >
+                    <%= variant.name %> </option>
+                <% }) %> 
+            </select>
             <a href="#" id="add" class="add-shadow"><i class="fas fa-shopping-cart"></i> Agregar al carrito</a>
 
 
@@ -32,5 +38,16 @@
     </div>
     
     <%- include('../partials/footer') %> 
+
+    <script>
+        let price = document.getElementById('price')
+        let variants = document.getElementById('variants')
+        variants.addEventListener('change',function(){
+            price.innerText='$'+variants.value
+        })
+        
+
+    </script>
+        
 </body>
 </html>

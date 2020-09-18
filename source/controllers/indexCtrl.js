@@ -6,7 +6,7 @@ const
     hash = bcrypt.genSalt(10),
     crypto = require('crypto'),
     tokenStorage = require('../db/userTokens'),
-    {user}  = require('../database/models/')
+    {user,category,products}  = require('../database/models/')
     ;
 
 module.exports ={
@@ -34,13 +34,13 @@ module.exports ={
     productDetail:(req,res)=>{
         res.render('productDetail')
     },
-    search:(req,res)=>{
-        res.render('search',{
-            categories:categories_db.data,
-            keyword:req.query.keyword,
-            products:products_db.findByKeyword(req.query.keyword)
-        })
-    },
+    // search:async(req,res)=>{
+    //     res.render('search',{
+    //         categories:categories_db.data,
+    //         keyword:req.query.keyword,
+    //         products:products_db.findByKeyword(req.query.keyword)
+    //     })
+    // },
     login:(req,res)=>{
         res.render('login')
     },

@@ -38,7 +38,7 @@ module.exports = (sequelize, DataTypes) => {
             sequelize, // This is the connection instance
             modelName: 'variant',
             tableName: 'variants',
-            timestamps: true 
+            timestamps: false 
         }     
   )
   return Product;
