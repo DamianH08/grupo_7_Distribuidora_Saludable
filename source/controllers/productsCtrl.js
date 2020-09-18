@@ -49,18 +49,37 @@ module.exports ={
             products
         })
     },
-    categories: (req,res) =>{
+    categories: async (req,res) =>{
         res.render('products/allCategories',{
-            categories:categories_db.data
+            categories:await category.findAll()
         })
     },
-    category: (req,res)=>{
+    category: async (req,res)=>{
+        // res.render('products/category',{
+        //     categoryName:categories_db.findById(req.params.cat),
+        //     categories:categories_db.data,
+        //     products:products_db.findByCategory(req.params.cat),
+        // });
+        // let cat = await category.findByPk(req.params.cat)
+        // let products= await product.findAll({
+        //             attributes:['id','name','image'],
+        //             include:{model:variant, attributes:['id','name','price']},
+        //             where:{
+        //                 category_id:req.params.cat
+        //             }
+        //         });
+        // res.send(products)
         res.render('products/category',{
-            categoryName:categories_db.findById(req.params.cat),
-            categories:categories_db.data,
-            products:products_db.findByCategory(req.params.cat),
-        });
-        
+            categories: await category.findAll(),
+            products: await product.findAll({
+                attributes:['id','name','image'],
+                include:{model:variant, attributes:['id','name','price']},
+                where:{
+                    category_id:req.params.cat
+                }
+            }),
+            categoryName:await category.findByPk(req.params.cat)
+        })
     },
     showProduct: async(req,res)=>{
     //     if(products_db.findById(req.params.id)){

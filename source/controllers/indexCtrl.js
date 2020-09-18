@@ -10,10 +10,10 @@ const
     ;
 
 module.exports ={
-    index: (req,res)=>{
-        let categories = categories_db.data;
+    index:async (req,res)=>{
+        // let categories = categories_db.data;
         res.render('index',{
-            categories:categories
+            categories:await category.findAll()
         })
     },
     locales: (req,res)=>{
