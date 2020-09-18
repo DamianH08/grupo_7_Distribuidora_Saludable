@@ -10,10 +10,20 @@ const
     ;
 
 module.exports ={
-    index:async (req,res)=>{
-        // let categories = categories_db.data;
+    index: async(req,res)=>{
+        // Se seleccionan categorias al azar para mostrar en la home
+        let categories = await category.findAll()
+        let catcopy = categories
+        let starCategories = []
+        for(let i=0;i<8;i++){
+            let a = catcopy.pop(Math.floor(Math.random()*categories.length))
+            starCategories.push(a)
+        }
+        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
         res.render('index',{
-            categories:await category.findAll()
+            categories,
+            starCategories
         })
     },
     locales: (req,res)=>{
@@ -34,6 +44,7 @@ module.exports ={
     productDetail:(req,res)=>{
         res.render('productDetail')
     },
+    //este controlador paso a products
     // search:async(req,res)=>{
     //     res.render('search',{
     //         categories:categories_db.data,
