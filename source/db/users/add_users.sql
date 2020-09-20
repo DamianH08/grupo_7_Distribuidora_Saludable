@@ -1,13 +1,6 @@
--- this query populate table users from dist_saludable database
 use dist_saludable;
-
-alter table users add role varchar(5) not null default 'user';
-alter table users add constraint check(role in ('user','admin'));
-insert into users (first_name,last_name,email,password,role) 
-values ('admin','admin','admin@mail.com','password','admin');
-
 insert into users (first_name,last_name,email,password) values 
-('Rodina','Souttar','rsout15tar0@phpbb.com','$2a$10$QNNznz/ADSKXi70XLOWJU.EAJ1x26xLJJ0OtZG1elMzDSca.g1rli'),
+('Rodina','Souttar','rsouttar0@phpbb.com','$2a$10$QNNznz/ADSKXi70XLOWJU.EAJ1x26xLJJ0OtZG1elMzDSca.g1rli'),
 ('Walliw','Laval','wlaval1@meetup.com','$2a$10$QNNznz/ADSKXi70XLOWJU.m5mcZSJ187LukpMoAC1aHGvDRB34.6K'),
 ('Madonna','Leward','mleward2@shutterfly.com','$2a$10$QNNznz/ADSKXi70XLOWJU.0vDbHAeYw0k.7UemS2chyxjbqlG8/Rq'),
 ('Sigfrid','Kincade','skincade3@symantec.com','$2a$10$QNNznz/ADSKXi70XLOWJU.UJpgGsYWte9fwbkB/IsgqZ5TBRRl1l2'),
@@ -57,4 +50,7 @@ insert into users (first_name,last_name,email,password) values
 ('Edi','Cyseley','ecyseley1b@about.me','$2a$10$QNNznz/ADSKXi70XLOWJU.ubR7f6OhixD9IdTrVV7DghT8mBpzHim'),
 ('Ariel','Riddeough','ariddeough1c@youtube.com','$2a$10$QNNznz/ADSKXi70XLOWJU.rZt7F8eB1dqHthpDz8NMymngkP9FTee'),
 ('Celestia','Brevetor','cbrevetor1d@xing.com','$2a$10$QNNznz/ADSKXi70XLOWJU.c8cGd9LIZXe5DIMZd5Szwwb07YGi5SO'),
-('Roco','Labrador','roco@mail.com','$2a$10$QNNznz/ADSKXi70XLOWJU.OOQ2Ut7EGu2IZQBPzudOk5hzvjStuTq');
+('Roco','Labrador','roco@mail.com','$2a$10$QNNznz/ADSKXi70XLOWJU.OOQ2Ut7EGu2IZQBPzudOk5hzvjStuTq'),
+('Jhon','Wick','admin@mail.com','$2a$10$QNNznz/ADSKXi70XLOWJU.OOQ2Ut7EGu2IZQBPzudOk5hzvjStuTq'),
+('Bilbo','Bolson','user@mail.com','$2a$10$QNNznz/ADSKXi70XLOWJU.OOQ2Ut7EGu2IZQBPzudOk5hzvjStuTq');
+

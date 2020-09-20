@@ -6,14 +6,24 @@ const
     hash = bcrypt.genSalt(10),
     crypto = require('crypto'),
     tokenStorage = require('../db/userTokens'),
-    {user}  = require('../database/models/')
+    {user,category,products}  = require('../database/models/')
     ;
 
 module.exports ={
-    index: (req,res)=>{
-        let categories = categories_db.data;
+    index: async(req,res)=>{
+        // Se seleccionan categorias al azar para mostrar en la home
+        let categories = await category.findAll()
+        let catcopy = categories
+        let starCategories = []
+        for(let i=0;i<8;i++){
+            let a = catcopy.pop(Math.floor(Math.random()*categories.length))
+            starCategories.push(a)
+        }
+        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
         res.render('index',{
-            categories:categories
+            categories,
+            starCategories
         })
     },
     locales: (req,res)=>{
@@ -34,13 +44,14 @@ module.exports ={
     productDetail:(req,res)=>{
         res.render('productDetail')
     },
-    search:(req,res)=>{
-        res.render('search',{
-            categories:categories_db.data,
-            keyword:req.query.keyword,
-            products:products_db.findByKeyword(req.query.keyword)
-        })
-    },
+    //este controlador paso a products
+    // search:async(req,res)=>{
+    //     res.render('search',{
+    //         categories:categories_db.data,
+    //         keyword:req.query.keyword,
+    //         products:products_db.findByKeyword(req.query.keyword)
+    //     })
+    // },
     login:(req,res)=>{
         res.render('login')
     },

@@ -1,6 +1,7 @@
 const
     express = require('express'),
     router = express.Router(),
+    maintenancePage = require('../middlewares/maintenance')
     adminCtrl = require('../controllers/adminCtrl');
 
 router
@@ -15,6 +16,8 @@ router
     .post('/products/:id/edit',adminCtrl.storeEditedProduct)
     .get('/products/:id/delete',adminCtrl.deleteProduct)
     .post('/products/:id/delete',adminCtrl.storeDeletedProduct  )
+    .get('/users',adminCtrl.users)
+    .get('/orders',maintenancePage)
     ;
 
 module.exports = router;

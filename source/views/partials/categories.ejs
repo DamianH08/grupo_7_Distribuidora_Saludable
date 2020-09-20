@@ -5,6 +5,20 @@
     </div>
     </a>
     <div class="lista-categories">
+        <% starCategories.forEach(category =>{ %> 
+            <div class="category-card">
+                <a href="#">
+                    <img class="img-category" src="images/categories/<%= category.id %>.jpg">
+                    <div class="name-category">
+                        <p style="margin: 0;"><%= category.name %> </p>
+                    </div>
+                </a>
+            </div>
+        <% }) %> 
+    </div>
+</div>
+<!-- 
+    <div class="lista-categories">
         <div class="category-card">
             <a href="#">
                 <img class="img-category" src="images/categories/cereales.jpg">
@@ -70,5 +84,4 @@
             </a>
         </div>
     </div>
-    
-</div>
+     -->

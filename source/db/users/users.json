@@ -355,5 +355,12 @@
     "last_name": "Labrador",
     "email": "roco@mail.com",
     "password": "$2a$10$QNNznz/ADSKXi70XLOWJU.OOQ2Ut7EGu2IZQBPzudOk5hzvjStuTq"
+  },
+  {
+    "id": 52,
+    "first_name": "Jhon",
+    "last_name": "Wick",
+    "email": "admin@mail.com",
+    "password": "$2a$10$QNNznz/ADSKXi70XLOWJU.OOQ2Ut7EGu2IZQBPzudOk5hzvjStuTq"
   }
 ]

@@ -6,8 +6,11 @@ module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     
     static associate(models) {
-      // define association here
+      this.hasMany(models.sessionToken)
+      this.hasMany(models.userAddress)
+      this.hasMany(models.order)
     }
+    
   };
   User.init({
           id:{
@@ -44,7 +47,7 @@ module.exports = (sequelize, DataTypes) => {
           },
         },
         {
-            sequelize, // This is the connection instance
+            sequelize, 
             modelName: 'user',
             tableName: 'users',
             timestamps: false 

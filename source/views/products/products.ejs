@@ -15,14 +15,17 @@
     <div class="container"> 
         <div class="title add-shadow-bottom"><h3>Todos nuestros productos</h3></div>
         <div class="products-container">
+            <% if(products){ %> 
             <% products.forEach((product) => {%> 
-            <div class="product-container add-shadow-1">
-                    <div class="image-product"><img class="photo-product" src="<%= product.img %>"></div>
-                    <div class="price-product">$<%= product.precio %> </div>
-                    <div class="desc-product"><%= product.producto %> </div>
-                    <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
-            </div>
-        <% }) %> 
+            <a class="to-product" href="/products/<%= product.id %> ">
+                <div class="product-container add-shadow-1">
+                        <div class="image-product"><img class="photo-product" src="<%= product.image %>"></div>
+                        <div class="price-product">$<%= product.variants[0].price %> </div>
+                        <div class="desc-product"><%= product.name %> </div>
+                        <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
+                </div>
+            </a>
+            <% })} %> 
         </div>
     
 </body>

@@ -2,7 +2,7 @@ const
     categories_db = require("../db/categories_db"),
     { check, validationResult, body } = require('express-validator'),
     { Op } = require('sequelize'),
-    {user}  = require('../database/models/'),
+    {user,store,product,category,sessionToken}  = require('../database/models/'),
     fs = require('fs'),
     path = require('path'),
     bcrypt = require('bcryptjs'),
@@ -26,9 +26,6 @@ module.exports ={
             if(req.files[0]){
                 foto = req.files[0].filename;
             }
-                
-                
-            
             user.create({
                 first_name:req.body.first_name,
                 last_name:req.body.last_name,
@@ -51,20 +48,15 @@ module.exports ={
                         errorMessage:"El email ya se ancuentra registrado",
                     })
                 }
-
                 res.render('users/register')
             })
-
         }
         else{
-
-           
            return res.render('users/register',{ 
                errors: errors.mapped(),
                first_name: req.body.first_name,
                last_name: req.body.last_name, 
                email: req.body.email, })
-
         }
     },
     cart:(req,res)=>{
@@ -80,21 +72,10 @@ module.exports ={
         })
     },
     test:(req,res)=>{
-        if(req.query.id){
-            user.findByPk(req.query.id)
-                .then(e=>res.send(e))
-        }
-        // if(req.query.name){
-        //     user.findOne({
-        //         where:{
-        //             email:req.query.name
-        //         }
-        //     })
-        //     .then(e=>res.send(e))
-        // }
-
-        // user.findAll()
-        //     .then(a=>res.send(a))
-        //     .catch(e=>console.log(e))
+        user.findAll({
+            attributes:['id','first_name','last_name','email']
+        })
+        .then(results => res.send(results))
+        .catch(e => console.log(e))
     }
 };

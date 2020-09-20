@@ -10,19 +10,19 @@
 <body>
     <%- include('../partials/header') %>
     
-    <h1><%= categoryName %> </h1>
+    <h1><%= categoryName.name %> </h1>
 
     <div class="container"> 
         <div class="products-container">
             <% products.forEach((product) => {%> 
             <a class="to-product" href="/products/<%= product.id %> ">
                 <div class="product-container add-shadow-1">
-                        <div class="image-product"><img class="photo-product" src="<%= product.img %>"></div>
-                        <div class="price-product">$<%= product.precio %> </div>
+                        <div class="image-product"><img class="photo-product" src="<%= product.image %>"></div>
+                        <div class="price-product">$<%= product.variants[0].price %> </div>
                         <div class="desc-product">
-                            <% if(product.producto.length>25){ %>
-                            <%= product.producto.slice(0,25)+"..."%> <%} else{ %>
-                                    <%= product.producto %> 
+                            <% if(product.name.length>25){ %>
+                            <%= product.name.slice(0,25)+"..."%> <%} else{ %>
+                                    <%= product.name %> 
                                     <%} %>  
                         </div>
                         <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>

@@ -7,7 +7,11 @@
         type="text" 
         name="keyword" 
         class="search-form_input"
-        placeholder="Buscar..."
+        <% if(locals.keyword){ %>
+            value = <%= keyword %>     
+        <% }else{ %>
+            placeholder="Buscar..."
+        <% } %> 
         >
         <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
     </form>
