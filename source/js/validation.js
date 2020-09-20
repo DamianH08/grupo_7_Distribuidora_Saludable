@@ -1,3 +1,4 @@
+/*
 window.addEventListener('load', function() {
     let errors = {};
 
@@ -8,3 +9,5 @@ window.addEventListener('load', function() {
     let email = document.getElementById('email');
     let password = document.getElementById('password');
     let password2 = document.getElementById('password2');
+
+    */
