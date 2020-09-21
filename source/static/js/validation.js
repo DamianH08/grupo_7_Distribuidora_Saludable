@@ -57,7 +57,6 @@ window.addEventListener('load', function() {
         handleError(password, error);
     };
 
-
     let validatePassword2 = function() {
         let error = '';
         
@@ -68,7 +67,6 @@ window.addEventListener('load', function() {
 
         handleError(password2, error);
     };
-
 
     let handleError = function (element, error) {
         let errorElement = document.getElementById('error' + element.name);
@@ -85,9 +83,6 @@ window.addEventListener('load', function() {
         
         errorElement.innerText = error;
     };
-
-   
-
 
     //llamados
     first_name.addEventListener('blur', validateFirstName);
