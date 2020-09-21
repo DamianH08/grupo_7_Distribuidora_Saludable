@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="/css/register.css">
     <!-- Icons fontawesome.com -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <script src="js/validations.js"></script>
+    
+    <script src="/js/validator.min.js"></script>
+    <script src="/js/validation.js"></script>
     
 </head>
 <body>
@@ -31,27 +33,33 @@
         
         <h4>Por favor, ingresá tus datos:</h4>
 
-       <% if(locals.errorMessage){ %>
-        <div class="errorMessage"><%= errorMessage %> </div>
-       <% } %>  
+    <!--   
+        <% if(locals.errorMessage){ %> 
+            <div class="errorMessage"><%= errorMessage %> </div> 
+        <% } %>   
+    -->
 
         <form action="/users/register" method="POST" enctype="multipart/form-data" id="userCreateForm">
             <div>
                 <label for="first_name">Nombre: </label>
+               
                 <% if(locals.first_name){ %> 
                     <input type="text" name="first_name" id="first_name" value=<%= first_name %>>
                 <% }else{ %> 
                     <input type="text" name="first_name" id="first_name" placeholder="Cosme">
                 <% } %>
 
-                <% if(typeof errors != 'undefined') { %>
-                <div class="errorMessage">
+                <p class="errorMessage" id="errorfirst_name"></p>
+
+              
+                 <% if(typeof errors != 'undefined') { %>
+                <p class="errorMessage">
                     <% if(errors.first_name) { %> 
                         <%= errors.first_name.msg %>
                     <% } %> 
-                </div>  
+                </p>  
                 <% } %> 
-
+          
                 <label for="last_name">Apellido: </label>
                 <% if(locals.last_name){ %> 
                     <input type="text" name="last_name" id="last_name" value=<%= last_name %> >
@@ -60,6 +68,8 @@
                     <input type="text" name="last_name" id="last_name" placeholder="Fulanito">
                 
                 <% } %>
+
+                <p class="errorMessage" id="errorlast_name"></p>
 
                 <% if(typeof errors != 'undefined') { %>
                 <div class="errorMessage">
@@ -80,6 +90,8 @@
               
             <% } %>
 
+            <p class="errorMessage" id="erroremail"></p>
+
             <% if(typeof errors != 'undefined') { %>
             <div class="errorMessage">
                 <% if(errors.email) { %> 
@@ -91,6 +103,8 @@
             <label for="password">Contraseña: </label>
             <input class="password" type="password" name="password" id="password" placeholder="*****">
              
+            <p class="errorMessage" id="errorpassword"></p>
+
             <% if(typeof errors != 'undefined') { %>
             <div class="errorMessage">
                 <% if(errors.password) { %> 
@@ -102,7 +116,7 @@
             <label for="password2">Confirmar contraseña: </label>
             <input type="password" name="password2" id="password2" placeholder="*****">
 
-
+            <p class="errorMessage" id="errorpassword2"></p>
 
             <div class="upload">
                 <label for="avatar">Sube una foto:</label>
