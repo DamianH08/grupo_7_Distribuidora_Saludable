@@ -64,6 +64,13 @@ module.exports ={
             categories:categories_db.data
         })
     },
+    showUser: (req,res)=>{
+        res.render('users/user',{
+            first_name:req.params.id,
+            last_name:'',
+            email:''
+        })
+    },
     test:(req,res)=>{
         user.findAll({
             attributes:['id','first_name','last_name','email']

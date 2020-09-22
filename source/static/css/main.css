@@ -382,8 +382,8 @@ a.to-product{
 
 /* Errors */
 .errorMessage{
-    color: white;
+    color: red;
     text-align: left;
     font-size: 0.9rem;
-    background-color: red;
+    border-color: red;
 }

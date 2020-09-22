@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <%- include('../partials/styles-and-fonts') %> 
+    <title>Distribuidora Saludable</title>
 
+    <link rel="stylesheet" href="/css/cart.css">
+    <%- include('../partials/styles-and-fonts') %> 
 </head>
 <body>
     <%- include('../partials/header') %> 
     <h1>Welcome <%= locals.user %> </h1>
     <div style="text-align: center;">
         <a href="/">go home!</a>
+        
+        <p> <%=first_name%></p>
+        
         <a href="/logout">Salir</a>
     </div>
+
+
+    <%- include('../partials/footer') %> 
 </body>
 </html>

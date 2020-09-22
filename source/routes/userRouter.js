@@ -22,8 +22,9 @@ router
     .get('/cart',userCtrl.cart)
     .get('/register',userCtrl.showRegisterForm)
     .post('/register',upload.any(), validate.registerForm,userCtrl.register)
+
     .get('/test',userCtrl.test)
-    .get('/user',(req,res)=>{res.render('users/user')})
+    .get('/user/:id',userCtrl.showUser)
     ;
 
 module.exports = router;
