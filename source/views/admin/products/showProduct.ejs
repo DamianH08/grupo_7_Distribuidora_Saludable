@@ -11,13 +11,7 @@
     <%- include('../partials/header') %> 
         
     <div class="main-container">
-        <div class="menu-container add-shadow-1">
-            <ul class="vnav">
-                <li><a class="nav-btn" href="/admin/products/create">Crear</a></li>
-                <li><a class="nav-btn" href="">Modificar</a></li>
-                <li><a class="nav-btn" href="">Borrar</a></li>
-            </ul>
-        </div>
+        <%- include('../partials/verticalMenu') %> 
 
         <div class="prod-container">
             <div style="text-align: left;margin:0.5rem;font-size: 1.2rem;">
@@ -26,7 +20,7 @@
                 </a>
             </div>
             <div class="details">
-                <img src="<%= product.img %> " alt="">
+                <img src="<%= product.image %> " alt="">
             </div>  
             <div class="details">
                 <div class="row-btns" style="text-align: right;margin:0.5rem;font-size: 1.2rem;">
@@ -35,9 +29,9 @@
                     <a class="btn-admin" href="/admin/products/<%= product.id %>/delete" title="Borrar"><i class="fas fa-trash-alt"></i></a>
                 </div>
                 <p>ID:<%= product.id %> </p>
-                <p><%= product.producto %> </p>
-                <p>$<%= product.precio %> </p>
-                <p><%= product.variante %> </p>     
+                <p><%= product.name %> </p>
+                <p>$100 </p>
+                <p>kg </p>     
             </div> 
             
                           

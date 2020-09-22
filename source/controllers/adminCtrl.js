@@ -1,6 +1,6 @@
 const products_db = require('../db/products_db');
 const categories_db = require('../db/categories_db');
-const {user,product} = require('../database/models');
+const {user,variant,product} = require('../database/models');
 const {Op} = require('sequelize')
 
 module.exports = {
@@ -40,9 +40,11 @@ module.exports = {
             })
         }
     },
-    showProduct: (req,res)=>{
+    showProduct: async(req,res)=>{
         res.render('admin/products/showProduct',{
-            product:products_db.findById(req.params.id)
+            product : await product.findOne({
+                where:{id:req.params.id}
+            })
         })
     },
     createProduct:(req,res)=>{
@@ -61,9 +63,14 @@ module.exports = {
         );
         res.redirect(`/admin/products/${newProduct}`);
     },
-    editProduct:(req,res)=>{
+    editProduct:async(req,res)=>{
         res.render('admin/products/editProduct',{
-            product:products_db.findById(req.params.id)
+            product:await product.findOne({
+                where:{
+                    id:req.params.id
+                },
+                include:{model:variant, attributes:['id','name','price']}
+            })
         })       
     },
     storeEditedProduct:(req,res)=>{

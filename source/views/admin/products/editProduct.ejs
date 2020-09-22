@@ -12,29 +12,22 @@
 
     <div class="main-container">
         
-        <div class="menu-container add-shadow-1">
-            <ul class="vnav">
-                <li><a class="nav-btn" href="/admin/products/create">Crear</a></li>
-                <li><a class="nav-btn active" href="admin/porducts/edit">Editar</a></li>
-                <li><a class="nav-btn" href="">Borrar</a></li>
-            </ul>
-
-        </div>
+        <%- include('../partials/verticalMenu') %> 
    
     <div class="form-container add-shadow-1">
         <form action="/admin/products/<%= product.id %>/edit " method="POST">
             <span>ID: <%= product.id %> </span><br>
             <br>
             <label for="name">Nombre del producto:</label><br>
-            <input type="text" style="width: 50%;" name="name" value="<%= product.producto %>"><br>
+            <input type="text" style="width: 50%;" name="name" value="<%= product.name %>"><br>
             <label for="price">Precio:</label><br>
-            <input type="text"  style="width: 10%;" name="price" value="<%= product.precio %>">
-            <span>$ - <%= product.variante %> </span><br>
+            <input type="text"  style="width: 10%;" name="price" value="<%= product.price %>">
+            <span>$ - <%= product.variants[0].price %> </span><br>
             <label for="description">Descripción:</label><br>
             <input type="text" id="descr">
             <label for="image">Imágen:</label>
             <input type="text" style="width: 50%;" name="img" value="<%= product.img %> ">
-            <a target="_blank" href="<%= product.img %>">ver</a>
+            <a target="_blank" href="<%= product.image %>">ver</a>
             <div class="btn-container"> 
                 <input type="submit" value="Aceptar">
                 <a href="javascript:history.back()">cancelar</a>
