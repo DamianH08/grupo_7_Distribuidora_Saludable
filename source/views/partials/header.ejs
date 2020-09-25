@@ -27,9 +27,10 @@
         </li>
         <% if(locals.user){ %>
             <li class="dropdown">
-                <a href="/users/user" class="dropbtn"><i class="fas fa-user"></i> <%= locals.user %> </a>
+                <a href="/users/user/<%= locals.userId %>" class="dropbtn"><i class="fas fa-user"></i> <%= locals.user %> </a>
                 <div class="dropdown-content">
-                    <a href="/users/user/<%= locals.user %>">Perfil</a>
+                    <a href="/users/user/<%= locals.userId %>">Perfil : <%= locals.userId %> </a>                 
+
                     <a href="/logout">Salir</a>
                 </div>
             </li>

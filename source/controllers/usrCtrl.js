@@ -64,11 +64,20 @@ module.exports ={
             categories:categories_db.data
         })
     },
-    showUser: (req,res)=>{
+    showUser: async (req,res)=>{
         res.render('users/user',{
             first_name:req.params.id,
-            last_name:'',
-            email:''
+            last_name:'Pepe',
+            email:'',
+            categories: await category.findAll() 
         })
+        
+    },
+    test:(req,res)=>{
+        user.findAll({
+            attributes:['id','first_name','last_name','email']
+        })
+        .then(results => res.send(results))
+        .catch(e => console.log(e))
     }
 };
