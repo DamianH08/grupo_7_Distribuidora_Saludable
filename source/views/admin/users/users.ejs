@@ -32,7 +32,9 @@
             width: 10%;
             text-align: right;
         }
-
+        #messageContainer{
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -67,6 +69,11 @@
         <!-- navbar -->
         <%- include('../partials/verticalMenu') %> 
 
+        <!-- Message -->
+        <div id="messageContainer">
+            <h3>usuario eliminado</h3>
+        </div>
+
         <!-- Products list -->
         <div class="products-list add-shadow-1">
 
@@ -85,19 +92,91 @@
                     <div class="last-name"><%= user.last_name %> </div>
                     <div class="email"><%= user.email %> </div>
                     <div class="row-btns">
-                        <a class="btn-admin" href="" title="Ver"><i class="fas fa-eye"></i></a>
-                        <a class="btn-admin" href="" title="Editar"><i class="fas fa-pen"></i></a>
-                        <a id="delete-btn" class="btn-admin" title="Borrar"><i class="fas fa-trash-alt"></i></a>
+                        <!-- <a class="btn-admin" href="" title="Ver"><i class="fas fa-eye"></i></a>
+                        <a class="btn-admin" href="" title="Editar"><i class="fas fa-pen"></i></a> -->
+                        <!-- <a id="my-btn" class="btn-admin" title="Borrar"><i class="fas fa-trash-alt"></i></a> -->
+                        <button onclick="openModal(this.dataset.email,this.dataset.id)" data-email=<%= user.email %> data-id=<%= user.id %>   title="Borrar"><i class="fas fa-trash-alt"></i></button>
                     </div>
                 </div>
             <% })} else{ %>
                 <h4>No se encontraton resultados de tu búsqueda</h4>
             <% } %>  
         </div>
-
   </div>
 
-    </div>    
+          <!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Advertencia</h2>
+        </div>
+        <div class="modal-body">
+            <p>¿Desea Eliminar el usuario<span id="userID"></span>?</p>
+        </div>
+        <div style="margin-bottom: 1rem;">
+            <!-- <a href="">Eliminar</a>
+            <a href="">Descartar</a> -->
+            <button id='comfirmBtn' href="/admin/" class="btn-modal">Eliminar</button>
+            <button id="cancelBtn" class="btn-modal">Descartar</button>
+        </div>
+    </div>
+</div>   
 
+<script>
+    // Get the modal
+    let modal = document.getElementById("myModal");
+    let userID = document.getElementById("userID");
+    let cancelBtn = document.getElementById("cancelBtn");
+    let comfirmBtn = document.getElementById("comfirmBtn");
+    let messageContainer = document.getElementById("messageContainer")
+    let user;
+    let id;
+    // Get the button that opens the modal
+    // var btn = document.querySelectorAll(".delete-btn");
+
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    function openModal(userEmail,uid) {
+      modal.style.display = "block";
+      id = uid;
+      userID.innerText = `${userEmail}`;
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    // Or when yhe user clicks 'descartar'
+    cancelBtn.addEventListener('click',function(){
+        modal.style.display = 'none'
+    })
+
+    comfirmBtn.addEventListener('click',function(){
+        fetch(`http://localhost:5000/admin/users/${id}`,{
+            method:'delete',
+            redirect:"follow"
+        })
+        .then(response=>response.json())
+        .then(r=>{
+            modal.style.display = "none"
+            console.log(r)
+            location.reload()
+
+        })
+        .catch(e=>console.log(e))
+    })
+
+</script>
 </body>
 </html>

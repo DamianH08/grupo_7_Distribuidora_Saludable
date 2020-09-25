@@ -70,12 +70,5 @@ module.exports ={
             last_name:'',
             email:''
         })
-    },
-    test:(req,res)=>{
-        user.findAll({
-            attributes:['id','first_name','last_name','email']
-        })
-        .then(results => res.send(results))
-        .catch(e => console.log(e))
     }
 };

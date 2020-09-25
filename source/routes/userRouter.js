@@ -22,8 +22,6 @@ router
     .get('/cart',userCtrl.cart)
     .get('/register',userCtrl.showRegisterForm)
     .post('/register',upload.any(), validate.registerForm,userCtrl.register)
-
-    .get('/test',userCtrl.test)
     .get('/user/:id',userCtrl.showUser)
     ;
 

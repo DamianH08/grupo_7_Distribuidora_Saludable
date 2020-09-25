@@ -17,6 +17,7 @@ router
     .get('/products/:id/delete',adminCtrl.deleteProduct)
     .post('/products/:id/delete',adminCtrl.storeDeletedProduct  )
     .get('/users',adminCtrl.users)
+    .delete('/users/:id',adminCtrl.deleteUser)
     .get('/orders',maintenancePage)
     ;
 
