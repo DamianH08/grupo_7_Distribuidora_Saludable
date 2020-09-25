@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distribuidora Saludable</title>
     
+    <style>
+        .pagination {
+            display: block;
+            text-align: center;
+            margin: auto;
+            margin-top: 1rem;
+        }
+        .pagination a{
+            font: 1.2rem;
+            font-weight: 700;
+            padding: 0.8rem 1.4rem;
+            background-color: var(--pink-1);
+            color:#efefef;
+            cursor: pointer;
+        }
+        .pagination a:hover{
+            background-color: #1d5a03;
+        }
+
+    </style>
+
     <%- include('../partials/styles-and-fonts') %> 
-    
 
 </head>
 <body>
@@ -14,19 +34,58 @@
     
     <div class="container"> 
         <div class="title add-shadow-bottom"><h3>Todos nuestros productos</h3></div>
-        <div class="products-container">
-            <% if(products){ %> 
-            <% products.forEach((product) => {%> 
-            <a class="to-product" href="/products/<%= product.id %> ">
-                <div class="product-container add-shadow-1">
-                        <div class="image-product"><img class="photo-product" src="<%= product.image %>"></div>
-                        <div class="price-product">$<%= product.variants[0].price %> </div>
-                        <div class="desc-product"><%= product.name %> </div>
+        <div id="productsContainer" class="products-container">
+            <% //if(products){ %> 
+            <% //products.forEach((product) => {%> 
+            <!-- <a class="to-product" href="/products/<%= //product.id %> "> -->
+                <!-- <div class="product-container add-shadow-1">
+                        <div class="image-product"><img class="photo-product" src="<%= //product.image %>"></div>
+                        <div class="price-product">$<%= //product.variants[0].price %> </div>
+                        <div class="desc-product"><%= //product.name %> </div>
                         <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
                 </div>
             </a>
-            <% })} %> 
+            <% //})} %> 
+        </div> -->
         </div>
-    
+    </div>
+
+    <!-- pagination button -->
+    <div class="pagination">
+        <a onclick="nextPage()">Ver más</a>
+    </div>
+
+
+    <script>
+        loadData()
+        let page=1
+        let productsContainer = document.getElementById('productsContainer')
+
+        function loadData(page=null,limit=null){
+            fetch(`http://localhost:5000/api/v1/products?limit=${limit}&page=${page}`)
+                .then(data => data.json())
+                .then(products => {
+                    for(let product of products.rows){
+                        addProductCard(product.id,product.name,product.image,product.variants[0].price)
+                    }
+                })
+        }
+
+        function addProductCard(id,name,image,price){
+            productsContainer.innerHTML +=
+            `<a class="to-product" href="/products/${id}">
+                <div class="product-container add-shadow-1">
+                    <div class="image-product"><img class="photo-product" src="${image}"></div>
+                    <div class="price-product">$${price} </div>
+                    <div class="desc-product">${name} </div>
+                    <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
+            </div>
+            </a>`
+        }
+
+        function nextPage(){
+            loadData(page++)
+        }
+    </script>
 </body>
 </html>

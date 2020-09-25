@@ -37,7 +37,6 @@ module.exports ={
         // res.send('ok')
         const products = await product.findAll({
             attributes:['id','name','image'],
-           
             include:{model:variant, attributes:['id','name','price']},
             where:{
                 name:{ [Op.like]:`%${req.query.keyword}%`}
