@@ -35,12 +35,6 @@ module.exports = {
             res.redirect('/login');
         }  
 
-    },
-    isUser:(req,res,next) => {
-        if (parseInt(req.params.id) === res.locals.userId ){
-            next()
-        } else {
-            res.send('No podes mirar otro usuario!')
-        }
     }
+  
 }

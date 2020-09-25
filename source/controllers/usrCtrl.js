@@ -64,14 +64,33 @@ module.exports ={
             categories:categories_db.data
         })
     },
-    showUser: async (req,res)=>{
-        res.render('users/user',{
-            first_name:req.params.id,
-            last_name:'Pepe',
-            email:'',
-            categories: await category.findAll() 
-        })
+    showUser: (req,res)=>{
+        let categorias;
         
+        category.findAll()
+        .then((cat) => {
+            categorias = cat;  
+        });
+        
+        let usario;
+        user.findOne({
+            where: {
+                id : req.session.userId
+            }
+        }).then((resultado) => {
+            usario = resultado;           
+
+            res.render('users/user',{
+                first_name: usario.first_name,
+                last_name: usario.last_name,
+                email: usario.email,
+                password: usario.password,
+                rol: usario.rol,
+                avatar: usario.avatar,
+            
+                categories: categorias 
+            })
+        });
     },
     test:(req,res)=>{
         user.findAll({

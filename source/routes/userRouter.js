@@ -26,7 +26,7 @@ router
     .post('/register',upload.any(), validate.registerForm,userCtrl.register)
 
     .get('/test',userCtrl.test)
-    .get('/user/:id',loggedUsers.isUser, userCtrl.showUser)
+    .get('/profile', userCtrl.showUser)
     ;
 
 module.exports = router;
