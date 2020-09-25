@@ -79,11 +79,19 @@ module.exports ={
                                 tokenStorage.new(token,user.id,user.first_name);
                                 res.cookie('userToken',token,{maxAge:1000*60*60}) // 1 hora
                                 res.cookie('userName',user.first_name,{maxAge:1000*60*60})
+                            }
+                            
+                           /* else{
                                 req.session.userName = user.first_name;
-                            }else{
-                                req.session.userName = user.first_name;
-                            }                            
+                                req.session.userId = user.id;
+                            }
+                            
+                            */
+
+                            req.session.userName = user.first_name;
+                            req.session.userId = user.id;                         
                             res.redirect('/')
+                            
                         }else{
                             res.render('login',{
                                 errorMessage:'Revisá los datos ingresados',

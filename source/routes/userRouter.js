@@ -1,3 +1,5 @@
+const loggedUsers = require('../middlewares/loggedUsers');
+
 const 
     express = require('express'),
     router = express.Router(),
@@ -24,7 +26,7 @@ router
     .post('/register',upload.any(), validate.registerForm,userCtrl.register)
 
     .get('/test',userCtrl.test)
-    .get('/user/:id',userCtrl.showUser)
+    .get('/user/:id',loggedUsers.isUser, userCtrl.showUser)
     ;
 
 module.exports = router;
