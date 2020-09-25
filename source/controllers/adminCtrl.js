@@ -102,6 +102,19 @@ module.exports = {
             })
 
         })
+    },
+    deleteUser:async(req,res)=>{
+        try{
+            user.destroy({
+                where:{
+                    id:req.params.id
+                }
+            })
+        }catch(e){
+            res.send(e)
+        }
+        res.json({message:'El usuario se a borrado exitosamente'})
+        
     }
     
 }
