@@ -97,7 +97,6 @@ div .errorMessage{
     border-color: red;
 }
 
-
 @media(max-width: 425px) {
     .login{
         width: 90%;

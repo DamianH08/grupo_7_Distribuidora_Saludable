@@ -10,21 +10,27 @@
 </head>
 <body>
     <%- include('../partials/header') %> 
-    <h1>Welcome <%= locals.user %> </h1>
-    <div style="text-align: center;">
-        <a href="/">go home!</a>
-        
-        
-        <p>Nombre: <%=first_name%> </br>
-        Apellido: <%=last_name%> </br>
-        Email: <%=email%> </br>
-        Avatar: <%=avatar%> </br>
-        </p>
-        <img src= "/tmp/myUploads/defaultAvatar.jpg">
+    
+          
+            <h1> Tu perfil</h1>
+            
+               
+            
+            <div class="profile">
+                <img src="<%=avatar%>" alt="Perfil/<%= first_name %>">
+                
+                <h2><%= first_name %> <%=last_name%></h2>
+                
+                <p>Email: <%=email%></p> 
+                
+            
+            </div>
 
-        
-        <a href="/logout">Salir</a>
-    </div>
+            <div class="profile">
+                <a href="">Editar</a>            
+            <br>
+                <a href="/logout">Logout</a>
+            </div>
 
 
     <%- include('../partials/footer') %> 
