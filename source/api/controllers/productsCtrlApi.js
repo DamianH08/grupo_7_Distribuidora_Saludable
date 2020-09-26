@@ -3,7 +3,7 @@ const {product,variant} = require('../../database/models')
 module.exports={
     all: async(req,res) =>{
 
-        let limit = req.params.limit || 12;
+        let limit = parseInt(req.query.limit) || 12;
         let offset = (limit * parseInt(req.query.page)) || 0 
 
         try{

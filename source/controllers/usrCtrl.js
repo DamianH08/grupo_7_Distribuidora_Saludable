@@ -64,33 +64,26 @@ module.exports ={
             categories:categories_db.data
         })
     },
-    showUser: (req,res)=>{
-        let categorias;
-        
-        category.findAll()
-        .then((cat) => {
-            categorias = cat;  
-        });
-        
-        let usario;
-        user.findOne({
-            where: {
-                id : req.session.userId
-            }
-        }).then((resultado) => {
-            usario = resultado;           
+    showUser: async (req,res)=>{
+             
+        try{
+            let usario = await user.findByPk(req.session.userId);
+            let categorias = await category.findAll();
 
             res.render('users/user',{
                 first_name: usario.first_name,
                 last_name: usario.last_name,
                 email: usario.email,
-                password: usario.password,
-                rol: usario.rol,
                 avatar: usario.avatar,
             
                 categories: categorias 
-            })
-        });
+            });              
+        
+        }catch(error){
+            res.send({message:'Hubo un error en la base de datos'})
+        }
+
+      
     },
     test:(req,res)=>{
         user.findAll({
