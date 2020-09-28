@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora Saludable</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/logo/logoWhite.png">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mainMobil.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <!-- Icons fontawesome.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <script src="/js/validator.min.js"></script>
+    <script src="/js/validation.js"></script>
+    
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img src="/images/logo/logoWhite.png" >
+        </a>
+        <a href="/">Inicio</a>
+    </header>
+    
+    <div class="login add-shadow">
+        <h3>Editar tu perfil</h3>
+                 
+        <% if(locals.errorMessage){ %> 
+            <div class="errorMessage"><%= errorMessage %> </div> 
+        <% } %>   
+    
+
+        <form action="/profile/edit" method="POST" enctype="multipart/form-data" id="userCreateForm">
+           
+            <div>
+                <label for="first_name">Nombre: </label>
+               
+                <input type="text" name="first_name" id="first_name" value=<%= first_name %>>
+                
+                <p class="errorMessage" id="errorfirst_name"></p>
+
+              
+                 <% if(typeof errors != 'undefined') { %>
+                <p class="errorMessage">
+                    <% if(errors.first_name) { %> 
+                        <%= errors.first_name.msg %>
+                    <% } %> 
+                </p>  
+                <% } %> 
+          
+                <label for="last_name">Apellido: </label>
+                 
+                <input type="text" name="last_name" id="last_name" value=<%= last_name %> >
+               
+                
+                <p class="errorMessage" id="errorlast_name"></p>
+
+                <% if(typeof errors != 'undefined') { %>
+                <div class="errorMessage">
+                    <% if(errors.last_name) { %> 
+                        <%= errors.last_name.msg %>
+                    <% } %> 
+                </div>
+                <% } %> 
+
+            </div>
+           
+            <label for="email">Email: </label>
+            
+            <input type="email" name="email" id="email" value=<%= email %> >
+               
+
+            <p class="errorMessage" id="erroremail"></p>
+
+            <% if(typeof errors != 'undefined') { %>
+            <div class="errorMessage">
+                <% if(errors.email) { %> 
+                    <%= errors.email.msg %>
+                <% } %> 
+            </div>
+            <% } %> 
+
+            <label for="password">Contraseña: </label>
+            <input class="password" type="password" name="password" id="password" placeholder="*****">
+             
+            <p class="errorMessage" id="errorpassword"></p>
+
+            <% if(typeof errors != 'undefined') { %>
+            <div class="errorMessage">
+                <% if(errors.password) { %> 
+                    <%= errors.password.msg %>
+                <% } %> 
+            </div>
+            <% } %> 
+
+            <label for="password2">Confirmar contraseña: </label>
+            <input type="password" name="password2" id="password2" placeholder="*****">
+
+            <p class="errorMessage" id="errorpassword2"></p>
+
+            <input type="hidden" name="oldAvatar" value="<%= avatar %>">
+
+            <div class="upload">
+                <label for="avatar">Sube una foto:</label>
+                <input type="file" name="avatar">
+            </div>
+            
+            <input type="submit" value="Enviar" style="background-color:var(--pink-1);font-weight: 700;color: #272726da;"></input>
+        
+        </form>
+    </div>
+
+    <div style="height: 100px;"></div>
+
+
+</body>
+</html>

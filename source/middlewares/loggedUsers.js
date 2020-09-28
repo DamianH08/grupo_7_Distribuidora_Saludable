@@ -17,6 +17,7 @@ module.exports = {
         }
         next();        
     },
+
     isAdmin: (req,res,next)=>{
         req.session.admin = true;
         req.session.user = 'Neo';

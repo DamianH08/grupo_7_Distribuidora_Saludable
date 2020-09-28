@@ -64,34 +64,97 @@ module.exports ={
             categories:categories_db.data
         })
     },
-    showUser: (req,res)=>{
-        let categorias;
-        
-        category.findAll()
-        .then((cat) => {
-            categorias = cat;  
-        });
-        
-        let usario;
-        user.findOne({
-            where: {
-                id : req.session.userId
-            }
-        }).then((resultado) => {
-            usario = resultado;           
+
+    showUser: async (req,res)=>{
+             
+        try{
+            let usario = await user.findByPk(req.session.userId);
+            let categorias = await category.findAll();
 
             res.render('users/user',{
                 first_name: usario.first_name,
                 last_name: usario.last_name,
                 email: usario.email,
-                password: usario.password,
-                rol: usario.rol,
                 avatar: usario.avatar,
             
                 categories: categorias 
-            })
-        });
+            });              
+        
+        }catch(error){
+            res.send({message:'Hubo un error en la base de datos'})
+        }
+
+      
     },
+
+    editUser: async (req,res)=>{
+             
+        try{
+            let usario = await user.findByPk(req.session.userId);
+            let categorias = await category.findAll();
+
+            res.render('users/userEdit',{
+                first_name: usario.first_name,
+                last_name: usario.last_name,
+                email: usario.email,
+                avatar: usario.avatar,
+            
+                categories: categorias 
+            });              
+        
+        }catch(error){
+            res.send({message:'Hubo un error en la base de datos'})
+        }
+
+      
+    },
+
+    updateUser: (req,res,next)=>{
+
+        console.log('LLEGO: session user: ' + req.session.user);
+        console.log('LLEGO: session id: ' + req.session.userId);
+    
+        console.log('LLEGO: oldAvatar: ' + req.body.oldAvatar);
+        console.log('LLEGO: first_name: '+ req.body.first_name);
+        console.log('LLEGO: last_name: ' + req.body.last_name);
+        console.log('LLEGO: email: ' + req.body.email);
+        console.log('LLEGO: password: ' + req.body.password);
+        console.log('LLEGO: avatar: ' +req.body.avatar);
+    
+       
+        
+     /*    
+        let foto;
+
+        if (req.body.avatar) {
+            foto = req.body.avatar;
+        } else if (req.body.oldAvatar) {
+            foto = req.body.oldAvatar;
+        }
+
+        delete req.body.oldAvatar;
+
+        user.update({
+            first_name: req.body.first_name,
+            last_name: req.body.last_name,
+            email: req.body.email,
+            password: req.body.password,
+            avatar: foto,
+        },{ where:{
+            id: req.session.userId
+        }
+        })  
+
+          
+
+        res.redirect('/users/profile');              
+        */
+
+        res.send('Actualizado');
+      
+              
+    },
+
     test:(req,res)=>{
         user.findAll({
             attributes:['id','first_name','last_name','email']
