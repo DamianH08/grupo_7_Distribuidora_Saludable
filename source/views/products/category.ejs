@@ -3,32 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= categoryName %> </title>
+    <title><%= categoryTitle.name %> </title>
     <%- include('../partials/styles-and-fonts') %> 
 
 </head>
 <body>
     <%- include('../partials/header') %>
     
-    <h1><%= categoryName.name %> </h1>
-
-    <div class="container"> 
-        <div class="products-container">
-            <% products.forEach((product) => {%> 
-            <a class="to-product" href="/products/<%= product.id %> ">
-                <div class="product-container add-shadow-1">
-                        <div class="image-product"><img class="photo-product" src="<%= product.image %>"></div>
-                        <div class="price-product">$<%= product.variants[0].price %> </div>
-                        <div class="desc-product">
-                            <% if(product.name.length>25){ %>
-                            <%= product.name.slice(0,25)+"..."%> <%} else{ %>
-                                    <%= product.name %> 
-                                    <%} %>  
-                        </div>
-                        <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
-                </div>
-            </a>
-        <% }) %> 
+    <h1 id="category" data-id=<%= categoryTitle.id%> ><%= categoryTitle.name %> </h1>
+    
+        <div style="text-align: right;margin: 0.5rem 0.8rem;" >
+            <select name="limit" id="ver" value="8" class="add-shadow">
+                <option value="8">Ver</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+                <option value="50">48</option>
+            </select>
         </div>
+
+        <div id="productsContainer" class="products-container">  
+        </div>
+
+    <!-- pagination button -->
+    <div class=pages>
+        <!-- <input id="actualPage" type="number" min="1" onchange="loadData(this.value,limit)"> -->
+        <span id="actPage"></span>
+        <span>de</span>
+        <span id='totalPages'></span>
+    </div>
+    <div class="pagination">
+        <a id="previous" onclick="previousPage()"><</a>
+        <a id="next" onclick="nextPage()">></a>
+    </div>
+
+
+
+    <script>
+        //get querystring params to define pagination
+        let params = new URLSearchParams(location.search) // => '?page=n1&limit=n2';
+        let page = params.get('page') || 0;
+        let limit = params.get('limit') || 8;
+        // le id de la categoria esta en el dataset del elemento h1
+        let category = document.getElementById('category').dataset.id;
+        let totalPages;
+
+        //boton de ver por paginas
+        let verBtn = document.getElementById('ver')
+        verBtn.addEventListener('change',function(){
+            limit = this.value
+            page=0
+            loadData(page,limit)
+        })
+
+        //input de paginado
+        let actualPageInput = document.getElementById('actualPage')
+        let actPageSpan = document.getElementById('actPage')
+        let totalPagesSpan = document.getElementById('totalPages')
+
+        //cambiar paginado desde input 
+        // actualPageInput.addEventListener('change',function(pageValue){
+        //     loadData(pageValue,limit)
+        // })
+
+        loadData(page,limit)
+        let productsContainer = document.getElementById('productsContainer')
+
+        function loadData(page,limit){
+            fetch(`http://localhost:5000/api/v1/products?page=${page}&limit=${limit}&cat=${category}`)
+                .then(data => data.json())
+                .then(products => {
+                    cleanProductcontainer();
+                    for(let product of products.list){
+                        addProductCard(product.id,product.name,product.image,product.variants[0].price)
+                    }
+                    addPaginationDetail(products.total)
+                })
+        }
+
+        function cleanProductcontainer(){
+            productsContainer.innerHTML=''
+        }
+
+        function addProductCard(id,name,image,price){
+            productsContainer.innerHTML +=
+            `<a class="to-product" href="/products/${id}">
+                <div class="product-container add-shadow-1">
+                    <div class="image-product"><img class="photo-product" src="${image}"></div>
+                    <div class="price-product">$${price} </div>
+                    <div class="desc-product">${name.length>25?name.slice(0,25):name} </div>
+                    <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
+            </div>
+            </a>`
+        }
+
+        //esta funcion carga los datos del paginado siguinte
+        function nextPage(){
+            page++
+            loadData(page,limit)
+        }
+
+        //esta funcion carga el paginado anterior
+        function previousPage(){
+            page--
+            loadData(page,limit)
+        }
+
+        //esta funcion agrega informacion del paginado en la vista
+        function addPaginationDetail(totalProducts){
+            actPage.innerText = page+1
+            totalPages = Math.floor(totalProducts/verBtn.value);
+            totalPagesSpan.innerText = totalPages
+            
+        }
+   </script>
+
 </body>
 </html>

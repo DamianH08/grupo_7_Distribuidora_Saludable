@@ -12,14 +12,7 @@
 
     <div class="main-container">
         
-        <div class="menu-container add-shadow-1">
-            <ul class="vnav">
-                <li><a class="nav-btn active" href="/admin/products/create">Crear</a></li>
-                <li><a class="nav-btn" href="">Modificar</a></li>
-                <li><a class="nav-btn" href="">Borrar</a></li>
-            </ul>
-
-        </div>
+    <%- include('../partials/verticalMenu') %> 
    
     <div class="form-container add-shadow-1">
         <form action="/admin/products/create" method="POST">

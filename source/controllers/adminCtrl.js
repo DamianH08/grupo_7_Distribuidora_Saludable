@@ -52,16 +52,24 @@ module.exports = {
             categories:categories_db.data
         })
     },
-    storeProduct:(req,res)=>{
-        let newProduct = products_db.createProduct(
-            req.body.name,
-            req.body.price,
-            req.body.quantity,
-            req.body.unit,
-            req.body.image,
-            req.body.category
-        );
-        res.redirect(`/admin/products/${newProduct}`);
+    storeProduct: async(req,res)=>{
+        // let newProduct = products_db.createProduct(
+        //     req.body.name,
+        //     req.body.price,
+        //     req.body.quantity,
+        //     req.body.unit,
+        //     req.body.image,
+        //     req.body.category
+        // );
+        // res.redirect(`/admin/products/${newProduct}`);
+        try{
+            let newProduct = await product.create({
+                name:req.body.name,
+                image:req.body.image,
+                category:req.body.category
+            })
+            res.redirect(`/admin/products/${newProduct.id}`)
+        }catch(e){res.send(newProduct)}
     },
     editProduct:async(req,res)=>{
         res.render('admin/products/editProduct',{

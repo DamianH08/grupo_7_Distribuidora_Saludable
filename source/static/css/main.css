@@ -441,3 +441,33 @@ a.to-product{
       padding: 0.5rem 1rem;
   }
   /* ========================================================= */
+
+  /* pagination */
+  #ver{
+      border:none;
+      padding: 0.3rem;
+  }
+  .pages{
+      text-align:center;
+  }
+  #numPage{
+      width: 30px;
+  }
+  .pagination {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+}
+.pagination a{
+    font: 1.2rem;
+    font-weight: 700;
+    padding: 0.8rem 1.4rem;
+    background-color: var(--pink-1);
+    color:#efefef;
+    cursor: pointer;
+}
+.pagination a:hover{
+    background-color: #1d5a03;
+}
+  

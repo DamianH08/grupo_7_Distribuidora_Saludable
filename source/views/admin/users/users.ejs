@@ -165,7 +165,6 @@
     comfirmBtn.addEventListener('click',function(){
         fetch(`http://localhost:5000/admin/users/${id}`,{
             method:'delete',
-            redirect:"follow"
         })
         .then(response=>response.json())
         .then(r=>{

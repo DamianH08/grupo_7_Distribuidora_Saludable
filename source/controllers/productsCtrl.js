@@ -15,17 +15,12 @@ module.exports ={
     //         products:products_db.all(),
     //         categories:categories_db.data
     //     })
-        let offset
-        if(req.query.npage){
-            offset = 12 * req.query.npage
-        }
+
         const products = await product.findAll({
-            limit:12,
-            offset:offset,
+            limit:8,
             attributes:['id','name','image'],
             include:{model:variant, attributes:['id','name','price']}
         })
-        // let categories = await category.findAll()
 
         res.render('products/products',{
             products,
@@ -68,17 +63,21 @@ module.exports ={
         //                 category_id:req.params.cat
         //             }
         //         });
-        // res.send(products)
+        // // res.send(products)
+        // res.render('products/category',{
+        //     categories: await category.findAll(),
+        //     products: await product.findAll({
+        //         attributes:['id','name','image'],
+        //         include:{model:variant, attributes:['id','name','price']},
+        //         where:{
+        //             category_id:req.params.cat
+        //         }
+        //     }),
+        //     categoryName:await category.findByPk(req.params.cat)
+        // })
         res.render('products/category',{
             categories: await category.findAll(),
-            products: await product.findAll({
-                attributes:['id','name','image'],
-                include:{model:variant, attributes:['id','name','price']},
-                where:{
-                    category_id:req.params.cat
-                }
-            }),
-            categoryName:await category.findByPk(req.params.cat)
+            categoryTitle: await category.findByPk(req.params.cat)
         })
     },
     showProduct: async(req,res)=>{
@@ -107,7 +106,7 @@ module.exports ={
         res.render('products/productDetail',{
             product:myProduct,
             variants:myVariant,
-            categories: categories_db.data
+            categories: await category.findAll()
         })
     }
 

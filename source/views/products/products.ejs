@@ -32,60 +32,37 @@
 <body>
     <%- include('../partials/header') %>
     
+    
+    <div class="title add-shadow-bottom"><h3>Todos nuestros productos</h3></div>
     <div class="container"> 
-        <div class="title add-shadow-bottom"><h3>Todos nuestros productos</h3></div>
-        <div id="productsContainer" class="products-container">
-            <% //if(products){ %> 
-            <% //products.forEach((product) => {%> 
-            <!-- <a class="to-product" href="/products/<%= //product.id %> "> -->
-                <!-- <div class="product-container add-shadow-1">
-                        <div class="image-product"><img class="photo-product" src="<%= //product.image %>"></div>
-                        <div class="price-product">$<%= //product.variants[0].price %> </div>
-                        <div class="desc-product"><%= //product.name %> </div>
-                        <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
-                </div>
-            </a>
-            <% //})} %> 
-        </div> -->
+        <div style="text-align: right;margin: 0.5rem 0.8rem;">
+            <select name="limit" id="ver" value="8">
+                <option value="8">Ver</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+                <option value="50">48</option>
+            </select>
+        </div>
+
+        <div id="productsContainer" class="products-container">  
         </div>
     </div>
 
     <!-- pagination button -->
+    <div class=pages>
+        <!-- <input id="actualPage" type="number" min="1" onchange="loadData(this.value,limit)"> -->
+        <span id="actPage"></span>
+        <span>de</span>
+        <span id='totalPages'></span>
+    </div>
     <div class="pagination">
-        <a onclick="nextPage()">Ver más</a>
+        <a id="previous" onclick="previousPage()"><</a>
+        <a id="next" onclick="nextPage()">></a>
     </div>
 
+    <script src="/js/paginate.js"></script>
 
-    <script>
-        loadData()
-        let page=1
-        let productsContainer = document.getElementById('productsContainer')
-
-        function loadData(page=null,limit=null){
-            fetch(`http://localhost:5000/api/v1/products?limit=${limit}&page=${page}`)
-                .then(data => data.json())
-                .then(products => {
-                    for(let product of products.rows){
-                        addProductCard(product.id,product.name,product.image,product.variants[0].price)
-                    }
-                })
-        }
-
-        function addProductCard(id,name,image,price){
-            productsContainer.innerHTML +=
-            `<a class="to-product" href="/products/${id}">
-                <div class="product-container add-shadow-1">
-                    <div class="image-product"><img class="photo-product" src="${image}"></div>
-                    <div class="price-product">$${price} </div>
-                    <div class="desc-product">${name} </div>
-                    <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
-            </div>
-            </a>`
-        }
-
-        function nextPage(){
-            loadData(page++)
-        }
-    </script>
 </body>
 </html>
