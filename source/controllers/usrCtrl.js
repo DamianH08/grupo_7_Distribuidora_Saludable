@@ -66,10 +66,10 @@ module.exports ={
     },
 
     showUser: async (req,res)=>{
+        console.log(req.session.userId)
              
         try{
             let usario = await user.findByPk(req.session.userId);
-            let categorias = await category.findAll();
 
             res.render('users/user',{
                 first_name: usario.first_name,
@@ -77,7 +77,7 @@ module.exports ={
                 email: usario.email,
                 avatar: usario.avatar,
             
-                categories: categorias 
+                categories: await category.findAll() 
             });              
         
         }catch(error){

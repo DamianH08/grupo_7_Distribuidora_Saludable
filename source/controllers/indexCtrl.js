@@ -74,6 +74,7 @@ module.exports ={
                             res.redirect('/admin');
                         }else if(isValidPassword){
                             req.session.user = user.first_name;
+                            req.session.userId = user.id;
                             if(req.body.remember=='on'){
                                 const token = crypto.randomBytes(64).toString('base64');
                                 tokenStorage.new(token,user.id,user.first_name);
