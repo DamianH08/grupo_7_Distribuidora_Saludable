@@ -27,6 +27,10 @@ router
 
     .get('/test',userCtrl.test)
     .get('/profile', userCtrl.showUser)
+
+    .get('/profile/edit', userCtrl.editUser)
+    .post('/profile/edit', userCtrl.updateUser)
+
     ;
 
 module.exports = router;
