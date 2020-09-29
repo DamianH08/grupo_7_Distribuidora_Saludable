@@ -86,7 +86,7 @@
             </div>
 
             <% if(users.length>0){users.forEach(user =>{ %> 
-                <div class="product-row">
+                <div class="product-row" id =<%= user.id %> >
                     <div class="user-id"><%= user.id %> </div>
                     <div class="first-name text-overflow"><%= user.first_name  %> </div>
                     <div class="last-name"><%= user.last_name %> </div>
@@ -169,6 +169,7 @@
         .then(response=>response.json())
         .then(r=>{
             modal.style.display = "none"
+            document.getElementById(id).remove()
             console.log(r)
             location.reload()
 

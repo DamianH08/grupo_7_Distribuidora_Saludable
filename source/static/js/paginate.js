@@ -1,6 +1,6 @@
 //get querystring params to define pagination
 let params = new URLSearchParams(location.search) // => '?page=n1&limit=n2';
-let page = params.get('page') || 0;
+let page = params.get('page') || 1;
 let limit = params.get('limit') || 8;
 let totalPages;
 
@@ -8,7 +8,7 @@ let totalPages;
 let verBtn = document.getElementById('ver')
 verBtn.addEventListener('change',function(){
     limit = this.value
-    page=0
+    page=1
     loadData(page,limit)
 })
 
@@ -55,20 +55,27 @@ function addProductCard(id,name,image,price){
 
 //esta funcion carga los datos del paginado siguinte
 function nextPage(){
-    page++
-    loadData(page,limit)
+    if(page<totalPages){ //si no es la ultima pagina, carga la siguiente
+        page++
+        loadData(page,limit)
+    }else{ //si es la ultima pagina, carga la primera
+        page=1
+        loadData(page,limit)
+    }
 }
 
 //esta funcion carga el paginado anterior
 function previousPage(){
-    page--
-    loadData(page,limit)
+    if(page>1){
+        page--;
+        loadData(page,limit)
+    }
 }
 
 //esta funcion agrega informacion del paginado en la vista
 function addPaginationDetail(totalProducts){
-    actPage.innerText = page+1
-    totalPages = Math.floor(totalProducts/verBtn.value);
+    actPage.innerText = page
+    totalPages = Math.ceil(totalProducts/verBtn.value);
     totalPagesSpan.innerText = totalPages
     
 }

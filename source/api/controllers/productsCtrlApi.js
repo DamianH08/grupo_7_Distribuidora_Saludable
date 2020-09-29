@@ -16,13 +16,18 @@ module.exports={
                     attributes:['id','name','image'],
                     include:{model:variant, attributes:['id','name','price']},
                     limit: parseInt(req.query.limit),
-                    offset: parseInt(req.query.page)*parseInt(req.query.limit)
+                    offset: (parseInt(req.query.page)-1)*parseInt(req.query.limit)
                 })
                 let categoryName= await category.findByPk(req.query.cat);
+                let totalItems= await product.findAndCountAll({
+                    where:{category_id:req.query.cat}
+                });
+                console.log('total items: '+totalItems.count)
                 res.json({
                     category:categoryName.name,
-                    list:products}
-                    )
+                    list:products,
+                    total:totalItems.count
+                })
             }catch(error){
                 res.send(error)
                 // res.json({message:'Hubo un error en la base de datos'})
