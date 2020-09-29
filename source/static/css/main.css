@@ -490,8 +490,8 @@ a.to-product{
     margin-top: 1rem;
 }
 .pagination a{
-    font: 1.2rem;
-    font-weight: 700;
+    font: 2rem;
+    font-weight: 800;
     padding: 0.8rem 1.4rem;
     background-color: var(--pink-1);
     color:#efefef;
