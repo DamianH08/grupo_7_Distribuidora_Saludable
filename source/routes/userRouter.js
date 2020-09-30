@@ -29,7 +29,7 @@ router
     .get('/profile', userCtrl.showUser)
 
     .get('/profile/edit', userCtrl.editUser)
-    .post('/profile/edit', userCtrl.updateUser)
+    .post('/profile/edit', upload.any(),userCtrl.updateUser)
 
     ;
 

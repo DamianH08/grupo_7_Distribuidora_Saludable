@@ -109,7 +109,7 @@ module.exports ={
       
     },
 
-    updateUser: (req,res)=>{
+    updateUser: (req,res,next)=>{
 
         console.log('LLEGO: session user: ' + req.session.user);
         console.log('LLEGO: session id: ' + req.session.userId);

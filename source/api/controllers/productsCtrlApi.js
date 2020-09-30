@@ -68,5 +68,10 @@ module.exports={
     },
     delete:(req,res)=>{
         res.send('ok')
+    },
+    variantTypes:(req,res)=>{
+        const variants = require('../../db/variantTypes')
+        console.log('variants: '+variants)
+        res.json(variants)
     }
 }

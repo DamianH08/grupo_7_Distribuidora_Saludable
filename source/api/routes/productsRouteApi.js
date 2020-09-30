@@ -4,6 +4,7 @@ const products = require('../controllers/productsCtrlApi');
 
 router
     .get('/',products.all)
+    .get('/variantTypes',products.variantTypes)
     .get('/:id',products.one)
     .post('/:id',products.create)
     .patch('/:id',products.edit)
