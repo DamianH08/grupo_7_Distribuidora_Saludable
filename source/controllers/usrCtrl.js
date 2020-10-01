@@ -1,3 +1,5 @@
+const { Console } = require("console");
+
 const 
     categories_db = require("../db/categories_db"),
     { check, validationResult, body } = require('express-validator'),
@@ -31,7 +33,7 @@ module.exports ={
                 last_name:req.body.last_name,
                 email:req.body.email,
                 password:bcrypt.hashSync(req.body.password,10),
-                // avatar: foto   
+                avatar: foto   
                 
             })
             
@@ -65,12 +67,10 @@ module.exports ={
         })
     },
 
-    showUser: async (req,res)=>{
-        console.log(req.session.userId)
-             
+    showUser: async (req,res)=>{             
         try{
             let usario = await user.findByPk(req.session.userId);
-
+            
             res.render('users/user',{
                 first_name: usario.first_name,
                 last_name: usario.last_name,
@@ -111,46 +111,27 @@ module.exports ={
 
     updateUser: (req,res,next)=>{
 
-        console.log('LLEGO: session user: ' + req.session.user);
-        console.log('LLEGO: session id: ' + req.session.userId);
-    
-        console.log('LLEGO: oldAvatar: ' + req.body.oldAvatar);
-        console.log('LLEGO: first_name: '+ req.body.first_name);
-        console.log('LLEGO: last_name: ' + req.body.last_name);
-        console.log('LLEGO: email: ' + req.body.email);
-        console.log('LLEGO: password: ' + req.body.password);
-        console.log('LLEGO: avatar: ' +req.body.avatar);
-    
-       
-        
-     /*    
-        let foto;
+        let foto;   
 
-        if (req.body.avatar) {
-            foto = req.body.avatar;
-        } else if (req.body.oldAvatar) {
+        if(req.files[0]){
+            foto = req.files[0].filename;
+        } else {
             foto = req.body.oldAvatar;
         }
-
-        delete req.body.oldAvatar;
 
         user.update({
             first_name: req.body.first_name,
             last_name: req.body.last_name,
             email: req.body.email,
-            password: req.body.password,
+            password: bcrypt.hashSync(req.body.password,10),
             avatar: foto,
         },{ where:{
             id: req.session.userId
         }
         })  
-
-          
-
+      
         res.redirect('/users/profile');              
-        */
-
-        res.send('Actualizado');
+       
       
               
     },

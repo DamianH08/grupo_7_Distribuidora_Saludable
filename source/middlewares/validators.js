@@ -22,7 +22,6 @@ module.exports = {
         check('password')
             .notEmpty().withMessage('El campo Contraseña no puede estar vacio.').bail()
             .isLength({min:5}).withMessage('La Contaseña debe tener al menos 5 caracteres.')
-
             
     ]
    

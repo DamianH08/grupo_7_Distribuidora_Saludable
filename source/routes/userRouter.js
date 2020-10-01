@@ -14,7 +14,7 @@ var storage = multer.diskStorage({
           cb(null, './static/tmp/myUploads')
         },
         filename: function (req, file, cb) {
-          cb(null, 'tmp/myUploads/' + file.fieldname + '-' + req.body.first_name + '-' + Date.now() + path.extname(file.originalname))}
+          cb(null, req.body.first_name + '-' + Date.now() + path.extname(file.originalname))}
       });
        
 var upload = multer({ storage: storage });
@@ -23,13 +23,13 @@ router
     .get('/',(req,res)=>res.redirect('/login'))
     .get('/cart',userCtrl.cart)
     .get('/register',userCtrl.showRegisterForm)
-    .post('/register',upload.any(), validate.registerForm,userCtrl.register)
+    .post('/register',upload.any(), validate.registerForm, userCtrl.register)
 
     .get('/test',userCtrl.test)
     .get('/profile', userCtrl.showUser)
 
     .get('/profile/edit', userCtrl.editUser)
-    .post('/profile/edit', upload.any(),userCtrl.updateUser)
+    .post('/profile/edit', upload.any(),validate.registerForm, userCtrl.updateUser)
 
     ;
 
