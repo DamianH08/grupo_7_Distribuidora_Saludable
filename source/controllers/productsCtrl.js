@@ -29,7 +29,7 @@ module.exports ={
 
     },
     search:async(req,res)=>{
-        // res.send('ok')
+        // res.send('ok')2
         const products = await product.findAll({
             attributes:['id','name','image'],
             include:{model:variant, attributes:['id','name','price']},

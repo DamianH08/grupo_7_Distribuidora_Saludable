@@ -12,34 +12,32 @@
 
     <div class="main-container">
         
-        <div class="menu-container add-shadow-1">
-            <ul class="vnav">
-                <li><a class="nav-btn" href="/admin/products/create">Crear</a></li>
-                <li><a class="nav-btn" href="admin/porducts/edit">Editar</a></li>
-                <li><a class="nav-btn active" href="">Borrar</a></li>
-            </ul>
-
-        </div>
+    <%- include('../partials/verticalMenu') %> 
    
     <div class="form-container add-shadow-1">
         <form action="/admin/products/<%= product.id %>/delete " method="POST">
-            <label for="">ID:</label><br>
-            <input type="text" value="<%= product.id %> " ><br>
+            <span>ID: <%= product.id %> </span><br>
             <br>
             <label for="name">Nombre del producto:</label><br>
-            <input type="text" style="width: 50%;" name="name" value="<%= product.producto %>"><br>
+            <input type="text" style="width: 50%;" name="name" value="<%= product.name %>"><br>
             <label for="price">Precio:</label><br>
-            <input type="text"  style="width: 10%;" name="price" value="<%= product.precio %>">
-            <span>$ - <%= product.variante %> </span><br>
+            <% for(let variant of product.variants){ %>
+            <div class="variantsContainer">
+                <input type="text" name="price" value="<%= variant.price %>"
+                        data-variantId=<%= variant.id %> >
+                <span>$ - <%= variant.name %> </span>
+            </div> 
+            <% } %> 
+            <div style="margin: 1rem;"></div>
             <label for="description">Descripción:</label><br>
             <input type="text" id="descr">
             <label for="image">Imágen:</label>
-            <input type="text" style="width: 50%;" name="img" value="<%= product.img %> ">
-            <a target="_blank" href="<%= product.img %>">ver</a>
-            <div class="btn-container"> 
-                <input type="submit" value="Borrar">
-                <a href="javascript:history.back()">cancelar</a>
-            </div>
+            <input type="text" style="width: 50%;" name="img" value="<%= product.image %> ">
+            <a target="_blank" href="<%= product.image %>">ver</a>
+            <div class="btn-container">
+                <button type="submit">Borrar</button>
+                <button type="button" onclick="history.back()">Cancelar</button>
+                </div>
         </form>
     </div>
     </div>

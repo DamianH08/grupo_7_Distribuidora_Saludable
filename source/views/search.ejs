@@ -15,7 +15,7 @@
             <a class="to-product" href="/products/<%= product.id %> ">
                 <div class="product-container add-shadow-1">
                         <div class="image-product"><img class="photo-product" src="<%= product.image %>"></div>
-                        <div class="price-product">$<%= product.variants[0].price %> </div>
+                        <div class="price-product">$<%= product.variants.length>0?product.variants[0].price:100 %> </div>
                         <div class="desc-product"><%= product.name %> </div>
                         <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
                 </div>

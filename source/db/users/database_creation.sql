@@ -60,7 +60,8 @@ CREATE TABLE variants(
     name varchar(50) not NULL,
     price int not NULL,
     stock int,
-    updated_at timestamp default current_timestamp on update current_timestamp
+    updated_at timestamp default current_timestamp on update current_timestamp,
+    constraint foreign key (product_id) references products(id) on delete cascade
 );
 CREATE TABLE categories(
     id int NOT NULL auto_increment PRIMARY KEY,
@@ -84,9 +85,12 @@ CREATE TABLE orders_products(
     foreign key (order_id) references orders(id) on delete cascade,
     foreign key (product_id) references products(id)
 );
---adding foreign keys to different tables
+create table variant_types(
+    id int not null primary key auto_increment,
+    name varchar(10) not null
+);
+
 alter table offers add constraint foreign key (variant_id) references variants(id);
-alter table variants add constraint foreign key (product_id) references products(id);
 alter table products add constraint foreign key (category_id) references categories(id);
 alter table products add constraint foreign key (section_id) references sections(id);
 alter table orders add constraint foreign key (user_id) references users(id);

@@ -30,8 +30,10 @@
                 </div>
                 <p>ID:<%= product.id %> </p>
                 <p><%= product.name %> </p>
-                <p>$100 </p>
-                <p>kg </p>     
+                <% product.variants.forEach(variant=>{ %>
+                    <p>$<%= variant.price %> - <%= variant.name %>  </p>
+                     
+                    <% }) %>      
             </div> 
             
                           

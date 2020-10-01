@@ -20,7 +20,7 @@
         <img class="prd-photo" src="<%= product.image %> ">
         <div class="prd-details">
             <div class="prd-name"><%= product.name %> </div>
-            <div id="price" class="prd-price">$<%= variants[0].price %> </div>
+            <div id="price" class="prd-price">$<%= variants.length>0?variants[0].price:100 %> </div>
             <!-- <div class="qty"> -->
                 <!-- <input type="number" name="qty" placeholder="1" required> -->
                 <!-- <div class="un">//variant.name</div> -->

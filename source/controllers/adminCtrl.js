@@ -1,7 +1,7 @@
 const products_db = require('../db/products_db');
 const categories_db = require('../db/categories_db');
-const {user,variant,product} = require('../database/models');
-const {Op} = require('sequelize')
+const {user,variant,product,category,variantTypes} = require('../database/models');
+const {Op} = require('sequelize');
 
 module.exports = {
     index:(req,res)=>{
@@ -41,18 +41,29 @@ module.exports = {
         }
     },
     showProduct: async(req,res)=>{
-        res.render('admin/products/showProduct',{
-            product : await product.findOne({
-                where:{id:req.params.id}
+        console.log(req.params.id)
+        try{
+            let myProduct = await product.findByPk(req.params.id,{
+                attributes:['id','name','image'],
+                include:{model:variant,attributes:['id','name','price']}
             })
-        })
+            res.render('admin/products/showProduct',{
+                product:myProduct
+            })
+        }catch(e){res.send(e)}
     },
-    createProduct:(req,res)=>{
-        res.render('admin/products/createProduct',{
-            categories:categories_db.data
-        })
+    createProduct: async(req,res)=>{
+        try{
+            res.render('admin/products/createProduct',{
+                categories:await category.findAll(),
+                variantTypes:await variantTypes.findAll()
+            })
+        }catch(e){
+            res.send(e)
+        }
     },
     storeProduct: async(req,res)=>{
+        // console.log(req.body)
         // let newProduct = products_db.createProduct(
         //     req.body.name,
         //     req.body.price,
@@ -62,11 +73,23 @@ module.exports = {
         //     req.body.category
         // );
         // res.redirect(`/admin/products/${newProduct}`);
+        let id;
+        console.log(req.body)
         try{
             let newProduct = await product.create({
                 name:req.body.name,
                 image:req.body.image,
-                category:req.body.category
+                category_id:req.body.category
+            })
+            id=newProduct.id
+        }catch(e){res.send('error 1')}
+        let variantName = await variantTypes.findOne({where:{id:parseInt(req.body.variant)}});
+        console.log(variantName)
+        try{
+            await variant.create({
+                product_id: id,
+                name: variantName.name,
+                price: req.body.price
             })
             res.redirect(`/admin/products/${newProduct.id}`)
         }catch(e){res.send(newProduct)}
@@ -90,14 +113,19 @@ module.exports = {
         );
         res.redirect(`/admin/products/${req.params.id}`);
     },
-    deleteProduct:(req,res)=>{
+    deleteProduct:async(req,res)=>{
         res.render('admin/products/deleteProduct',{
-            product : products_db.findById(req.params.id)
+            product : await product.findOne({where:{id:req.params.id},include:variant})
         });
     },
-    storeDeletedProduct:(req,res)=>{
-        products_db.storeDeletedProduct(req.params.id);
-        res.render('admin/products/deletedProduct');
+    storeDeletedProduct:async(req,res)=>{
+        try{
+            console.log(`param: ${req.params.id}`)
+            await product.destroy({where:{id:req.params.id},include:variant})
+            res.redirect('/admin/products')
+        }catch(e){
+            res.send(e)
+        }
     },
     users:(req,res)=>{
         user.findAll({

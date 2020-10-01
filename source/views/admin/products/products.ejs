@@ -36,16 +36,28 @@
                 <div class="row-btns">
                     <a class="btn-admin" href="/admin/products/<%= product.id %> " title="Ver"><i class="fas fa-eye"></i></a>
                     <a class="btn-admin" href="/admin/products/<%= product.id %>/edit" title="Editar"><i class="fas fa-pen"></i></a>
-                    <a class="btn-admin" href="/admin/products/<%= product.id %>/delete" title="Borrar"><i class="fas fa-trash-alt"></i></a>
+                    <!-- <button id="deleteBtn">Borrar</button> -->
+                    <a id='deleteBtn' class="btn-admin" href="/admin/products/<%= product.id %>/delete" title="Borrar"><i class="fas fa-trash-alt"></i></a>
                 </div>
             </div>
             <% })} else{ %>
                 <h4>No se encontraton resultados de tu búsqueda</h4>
             <% } %>  
         </div>
+    </div>
 
 
+    <script>
+        document.getElementById('vmenu').innerHTML += `
+            <hr style="border:2px rgb(49, 173, 80) solid;">
+            <a href="/admin/products/create">
+                <span><i class="fa fa-plus"></i></span>  
+                <span>Nuevo Producto</span>
+            </a>
+        `
+    </script>
 
-    </div>    
 </body>
+
+
 </html>

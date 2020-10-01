@@ -3,14 +3,14 @@
 const { Model } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
-  class Product extends Model {
+  class Variant extends Model {
     
     static associate(models) {
-      this.belongsTo(models.product,{foreignKey:'product_id'})
+      this.belongsTo(models.product,{foreignKey:'product_id',onDelete:'CASCADE'})
       this.hasMany(models.offer)
     }
   };
-  Product.init({
+  Variant.init({
           id:{
               type: DataTypes.INTEGER(11),
               allowNull: false,
@@ -41,5 +41,5 @@ module.exports = (sequelize, DataTypes) => {
             timestamps: false 
         }     
   )
-  return Product;
+  return Variant;
 };
