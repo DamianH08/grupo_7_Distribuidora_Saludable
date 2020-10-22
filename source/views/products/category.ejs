@@ -72,7 +72,7 @@
             let productsContainer = document.getElementById('productsContainer')
 
         function loadData(page,limit){
-            fetch(`http://localhost:5000/api/v1/products?page=${page}&limit=${limit}&cat=${category}`)
+            fetch(`http://${location.host}/api/v1/products?page=${page}&limit=${limit}&cat=${category}`)
                 .then(data => data.json())
                 .then(products => {
                     cleanProductcontainer();
