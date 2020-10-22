@@ -1,5 +1,3 @@
--- Esta query la deben ejecutar para tener la base de datos y la tabla de 
--- usuarios en sus computadoras dist_saludable;
 CREATE DATABASE dist_saludable;
 use dist_saludable;
 

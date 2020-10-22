@@ -74,7 +74,7 @@ module.exports = {
         // );
         // res.redirect(`/admin/products/${newProduct}`);
         let id;
-        console.log(req.body)
+        console.log(JSON.parse(req.body))
         try{
             let newProduct = await product.create({
                 name:req.body.name,

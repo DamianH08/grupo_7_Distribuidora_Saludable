@@ -7,6 +7,9 @@ const coockieParser = require('cookie-parser');
 const app = express();
 const port = 5000;
 
+const cors = require('cors');
+app.use(cors());
+
 // Serve static files
 app.use(express.static(path.join(__dirname,'static')));
 
@@ -15,6 +18,7 @@ app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 
 // Populate req.body
+app.use(express.json())
 app.use(express.urlencoded({extended:false}));
 
 //Session and cookies
@@ -31,21 +35,19 @@ app.use('*',verify.isLogged);
 app.use('/admin',verify.isAdmin);
 
 // Routes
-const
-    adminRouter = require('./routes/adminRouter'),
-    productRouter = require('./routes/productRouter'),
-    userRouter = require('./routes/userRouter'),
-    indexRouter = require('./routes/indexRouter');
+const adminRouter = require('./routes/adminRouter');
+const productRouter = require('./routes/productRouter');
+const userRouter = require('./routes/userRouter');
+const indexRouter = require('./routes/indexRouter');
 
-app
-    .use('/',indexRouter)
-    .use('/products',productRouter)
-    .use('/users',userRouter)
-    .use('/admin',adminRouter)
-    ;
+app.use('/',indexRouter);
+app.use('/products',productRouter);
+app.use('/users',userRouter);
+app.use('/admin',adminRouter);
 
 //api Routes
 app.use('/api/v1/products',require('./api/routes/productsRouteApi'));
+app.use('/api/v1/users',require('./api/routes/usersRouteApi'));
 
 
 //Error 404

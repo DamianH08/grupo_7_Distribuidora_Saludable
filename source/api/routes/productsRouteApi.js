@@ -4,9 +4,10 @@ const products = require('../controllers/productsCtrlApi');
 
 router
     .get('/',products.all)
+    .post('/',products.create)
     .get('/variantTypes',products.variantTypes)
+    .get('/categories',products.categories)
     .get('/:id',products.one)
-    .post('/:id',products.create)
     .patch('/:id',products.edit)
     .delete('/:id',products.delete)
     ;

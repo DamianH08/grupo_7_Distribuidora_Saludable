@@ -66,9 +66,10 @@
         // actualPageInput.addEventListener('change',function(pageValue){
         //     loadData(pageValue,limit)
         // })
-
-        loadData(page,limit)
-        let productsContainer = document.getElementById('productsContainer')
+        window.onload={
+        }
+            loadData(page,limit)
+            let productsContainer = document.getElementById('productsContainer')
 
         function loadData(page,limit){
             fetch(`http://localhost:5000/api/v1/products?page=${page}&limit=${limit}&cat=${category}`)

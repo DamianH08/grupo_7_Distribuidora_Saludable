@@ -1,7 +1,10 @@
-/*=== Movil <420px ===*/
-@media(max-width:425px){
+/*=== Movil <425px ===*/
+@media(max-width:500px){
 
-    .desktop,.tablet{
+    .desktop{
+        display: none;
+    }
+    .tablet{
         display: none;
     }
     .products-container{

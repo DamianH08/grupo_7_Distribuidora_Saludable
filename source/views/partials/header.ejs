@@ -7,9 +7,9 @@
         <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
     </form>
     
-    <ul class="desktop tablet">
+    <ul class="desktop">
         <li class="dropdown">
-            <a href="" class="dropbtn"><i class="fas fa-angle-down"></i> Categorías</a>
+            <a class="dropbtn"><i class="fas fa-angle-down"></i> Categorías</a>
             <div class="dropdown-content">
                 <a href="/products/categories">Ver todas</a>
                
@@ -19,7 +19,7 @@
             </div>
         </li>
         <li class="dropdown">
-            <a href="" class="dropbtn"><i class="fas fa-angle-down"></i> Conocénos</a>
+            <a class="dropbtn"><i class="fas fa-angle-down"></i> Conocénos</a>
             <div class="dropdown-content">
                 <a href="/locales">Locales</a>
                 <a href="/about">Nosotros</a>
@@ -30,7 +30,6 @@
                 <a href="/users/profile" class="dropbtn"><i class="fas fa-user"></i> <%= locals.user %> </a>
                 <div class="dropdown-content">
                     <a href="/users/profile">Perfil</a>                 
-
                     <a href="/logout">Salir</a>
                 </div>
             </li>
@@ -40,7 +39,34 @@
 
         <li><a href="/users/cart"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
       </ul>
+    
     <div class="movil">
-        <i class="fa fa-bars movil" style="margin-right:1rem;color: #fff;font-size: 2rem;"></i>
+        <a class="movil" href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+            <i class="fa fa-bars movil" style="margin-right:1rem;color: #fff;font-size: 2rem;"></i>
+          </a>
     </div>
+    
 </header>
+<div class="topnav">
+    <div id="myLinks">
+        <a href="/products/categories"><i class="fas fa-apple-alt"></i> Categorías</a>
+        <a href="/users/cart"><i class="fas fa-shopping-cart"></i> Carrito</a>
+        <% if(locals.user){ %>
+        <a href="/users/profile"><i class="fas fa-user"></i> Mi perfil</a>
+        <a href="/logout"><i class="fas fa-sign-out-alt"></i> Salir</a>
+        <% }else{ %> 
+        <a href="/login"><i class="fas fa-user"></i> Ingresar</a>
+        <% } %> 
+    </div>
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>

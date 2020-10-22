@@ -70,16 +70,13 @@ module.exports ={
     showUser: async (req,res)=>{             
         try{
             let usario = await user.findByPk(req.session.userId);
-            
             res.render('users/user',{
                 first_name: usario.first_name,
                 last_name: usario.last_name,
                 email: usario.email,
                 avatar: usario.avatar,
-            
                 categories: await category.findAll() 
             });              
-        
         }catch(error){
             res.send({message:'Hubo un error en la base de datos'})
         }

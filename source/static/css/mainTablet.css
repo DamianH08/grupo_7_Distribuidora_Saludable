@@ -1,6 +1,9 @@
 /*=== Tablet ===*/
-@media(min-width:426px) and (max-width:768px) {
+@media(min-width:501px) and (max-width:768px) {
     .movil{
+        display: none;
+    }
+    .hide{
         display: none;
     }
     .product-container{
@@ -15,9 +18,6 @@
     }
     .products-container{
         justify-content: center;
-    }
-    .menuBar,bar{
-        display: none;
     }
     
     /* Productos */
@@ -35,7 +35,7 @@
         align-items: center;
         cursor: pointer;
     
-        width:25%;
+        width:23%;
         background-color:#ffffff;
         margin:auto;
         border: 0.1rem #ebebeb solid;
@@ -77,7 +77,7 @@
     }
     
     .product-container{
-        width: 24%;
+        width: 20%;
     }
     .btn{
         width: 95%;
@@ -179,9 +179,6 @@ footer i {
     font-size: 8px;
     
 }
-
-
-
 
 
 }
