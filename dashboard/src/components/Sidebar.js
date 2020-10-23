@@ -1,10 +1,9 @@
 import React from 'react';
+import './sidebar.css';
 
 function Sidebar() {
   return (
 <>
-   
-
     <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
