@@ -17,20 +17,31 @@
 
     <div style="margin-bottom:1rem;"></div>
     <div class="desc-container add-shadow">
-        <img class="prd-photo" src="<%= product.image %> ">
+        <img id="image" class="prd-photo" src="<%= product.image %> ">
         <div class="prd-details">
-            <div class="prd-name"><%= product.name %> </div>
+            <span id="productid" style="display: none;"><%= product.id %></span>
+            <div id="name" class="prd-name"><%= product.name %> </div>
             <div id="price" class="prd-price">$<%= variants.length>0?variants[0].price:100 %> </div>
-            <!-- <div class="qty"> -->
-                <!-- <input type="number" name="qty" placeholder="1" required> -->
-                <!-- <div class="un">//variant.name</div> -->
-            <!-- </div> -->
-            <select name="variant" id="variants">
-                <% variants.forEach(variant => { %> 
-                <option value=<%= variant.price %> data-price=<%= variant.price %> >
-                    <%= variant.name %> </option>
-                <% }) %> 
-            </select>
+            <!-- <div class="qty">
+                <input type="number" name="qty" placeholder="1" required>
+            </div> -->
+                <span>Presentación</span>
+                <select name="variant" id="variants">
+                    <% variants.forEach(variant => { %> 
+                    <option value=<%= variant.price %> data-id=<%= variant.id %> >
+                        <%= variant.name %> </option>
+                    <% }) %> 
+                </select>
+                <span id="variantId" style="display:none;"><%= variants[0].id %> </span>
+
+                <span>Cantidad</span>
+                <!-- <div style="display: inline; font-size: 2rem;">                
+                    <i class="far fa-minus-square" style="color: rgb(33, 160, 16);"></i>  
+                    <span> 128 </span>  <i style="color: rgb(33, 160, 16);" class="far fa-plus-square"></i>
+                </div>  -->
+                    <input id="cantidad" style="margin-bottom: 1rem;" type="number" min="1" value="1">
+
+
             <a href="#" id="add" class="add-shadow"><i class="fas fa-shopping-cart"></i> Agregar al carrito</a>
 
 
@@ -42,9 +53,36 @@
     <script>
         let price = document.getElementById('price')
         let variants = document.getElementById('variants')
-        variants.addEventListener('change',function(){
-            price.innerText='$'+variants.value
+        variants.addEventListener('change',function(e){
+            console.log(e)
+            price.innerText = '$'+variants.value
             })
+        
+
+        //Carrito
+        let productId = document.getElementById('productid')
+        let q = document.getElementById('cantidad')
+        let v = document.getElementById('variants')
+        
+        let addToCartBtn = document.getElementById('add')    
+        addToCartBtn.addEventListener('click',function(){
+            let product = {
+                id:productId.innerText,
+                qty:q.value,
+                variant:v.value
+            }
+            console.log(product)
+            if(!(localStorage.getItem('cart'))){ //si no hay un carrito
+                console.log('no hay cart')
+                let products = [product]
+                window.localStorage.setItem('cart',JSON.stringify(products))
+            }else{ //si ya hay items en el carrito
+                let products = JSON.parse(window.localStorage.getItem('cart'))
+                products.push(product)
+                window.localStorage.setItem('cart',JSON.stringify(products))
+            }
+            window.location.href='/users/cart'
+        })
     </script>
 
 </body>

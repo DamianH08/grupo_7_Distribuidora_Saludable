@@ -14,8 +14,8 @@
     <div class="main-container add-shadow">
             <div class="title1">Mi carrito:</div>
             <div class="content">
-                <div class="list">
-                    <div class="row">
+                <div id="productContainer" class="list">
+                    <!-- <div class="row">
                         <div class="photo">
                             <img src="/images/products/003.jpg">
                         </div>
@@ -31,57 +31,24 @@
                             <div>
                                 $800
                             </div>  
-                    </div>
-                    <div class="row">
-                        <div class="photo">
-                            <img src="/images/products/003.jpg">
-                        </div>
-                        <div class="detail">
-                            Mix almendras
-                        </div>
-                            <div>
-                                $400
-                            </div>
-                            <div>
-                                2 kg
-                            </div>
-                            <div>
-                                $800
-                            </div>  
-                    </div>
-                    <div class="row">
-                        <div class="photo">
-                            <img src="/images/products/003.jpg">
-                        </div>
-                        <div class="detail">
-                            Mix almendras
-                        </div>
-                            <div>
-                                $400
-                            </div>
-                            <div>
-                                2 kg
-                            </div>
-                            <div>
-                                $800
-                            </div>  
-                    </div>
+                    </div> -->
+                    
                 </div>
                 <div class="right-col">
                     <div class="resumen"><div>Resúmen</div></div>
                     <div class="sub">
                         <span>Subtotal: </span>
-                        <span>$2.400</span>
+                        <span id="st"></span>
                     </div>
                     <div class="sub">
                         <span>Envío: </span>
-                        <span>$200</span>
+                        <span id="env">Gratis</span>
                     </div>
                     <div class="total">
                         <span>Total: </span>
-                        <span>$2.600</span>
+                        <span id="total">0</span>
                     </div>
-                    <a href="#" id="buy-btn"class="btn add-shadow-1"><i class="fas fa-shopping-cart"></i> Seguir comprando</a> 
+                    <a href="/products" id="buy-btn"class="btn add-shadow-1"><i class="fas fa-shopping-cart"></i> Seguir comprando</a> 
                     <a href="#" id="pay-btn" class="btn add-shadow-1"><i class="fas fa-shopping-bag"></i> Pagar</a> 
 
                 </div>
@@ -92,5 +59,87 @@
     
     <%- include('../partials/footer') %> 
 
+    <script>
+
+        let subtotal=0;
+        let envio =0;
+        let total =0;
+        let subtotalSpan = document.getElementById('st')
+        subtotalSpan.innerText = subtotal
+        
+        let totalSpan = document.getElementById('total')
+
+
+        let productContainer = document.getElementById('productContainer')
+        if(window.localStorage.getItem('cart')){
+            loadList()
+        }
+
+
+        //load list
+        function loadList(){
+            productContainer.innerText = ''
+            total=0
+            totalSpan.innerText=total
+            subtotal=0
+            subtotalSpan.innerText=subtotal
+            let items = JSON.parse(window.localStorage.getItem('cart'))
+            let products =[]
+            items.forEach(item => { // item:{"id":"535","qty":"1","variant":"450"}
+                fetch(`http://localhost:5000/api/v1/products/${item.id}`)
+                .then(res=>res.json())
+                .then(product=>{ 
+                    //product
+                    //{"id":535,"name":"Avellana","image":"//d26lpennugtm8s.cloudfront.net/stores/904/312/products/avellanas1-4bcf7938784e5d9f3b15508372787248-320-0.jpg",
+                    //"variants":[{"id":86,"name":"250 GR.","price":450},{"id":87,"name":"500 GR.","price":880},{"id":88,"name":"3 KG.","price":5130},{"id":89,"name":"1 KG.","price":1710}]} 
+                    let variantName = product.variants.filter(v=>v.price==item.variant)[0].name
+
+                    subtotal += parseInt(item.variant)*parseInt(item.qty)
+                    total = subtotal+envio 
+                    console.log(subtotal)
+                    subtotalSpan.innerText=`$ ${subtotal}`
+                    totalSpan.innerText=`$ ${total}`
+                    productContainer.innerHTML+=`
+                        <div id=${item.id} class="row">
+                            <div class="photo">
+                                <img src=${product.image}>
+                            </div>
+                            <div class="detail">
+                                ${product.name.slice(0,15)}
+                            </div>
+                                <div>
+                                    $${item.variant}
+                                </div>
+                                <div>
+                                    ${variantName}
+                                </div>
+                                <div>
+                                    ${item.qty} U
+                                </div>  
+                                <button onClick="quitar(${item.id})">X</button>
+                        </div>`
+                })
+                .catch(e=>console.log(e))
+            });
+
+        }
+
+        //quitar
+        function quitar(id){
+            let i=0
+            let items = JSON.parse(window.localStorage.getItem('cart'))
+            for(item of items){
+                if(item.id==id){
+                    items.splice(i,1)
+                    window.localStorage.setItem('cart',JSON.stringify(items))
+                    loadList()
+                    break
+                }
+                i++
+            }
+        }
+            
+        
+    </script>
 </body>
 </html>

@@ -7,8 +7,10 @@ CREATE TABLE users (
     last_name VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(80) not NULL,
-    avatar VARCHAR(150) default '/tmp/myUploads/defaultAvatar.jpg',
+    avatar VARCHAR(150) default 'defaultAvatar.jpg',
     role VARCHAR(5) not NULL default 'user',
+    created_at timestamp default current_timestamp,
+    updated_at timestamp default current_timestamp on update current_timestamp,
     constraint check(role in ('user','admin'))
 );
 CREATE TABLE session_tokens (

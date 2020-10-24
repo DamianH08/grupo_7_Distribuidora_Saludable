@@ -61,11 +61,11 @@ module.exports ={
                email: req.body.email, })
         }
     },
-    cart:(req,res)=>{
+    cart:async(req,res)=>{
         res.render('users/cart',{
-            categories:categories_db.data
+            categories:await category.findAll()
         })
-    },
+    },  
 
     showUser: async (req,res)=>{             
         try{
@@ -125,7 +125,10 @@ module.exports ={
         },{ where:{
             id: req.session.userId
         }
-        })  
+        }) 
+        
+        req.session.user = req.body.first_name
+        
       
         res.redirect('/users/profile');              
        

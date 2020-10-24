@@ -4,6 +4,7 @@ const users = require('../controllers/usersCtrlApi');
 
 router
     .get('/',users.all)
+    .get('/:id',users.findOne)
     ;
 
 module.exports = router;

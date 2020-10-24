@@ -9,23 +9,36 @@ module.exports={
         let page = req.query.page? parseInt(req.query.page):1
         let cat = req.query.cat? parseInt(req.query.cat):undefined
         let keyword = req.query.keyword? req.query.keyword:undefined
+        let order = req.query.order? req.query.order:undefined
 
         //Search by keyword
         if(keyword){
-            let products = await product.findAll({
-                attributes:['id','name','image'],
-                include:{model:variant, attributes:['id','name','price']},
-                where:{
-                    name:{ [Op.like]:`%${keyword}%`}
-                }
-            })
-            res.json(products)
+            try{
+                let products = await product.findAll({
+                    attributes:['id','name','image','updated_at'],
+                    include:{model:variant, attributes:['id','name','price']},
+                    where:{
+                        name:{ [Op.like]:`%${keyword}%`}
+                    }
+                })
+                res.json(products)
+            }catch(e){res.json('Error')}
         }
 
+        //Order By
+        if(order){
+            try{
+                let products = await product.findAll({
+                    attributes:['id','name','image'],
+                    // include:{model:variant, attributes:['id','name','price']},
+                    order:[['created_at','desc']],
+                    limit:limit 
+                })
+                res.json(products)
+            }catch(e){res.json(e)}
+        }
 
         // Extraer por categorias
-        console.log(`executing  ${req.query}...`)
-        console.log(`cat=${category}  limit:${limit}  page=${page}`)
         if(cat!=undefined){
             try{
                 let products = await product.findAll({
@@ -88,7 +101,7 @@ module.exports={
     },
     one:async(req,res)=>{
         product.findByPk(req.params.id,{
-            attributes:['id','name'],
+            attributes:['id','name','image'],
             include:{model:variant,attributes:['id','name','price']}
         })
         .then(product=>{
@@ -144,7 +157,7 @@ module.exports={
     },
     categories:async(req,res)=>{
         try{
-            let categoryList = await category.findAll()
+            let categoryList = await category.findAndCountAll()
             console.log(categoryList)
             res.json(categoryList)
         }catch(e){res.json(e)}

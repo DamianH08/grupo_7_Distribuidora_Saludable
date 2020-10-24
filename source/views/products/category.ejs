@@ -34,8 +34,8 @@
         <span id='totalPages'></span>
     </div>
     <div class="pagination">
-        <a id="previous" onclick="previousPage()"><</a>
-        <a id="next" onclick="nextPage()">></a>
+        <a id="previous" onclick="previousPage()" style="font-size: 0.8rem;">< Anterior</a>
+        <a id="next" onclick="nextPage()" style="font-size: 0.8rem;">Siguiete ></a>
     </div>
 
 
@@ -94,7 +94,7 @@
                     <div class="image-product"><img class="photo-product" src="${image}"></div>
                     <div class="price-product">$${price} </div>
                     <div class="desc-product">${name.length>25?name.slice(0,25):name} </div>
-                    <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
+                    <a href="#" onclick="goTo(${id})" class="btn"><i class="fas fa-cart-arrow-down"></i> Comprar </a>
             </div>
             </a>`
         }
@@ -125,6 +125,12 @@
             totalPagesSpan.innerText = totalPages
             
         }
+
+        //esta funcion redirecciona a '/products/:id'
+        function goTo(id){
+            window.location.href='/products/'+id
+        } 
+
    </script>
 
 </body>
