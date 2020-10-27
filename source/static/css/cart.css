@@ -134,3 +134,12 @@ img{
     }
 
 }
+
+.empty-message{
+    margin-left: 1rem;
+    color: rgb(245, 152, 118);
+}
+
+.hidden{
+    display: none;
+}

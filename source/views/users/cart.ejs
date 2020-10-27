@@ -13,6 +13,9 @@
     
     <div class="main-container add-shadow">
             <div class="title1">Mi carrito:</div>
+            <div id="emptyMessageSpan" class="empty-message">
+                ¡Todavía no agregaste nada a tu carrito!
+            </div>
             <div class="content">
                 <div id="productContainer" class="list">
                     <!-- <div class="row">
@@ -49,11 +52,12 @@
                         <span id="total">0</span>
                     </div>
                     <a href="/products" id="buy-btn"class="btn add-shadow-1"><i class="fas fa-shopping-cart"></i> Seguir comprando</a> 
-                    <a href="#" id="pay-btn" class="btn add-shadow-1"><i class="fas fa-shopping-bag"></i> Pagar</a> 
+                    <a  id="pay-btn" class="btn add-shadow-1"><i class="fas fa-shopping-bag"></i> Pagar</a> 
 
                 </div>
     </div>
     </div>
+
 
     <div class="separador"></div>
     
@@ -69,10 +73,17 @@
         
         let totalSpan = document.getElementById('total')
 
+        let emptyMessageSpan = document.getElementById('emptyMessageSpan')
 
         let productContainer = document.getElementById('productContainer')
         if(window.localStorage.getItem('cart')){
+            if(JSON.parse(window.localStorage.getItem('cart')).length>0){
+                emptyMessageSpan.classList.add("hidden")
+            }    
+            
             loadList()
+        }else{
+
         }
 
 
@@ -137,9 +148,31 @@
                 }
                 i++
             }
+            if(JSON.parse(window.localStorage.getItem('cart')).length==0){
+                emptyMessageSpan.classList.toggle("hidden")
+            }
         }
+
+        // Pay
+        let payBtn = document.getElementById('pay-btn')
+        payBtn.addEventListener('click',function(){
+
+            let logData
+            fetch('http://localhost:5000/api/v1/users/islogged')
+            .then(res=>res.json())
+            .then(result=>{
+                logData = result
+                // console.log(logData.status)
+                if(logData.status=='notlogged'){
+                    window.location.href='http://localhost:5000/login'
+                }else{
+                    window.localStorage.removeItem('cart')
+                    location.href='http://localhost:5000/users/cart'
+                    
+                }
+            })
             
-        
+        })        
     </script>
 </body>
 </html>

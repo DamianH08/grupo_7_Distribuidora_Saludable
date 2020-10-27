@@ -103,11 +103,15 @@ module.exports ={
             attributes:['id','name','price','stock']
         })
         // res.send(myVariant)
-        res.render('products/productDetail',{
-            product:myProduct,
-            variants:myVariant,
-            categories: await category.findAll()
-        })
+        if(myProduct){
+            res.render('products/productDetail',{
+                product:myProduct,
+                variants:myVariant,
+                categories: await category.findAll()
+            })
+        }else{
+            res.render('404')
+        }
     }
 
 };

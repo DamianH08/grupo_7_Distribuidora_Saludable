@@ -1,16 +1,18 @@
 const express = require('express');
 const path = require('path');
+require('dotenv').config()
 
 const session = require('express-session');
 const coockieParser = require('cookie-parser');
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 const cors = require('cors');
 app.use(cors());
 
 // Serve static files
+app.use(express.static(path.join(__dirname,'build')))
 app.use(express.static(path.join(__dirname,'static')));
 
 // View engine
@@ -39,6 +41,7 @@ const adminRouter = require('./routes/adminRouter');
 const productRouter = require('./routes/productRouter');
 const userRouter = require('./routes/userRouter');
 const indexRouter = require('./routes/indexRouter');
+const loggedUsers = require('./middlewares/loggedUsers');
 
 app.use('/',indexRouter);
 app.use('/products',productRouter);
@@ -48,6 +51,9 @@ app.use('/admin',adminRouter);
 //api Routes
 app.use('/api/v1/products',require('./api/routes/productsRouteApi'));
 app.use('/api/v1/users',require('./api/routes/usersRouteApi'));
+
+//Dashboard
+app.get('/admin/dashboard',(req,res)=>res.sendFile(path.join(__dirname,'build','index2.html')))
 
 
 //Error 404

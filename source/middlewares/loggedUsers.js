@@ -5,7 +5,6 @@ module.exports = {
         if(req.session.userName){ //si hay una session abierta
             res.locals.user = req.session.user;
             res.locals.userId = req.session.userId;
-         
 
         }else if(req.cookies.userToken){ //si no hay session pero hay una cookie con token
             let oldToken = tokens.find(req.cookies.userToken)[0];
@@ -19,8 +18,8 @@ module.exports = {
     },
 
     isAdmin: (req,res,next)=>{
-        req.session.admin = true;
-        req.session.user = 'Neo';
+        // req.session.admin = true;
+        // req.session.user = 'Neo';
         if(req.session.admin){
             res.locals.user = req.session.user;
             next()

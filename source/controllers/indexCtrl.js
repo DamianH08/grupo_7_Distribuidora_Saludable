@@ -6,7 +6,7 @@ const
     hash = bcrypt.genSalt(10),
     crypto = require('crypto'),
     tokenStorage = require('../db/userTokens'),
-    {user,category,products}  = require('../database/models/')
+    {user,category,product,variant}  = require('../database/models/')
     ;
 
 module.exports ={
@@ -20,25 +20,39 @@ module.exports ={
             starCategories.push(a)
         }
         //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        try{
+            let ofertas = await product.findAll({
+                where:{section_id:1},
+                attributes:['id','name','image'],
+                include:{model:variant, attributes:['id','name','price']}
+            })
+            let destacados = await product.findAll({
+                where:{section_id:2},
+                attributes:['id','name','image'],
+                include:{model:variant, attributes:['id','name','price']}
+            })
 
-        res.render('index',{
-            categories,
-            starCategories
-        })
+            res.render('index',{
+                categories,
+                starCategories,
+                ofertas,
+                destacados
+            })
+        }catch(e){console.log(e)}
     },
     locales: (req,res)=>{
         res.render('about/locales',{
             categories:categories_db.data
         })
     },
-    about: (req,res)=>{
+    about: (req,res)=>{ 
         res.render('about/about',{
             categories:categories_db.data
         })
     },
-    cart:(req,res)=>{
+    cart:async(req,res)=>{
         res.render('cart',{
-            categories:categories_db.data
+            categories:await category.all()
         })
     },
     productDetail:(req,res)=>{

@@ -2,7 +2,18 @@
  <div class="container"> 
     <div class="title"><h3>Destacados</h3></div>
     <div class="products-container">
-        <div class="product-container add-shadow-1">
+        <% destacados.forEach(product => { %>
+            
+                <a class="to-product" href="/products/<%= product.id %>">
+                    <div class="product-container add-shadow-1">
+                        <div class="image-product"><img class="photo-product" src=<%= product.image %> ></div>
+                        <div class="price-product">$<%= product.variants[0].price %> </div>
+                        <div class="desc-product"><%= product.name %> </div>
+                        <a href="/products/<%= product.id %>"<%= product.id %> class="btn"><i class="fas fa-cart-arrow-down"></i> Comprar </a>
+                </div>
+                </a>
+            <% }) %>
+        <!-- <div class="product-container add-shadow-1">
                 <div class="image-product"><img class="photo-product" src="images/products/009.jpg"></div>
                 <div class="price-product">$420</div>
                 <div class="desc-product">Aceite de Oliva</div>
@@ -25,6 +36,6 @@
             <div class="price-product">$250</div>
             <div class="desc-product">Pasas de Uva Rubias</div>
             <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
-        </div>
+        </div> -->
         </div>
     </div>

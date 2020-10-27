@@ -3,13 +3,21 @@
         <h3>Ofertas</h3>
     </div>
     <div class="products-container">
-        <div class="product-container add-shadow-1">
-                <div class="image-product"><img class="photo-product" src="images/products/002.jpg"></div>
-                <div class="price-product">$140</div>
-                <div class="desc-product overflow-text">Almohaditas Rellenas</div>
-                <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
-        </div>
-        <div class="product-container add-shadow-1">
+        <% ofertas.forEach(product => { %>
+            
+            <a class="to-product" href="/products/<%= product.id %>">
+                <div class="product-container add-shadow-1">
+                    <div class="image-product"><img class="photo-product" src=<%= product.image %> ></div>
+                    <div class="price-product">$<%= product.variants[0].price %> </div>
+                    <div class="desc-product"><%= product.name %> </div>
+                    <a href="/products/<%= product.id %>"<%= product.id %> class="btn"><i class="fas fa-cart-arrow-down"></i> Comprar </a>
+            </div>
+            </a>
+        <% }) %> 
+
+
+
+        <!-- <div class="product-container add-shadow-1">
                 <div class="image-product"><img class="photo-product" src="images/products/001.jpg"></div>
                 <div class="price-product">$530</div>
                 <div class="desc-product overflow-text">Mix Sin Pasas</div>
@@ -26,7 +34,7 @@
             <div class="price-product">$85</div>
             <div class="desc-product overflow-text">Avena Instantánea</div>
             <a href="#" class="btn"><i class="fas fa-cart-arrow-down"></i> Agregar al carrito</a>
-        </div>
+        </div> -->
     </div>
     
 </div> 

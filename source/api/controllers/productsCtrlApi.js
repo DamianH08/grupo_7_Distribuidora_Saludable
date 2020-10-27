@@ -1,3 +1,4 @@
+const { clearCache } = require('ejs');
 const sequelize = require('sequelize');
 const {Op} = require('sequelize');
 const {product,variant,category} = require('../../database/models');
@@ -15,7 +16,7 @@ module.exports={
         if(keyword){
             try{
                 let products = await product.findAll({
-                    attributes:['id','name','image','updated_at'],
+                    attributes:['id','name','image','description','updated_at'],
                     include:{model:variant, attributes:['id','name','price']},
                     where:{
                         name:{ [Op.like]:`%${keyword}%`}
@@ -71,7 +72,7 @@ module.exports={
         }else{
             try{
                 let products = await product.findAll({
-                    attributes:['id','name','image'],
+                    attributes:['id','name','image','description'],
                     include:{model:variant, attributes:['id','name','price']},
                     limit: limit,
                     offset: (page-1)*limit
@@ -101,7 +102,7 @@ module.exports={
     },
     one:async(req,res)=>{
         product.findByPk(req.params.id,{
-            attributes:['id','name','image'],
+            attributes:['id','name','image','description'],
             include:{model:variant,attributes:['id','name','price']}
         })
         .then(product=>{
@@ -143,10 +144,29 @@ module.exports={
         res.json(newProduct)
 
     },
-    edit:(req,res)=>{
+    edit:async(req,res)=>{
+        try{
+            let actualProduct = await product.findByPk(req.params.id)
+
+            product.update(
+                {
+                    name:req.body.name || actualProduct.first_name,
+                    description:req.body.description || actualProduct.description,
+                    image: req.body.image || actualProduct.image
+                },
+                {where:{id:req.params.id}}
+            )
+
+            res.json({status:'ok',url:`/products/${req.params.id}`})
+        }catch(e){res.send(e)}
     },
-    delete:(req,res)=>{
-        res.send('ok')
+    delete:async(req,res)=>{
+        try{
+            product.destroy({
+                where:{id:req.params.id}
+            })
+            res.send(`deleted: ${req.params.id}`)
+        }catch(e){res.send(e)}
     },
     variantTypes:(req,res)=>{
         const variants = require('../../db/variantTypes')

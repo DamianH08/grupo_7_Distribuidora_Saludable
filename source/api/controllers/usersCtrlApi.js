@@ -59,5 +59,39 @@ module.exports = {
             })
             res.json(myUser)
         }catch(e){res.send(e)}
+    },
+    delete:async(req,res)=>{
+        try{ 
+            user.destroy({
+                where:{id:req.params.id}
+            })
+            res.json({status:'deleted',id:req.params.id})
+        }catch(e){res.json({status:'error'})}
+    },
+    update:async(req,res)=>{
+        try{
+            let oldUser = await user.findByPk(req.params.id)
+            console.log(oldUser)
+            user.update(
+                {
+                    first_name:req.body.fname || oldUser.first_name,
+                    last_name:req.body.lname || oldUser.last_name,
+                    email:req.body.email || oldUser.email,
+                    password:req.body.password || oldUser.password
+                },
+                {where:{id:req.params.id}}
+            )
+            let updatedUser = user.findByPk(req.params.id)
+
+            res.json({status:'ok',url:`/users/${req.params.id}`})
+        }catch(e){res.send(e)}
+    },
+    islogged:(req,res)=>{
+        if(req.session.user){
+            res.json({status:'logged'})
+    }
+        else{
+            res.json({status:'notlogged'})
+        }
     }
 }

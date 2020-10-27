@@ -142,5 +142,12 @@ module.exports ={
         })
         .then(results => res.send(results))
         .catch(e => console.log(e))
+    },
+    pay:(req,res)=>{
+        if(req.session.userName){
+            res.json({status:'logged'})
+        }else{
+            res.json({satus:'notlogged'})
+        }
     }
 };
